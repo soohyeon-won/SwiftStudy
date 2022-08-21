@@ -25,6 +25,8 @@ final class Study {
     }
     
     struct Output {
+        let router = PublishRelay<String>()
+        
         let relay = PublishRelay<String>()
         let subject = PublishSubject<String>()
         
@@ -44,7 +46,7 @@ final class Study {
         return Observable<String>.create { observer in
             print("createObservableRequester😇")
             observer.onNext("Observable1")
-//            observer.onCompleted() // X
+            observer.onCompleted() // X
             return Disposables.create()
         }
     }
@@ -129,6 +131,22 @@ final class Study {
             .disposed(by: disposeBag)
     }
     
+    func routerRelay() {
+        let apiRequester = createSingleRequester().asObservable()
+
+        apiRequester
+            .bind(to: output.router)
+            .disposed(by: disposeBag)
+    }
+    
+    func routerSubject() {
+        let apiRequester = createSingleRequester().asObservable()
+
+        apiRequester
+            .bind(to: output.subject)
+            .disposed(by: disposeBag)
+    }
+    
     func bindInput() {
         let observable = input.observable
             .withUnretained(self)
@@ -179,6 +197,18 @@ final class Study {
                 print("👾behaviorSubject:\(test)")
             })
             .disposed(by: disposeBag)
+        
+        output.router
+            .subscribe(onNext: { test in
+                print("🤝Router1 PublishRelay:\(test)")
+            })
+            .disposed(by: disposeBag)
+        
+        output.router
+            .subscribe(onNext: { test in
+                print("🤝Router2 PublishRelay:\(test)")
+            })
+            .disposed(by: disposeBag)
     }
 }
 
@@ -186,13 +216,22 @@ final class Study {
  결론
  
  1. input 변수를 통해서 API 를 request하고, 이를 share형태로 사용한다.
- - 장점: subject, behavior 모두 사용가능한 방식 이고 API 가 중복호출 될 위험이 적다.
+ - 장점: subject, behavior 모두 사용가능한 방식 이고 share()를 사용하여  API 가 중복호출 될 위험이 적다.
  - 단점: 함수로 호출될 때보다 디버깅이 힘들 수 있음, 테스트코드로 해결 할 수 있지만 우리 구조에서는 불가능하다.
  
  2. 여러번 호출되는 곳에서 Subject 선언을 지양한다. relay로 작성되어야함.
  - 장점: 기존 아키텍처로 작성된 곳을 수정할 필요없음
  - 단점: 구성원들 모두가 relay와 subject에 대한 이해도를 가져야함 무분별한 relay가 생성될 수 있음.
  
- 3. Observable<String>.create 시에 onCompleted를 작성하지 않는다.
-
+ + 참고의견
+ 2번 선택시 Observable<String>.create 시에 Share()를 사용하려면 onCompleted를 작성하지 않아야함
+ Single 로 네트워크를 호출하면 Share()를 사용할 수 없기때문에 traits를 사용하는 장점을 잃는다.
+ - 장점: 기존 코드에서 onCompleted 코드만 삭제해주면될듯하다. // deinit이 호출이 잘 되는것은 확인 완료
+ - 단점: 항상 onCompleted를 작성하지 않는다고 가정하자면 의미가 모호해 질 수 있음
+ 
+ 3. Single, 하나의 Output만을 둔다. // Router 코드 참고
+ Network request는 Single을 유지하되
+ Requester를 구독하면 반드시! 하나의 output을 호출하게 만들고 해당 output을 구독하여 사용한다.
+ Relay를사용해야함
+ 
  */

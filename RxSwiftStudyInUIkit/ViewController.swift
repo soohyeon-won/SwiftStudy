@@ -45,6 +45,14 @@ class ShareStudyViewController: UIViewController {
         $0.setTitle("observer", for: .normal)
         $0.setTitleColor(UIColor.black, for: .normal)
     }
+    private let routerButton = UIButton().then {
+        $0.setTitle("routerRelay", for: .normal)
+        $0.setTitleColor(UIColor.black, for: .normal)
+    }
+    private let routerSubjectButton = UIButton().then {
+        $0.setTitle("routerSubjectButton", for: .normal)
+        $0.setTitleColor(UIColor.black, for: .normal)
+    }
     
     private let disposeBag = DisposeBag()
     
@@ -73,7 +81,9 @@ class ShareStudyViewController: UIViewController {
                 singleShare,
                 sigle,
                 observerShare,
-                observer
+                observer,
+                routerButton,
+                routerSubjectButton
             ]
         ).then {
             $0.axis = .vertical
@@ -127,23 +137,21 @@ class ShareStudyViewController: UIViewController {
                 self.study.studyObservable()
             })
             .disposed(by: disposeBag)
+        
+        routerButton.rx.tap
+            .asDriver()
+            .drive(onNext: { [weak self] _ in
+                guard let self = self else { return }
+                self.study.routerRelay()
+            })
+            .disposed(by: disposeBag)
+        
+        routerSubjectButton.rx.tap
+            .asDriver()
+            .drive(onNext: { [weak self] _ in
+                guard let self = self else { return }
+                self.study.routerSubject()
+            })
+            .disposed(by: disposeBag)   
     }
-
-
 }
-
-
-/**
- 결론
- 
- 1. input 변수를 통해서 API 를 request하고, 이를 share형태로 사용한다.
- - 장점: subject, behavior 모두 사용가능한 방식 이고 API 가 중복호출 될 위험이 적다.
- - 단점: 함수로 호출될 때보다 디버깅이 힘들 수 있음, 테스트코드로 해결 할 수 있지만 우리 구조에서는 불가능하다.
- 
- 2. 여러번 호출되는 곳에서 Subject 선언을 지양한다. relay로 작성되어야함.
- - 장점: 기존 아키텍처로 작성된 곳을 수정할 필요없음
- - 단점: 구성원들 모두가 relay와 subject에 대한 이해도를 가져야함 무분별한 relay가 생성될 수 있음.
- 
- 3. Observable<String>.create 시에 onCompleted를 작성하지 않는다.
-
- */
