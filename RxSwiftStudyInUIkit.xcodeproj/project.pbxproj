@@ -20,6 +20,8 @@
 		E636139728B22E5A0050C070 /* RxSwiftStudyInUIkitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636139628B22E5A0050C070 /* RxSwiftStudyInUIkitUITests.swift */; };
 		E636139928B22E5A0050C070 /* RxSwiftStudyInUIkitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636139828B22E5A0050C070 /* RxSwiftStudyInUIkitUITestsLaunchTests.swift */; };
 		E63613A628B22E6A0050C070 /* RxSwiftStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63613A528B22E6A0050C070 /* RxSwiftStudy.swift */; };
+		E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E958D9AF28B47E4000D05AC4 /* ShareStudyViewController.swift */; };
+		E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E958D9B128B47FA100D05AC4 /* OutlineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		E636139628B22E5A0050C070 /* RxSwiftStudyInUIkitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftStudyInUIkitUITests.swift; sourceTree = "<group>"; };
 		E636139828B22E5A0050C070 /* RxSwiftStudyInUIkitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftStudyInUIkitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E63613A528B22E6A0050C070 /* RxSwiftStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftStudy.swift; sourceTree = "<group>"; };
+		E958D9AF28B47E4000D05AC4 /* ShareStudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareStudyViewController.swift; sourceTree = "<group>"; };
+		E958D9B128B47FA100D05AC4 /* OutlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +107,6 @@
 				B049730E5F148BC0E5363DE8 /* Pods-RxSwiftStudyInUIkitTests.debug.xcconfig */,
 				2420FAA5D1ACA4AEBC937EC9 /* Pods-RxSwiftStudyInUIkitTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -145,11 +148,12 @@
 				E636137528B22E570050C070 /* AppDelegate.swift */,
 				E636137728B22E570050C070 /* SceneDelegate.swift */,
 				E636137928B22E570050C070 /* ViewController.swift */,
+				E958D9B128B47FA100D05AC4 /* OutlineViewController.swift */,
+				E958D9AE28B47E3700D05AC4 /* RxSwift */,
 				E636137B28B22E570050C070 /* Main.storyboard */,
 				E636137E28B22E5A0050C070 /* Assets.xcassets */,
 				E636138028B22E5A0050C070 /* LaunchScreen.storyboard */,
 				E636138328B22E5A0050C070 /* Info.plist */,
-				E63613A528B22E6A0050C070 /* RxSwiftStudy.swift */,
 			);
 			path = RxSwiftStudyInUIkit;
 			sourceTree = "<group>";
@@ -169,6 +173,15 @@
 				E636139828B22E5A0050C070 /* RxSwiftStudyInUIkitUITestsLaunchTests.swift */,
 			);
 			path = RxSwiftStudyInUIkitUITests;
+			sourceTree = "<group>";
+		};
+		E958D9AE28B47E3700D05AC4 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				E63613A528B22E6A0050C070 /* RxSwiftStudy.swift */,
+				E958D9AF28B47E4000D05AC4 /* ShareStudyViewController.swift */,
+			);
+			path = RxSwift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,6 +423,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */,
+				E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */,
 				E636137A28B22E570050C070 /* ViewController.swift in Sources */,
 				E63613A628B22E6A0050C070 /* RxSwiftStudy.swift in Sources */,
 				E636137628B22E570050C070 /* AppDelegate.swift in Sources */,
