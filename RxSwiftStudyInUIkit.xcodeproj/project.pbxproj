@@ -178,10 +178,18 @@
 		E958D9AE28B47E3700D05AC4 /* RxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				E958D9B328B481F400D05AC4 /* Share */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		E958D9B328B481F400D05AC4 /* Share */ = {
+			isa = PBXGroup;
+			children = (
 				E63613A528B22E6A0050C070 /* RxSwiftStudy.swift */,
 				E958D9AF28B47E4000D05AC4 /* ShareStudyViewController.swift */,
 			);
-			path = RxSwift;
+			path = Share;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

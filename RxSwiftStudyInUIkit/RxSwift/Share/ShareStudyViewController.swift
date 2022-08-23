@@ -14,7 +14,7 @@ final class ShareStudyViewController: UIViewController {
         print("deinit ShareStudyViewController")
     }
 
-    private let study = Study()
+    private let shareStudy = ShareStudy()
     
     private let inputSingleShare = UIButton().then {
         $0.setTitle("inputSingleShare", for: .normal)
@@ -59,8 +59,8 @@ final class ShareStudyViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         bindEvent()
-        study.bindInput()
-        study.bindOutput()
+        shareStudy.bindInput()
+        shareStudy.bindOutput()
     }
     
     func setupUI() {
@@ -93,7 +93,7 @@ final class ShareStudyViewController: UIViewController {
             .asDriver()
             .drive(onNext: { [weak self] _ in
                 guard let self = self else { return }
-                self.study.input.observable.accept("tap")
+                self.shareStudy.input.observable.accept("tap")
             })
             .disposed(by: disposeBag)
         
@@ -101,7 +101,7 @@ final class ShareStudyViewController: UIViewController {
             .asDriver()
             .drive(onNext: { [weak self] _ in
                 guard let self = self else { return }
-                self.study.studySingleShare()
+                self.shareStudy.studySingleShare()
             })
             .disposed(by: disposeBag)
         
@@ -109,7 +109,7 @@ final class ShareStudyViewController: UIViewController {
             .asDriver()
             .drive(onNext: { [weak self] _ in
                 guard let self = self else { return }
-                self.study.studySingle()
+                self.shareStudy.studySingle()
             })
             .disposed(by: disposeBag)
         
@@ -117,7 +117,7 @@ final class ShareStudyViewController: UIViewController {
             .asDriver()
             .drive(onNext: { [weak self] _ in
                 guard let self = self else { return }
-                self.study.studyObservableShare()
+                self.shareStudy.studyObservableShare()
             })
             .disposed(by: disposeBag)
         
@@ -125,7 +125,7 @@ final class ShareStudyViewController: UIViewController {
             .asDriver()
             .drive(onNext: { [weak self] _ in
                 guard let self = self else { return }
-                self.study.studyObservable()
+                self.shareStudy.studyObservable()
             })
             .disposed(by: disposeBag)
         
@@ -133,7 +133,7 @@ final class ShareStudyViewController: UIViewController {
             .asDriver()
             .drive(onNext: { [weak self] _ in
                 guard let self = self else { return }
-                self.study.routerRelay()
+                self.shareStudy.routerRelay()
             })
             .disposed(by: disposeBag)
         
@@ -141,7 +141,7 @@ final class ShareStudyViewController: UIViewController {
             .asDriver()
             .drive(onNext: { [weak self] _ in
                 guard let self = self else { return }
-                self.study.routerSubject()
+                self.shareStudy.routerSubject()
             })
             .disposed(by: disposeBag)
     }

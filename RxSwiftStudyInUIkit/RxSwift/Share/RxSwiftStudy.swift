@@ -10,7 +10,7 @@ import RxSwift
 import RxRelay
 import RxCocoa
 
-final class Study {
+final class ShareStudy {
     
     deinit {
         print("deinit study")
