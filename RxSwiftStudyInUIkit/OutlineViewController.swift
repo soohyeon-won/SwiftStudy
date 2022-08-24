@@ -49,6 +49,7 @@ class OutlineViewController: UIViewController {
             OutlineItem(
                 title: "RxSwift",
                 subitems: [
+                    OutlineItem(title: "ShareStudyViewController", viewController: ShareStudyViewController.self),
                     OutlineItem(title: "ShareStudyViewController", viewController: ShareStudyViewController.self)
                 ]
             )

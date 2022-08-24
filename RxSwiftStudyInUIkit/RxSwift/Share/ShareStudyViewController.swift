@@ -7,6 +7,8 @@
 
 import UIKit
 import RxSwift
+import SnapKit
+import Then
 
 final class ShareStudyViewController: UIViewController {
     

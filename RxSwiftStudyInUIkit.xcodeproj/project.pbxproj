@@ -12,7 +12,6 @@
 		E596EED8C77ACC046C67384C /* Pods_RxSwiftStudyInUIkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775483CC6DC2A4CE03C1F742 /* Pods_RxSwiftStudyInUIkit.framework */; };
 		E636137628B22E570050C070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636137528B22E570050C070 /* AppDelegate.swift */; };
 		E636137828B22E570050C070 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636137728B22E570050C070 /* SceneDelegate.swift */; };
-		E636137A28B22E570050C070 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636137928B22E570050C070 /* ViewController.swift */; };
 		E636137D28B22E570050C070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E636137B28B22E570050C070 /* Main.storyboard */; };
 		E636137F28B22E5A0050C070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E636137E28B22E5A0050C070 /* Assets.xcassets */; };
 		E636138228B22E5A0050C070 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E636138028B22E5A0050C070 /* LaunchScreen.storyboard */; };
@@ -54,7 +53,6 @@
 		E636137228B22E570050C070 /* RxSwiftStudyInUIkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftStudyInUIkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E636137528B22E570050C070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E636137728B22E570050C070 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E636137928B22E570050C070 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E636137C28B22E570050C070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E636137E28B22E5A0050C070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E636138128B22E5A0050C070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -147,7 +145,6 @@
 			children = (
 				E636137528B22E570050C070 /* AppDelegate.swift */,
 				E636137728B22E570050C070 /* SceneDelegate.swift */,
-				E636137928B22E570050C070 /* ViewController.swift */,
 				E958D9B128B47FA100D05AC4 /* OutlineViewController.swift */,
 				E958D9AE28B47E3700D05AC4 /* RxSwift */,
 				E636137B28B22E570050C070 /* Main.storyboard */,
@@ -179,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				E958D9B328B481F400D05AC4 /* Share */,
+				E958D9B428B4838100D05AC4 /* map */,
 			);
 			path = RxSwift;
 			sourceTree = "<group>";
@@ -190,6 +188,13 @@
 				E958D9AF28B47E4000D05AC4 /* ShareStudyViewController.swift */,
 			);
 			path = Share;
+			sourceTree = "<group>";
+		};
+		E958D9B428B4838100D05AC4 /* map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,7 +438,6 @@
 			files = (
 				E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */,
 				E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */,
-				E636137A28B22E570050C070 /* ViewController.swift in Sources */,
 				E63613A628B22E6A0050C070 /* RxSwiftStudy.swift in Sources */,
 				E636137628B22E570050C070 /* AppDelegate.swift in Sources */,
 				E636137828B22E570050C070 /* SceneDelegate.swift in Sources */,
