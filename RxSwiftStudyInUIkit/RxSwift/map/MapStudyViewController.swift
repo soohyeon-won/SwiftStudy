@@ -20,32 +20,16 @@ final class MapStudyViewController: UIViewController {
     
     /// flatMap:
     /// Observable의 요소들을 각각의 Observable로 만들고, 만들어진 각각의 Observable이 요소들을 방출하게 된다.
+    private let mapBasicButton = UIButton().then {
+        $0.setTitle("map test", for: .normal)
+        $0.setTitleColor(UIColor.black, for: .normal)
+    }
     private let flatMapButton = UIButton().then {
-        $0.setTitle("flatMapButton", for: .normal)
+        $0.setTitle("flatMap", for: .normal)
         $0.setTitleColor(UIColor.black, for: .normal)
     }
-    private let observable2 = UIButton().then {
-        $0.setTitle("observable2", for: .normal)
-        $0.setTitleColor(UIColor.black, for: .normal)
-    }
-    private let sigle = UIButton().then {
-        $0.setTitle("sigle", for: .normal)
-        $0.setTitleColor(UIColor.black, for: .normal)
-    }
-    private let observerShare = UIButton().then {
-        $0.setTitle("observerShare", for: .normal)
-        $0.setTitleColor(UIColor.black, for: .normal)
-    }
-    private let observer = UIButton().then {
-        $0.setTitle("observer", for: .normal)
-        $0.setTitleColor(UIColor.black, for: .normal)
-    }
-    private let routerButton = UIButton().then {
-        $0.setTitle("routerRelay", for: .normal)
-        $0.setTitleColor(UIColor.black, for: .normal)
-    }
-    private let routerSubjectButton = UIButton().then {
-        $0.setTitle("routerSubjectButton", for: .normal)
+    private let flatMapLatestButton = UIButton().then {
+        $0.setTitle("flatMapLatest", for: .normal)
         $0.setTitleColor(UIColor.black, for: .normal)
     }
     
@@ -72,13 +56,9 @@ final class MapStudyViewController: UIViewController {
         
         let stackView = UIStackView(
             arrangedSubviews: [
+                mapBasicButton,
                 flatMapButton,
-                observable2,
-                sigle,
-                observerShare,
-                observer,
-                routerButton,
-                routerSubjectButton
+                flatMapLatestButton
             ]
         ).then {
             $0.axis = .vertical
@@ -93,60 +73,22 @@ final class MapStudyViewController: UIViewController {
     }
     
     func bindEvent() {
-        flatMapButton.rx.tap
+        mapBasicButton.rx.tap
             .asDriver()
             .drive(onNext: { [weak self] _ in
                 guard let self = self else { return }
-                self.mapStudy.input.observable.accept("flatMapButton tap")
+                self.mapStudy.input.mapBasic.accept("flatMapButton tap")
             })
             .disposed(by: disposeBag)
         
-//        observable2.rx.tap
-//            .asDriver()
-//            .drive(onNext: { [weak self] _ in
-//                guard let self = self else { return }
-//                self.mapStudy.studySingleShare()
-//            })
-//            .disposed(by: disposeBag)
-//        
-//        sigle.rx.tap
-//            .asDriver()
-//            .drive(onNext: { [weak self] _ in
-//                guard let self = self else { return }
-//                self.mapStudy.studySingle()
-//            })
-//            .disposed(by: disposeBag)
-//        
-//        observerShare.rx.tap
-//            .asDriver()
-//            .drive(onNext: { [weak self] _ in
-//                guard let self = self else { return }
-//                self.mapStudy.studyObservableShare()
-//            })
-//            .disposed(by: disposeBag)
-//        
-//        observer.rx.tap
-//            .asDriver()
-//            .drive(onNext: { [weak self] _ in
-//                guard let self = self else { return }
-//                self.mapStudy.studyObservable()
-//            })
-//            .disposed(by: disposeBag)
-//        
-//        routerButton.rx.tap
-//            .asDriver()
-//            .drive(onNext: { [weak self] _ in
-//                guard let self = self else { return }
-//                self.mapStudy.routerRelay()
-//            })
-//            .disposed(by: disposeBag)
-//        
-//        routerSubjectButton.rx.tap
-//            .asDriver()
-//            .drive(onNext: { [weak self] _ in
-//                guard let self = self else { return }
-//                self.mapStudy.routerSubject()
-//            })
-//            .disposed(by: disposeBag)
+        flatMapButton.rx.tap
+            .map { () }
+            .bind(to: mapStudy.input.flatMap)
+            .disposed(by: disposeBag)
+        
+        flatMapLatestButton.rx.tap
+            .map { () }
+            .bind(to: mapStudy.input.flatMapLatest)
+            .disposed(by: disposeBag)
     }
 }
