@@ -18,7 +18,9 @@
 		E636138D28B22E5A0050C070 /* RxSwiftStudyInUIkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636138C28B22E5A0050C070 /* RxSwiftStudyInUIkitTests.swift */; };
 		E636139728B22E5A0050C070 /* RxSwiftStudyInUIkitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636139628B22E5A0050C070 /* RxSwiftStudyInUIkitUITests.swift */; };
 		E636139928B22E5A0050C070 /* RxSwiftStudyInUIkitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636139828B22E5A0050C070 /* RxSwiftStudyInUIkitUITestsLaunchTests.swift */; };
-		E63613A628B22E6A0050C070 /* RxSwiftStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63613A528B22E6A0050C070 /* RxSwiftStudy.swift */; };
+		E63613A628B22E6A0050C070 /* ShareStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63613A528B22E6A0050C070 /* ShareStudy.swift */; };
+		E94DDCBC28B5CFD7005451EA /* MapStudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94DDCBB28B5CFD7005451EA /* MapStudyViewController.swift */; };
+		E94DDCBE28B5CFE4005451EA /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94DDCBD28B5CFE4005451EA /* Map.swift */; };
 		E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E958D9AF28B47E4000D05AC4 /* ShareStudyViewController.swift */; };
 		E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E958D9B128B47FA100D05AC4 /* OutlineViewController.swift */; };
 /* End PBXBuildFile section */
@@ -62,7 +64,9 @@
 		E636139228B22E5A0050C070 /* RxSwiftStudyInUIkitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftStudyInUIkitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E636139628B22E5A0050C070 /* RxSwiftStudyInUIkitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftStudyInUIkitUITests.swift; sourceTree = "<group>"; };
 		E636139828B22E5A0050C070 /* RxSwiftStudyInUIkitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftStudyInUIkitUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E63613A528B22E6A0050C070 /* RxSwiftStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftStudy.swift; sourceTree = "<group>"; };
+		E63613A528B22E6A0050C070 /* ShareStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareStudy.swift; sourceTree = "<group>"; };
+		E94DDCBB28B5CFD7005451EA /* MapStudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapStudyViewController.swift; sourceTree = "<group>"; };
+		E94DDCBD28B5CFE4005451EA /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		E958D9AF28B47E4000D05AC4 /* ShareStudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareStudyViewController.swift; sourceTree = "<group>"; };
 		E958D9B128B47FA100D05AC4 /* OutlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,7 +188,7 @@
 		E958D9B328B481F400D05AC4 /* Share */ = {
 			isa = PBXGroup;
 			children = (
-				E63613A528B22E6A0050C070 /* RxSwiftStudy.swift */,
+				E63613A528B22E6A0050C070 /* ShareStudy.swift */,
 				E958D9AF28B47E4000D05AC4 /* ShareStudyViewController.swift */,
 			);
 			path = Share;
@@ -193,6 +197,8 @@
 		E958D9B428B4838100D05AC4 /* map */ = {
 			isa = PBXGroup;
 			children = (
+				E94DDCBD28B5CFE4005451EA /* Map.swift */,
+				E94DDCBB28B5CFD7005451EA /* MapStudyViewController.swift */,
 			);
 			path = map;
 			sourceTree = "<group>";
@@ -438,7 +444,9 @@
 			files = (
 				E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */,
 				E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */,
-				E63613A628B22E6A0050C070 /* RxSwiftStudy.swift in Sources */,
+				E63613A628B22E6A0050C070 /* ShareStudy.swift in Sources */,
+				E94DDCBE28B5CFE4005451EA /* Map.swift in Sources */,
+				E94DDCBC28B5CFD7005451EA /* MapStudyViewController.swift in Sources */,
 				E636137628B22E570050C070 /* AppDelegate.swift in Sources */,
 				E636137828B22E570050C070 /* SceneDelegate.swift in Sources */,
 			);

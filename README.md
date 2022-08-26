@@ -2,3 +2,4 @@
 
 ### 1. RxSwift
 #### - share 
+#### - Map, flatMap, flatMapLatest
