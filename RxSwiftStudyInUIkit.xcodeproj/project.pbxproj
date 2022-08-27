@@ -19,6 +19,8 @@
 		E636139728B22E5A0050C070 /* RxSwiftStudyInUIkitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636139628B22E5A0050C070 /* RxSwiftStudyInUIkitUITests.swift */; };
 		E636139928B22E5A0050C070 /* RxSwiftStudyInUIkitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636139828B22E5A0050C070 /* RxSwiftStudyInUIkitUITestsLaunchTests.swift */; };
 		E63613A628B22E6A0050C070 /* ShareStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63613A528B22E6A0050C070 /* ShareStudy.swift */; };
+		E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */; };
+		E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */; };
 		E94DDCBC28B5CFD7005451EA /* MapStudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94DDCBB28B5CFD7005451EA /* MapStudyViewController.swift */; };
 		E94DDCBE28B5CFE4005451EA /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94DDCBD28B5CFE4005451EA /* Map.swift */; };
 		E950C91628B8709600E0C80A /* Reduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = E950C91528B8709600E0C80A /* Reduce.swift */; };
@@ -67,6 +69,8 @@
 		E636139628B22E5A0050C070 /* RxSwiftStudyInUIkitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftStudyInUIkitUITests.swift; sourceTree = "<group>"; };
 		E636139828B22E5A0050C070 /* RxSwiftStudyInUIkitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftStudyInUIkitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E63613A528B22E6A0050C070 /* ShareStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareStudy.swift; sourceTree = "<group>"; };
+		E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
+		E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		E94DDCBB28B5CFD7005451EA /* MapStudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapStudyViewController.swift; sourceTree = "<group>"; };
 		E94DDCBD28B5CFE4005451EA /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		E950C91528B8709600E0C80A /* Reduce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reduce.swift; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 				E636137728B22E570050C070 /* SceneDelegate.swift */,
 				E958D9B128B47FA100D05AC4 /* OutlineViewController.swift */,
 				E958D9AE28B47E3700D05AC4 /* RxSwift */,
+				E6A16EA128BA1B1600921D78 /* UIKit */,
 				E636137B28B22E570050C070 /* Main.storyboard */,
 				E636137E28B22E5A0050C070 /* Assets.xcassets */,
 				E636138028B22E5A0050C070 /* LaunchScreen.storyboard */,
@@ -178,6 +183,31 @@
 				E636139828B22E5A0050C070 /* RxSwiftStudyInUIkitUITestsLaunchTests.swift */,
 			);
 			path = RxSwiftStudyInUIkitUITests;
+			sourceTree = "<group>";
+		};
+		E6A16EA128BA1B1600921D78 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				E6A16EA628BA1B6100921D78 /* Paging */,
+				E6A16EA728BA1B6500921D78 /* Expandable */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		E6A16EA628BA1B6100921D78 /* Paging */ = {
+			isa = PBXGroup;
+			children = (
+				E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */,
+			);
+			path = Paging;
+			sourceTree = "<group>";
+		};
+		E6A16EA728BA1B6500921D78 /* Expandable */ = {
+			isa = PBXGroup;
+			children = (
+				E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */,
+			);
+			path = Expandable;
 			sourceTree = "<group>";
 		};
 		E950C91428B8708400E0C80A /* Reduce */ = {
@@ -458,8 +488,10 @@
 			files = (
 				E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */,
 				E950C91828B87BD800E0C80A /* ReduceStudyViewController.swift in Sources */,
+				E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */,
 				E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */,
 				E63613A628B22E6A0050C070 /* ShareStudy.swift in Sources */,
+				E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */,
 				E94DDCBE28B5CFE4005451EA /* Map.swift in Sources */,
 				E94DDCBC28B5CFD7005451EA /* MapStudyViewController.swift in Sources */,
 				E636137628B22E570050C070 /* AppDelegate.swift in Sources */,
