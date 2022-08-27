@@ -50,7 +50,8 @@ class OutlineViewController: UIViewController {
                 title: "RxSwift",
                 subitems: [
                     OutlineItem(title: "ShareStudyViewController", viewController: ShareStudyViewController.self),
-                    OutlineItem(title: "MapStudyViewController", viewController: MapStudyViewController.self)
+                    OutlineItem(title: "MapStudyViewController", viewController: MapStudyViewController.self),
+                    OutlineItem(title: "ReduceStudyViewController", viewController: ReduceStudyViewController.self)
                 ]
             )
         ]
