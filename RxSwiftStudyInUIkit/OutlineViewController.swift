@@ -53,6 +53,13 @@ class OutlineViewController: UIViewController {
                     OutlineItem(title: "MapStudyViewController", viewController: MapStudyViewController.self),
                     OutlineItem(title: "ReduceStudyViewController", viewController: ReduceStudyViewController.self)
                 ]
+            ),
+            OutlineItem(
+                title: "UIKit",
+                subitems: [
+                    OutlineItem(title: "PagingViewController", viewController: PagingViewController.self),
+                    OutlineItem(title: "ExpandableViewController", viewController: ExpandableViewController.self)
+                ]
             )
         ]
 //                OutlineItem(title: "Getting Started", subitems: [
