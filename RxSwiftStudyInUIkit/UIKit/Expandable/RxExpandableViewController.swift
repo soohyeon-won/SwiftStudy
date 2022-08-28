@@ -7,27 +7,17 @@
 
 import UIKit
 import RxSwift
+import RxRelay
 
-struct SectionList {
-    
-    var list: [Section] = [Section]()
-    
-    struct Section {
-        let title: String
-        let rowList: [Data]
-        
-        struct Data {
-            let rowTitle: String
-        }
-    }
-}
-
-final class ExpandableViewController: UIViewController {
+final class RxExpandableViewController: UIViewController {
     
     private let disposeBag = DisposeBag()
     private var data = SectionList()
+    private var rxData = PublishRelay<SectionList>()
     
-    private lazy var tableView = UITableView(frame: .zero, style: .grouped).then {
+    private lazy var tableView = UITableView(
+        frame: .zero, style: .grouped
+    ).then {
         $0.bounces = false
         $0.separatorStyle = .none
         $0.rowHeight = 40
@@ -60,6 +50,8 @@ final class ExpandableViewController: UIViewController {
             }
             data.list.append(SectionList.Section(title: "section \(i)", rowList: rowList))
         }
+        
+        rxData.accept(data)
     }
     
     func setupUI() {
@@ -73,13 +65,18 @@ final class ExpandableViewController: UIViewController {
             $0.edges.equalTo(view.safeAreaLayoutGuide)
         }
     }
-}
-
-extension ExpandableViewController: UITableViewDelegate {
+    
+    private func bindOutput() {
+        
+    }
     
 }
 
-extension ExpandableViewController: UITableViewDataSource {
+extension RxExpandableViewController: UITableViewDelegate {
+    
+}
+
+extension RxExpandableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = BaseTextTableViewCell()
         cell.label.text = data.list[indexPath.section].rowList[indexPath.row].rowTitle
