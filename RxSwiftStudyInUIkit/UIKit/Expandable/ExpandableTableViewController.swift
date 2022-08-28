@@ -37,7 +37,7 @@ final class ExpandableViewController: UIViewController {
         $0.dataSource = self
         $0.register(BaseTextTableViewCell.self)
     }
-    var hiddenSections = Set<Int>()
+    var showSections = Set<Int>()
     
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -93,32 +93,30 @@ extension ExpandableViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // 섹션이 hidden이므로 행을 노출시키지 않는다.
-        if hiddenSections.contains(section) {
-            return 0
+        if showSections.contains(section) {
+            return data.list[section].rowList.count
+            
         }
         
-        // 가진 데이터의 개수만큼 노출시킨다.
-        return data.list[section].rowList.count
+        print("hiddenSections: \(showSections)")
+        return 0
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        // UIButton 생성
         let sectionButton = UIButton()
         
-        // section 제목
-        sectionButton.setTitle(String(section),
-                               for: .normal)
-        
-        // section 배경 색
-        sectionButton.backgroundColor = .systemBlue
-        
-        // tag로 섹션을 구분할 것이다.
-        sectionButton.tag = section
-        
-        // section을 터치했을 때 실행할 메서드 설정(밑에서 구현한다.)
-        sectionButton.addTarget(self,
-                                action: #selector(self.hideSection(sender:)),
-                                for: .touchUpInside)
+            sectionButton.setTitle(String(section),
+                                   for: .normal)
+            sectionButton.backgroundColor = .systemBlue
+            
+            // tag로 섹션을 구분할 것이다.
+            sectionButton.tag = section
+        if section % 2 == 0 {
+            // section을 터치했을 때 실행할 메서드 설정(밑에서 구현한다.)
+            sectionButton.addTarget(self,
+                                    action: #selector(self.hideSection(sender:)),
+                                    for: .touchUpInside)
+        }
 
         return sectionButton
     }
@@ -140,21 +138,19 @@ extension ExpandableViewController: UITableViewDataSource {
             return indexPaths
         }
         
-        // 가져온 section이 원래 감춰져 있었다면
-        if self.hiddenSections.contains(section) {
-            // section을 다시 노출시킨다.
-            self.hiddenSections.remove(section)
-            self.tableView.insertRows(at: indexPathsForSection(),
-                                      with: .fade)
-        } else {
+        if self.showSections.contains(section) {
             // section이 원래 노출되어 있었다면 행들을 감춘다.
-            self.hiddenSections.insert(section)
+            self.showSections.remove(section)
             self.tableView.deleteRows(at: indexPathsForSection(),
                                       with: .fade)
+        } else { // 가져온 section이 원래 감춰져 있었다면
+            // section을 다시 노출시킨다.
+            self.showSections.insert(section)
+            self.tableView.insertRows(at: indexPathsForSection(),
+                                      with: .fade)
+            // 섹션을 노출시킬때 원래 감춰져 있던 행들이 다 보일 수 있게 한다.
+            self.tableView.scrollToRow(at: IndexPath(row: data.list[section].rowList.count - 1,
+                                                     section: section), at: UITableView.ScrollPosition.none, animated: true)
         }
-    }
-    
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 0
     }
 }
