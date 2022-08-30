@@ -240,19 +240,19 @@
 			path = UIUtils;
 			sourceTree = "<group>";
 		};
-		E950C91428B8708400E0C80A /* Reduce */ = {
+		E950C91428B8708400E0C80A /* Combine */ = {
 			isa = PBXGroup;
 			children = (
 				E950C91528B8709600E0C80A /* Reduce.swift */,
 				E950C91728B87BD800E0C80A /* ReduceStudyViewController.swift */,
 			);
-			path = Reduce;
+			path = Combine;
 			sourceTree = "<group>";
 		};
 		E958D9AE28B47E3700D05AC4 /* RxSwift */ = {
 			isa = PBXGroup;
 			children = (
-				E950C91428B8708400E0C80A /* Reduce */,
+				E950C91428B8708400E0C80A /* Combine */,
 				E958D9B328B481F400D05AC4 /* Share */,
 				E958D9B428B4838100D05AC4 /* Map */,
 			);

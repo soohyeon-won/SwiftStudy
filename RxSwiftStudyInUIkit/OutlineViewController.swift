@@ -62,65 +62,6 @@ class OutlineViewController: UIViewController {
                 ]
             )
         ]
-//                OutlineItem(title: "Getting Started", subitems: [
-//                    OutlineItem(title: "Grid", viewController: GridViewController.self),
-//                    OutlineItem(title: "Inset Items Grid",
-//                                viewController: InsetItemsGridViewController.self),
-//                    OutlineItem(title: "Two-Column Grid", viewController: TwoColumnViewController.self),
-//                    OutlineItem(title: "Per-Section Layout", subitems: [
-//                        OutlineItem(title: "Distinct Sections",
-//                                    viewController: DistinctSectionsViewController.self),
-//                        OutlineItem(title: "Adaptive Sections",
-//                                    viewController: AdaptiveSectionsViewController.self)
-//                        ])
-//                    ])
-//                OutlineItem(title: "Advanced Layouts", subitems: [
-//                    OutlineItem(title: "Supplementary Views", subitems: [
-//                        OutlineItem(title: "Item Badges",
-//                                    viewController: ItemBadgeSupplementaryViewController.self),
-//                        OutlineItem(title: "Section Headers/Footers",
-//                                    viewController: SectionHeadersFootersViewController.self),
-//                        OutlineItem(title: "Pinned Section Headers",
-//                                    viewController: PinnedSectionHeaderFooterViewController.self)
-//                        ]),
-//                    OutlineItem(title: "Section Background Decoration",
-//                                viewController: SectionDecorationViewController.self),
-//                    OutlineItem(title: "Nested Groups",
-//                                viewController: NestedGroupsViewController.self),
-//                    OutlineItem(title: "Orthogonal Sections", subitems: [
-//                        OutlineItem(title: "Orthogonal Sections",
-//                                    viewController: OrthogonalScrollingViewController.self),
-//                        OutlineItem(title: "Orthogonal Section Behaviors",
-//                                    viewController: OrthogonalScrollBehaviorViewController.self)
-//                        ])
-//                    ]),
-//                OutlineItem(title: "Conference App", subitems: [
-//                    OutlineItem(title: "Videos",
-//                                viewController: ConferenceVideoSessionsViewController.self),
-//                    OutlineItem(title: "News", viewController: ConferenceNewsFeedViewController.self)
-//                    ])
-//            ]),
-//            OutlineItem(title: "Diffable Data Source", subitems: [
-//                OutlineItem(title: "Mountains Search", viewController: MountainsViewController.self),
-//                OutlineItem(title: "Settings: Wi-Fi", viewController: WiFiSettingsViewController.self),
-//                OutlineItem(title: "Insertion Sort Visualization",
-//                            viewController: InsertionSortViewController.self),
-//                OutlineItem(title: "UITableView: Editing",
-//                            viewController: TableViewEditingViewController.self)
-//                ]),
-//            OutlineItem(title: "Lists", subitems: [
-//                OutlineItem(title: "Simple List", viewController: SimpleListViewController.self),
-//                OutlineItem(title: "Reorderable List", viewController: ReorderableListViewController.self),
-//                OutlineItem(title: "List Appearances", viewController: ListAppearancesViewController.self),
-//                OutlineItem(title: "List with Custom Cells", viewController: CustomCellListViewController.self)
-//            ]),
-//            OutlineItem(title: "Outlines", subitems: [
-//                OutlineItem(title: "Emoji Explorer", viewController: EmojiExplorerViewController.self),
-//                OutlineItem(title: "Emoji Explorer - List", viewController: EmojiExplorerListViewController.self)
-//            ]),
-//            OutlineItem(title: "Cell Configurations", subitems: [
-//                OutlineItem(title: "Custom Configurations", viewController: CustomConfigurationViewController.self)
-//            ])
     }()
     
 }

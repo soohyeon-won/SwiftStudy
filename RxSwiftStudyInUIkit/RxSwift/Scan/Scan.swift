@@ -1,8 +1,8 @@
 //
-//  Reduce.swift
+//  File.swift
 //  RxSwiftStudyInUIkit
 //
-//  Created by soohyeon won on 2022/08/26.
+//  Created by soohyeon won on 2022/08/30.
 //
 
 import Foundation
@@ -10,7 +10,7 @@ import RxSwift
 import RxRelay
 import RxCocoa
 
-final class ReduceStudy {
+final class ScanStudy {
     
     deinit {
         print("deinit MapStudy")
