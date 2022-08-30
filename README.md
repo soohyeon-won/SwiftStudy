@@ -3,7 +3,7 @@
 ### 1. RxSwift
 #### - share 
 #### - Map, flatMap, flatMapLatest
-#### - Reduce
+#### - Reduce, Scan
 
 ### 2. UIKit
 #### - Expandable UITableView
