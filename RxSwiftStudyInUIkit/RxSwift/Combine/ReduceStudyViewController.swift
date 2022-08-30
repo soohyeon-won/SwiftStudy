@@ -28,6 +28,16 @@ final class ReduceStudyViewController: UIViewController {
         $0.setTitleColor(UIColor.black, for: .normal)
     }
     
+    private let scanButton = UIButton().then {
+        $0.setTitle("scanButton", for: .normal)
+        $0.setTitleColor(UIColor.black, for: .normal)
+    }
+    
+    private let scanArrayButton = UIButton().then {
+        $0.setTitle("scan Array Button", for: .normal)
+        $0.setTitleColor(UIColor.black, for: .normal)
+    }
+    
     private let disposeBag = DisposeBag()
     
     init() {
@@ -51,7 +61,9 @@ final class ReduceStudyViewController: UIViewController {
         let stackView = UIStackView(
             arrangedSubviews: [
                 reduceButton,
-                reduceButtonWithoutOnCompleted
+                reduceButtonWithoutOnCompleted,
+                scanButton,
+                scanArrayButton
             ]
         ).then {
             $0.axis = .vertical
@@ -75,5 +87,21 @@ final class ReduceStudyViewController: UIViewController {
             .map { () }
             .bind(to: reduceStudy.input.reduceTestWithoutOnCompleted)
             .disposed(by: disposeBag)
+        
+        scanButton.rx.tap
+            .scan(false) { lastState, newState in
+                return !lastState
+            }
+            .bind(to: reduceStudy.input.scanTest)
+            .disposed(by: disposeBag)
+        
+        scanArrayButton.rx.tap
+            .subscribe(onNext: {
+                self.reduceStudy.input.scanArrayTest.accept([Int]())
+                self.reduceStudy.input.scanArrayTest.accept([1,2,3])
+                self.reduceStudy.input.scanArrayTest.accept([4,5,6])
+            })
+            .disposed(by: disposeBag)
+        
     }
 }
