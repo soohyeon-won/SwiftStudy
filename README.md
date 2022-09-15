@@ -11,3 +11,10 @@
 
 ### 3. Study
 #### - 접근제한자
+
+### 4. Architecture
+#### - MVC
+#### - MVP
+#### - MVVM
+#### - MVVM CleanArchitecture
+#### - ReactorKit
