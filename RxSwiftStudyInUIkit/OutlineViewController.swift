@@ -7,6 +7,8 @@ A simple outline view for the sample app's main UI
 
 import UIKit
 
+import SwiftUI
+
 class OutlineViewController: UIViewController {
 
     enum Section {
@@ -17,13 +19,16 @@ class OutlineViewController: UIViewController {
         let title: String
         let subitems: [OutlineItem]
         let outlineViewController: UIViewController.Type?
+        let swiftUIController: UIHostingController<BaseView>?
 
         init(title: String,
              viewController: UIViewController.Type? = nil,
+             swiftUIController: UIHostingController<BaseView>? = nil,
              subitems: [OutlineItem] = []) {
             self.title = title
             self.subitems = subitems
             self.outlineViewController = viewController
+            self.swiftUIController = swiftUIController
         }
         func hash(into hasher: inout Hasher) {
             hasher.combine(identifier)
@@ -60,11 +65,17 @@ class OutlineViewController: UIViewController {
                     OutlineItem(title: "PagingViewController", viewController: PagingViewController.self),
                     OutlineItem(title: "ExpandableViewController", viewController: ExpandableViewController.self)
                 ]
+            ),
+            OutlineItem(
+                title: "SwiftUI",
+                subitems: [
+                    OutlineItem(title: "swiftUIController", swiftUIController: UIHostingController(rootView: BaseView()))
+                ]
             )
         ]
     }()
     
-}
+}//
 
 extension OutlineViewController {
 
@@ -144,6 +155,10 @@ extension OutlineViewController: UICollectionViewDelegate {
         
         if let viewController = menuItem.outlineViewController {
             navigationController?.pushViewController(viewController.init(), animated: true)
+        }
+        
+        if let swiftUIView = menuItem.swiftUIController {
+            navigationController?.pushViewController(swiftUIView, animated: true)
         }
         
     }
