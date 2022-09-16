@@ -1,23 +1,23 @@
 # iOS develop study
 
-### 1. RxSwift
+## 🦅 RxSwift
 #### - share 
 #### - Map, flatMap, flatMapLatest
 #### - Reduce, Scan
 
-### 2. UIKit
+## 🦉 UIKit
 #### - Expandable UITableView
 #### - Paging
 
-### 3. Study
-#### - 접근제한자
+### 🕊 SwiftUI
+#### - UIKit에서 Preview 활용하기
 
-### 4. Architecture
+### 🏗 Architecture
 #### - MVC
 #### - MVP
 #### - MVVM
 #### - MVVM CleanArchitecture
 #### - ReactorKit
 
-### 5. SwiftUI
-#### - UIKit에서 Preview 활용하기
+## 📖 Study
+#### - 접근제한자
