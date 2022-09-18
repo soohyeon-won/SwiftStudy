@@ -1,10 +1,10 @@
 # iOS develop study
 
-- [🦅 RxSwift](#-features)
-- [🦉 UIKit](#-guides)
-- [🕊 SwiftUI](#-installation)
-- [🏗 Architecture](#-usage)
-- [✨ Study](#-miscellaneous)
+- [🦅 RxSwift](#-RxSwift)
+- [🦉 UIKit](#-UIKit)
+- [🕊 SwiftUI](#-SwiftUI)
+- [🏗 Architecture](#-Architecture)
+- [✨ Study](#-Study)
 
 ## 🦅 RxSwift
 - share 
