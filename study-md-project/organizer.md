@@ -1,5 +1,7 @@
-# Any
+# Any 😜
 I was organizing what I studied
+It was diffrent with 'TIL'
+because i just organized what i learned from time to time.
 
 ## [Date] contents...
 
