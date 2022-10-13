@@ -13,5 +13,8 @@ I was organizing what I studied
 ## [22.10.12]
  
 1. stackView Inset 추가 
+
+```
 tabStackView.layoutMargins = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
 tabStackView.isLayoutMarginsRelativeArrangement = true
+```
