@@ -1,4 +1,6 @@
 ## ✨ Study
+https://www.inflearn.com/course/%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4/dashboard
+
 - 디자인패턴
 #### 1. 싱글톤 패턴
 #### 2. 팩토리 메소드 (Factory method) 패턴
@@ -15,4 +17,4 @@ interface ShipFactory
 - orderShip(String name, String email)
 - private void validate(String name, String email)
 
-
+#### 3. 추상 팩토리 메소드 패턴
