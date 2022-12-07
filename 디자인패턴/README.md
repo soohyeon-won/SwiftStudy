@@ -2,6 +2,9 @@
 https://www.inflearn.com/course/%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4/dashboard
 
 - 디자인패턴
+
+[객체 생성 관련 디자인 패턴]
+
 #### 1. 싱글톤 패턴
 #### 2. 팩토리 메소드 (Factory method) 패턴
 
@@ -17,4 +20,18 @@ interface ShipFactory
 - orderShip(String name, String email)
 - private void validate(String name, String email)
 
-#### 3. 추상 팩토리 메소드 패턴
+#### 3. 추상 팩토리 패턴
+
+#### 4. 빌더 패턴
+
+#### 5. 프로토타입 패턴
+
+[구조 관련 디자인 패턴]
+
+#### 1. 어댑터 패턴
+
+#### 2. 브릿지 패턴
+
+[행동 관련 디자인 패턴]
+
+#### 1. 책임 
