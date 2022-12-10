@@ -10,6 +10,7 @@
 - share 
 - Map, flatMap, flatMapLatest
 - Reduce, Scan
+- materialize/dematerialize
 
 ## 🦉 UIKit
 - Expandable UITableView
