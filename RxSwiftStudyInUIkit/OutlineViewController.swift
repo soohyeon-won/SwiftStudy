@@ -52,7 +52,7 @@ class OutlineViewController: UIViewController {
     private lazy var menuItems: [OutlineItem] = {
         return [
             OutlineItem(
-                title: "RxSwift",
+                title: "🦅 RxSwift",
                 subitems: [
                     OutlineItem(title: "ShareStudyViewController", viewController: ShareStudyViewController.self),
                     OutlineItem(title: "MapStudyViewController", viewController: MapStudyViewController.self),
@@ -61,16 +61,28 @@ class OutlineViewController: UIViewController {
                 ]
             ),
             OutlineItem(
-                title: "UIKit",
+                title: "🦉 UIKit",
                 subitems: [
                     OutlineItem(title: "PagingViewController", viewController: PagingViewController.self),
                     OutlineItem(title: "ExpandableViewController", viewController: ExpandableViewController.self)
                 ]
             ),
             OutlineItem(
-                title: "SwiftUI",
+                title: "🕊 SwiftUI",
                 subitems: [
                     OutlineItem(title: "swiftUIController", swiftUIController: UIHostingController(rootView: BaseView()))
+                ]
+            ),
+            OutlineItem(
+                title: "✨ Study",
+                subitems: [
+                    OutlineItem(
+                        title: "☀️DesignPatterns",
+                        subitems: [
+                            OutlineItem(title: "Singleton",
+                                        viewController: SingletonViewController.self)
+                        ]
+                    )
                 ]
             )
         ]
