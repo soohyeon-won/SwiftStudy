@@ -51,7 +51,7 @@ final class ScanStudy {
     
     private func createObservableRequesterOnCompleted() -> Observable<Int> {
         return Observable<Int>.create { observer in
-            print("createObservableRequester😇")
+            print("createObservableRequesterOnCompleted😇")
             observer.onNext(1)
             observer.onNext(2)
             observer.onNext(3)
@@ -83,6 +83,7 @@ final class ScanStudy {
             .reduce(0) { lsh, rsh in
                 return lsh + rsh
             }.subscribe(onNext: { elemet in
+                print("single trait은 onCompletion이 불림")
                 print(elemet)
             }).disposed(by: disposeBag)
         
