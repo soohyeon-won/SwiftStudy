@@ -80,7 +80,9 @@ class OutlineViewController: UIViewController {
                         title: "☀️DesignPatterns",
                         subitems: [
                             OutlineItem(title: "Singleton",
-                                        viewController: SingletonViewController.self)
+                                        viewController: SingletonViewController.self),
+                            OutlineItem(title: "Factory method",
+                                        viewController: FactoryMethodViewController.self)
                         ]
                     )
                 ]
