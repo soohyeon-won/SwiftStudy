@@ -13,7 +13,7 @@ import Then
 final class MapStudyViewController: UIViewController {
     
     deinit {
-        print("deinit ShareStudyViewController")
+        print("deinit MapStudyViewController")
     }
 
     private let mapStudy = MapStudy()

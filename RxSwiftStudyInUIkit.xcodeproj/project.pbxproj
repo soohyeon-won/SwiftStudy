@@ -10,6 +10,7 @@
 		36AB96FCFE57D5162DB1CBFB /* Pods_RxSwiftStudyInUIkitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EC64F360D14E17FB704753 /* Pods_RxSwiftStudyInUIkitTests.framework */; };
 		73D05364EAE7903224645227 /* Pods_RxSwiftStudyInUIkit_RxSwiftStudyInUIkitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E70DBCE021C4AB8D5DD1209 /* Pods_RxSwiftStudyInUIkit_RxSwiftStudyInUIkitUITests.framework */; };
 		E596EED8C77ACC046C67384C /* Pods_RxSwiftStudyInUIkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775483CC6DC2A4CE03C1F742 /* Pods_RxSwiftStudyInUIkit.framework */; };
+		E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6EA2944618F0054EA97 /* Materialize.swift */; };
 		E636137628B22E570050C070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636137528B22E570050C070 /* AppDelegate.swift */; };
 		E636137828B22E570050C070 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636137728B22E570050C070 /* SceneDelegate.swift */; };
 		E636137D28B22E570050C070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E636137B28B22E570050C070 /* Main.storyboard */; };
@@ -59,6 +60,7 @@
 		738A0419C012CC27ED78558C /* Pods-RxSwiftStudyInUIkit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftStudyInUIkit.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftStudyInUIkit/Pods-RxSwiftStudyInUIkit.release.xcconfig"; sourceTree = "<group>"; };
 		775483CC6DC2A4CE03C1F742 /* Pods_RxSwiftStudyInUIkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftStudyInUIkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B049730E5F148BC0E5363DE8 /* Pods-RxSwiftStudyInUIkitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftStudyInUIkitTests.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftStudyInUIkitTests/Pods-RxSwiftStudyInUIkitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E62AE6EA2944618F0054EA97 /* Materialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materialize.swift; sourceTree = "<group>"; };
 		E636137228B22E570050C070 /* RxSwiftStudyInUIkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftStudyInUIkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E636137528B22E570050C070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E636137728B22E570050C070 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +136,14 @@
 				63EC64F360D14E17FB704753 /* Pods_RxSwiftStudyInUIkitTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E62AE6E8294461290054EA97 /* Materialize */ = {
+			isa = PBXGroup;
+			children = (
+				E62AE6EA2944618F0054EA97 /* Materialize.swift */,
+			);
+			path = Materialize;
 			sourceTree = "<group>";
 		};
 		E636136928B22E570050C070 = {
@@ -258,6 +268,7 @@
 				E950C91428B8708400E0C80A /* Combine */,
 				E958D9B328B481F400D05AC4 /* Share */,
 				E958D9B428B4838100D05AC4 /* Map */,
+				E62AE6E8294461290054EA97 /* Materialize */,
 			);
 			path = RxSwift;
 			sourceTree = "<group>";
@@ -528,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */,
+				E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */,
 				E950C91828B87BD800E0C80A /* ReduceStudyViewController.swift in Sources */,
 				E9D1A21028D4230A00C46741 /* SwfitUIView.swift in Sources */,
 				E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */,

@@ -56,7 +56,8 @@ class OutlineViewController: UIViewController {
                 subitems: [
                     OutlineItem(title: "ShareStudyViewController", viewController: ShareStudyViewController.self),
                     OutlineItem(title: "MapStudyViewController", viewController: MapStudyViewController.self),
-                    OutlineItem(title: "ReduceStudyViewController", viewController: ReduceStudyViewController.self)
+                    OutlineItem(title: "ReduceStudyViewController", viewController: ReduceStudyViewController.self),
+                    OutlineItem(title: "MaterializeViewController", viewController: MaterializeViewController.self)
                 ]
             ),
             OutlineItem(
