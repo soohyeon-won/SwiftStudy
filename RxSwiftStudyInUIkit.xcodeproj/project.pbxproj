@@ -11,6 +11,7 @@
 		73D05364EAE7903224645227 /* Pods_RxSwiftStudyInUIkit_RxSwiftStudyInUIkitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E70DBCE021C4AB8D5DD1209 /* Pods_RxSwiftStudyInUIkit_RxSwiftStudyInUIkitUITests.framework */; };
 		E596EED8C77ACC046C67384C /* Pods_RxSwiftStudyInUIkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775483CC6DC2A4CE03C1F742 /* Pods_RxSwiftStudyInUIkit.framework */; };
 		E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6EA2944618F0054EA97 /* Materialize.swift */; };
+		E62AE6EE2944680A0054EA97 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6ED2944680A0054EA97 /* Singleton.swift */; };
 		E636137628B22E570050C070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636137528B22E570050C070 /* AppDelegate.swift */; };
 		E636137828B22E570050C070 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636137728B22E570050C070 /* SceneDelegate.swift */; };
 		E636137D28B22E570050C070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E636137B28B22E570050C070 /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 		775483CC6DC2A4CE03C1F742 /* Pods_RxSwiftStudyInUIkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftStudyInUIkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B049730E5F148BC0E5363DE8 /* Pods-RxSwiftStudyInUIkitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftStudyInUIkitTests.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftStudyInUIkitTests/Pods-RxSwiftStudyInUIkitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E62AE6EA2944618F0054EA97 /* Materialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materialize.swift; sourceTree = "<group>"; };
+		E62AE6ED2944680A0054EA97 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		E636137228B22E570050C070 /* RxSwiftStudyInUIkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftStudyInUIkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E636137528B22E570050C070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E636137728B22E570050C070 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,22 @@
 			path = Materialize;
 			sourceTree = "<group>";
 		};
+		E62AE6EC294466AA0054EA97 /* DesignPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				E62AE6EF294468C20054EA97 /* Singleton */,
+			);
+			path = DesignPatterns;
+			sourceTree = "<group>";
+		};
+		E62AE6EF294468C20054EA97 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				E62AE6ED2944680A0054EA97 /* Singleton.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
 		E636136928B22E570050C070 = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +195,7 @@
 				E958D9AE28B47E3700D05AC4 /* RxSwift */,
 				E6A16EA128BA1B1600921D78 /* UIKit */,
 				E9D1A20E28D4228F00C46741 /* SwiftUI */,
+				E62AE6EC294466AA0054EA97 /* DesignPatterns */,
 				E6A16EA828BB3FAA00921D78 /* Common */,
 				E636137B28B22E570050C070 /* Main.storyboard */,
 				E636137E28B22E5A0050C070 /* Assets.xcassets */,
@@ -551,6 +570,7 @@
 				E94DDCBC28B5CFD7005451EA /* MapStudyViewController.swift in Sources */,
 				E636137628B22E570050C070 /* AppDelegate.swift in Sources */,
 				E636137828B22E570050C070 /* SceneDelegate.swift in Sources */,
+				E62AE6EE2944680A0054EA97 /* Singleton.swift in Sources */,
 				E950C91628B8709600E0C80A /* Reduce.swift in Sources */,
 				E6A16EAE28BB3FEA00921D78 /* UITableView+Extension.swift in Sources */,
 			);
