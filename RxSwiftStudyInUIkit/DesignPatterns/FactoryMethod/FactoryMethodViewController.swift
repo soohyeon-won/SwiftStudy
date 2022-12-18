@@ -25,7 +25,13 @@ final class FactoryMethodViewController: UIViewController {
         
         textView.text = """
         [ 팩토리 메서드 패턴 ]
-        
+        구체적으로 어떤 인스턴스를 만들지는 서브 클래스가 정한다.
         """
+        
+        client()
+    }
+    
+    private func client() {
+        let ship = WhiteshipFactory().ordershiip(name: "WhiteShip", email: "test@naver.com")
     }
 }
