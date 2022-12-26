@@ -17,13 +17,24 @@ import Foundation
 protocol Ship {
     var name: String { get set }
     var color: String { get set }
+    var anchor: Anchor { get set }
+    var wheel: Wheel { get set }
     
     mutating func prepareFor(name: String)
+    
+    mutating func setAnchor(anchor: Anchor)
+    mutating func setWheel(anchor: Anchor)
 }
 
 extension Ship {
     mutating func prepareFor(name: String) {
         self.name = name
+    }
+    mutating func setAnchor(anchor: Anchor) {
+        self.anchor = anchor
+    }
+    mutating func setWheel(wheel: Wheel) {
+        self.wheel = wheel
     }
 }
 
@@ -62,8 +73,11 @@ extension ShipFactory {
 // MARK: - instance White
 
 final class Whiteship: Ship {
+    
     var color: String
     var name: String
+    var anchor: Anchor
+    var wheel: Wheel
     
     init() {
         self.color = "white"
@@ -83,6 +97,8 @@ final class WhiteshipFactory: ShipFactory {
 final class Blackship: Ship {
     var name: String
     var color: String
+    var anchor: Anchor
+    var wheel: Wheel
     
     init() {
         self.color = "white"
