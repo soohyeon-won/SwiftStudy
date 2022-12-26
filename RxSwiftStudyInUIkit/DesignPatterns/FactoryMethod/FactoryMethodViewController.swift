@@ -32,6 +32,10 @@ final class FactoryMethodViewController: UIViewController {
     }
     
     private func client() {
-        let ship = WhiteshipFactory().ordershiip(name: "WhiteShip", email: "test@naver.com")
+        let whiteship = WhiteshipFactory().ordershiip(name: "WhiteShip", email: "test@naver.com")
+        print(whiteship)
+        
+        let blackship = BlackshipFactory().ordershiip(name: "BlackShip", email: "test1@naver.com")
+        print(blackship)
     }
 }

@@ -18,7 +18,13 @@ protocol Ship {
     var name: String { get set }
     var color: String { get set }
     
-    func prepareFor(name: String)
+    mutating func prepareFor(name: String)
+}
+
+extension Ship {
+    mutating func prepareFor(name: String) {
+        self.name = name
+    }
 }
 
 protocol ShipFactory {
@@ -33,7 +39,7 @@ extension ShipFactory {
     
     func ordershiip(name: String, email: String) -> Ship {
         validate(name: name, email: email)
-        let ship = createShip()
+        var ship = createShip()
         ship.prepareFor(name: name)
         sendEmailTo(email: email, ship: ship)
         return ship
@@ -47,9 +53,13 @@ extension ShipFactory {
             fatalError("연락처를 남겨주세요.")
         }
     }
+    
+    func sendEmailTo(email: String, ship: Ship) {
+        print("ship: \(ship.name) 생성이 완료되었습니다. To: \(email)")
+    }
 }
 
-// MARK: - instance
+// MARK: - instance White
 
 final class Whiteship: Ship {
     var color: String
@@ -59,19 +69,30 @@ final class Whiteship: Ship {
         self.color = "white"
         self.name = ""
     }
-    
-    func prepareFor(name: String) {
-        self.name = name
-    }
 }
 
 final class WhiteshipFactory: ShipFactory {
     
-    func sendEmailTo(email: String, ship: Ship) {
-        print("ship: \(ship.name) 생성이 완료되었습니다. To: \(email)")
-    }
-    
     func createShip() -> Ship {
         return Whiteship()
+    }
+}
+
+// MARK: - instance Black
+
+final class Blackship: Ship {
+    var name: String
+    var color: String
+    
+    init() {
+        self.color = "white"
+        self.name = ""
+    }
+}
+
+final class BlackshipFactory: ShipFactory {
+    
+    func createShip() -> Ship {
+        return Blackship()
     }
 }
