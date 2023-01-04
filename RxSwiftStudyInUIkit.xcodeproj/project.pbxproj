@@ -30,6 +30,7 @@
 		E6A16EAE28BB3FEA00921D78 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EAD28BB3FEA00921D78 /* UITableView+Extension.swift */; };
 		E90654B3295951760027A47C /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B2295951760027A47C /* AbstractFactory.swift */; };
 		E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B4295951820027A47C /* AbstractFactoryViewController.swift */; };
+		E908D72229652EAA0062B85F /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908D72129652EAA0062B85F /* Ship.swift */; };
 		E94DDCBC28B5CFD7005451EA /* MapStudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94DDCBB28B5CFD7005451EA /* MapStudyViewController.swift */; };
 		E94DDCBE28B5CFE4005451EA /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94DDCBD28B5CFE4005451EA /* Map.swift */; };
 		E950C91628B8709600E0C80A /* Reduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = E950C91528B8709600E0C80A /* Reduce.swift */; };
@@ -90,6 +91,7 @@
 		E6A16EAD28BB3FEA00921D78 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		E90654B2295951760027A47C /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		E90654B4295951820027A47C /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
+		E908D72129652EAA0062B85F /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
 		E94DDCBB28B5CFD7005451EA /* MapStudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapStudyViewController.swift; sourceTree = "<group>"; };
 		E94DDCBD28B5CFE4005451EA /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		E950C91528B8709600E0C80A /* Reduce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reduce.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			children = (
 				E62AE6F329447DB40054EA97 /* FactoryMethodViewController.swift */,
 				E62AE6F529447DE40054EA97 /* FactoryMethod.swift */,
+				E908D72129652EAA0062B85F /* Ship.swift */,
 			);
 			path = FactoryMethod;
 			sourceTree = "<group>";
@@ -605,6 +608,7 @@
 				E94DDCBE28B5CFE4005451EA /* Map.swift in Sources */,
 				E94DDCBC28B5CFD7005451EA /* MapStudyViewController.swift in Sources */,
 				E636137628B22E570050C070 /* AppDelegate.swift in Sources */,
+				E908D72229652EAA0062B85F /* Ship.swift in Sources */,
 				E636137828B22E570050C070 /* SceneDelegate.swift in Sources */,
 				E62AE6EE2944680A0054EA97 /* Singleton.swift in Sources */,
 				E950C91628B8709600E0C80A /* Reduce.swift in Sources */,

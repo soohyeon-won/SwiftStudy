@@ -32,6 +32,21 @@ final class AbstractFactoryViewController: UIViewController {
     }
     
     private func client() {
+        // 1. Factory 클라이언트에서 직접 호출
+        let whiteship = WhiteshipFactory().ordershiip(name: "WhiteShip", email: "test@naver.com")
+        print(whiteship)
+        
+        let blackship = BlackshipFactory().ordershiip(name: "BlackShip", email: "test1@naver.com")
+        print(blackship)
+        
+        // 2. 의존성 주입을 통한 FactoryMethod 인터페이스 호출
+        // 클라이언트 변경 최소화
+        printShip(shipFactory: WhiteshipFactory(), name: "WhiteShip", email: "test@naver.com")
+        printShip(shipFactory: BlackshipFactory(), name: "BlackShip", email: "test1@naver.com")
+    }
+    
+    private func printShip(shipFactory: ShipFactory, name: String, email: String) {
+        print(shipFactory.ordershiip(name: name, email: email))
     }
 }
 
