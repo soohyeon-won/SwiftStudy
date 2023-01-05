@@ -63,6 +63,10 @@ final class WhiteshipFactory2: ShipFactory {
     
     func createShip() -> Ship {
         var whiteShip = Whiteship()
+        // 직접 객체를 인스턴스화해서 넣는것이 아니라
+        // 추상화된 인스턴스를 받아서 인스턴스를 주입해준다
+        // ShipFactory 는 변형없이 사용가능함.
+        // Open/Closed Principle (OCP) 개방 폐쇄 원칙 
         whiteShip.setAnchor(anchor: shipPartsFactory.createAnchor())
         whiteShip.setWheel(wheel: shipPartsFactory.createWheel())
         return whiteShip
