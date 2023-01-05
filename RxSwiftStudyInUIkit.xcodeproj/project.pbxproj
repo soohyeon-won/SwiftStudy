@@ -37,6 +37,8 @@
 		E950C91828B87BD800E0C80A /* ReduceStudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E950C91728B87BD800E0C80A /* ReduceStudyViewController.swift */; };
 		E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E958D9AF28B47E4000D05AC4 /* ShareStudyViewController.swift */; };
 		E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E958D9B128B47FA100D05AC4 /* OutlineViewController.swift */; };
+		E997CBE62966814300A5B0B5 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997CBE52966814300A5B0B5 /* Builder.swift */; };
+		E997CBE82966819D00A5B0B5 /* BuilderPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997CBE72966819D00A5B0B5 /* BuilderPattern.swift */; };
 		E9D1A21028D4230A00C46741 /* SwfitUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1A20F28D4230A00C46741 /* SwfitUIView.swift */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +100,8 @@
 		E950C91728B87BD800E0C80A /* ReduceStudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceStudyViewController.swift; sourceTree = "<group>"; };
 		E958D9AF28B47E4000D05AC4 /* ShareStudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareStudyViewController.swift; sourceTree = "<group>"; };
 		E958D9B128B47FA100D05AC4 /* OutlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineViewController.swift; sourceTree = "<group>"; };
+		E997CBE52966814300A5B0B5 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		E997CBE72966819D00A5B0B5 /* BuilderPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderPattern.swift; sourceTree = "<group>"; };
 		E9D1A20F28D4230A00C46741 /* SwfitUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwfitUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,6 +170,7 @@
 				E62AE6EF294468C20054EA97 /* Singleton */,
 				E62AE6F029447D7C0054EA97 /* FactoryMethod */,
 				E90654B1295951590027A47C /* AbstractFactory */,
+				E997CBE42966814300A5B0B5 /* Builder */,
 			);
 			path = DesignPatterns;
 			sourceTree = "<group>";
@@ -342,6 +347,15 @@
 				E94DDCBB28B5CFD7005451EA /* MapStudyViewController.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		E997CBE42966814300A5B0B5 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				E997CBE52966814300A5B0B5 /* Builder.swift */,
+				E997CBE72966819D00A5B0B5 /* BuilderPattern.swift */,
+			);
+			path = Builder;
 			sourceTree = "<group>";
 		};
 		E9D1A20E28D4228F00C46741 /* SwiftUI */ = {
@@ -591,9 +605,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E997CBE62966814300A5B0B5 /* Builder.swift in Sources */,
 				E62AE6F629447DE40054EA97 /* FactoryMethod.swift in Sources */,
 				E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */,
 				E62AE6F429447DB40054EA97 /* FactoryMethodViewController.swift in Sources */,
+				E997CBE82966819D00A5B0B5 /* BuilderPattern.swift in Sources */,
 				E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */,
 				E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */,
 				E62AE6F229447D9C0054EA97 /* SingletonViewController.swift in Sources */,
