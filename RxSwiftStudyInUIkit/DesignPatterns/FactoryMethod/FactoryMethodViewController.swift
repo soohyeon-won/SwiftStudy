@@ -10,7 +10,7 @@ import UIKit
 final class FactoryMethodViewController: UIViewController {
     
     private let textView = UITextView().then {
-        $0.isUserInteractionEnabled = false
+        $0.isEditable = false
         $0.font = .systemFont(ofSize: 24)
     }
     
