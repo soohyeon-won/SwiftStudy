@@ -13,20 +13,6 @@ import Foundation
  - 다양한 구현체(Product)가 있고 , 그 중에서 특정한 구현체를 만들 수 있는 다양한 팩토리(Creator)를 제공할 수 있다.
  */
 
-// MARK: - protocol
-protocol Ship {
-    var name: String { get set }
-    var color: String { get set }
-    
-    mutating func prepareFor(name: String)
-}
-
-extension Ship {
-    mutating func prepareFor(name: String) {
-        self.name = name
-    }
-}
-
 protocol ShipFactory {
     func ordershiip(name: String, email: String) -> Ship
     
@@ -59,17 +45,6 @@ extension ShipFactory {
     }
 }
 
-// MARK: - instance White
-
-final class Whiteship: Ship {
-    var color: String
-    var name: String
-    
-    init() {
-        self.color = "white"
-        self.name = ""
-    }
-}
 
 final class WhiteshipFactory: ShipFactory {
     
@@ -78,17 +53,26 @@ final class WhiteshipFactory: ShipFactory {
     }
 }
 
-// MARK: - instance Black
-
-final class Blackship: Ship {
-    var name: String
-    var color: String
+final class WhiteshipFactory2: ShipFactory {
     
-    init() {
-        self.color = "white"
-        self.name = ""
+    private var shipPartsFactory: ShipPartsFactory
+    
+    init(shipPartsFactory: ShipPartsFactory) {
+        self.shipPartsFactory = shipPartsFactory
+    }
+    
+    func createShip() -> Ship {
+        var whiteShip = Whiteship()
+        // 직접 객체를 인스턴스화해서 넣는것이 아니라
+        // 추상화된 인스턴스를 받아서 인스턴스를 주입해준다
+        // ShipFactory 는 변형없이 사용가능함.
+        // Open/Closed Principle (OCP) 개방 폐쇄 원칙 
+        whiteShip.setAnchor(anchor: shipPartsFactory.createAnchor())
+        whiteShip.setWheel(wheel: shipPartsFactory.createWheel())
+        return whiteShip
     }
 }
+
 
 final class BlackshipFactory: ShipFactory {
     
@@ -96,3 +80,4 @@ final class BlackshipFactory: ShipFactory {
         return Blackship()
     }
 }
+
