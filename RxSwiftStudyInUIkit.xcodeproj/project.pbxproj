@@ -28,6 +28,7 @@
 		E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */; };
 		E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */; };
 		E6A16EAE28BB3FEA00921D78 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EAD28BB3FEA00921D78 /* UITableView+Extension.swift */; };
+		E6AD8E6F29692FB400208D8C /* WebviewDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD8E6E29692FB400208D8C /* WebviewDirector.swift */; };
 		E90654B3295951760027A47C /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B2295951760027A47C /* AbstractFactory.swift */; };
 		E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B4295951820027A47C /* AbstractFactoryViewController.swift */; };
 		E908D72229652EAA0062B85F /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908D72129652EAA0062B85F /* Ship.swift */; };
@@ -91,6 +92,7 @@
 		E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
 		E6A16EAD28BB3FEA00921D78 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		E6AD8E6E29692FB400208D8C /* WebviewDirector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewDirector.swift; sourceTree = "<group>"; };
 		E90654B2295951760027A47C /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		E90654B4295951820027A47C /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
 		E908D72129652EAA0062B85F /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
@@ -354,6 +356,7 @@
 			children = (
 				E997CBE52966814300A5B0B5 /* Builder.swift */,
 				E997CBE72966819D00A5B0B5 /* BuilderPattern.swift */,
+				E6AD8E6E29692FB400208D8C /* WebviewDirector.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -618,6 +621,7 @@
 				E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */,
 				E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */,
 				E63613A628B22E6A0050C070 /* ShareStudy.swift in Sources */,
+				E6AD8E6F29692FB400208D8C /* WebviewDirector.swift in Sources */,
 				E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */,
 				E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */,
 				E90654B3295951760027A47C /* AbstractFactory.swift in Sources */,
