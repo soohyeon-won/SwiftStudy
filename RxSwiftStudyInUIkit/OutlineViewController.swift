@@ -88,6 +88,16 @@ class OutlineViewController: UIViewController {
                             OutlineItem(title: "Builder",
                                         viewController: BuilderViewController.self)
                         ]
+                    ),
+                    OutlineItem(
+                        title: "📚Swift study",
+                        subitems: [
+                            OutlineItem(title: "SwiftStudy",
+                                        swiftUIController: UIHostingController(
+                                            rootView: AnyView(SwiftStudyView())
+                                        )
+                                       )
+                        ]
                     )
                 ]
             )

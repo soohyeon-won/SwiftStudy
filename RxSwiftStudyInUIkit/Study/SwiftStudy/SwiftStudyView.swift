@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SwuftStydyView: View {
+struct SwiftStudyView: View {
     var body: some View {
         VStack {
             Text("📚 Swift Study")
