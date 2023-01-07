@@ -29,6 +29,8 @@
 		E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */; };
 		E6A16EAE28BB3FEA00921D78 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EAD28BB3FEA00921D78 /* UITableView+Extension.swift */; };
 		E6AD8E6F29692FB400208D8C /* WebviewDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD8E6E29692FB400208D8C /* WebviewDirector.swift */; };
+		E6AD8E7D296948AA00208D8C /* SwiftStudyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD8E7C296948AA00208D8C /* SwiftStudyView.swift */; };
+		E6AD8E7F296948E600208D8C /* DynamicMemberLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD8E7E296948E600208D8C /* DynamicMemberLookup.swift */; };
 		E90654B3295951760027A47C /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B2295951760027A47C /* AbstractFactory.swift */; };
 		E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B4295951820027A47C /* AbstractFactoryViewController.swift */; };
 		E908D72229652EAA0062B85F /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908D72129652EAA0062B85F /* Ship.swift */; };
@@ -93,6 +95,8 @@
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
 		E6A16EAD28BB3FEA00921D78 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		E6AD8E6E29692FB400208D8C /* WebviewDirector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewDirector.swift; sourceTree = "<group>"; };
+		E6AD8E7C296948AA00208D8C /* SwiftStudyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStudyView.swift; sourceTree = "<group>"; };
+		E6AD8E7E296948E600208D8C /* DynamicMemberLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicMemberLookup.swift; sourceTree = "<group>"; };
 		E90654B2295951760027A47C /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		E90654B4295951820027A47C /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
 		E908D72129652EAA0062B85F /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
@@ -227,7 +231,7 @@
 				E958D9AE28B47E3700D05AC4 /* RxSwift */,
 				E6A16EA128BA1B1600921D78 /* UIKit */,
 				E9D1A20E28D4228F00C46741 /* SwiftUI */,
-				E62AE6EC294466AA0054EA97 /* DesignPatterns */,
+				E6AD8E7A2969488600208D8C /* Study */,
 				E6A16EA828BB3FAA00921D78 /* Common */,
 				E636137B28B22E570050C070 /* Main.storyboard */,
 				E636137E28B22E5A0050C070 /* Assets.xcassets */,
@@ -302,6 +306,24 @@
 				E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */,
 			);
 			path = UIUtils;
+			sourceTree = "<group>";
+		};
+		E6AD8E7A2969488600208D8C /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				E62AE6EC294466AA0054EA97 /* DesignPatterns */,
+				E6AD8E7B2969489700208D8C /* SwiftStudy */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
+		E6AD8E7B2969489700208D8C /* SwiftStudy */ = {
+			isa = PBXGroup;
+			children = (
+				E6AD8E7C296948AA00208D8C /* SwiftStudyView.swift */,
+				E6AD8E7E296948E600208D8C /* DynamicMemberLookup.swift */,
+			);
+			path = SwiftStudy;
 			sourceTree = "<group>";
 		};
 		E90654B1295951590027A47C /* AbstractFactory */ = {
@@ -615,6 +637,7 @@
 				E997CBE82966819D00A5B0B5 /* BuilderPattern.swift in Sources */,
 				E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */,
 				E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */,
+				E6AD8E7F296948E600208D8C /* DynamicMemberLookup.swift in Sources */,
 				E62AE6F229447D9C0054EA97 /* SingletonViewController.swift in Sources */,
 				E950C91828B87BD800E0C80A /* ReduceStudyViewController.swift in Sources */,
 				E9D1A21028D4230A00C46741 /* SwfitUIView.swift in Sources */,
@@ -632,6 +655,7 @@
 				E636137828B22E570050C070 /* SceneDelegate.swift in Sources */,
 				E62AE6EE2944680A0054EA97 /* Singleton.swift in Sources */,
 				E950C91628B8709600E0C80A /* Reduce.swift in Sources */,
+				E6AD8E7D296948AA00208D8C /* SwiftStudyView.swift in Sources */,
 				E6A16EAE28BB3FEA00921D78 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
