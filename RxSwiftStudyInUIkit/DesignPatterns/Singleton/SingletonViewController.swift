@@ -10,7 +10,7 @@ import UIKit
 final class SingletonViewController: UIViewController {
     
     let textView = UITextView().then {
-        $0.isUserInteractionEnabled = false
+        $0.isEditable = false
         $0.font = .systemFont(ofSize: 24)
     }
     

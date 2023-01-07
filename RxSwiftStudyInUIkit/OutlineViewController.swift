@@ -82,7 +82,11 @@ class OutlineViewController: UIViewController {
                             OutlineItem(title: "Singleton",
                                         viewController: SingletonViewController.self),
                             OutlineItem(title: "Factory method",
-                                        viewController: FactoryMethodViewController.self)
+                                        viewController: FactoryMethodViewController.self),
+                            OutlineItem(title: "Absctract factory",
+                                        viewController: AbstractFactoryViewController.self),
+                            OutlineItem(title: "Builder",
+                                        viewController: BuilderViewController.self)
                         ]
                     )
                 ]
