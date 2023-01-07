@@ -19,11 +19,11 @@ class OutlineViewController: UIViewController {
         let title: String
         let subitems: [OutlineItem]
         let outlineViewController: UIViewController.Type?
-        let swiftUIController: UIHostingController<BaseView>?
+        let swiftUIController: UIHostingController<AnyView>?
 
         init(title: String,
              viewController: UIViewController.Type? = nil,
-             swiftUIController: UIHostingController<BaseView>? = nil,
+             swiftUIController: UIHostingController<AnyView>? = nil,
              subitems: [OutlineItem] = []) {
             self.title = title
             self.subitems = subitems
@@ -70,7 +70,7 @@ class OutlineViewController: UIViewController {
             OutlineItem(
                 title: "🕊 SwiftUI",
                 subitems: [
-                    OutlineItem(title: "swiftUIController", swiftUIController: UIHostingController(rootView: BaseView()))
+                    OutlineItem(title: "swiftUIController", swiftUIController: UIHostingController(rootView: AnyView(BaseView())))
                 ]
             ),
             OutlineItem(
@@ -87,6 +87,16 @@ class OutlineViewController: UIViewController {
                                         viewController: AbstractFactoryViewController.self),
                             OutlineItem(title: "Builder",
                                         viewController: BuilderViewController.self)
+                        ]
+                    ),
+                    OutlineItem(
+                        title: "📚Swift study",
+                        subitems: [
+                            OutlineItem(title: "SwiftStudy",
+                                        swiftUIController: UIHostingController(
+                                            rootView: AnyView(SwiftStudyView())
+                                        )
+                                       )
                         ]
                     )
                 ]
