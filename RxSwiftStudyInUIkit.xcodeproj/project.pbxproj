@@ -43,6 +43,7 @@
 		E997CBE62966814300A5B0B5 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997CBE52966814300A5B0B5 /* Builder.swift */; };
 		E997CBE82966819D00A5B0B5 /* BuilderPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997CBE72966819D00A5B0B5 /* BuilderPattern.swift */; };
 		E9D1A21028D4230A00C46741 /* SwfitUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1A20F28D4230A00C46741 /* SwfitUIView.swift */; };
+		E9F71BFD2974FEB500BDD86B /* PrototypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F71BFC2974FEB500BDD86B /* PrototypeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		E997CBE52966814300A5B0B5 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		E997CBE72966819D00A5B0B5 /* BuilderPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderPattern.swift; sourceTree = "<group>"; };
 		E9D1A20F28D4230A00C46741 /* SwfitUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwfitUIView.swift; sourceTree = "<group>"; };
+		E9F71BFC2974FEB500BDD86B /* PrototypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,10 +175,7 @@
 		E62AE6EC294466AA0054EA97 /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
-				E62AE6EF294468C20054EA97 /* Singleton */,
-				E62AE6F029447D7C0054EA97 /* FactoryMethod */,
-				E90654B1295951590027A47C /* AbstractFactory */,
-				E997CBE42966814300A5B0B5 /* Builder */,
+				E9F71BFA2974FE9200BDD86B /* Create */,
 			);
 			path = DesignPatterns;
 			sourceTree = "<group>";
@@ -389,6 +388,26 @@
 				E9D1A20F28D4230A00C46741 /* SwfitUIView.swift */,
 			);
 			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		E9F71BFA2974FE9200BDD86B /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				E62AE6EF294468C20054EA97 /* Singleton */,
+				E62AE6F029447D7C0054EA97 /* FactoryMethod */,
+				E90654B1295951590027A47C /* AbstractFactory */,
+				E997CBE42966814300A5B0B5 /* Builder */,
+				E9F71BFB2974FEA400BDD86B /* Prototype */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		E9F71BFB2974FEA400BDD86B /* Prototype */ = {
+			isa = PBXGroup;
+			children = (
+				E9F71BFC2974FEB500BDD86B /* PrototypeViewController.swift */,
+			);
+			path = Prototype;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -635,6 +654,7 @@
 				E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */,
 				E62AE6F429447DB40054EA97 /* FactoryMethodViewController.swift in Sources */,
 				E997CBE82966819D00A5B0B5 /* BuilderPattern.swift in Sources */,
+				E9F71BFD2974FEB500BDD86B /* PrototypeViewController.swift in Sources */,
 				E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */,
 				E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */,
 				E6AD8E7F296948E600208D8C /* DynamicMemberLookup.swift in Sources */,
