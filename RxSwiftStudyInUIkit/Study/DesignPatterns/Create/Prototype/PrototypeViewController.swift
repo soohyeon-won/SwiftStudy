@@ -45,24 +45,56 @@ final class PrototypeViewController: UIViewController {
     }
     
     private func client() {
+        // 얕은복사 : Shallow copy | 스택영역 | 주소값 복사
+        // 깊은복사 : Deep copy | 힙영역 | 실제값을 메모리 값에 복사
+        
+        // swift는 class로 모델 선언 > clone.repository === githubIssue.repository (true)
+        print("=====CLASS=====")
         let repository = GithubRepository()
-        
         let githubIssue = GithubIssue(repository: repository)
-        
         let clone = githubIssue
+        print("clone.repository === githubIssue.repository", clone.repository === githubIssue.repository) // true
+        print("clone === githubIssue", clone === githubIssue) // true
         
-        // shallow copy의 경우
-        print(clone.repository === githubIssue.repository)
+        githubIssue.repository.issueNumber = 2
+        print("githubIssue.repository.issueNumber: ", githubIssue.repository.issueNumber)
+        print("clone.repository.issueNumber: ", clone.repository.issueNumber)
         
-        // java에서는 clonable을 제공하지만 swift X
+        // struct로 모델 선언 > Equatable채택
+        print("=====STRUCT=====")
+        var gitIssue = GitIssue(repo: GithubRepo())
+        let cloneGitIssue = gitIssue
+        
+        print("cloneGitIssue === gitIssue", cloneGitIssue == gitIssue)
+        
+        gitIssue.repo.issueNumber = 20
+        print("gitIssue.repo.issueNumber: ", gitIssue.repo.issueNumber)
+        print("cloneGitIssue.issueNumber: ", cloneGitIssue.repo.issueNumber)
     }
 }
 
-final class GithubRepository {
-    
+struct GithubRepo {
+    var issueNumber: Int = 1
 }
 
-final class GithubIssue {
+struct GitIssue: Equatable {
+    
+    var repo: GithubRepo
+    
+    init(repo: GithubRepo) {
+        self.repo = repo
+    }
+    static func == (lhs: GitIssue, rhs: GitIssue) -> Bool {
+        lhs.repo.issueNumber == rhs.repo.issueNumber
+    }
+}
+
+
+class GithubRepository {
+    var issueNumber: Int = 1
+}
+
+class GithubIssue {
     let repository: GithubRepository
     
     init(repository: GithubRepository) {
