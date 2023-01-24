@@ -70,6 +70,23 @@ final class PrototypeViewController: UIViewController {
         gitIssue.repo.issueNumber = 20
         print("gitIssue.repo.issueNumber: ", gitIssue.repo.issueNumber)
         print("cloneGitIssue.issueNumber: ", cloneGitIssue.repo.issueNumber)
+        
+        // 참조타입 NSCopying 채택
+        // 깊은복사 가능
+        guard let clone2 = githubIssue.copy() as? GithubIssue else { return }
+        print("clone === clone2", clone === clone2) // false
+        
+        // 깊은 복사가 이루어졌다.
+        githubIssue.actionNumber = 200
+        print("githubIssue.actionNumber: ", githubIssue.actionNumber)
+        print("clone2.actionNumber: ", clone2.actionNumber)
+        
+        // 참조 타입 내부에 참조타입을 갖고 있는 경우이기 때문에
+        // 아래는 func copy 함수의 내부 구현에 따라 달라짐
+        githubIssue.repository.issueNumber = 100
+        print("githubIssue.repository.issueNumber: ", githubIssue.repository.issueNumber)
+        print("clone.repository.issueNumber: ", clone.repository.issueNumber)
+        print("clone2.repository.issueNumber: ", clone2.repository.issueNumber)
     }
 }
 
@@ -91,14 +108,21 @@ struct GitIssue: Equatable {
 
 
 class GithubRepository {
+    
     var issueNumber: Int = 1
 }
 
-class GithubIssue {
+class GithubIssue: NSCopying {
+    
     let repository: GithubRepository
+    var actionNumber = 10
     
     init(repository: GithubRepository) {
         self.repository = repository
+    }
+    
+    func copy(with zone: NSZone? = nil) -> Any {
+        return GithubIssue(repository: GithubRepository())
     }
 }
 
