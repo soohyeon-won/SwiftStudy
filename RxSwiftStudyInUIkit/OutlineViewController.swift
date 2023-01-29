@@ -79,6 +79,7 @@ class OutlineViewController: UIViewController {
                     OutlineItem(
                         title: "☀️DesignPatterns",
                         subitems: [
+                            // 생성
                             OutlineItem(title: "Singleton",
                                         viewController: SingletonViewController.self),
                             OutlineItem(title: "Factory method",
@@ -88,17 +89,21 @@ class OutlineViewController: UIViewController {
                             OutlineItem(title: "Builder",
                                         viewController: BuilderViewController.self),
                             OutlineItem(title: "Prototype",
-                                        viewController: PrototypeViewController.self)
+                                        viewController: PrototypeViewController.self),
+                            // 구조
+                            OutlineItem(title: "Adapter",
+                                        viewController: AdapterViewController.self)
                         ]
                     ),
                     OutlineItem(
                         title: "📚Swift study",
                         subitems: [
-                            OutlineItem(title: "SwiftStudy",
-                                        swiftUIController: UIHostingController(
-                                            rootView: AnyView(SwiftStudyView())
-                                        )
-                                       )
+                            OutlineItem(
+                                title: "SwiftStudy",
+                                swiftUIController: UIHostingController(
+                                    rootView: AnyView(SwiftStudyView())
+                                )
+                            )
                         ]
                     )
                 ]
