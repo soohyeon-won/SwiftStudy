@@ -92,6 +92,8 @@ class OutlineViewController: UIViewController {
                                         viewController: PrototypeViewController.self),
                             // 구조
                             OutlineItem(title: "Adapter",
+                                        viewController: AdapterViewController.self),
+                            OutlineItem(title: "Bridge",
                                         viewController: AdapterViewController.self)
                         ]
                     ),
