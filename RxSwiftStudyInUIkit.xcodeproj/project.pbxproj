@@ -40,6 +40,7 @@
 		E6AE13A1298937910077DEDC /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6AE138C298937910077DEDC /* DataLayer.framework */; };
 		E6AE13A2298937910077DEDC /* DataLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6AE138C298937910077DEDC /* DataLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6AE13AC298937B50077DEDC /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13AB298937B50077DEDC /* NetworkProvider.swift */; };
+		E6AE13AF298947C40077DEDC /* MoyaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13AE298947C40077DEDC /* MoyaViewController.swift */; };
 		E90654B3295951760027A47C /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B2295951760027A47C /* AbstractFactory.swift */; };
 		E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B4295951820027A47C /* AbstractFactoryViewController.swift */; };
 		E908D72229652EAA0062B85F /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908D72129652EAA0062B85F /* Ship.swift */; };
@@ -152,6 +153,7 @@
 		E6AE1395298937910077DEDC /* DataLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6AE139C298937910077DEDC /* DataLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayerTests.swift; sourceTree = "<group>"; };
 		E6AE13AB298937B50077DEDC /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		E6AE13AE298947C40077DEDC /* MoyaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaViewController.swift; sourceTree = "<group>"; };
 		E90654B2295951760027A47C /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		E90654B4295951820027A47C /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
 		E908D72129652EAA0062B85F /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
@@ -250,7 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				E9F71BFA2974FE9200BDD86B /* Create */,
-				E6AD8E80297FB9E100208D8C /* 구조 */,
+				E6AD8E80297FB9E100208D8C /* 구조 */,
 			);
 			path = DesignPatterns;
 			sourceTree = "<group>";
@@ -392,6 +394,7 @@
 			children = (
 				E62AE6EC294466AA0054EA97 /* DesignPatterns */,
 				E6AD8E7B2969489700208D8C /* SwiftStudy */,
+				E6AE13AD298947B30077DEDC /* Library */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -405,7 +408,7 @@
 			path = SwiftStudy;
 			sourceTree = "<group>";
 		};
-		E6AD8E80297FB9E100208D8C /* 구조 */ = {
+		E6AD8E80297FB9E100208D8C /* 구조 */ = {
 			isa = PBXGroup;
 			children = (
 				E6AD8E83297FBA6C00208D8C /* Adapter */,
@@ -453,6 +456,14 @@
 				E6AE13AB298937B50077DEDC /* NetworkProvider.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		E6AE13AD298947B30077DEDC /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				E6AE13AE298947C40077DEDC /* MoyaViewController.swift */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 		E90654B1295951590027A47C /* AbstractFactory */ = {
@@ -885,6 +896,7 @@
 				E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */,
 				E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */,
 				E6AD8E7F296948E600208D8C /* DynamicMemberLookup.swift in Sources */,
+				E6AE13AF298947C40077DEDC /* MoyaViewController.swift in Sources */,
 				E62AE6F229447D9C0054EA97 /* SingletonViewController.swift in Sources */,
 				E950C91828B87BD800E0C80A /* ReduceStudyViewController.swift in Sources */,
 				E9D1A21028D4230A00C46741 /* SwfitUIView.swift in Sources */,
@@ -1282,7 +1294,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1315,7 +1327,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
