@@ -28,7 +28,11 @@ final class DecoratorViewController: UIViewController {
         다이나믹하게 런타임에(유연하게, 동적이게) 기존 코드를 확장하는 디자인 패턴
         (<-> 컴파일타임에(고정적이고, 스태틱하게))
         
+        상속이 아닌 위임을 사용해서 보다 유연하게(런타임에) 부가 기능을 추가하는 것도 가능하다.
         
+        컴포짓 패턴처럼 여러개가 아니라 딱 한개의 wrappee라는 컴포넌트를 갖고 있음
+        concreateComponent - Decorator // wrapper 라고도 부름
+        단 하나의 Decorator가 wrappee를 감쌈
         [장점]
         
         [단점]
@@ -39,15 +43,31 @@ final class DecoratorViewController: UIViewController {
     }
     
     private func client() {
-        CommentClient(commentService: TrimmingCommentService()).writeComment(comment: "오징어게임...")
+        
+        let enabledSpamFilter = true
+        let enabledTrimming = true
+        
+        var commentService: CommentService = DefaultComentService()
+        
+        if enabledSpamFilter {
+            commentService = SpamFilteringCommentDecorator(commentService: commentService)
+        }
+        
+        if enabledTrimming {
+            commentService = TrimmingCommentDecorator(commentService: commentService)
+        }
+        
+        let client = CommentClient(commentService: commentService)
+        client.writeComment(comment: "오징어게임...")
+        client.writeComment(comment: "http://whiteship.me")
     }
 }
 
-protocol CommentService {
+protocol CommentService { // Component
     func addComment(comment: String)
 }
 
-class DefaultComentService: CommentService {
+class DefaultComentService: CommentService { // ConcreateComponent
     func addComment(comment: String) {
         print("comment: \(comment)")
     }
@@ -59,6 +79,49 @@ class TrimmingCommentService: DefaultComentService {
     override func addComment(comment: String) {
         let comment = comment.replacingOccurrences(of: "...", with: "")
         super.addComment(comment: comment)
+    }
+}
+
+class CommentDecorator: CommentService {
+    
+    let commentService: CommentService
+    
+    init(commentService: CommentService) {
+        self.commentService = commentService
+    }
+    
+    func addComment(comment: String) {
+        commentService.addComment(comment: comment)
+    }
+}
+
+class TrimmingCommentDecorator: CommentDecorator {
+    
+    override init(commentService: CommentService) {
+        super.init(commentService: commentService)
+    }
+    
+    override func addComment(comment: String) {
+        let comment = comment.replacingOccurrences(of: "...", with: "")
+        super.addComment(comment: comment)
+    }
+}
+
+class SpamFilteringCommentDecorator: CommentDecorator {
+    
+    override init(commentService: CommentService) {
+        super.init(commentService: commentService)
+    }
+    
+    override func addComment(comment: String) {
+        if isNotSpam(comment: comment) {
+            super.addComment(comment: comment)
+            return
+        }
+    }
+    
+    func isNotSpam(comment: String) -> Bool {
+        return !comment.contains("http")
     }
 }
 
