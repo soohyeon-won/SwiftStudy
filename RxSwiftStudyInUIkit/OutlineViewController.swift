@@ -94,7 +94,7 @@ class OutlineViewController: UIViewController {
                             OutlineItem(title: "Adapter",
                                         viewController: AdapterViewController.self),
                             OutlineItem(title: "Bridge",
-                                        viewController: AdapterViewController.self)
+                                        viewController: BridgeViewController.self)
                         ]
                     ),
                     OutlineItem(
