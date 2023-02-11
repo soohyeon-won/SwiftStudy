@@ -40,6 +40,9 @@ final class CompositeViewController: UIViewController {
         공통점을 억지로 찾아서 적용한다거나...
         잘못만들면 런타임시에 타입을 체크해야하는 경우도 생김
         그때는 내가 너무 디자인패턴에 종속된 코드를 작성하는건 아닐까? 하는 의심을 해보면좋음, 다른 시각으로 바라보아야함
+        
+        UIView를 상속받아서
+        Button, tableView 등을 add하고 화면에 나타내주는 (예제의 getPrice()처럼 .visible() 함수를 호출하는 관점으로 바라보면 이해가 쉬움) 부분들도 컴포짓 패턴을 사용했다고 볼 수 있다.
         """
         
         client()
