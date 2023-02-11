@@ -42,6 +42,11 @@
 		E6AE13A2298937910077DEDC /* DataLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6AE138C298937910077DEDC /* DataLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6AE13AC298937B50077DEDC /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13AB298937B50077DEDC /* NetworkProvider.swift */; };
 		E6AE13AF298947C40077DEDC /* MoyaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13AE298947C40077DEDC /* MoyaViewController.swift */; };
+		E6AE13B329974F120077DEDC /* CompositeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13B229974F120077DEDC /* CompositeViewController.swift */; };
+		E6AE13B629974F870077DEDC /* DecoratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13B529974F870077DEDC /* DecoratorViewController.swift */; };
+		E6AE13B929974FB80077DEDC /* FacadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13B829974FB80077DEDC /* FacadeViewController.swift */; };
+		E6AE13BC29974FF10077DEDC /* FlyweightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13BB29974FF10077DEDC /* FlyweightViewController.swift */; };
+		E6AE13BF299750230077DEDC /* ProxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13BE299750230077DEDC /* ProxyViewController.swift */; };
 		E90654B3295951760027A47C /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B2295951760027A47C /* AbstractFactory.swift */; };
 		E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B4295951820027A47C /* AbstractFactoryViewController.swift */; };
 		E908D72229652EAA0062B85F /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908D72129652EAA0062B85F /* Ship.swift */; };
@@ -156,6 +161,11 @@
 		E6AE139C298937910077DEDC /* DataLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayerTests.swift; sourceTree = "<group>"; };
 		E6AE13AB298937B50077DEDC /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		E6AE13AE298947C40077DEDC /* MoyaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaViewController.swift; sourceTree = "<group>"; };
+		E6AE13B229974F120077DEDC /* CompositeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeViewController.swift; sourceTree = "<group>"; };
+		E6AE13B529974F870077DEDC /* DecoratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorViewController.swift; sourceTree = "<group>"; };
+		E6AE13B829974FB80077DEDC /* FacadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadeViewController.swift; sourceTree = "<group>"; };
+		E6AE13BB29974FF10077DEDC /* FlyweightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightViewController.swift; sourceTree = "<group>"; };
+		E6AE13BE299750230077DEDC /* ProxyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyViewController.swift; sourceTree = "<group>"; };
 		E90654B2295951760027A47C /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		E90654B4295951820027A47C /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
 		E908D72129652EAA0062B85F /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
@@ -415,6 +425,11 @@
 			children = (
 				E6AD8E83297FBA6C00208D8C /* Adapter */,
 				E6AE1383298661180077DEDC /* Bridge */,
+				E6AE13B129974EFF0077DEDC /* Composite */,
+				E6AE13B429974F6A0077DEDC /* Decorator */,
+				E6AE13B729974FA70077DEDC /* Facade */,
+				E6AE13BA29974FD30077DEDC /* Flyweight */,
+				E6AE13BD299750080077DEDC /* Proxy */,
 			);
 			name = Structural;
 			path = "구조";
@@ -434,8 +449,8 @@
 				E6AE13842986612D0077DEDC /* BridgeViewController.swift */,
 			);
 			path = Bridge;
-            sourceTree = "<group>";
-        };
+			sourceTree = "<group>";
+		};
 		E6AE1386298937640077DEDC /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -475,6 +490,46 @@
 				E6AE13AE298947C40077DEDC /* MoyaViewController.swift */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		E6AE13B129974EFF0077DEDC /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				E6AE13B229974F120077DEDC /* CompositeViewController.swift */,
+			);
+			path = Composite;
+			sourceTree = "<group>";
+		};
+		E6AE13B429974F6A0077DEDC /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				E6AE13B529974F870077DEDC /* DecoratorViewController.swift */,
+			);
+			path = Decorator;
+			sourceTree = "<group>";
+		};
+		E6AE13B729974FA70077DEDC /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				E6AE13B829974FB80077DEDC /* FacadeViewController.swift */,
+			);
+			path = Facade;
+			sourceTree = "<group>";
+		};
+		E6AE13BA29974FD30077DEDC /* Flyweight */ = {
+			isa = PBXGroup;
+			children = (
+				E6AE13BB29974FF10077DEDC /* FlyweightViewController.swift */,
+			);
+			path = Flyweight;
+			sourceTree = "<group>";
+		};
+		E6AE13BD299750080077DEDC /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				E6AE13BE299750230077DEDC /* ProxyViewController.swift */,
+			);
+			path = Proxy;
 			sourceTree = "<group>";
 		};
 		E90654B1295951590027A47C /* AbstractFactory */ = {
@@ -897,16 +952,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6AE13B629974F870077DEDC /* DecoratorViewController.swift in Sources */,
+				E6AE13BF299750230077DEDC /* ProxyViewController.swift in Sources */,
 				E997CBE62966814300A5B0B5 /* Builder.swift in Sources */,
 				E6AE13852986612D0077DEDC /* BridgeViewController.swift in Sources */,
 				E6AD8E82297FBA2F00208D8C /* AdapterViewController.swift in Sources */,
+				E6AE13B929974FB80077DEDC /* FacadeViewController.swift in Sources */,
 				E62AE6F629447DE40054EA97 /* FactoryMethod.swift in Sources */,
 				E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */,
 				E62AE6F429447DB40054EA97 /* FactoryMethodViewController.swift in Sources */,
 				E997CBE82966819D00A5B0B5 /* BuilderPattern.swift in Sources */,
 				E9F71BFD2974FEB500BDD86B /* PrototypeViewController.swift in Sources */,
 				E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */,
+				E6AE13BC29974FF10077DEDC /* FlyweightViewController.swift in Sources */,
 				E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */,
+				E6AE13B329974F120077DEDC /* CompositeViewController.swift in Sources */,
 				E6AD8E7F296948E600208D8C /* DynamicMemberLookup.swift in Sources */,
 				E6AE13AF298947C40077DEDC /* MoyaViewController.swift in Sources */,
 				E62AE6F229447D9C0054EA97 /* SingletonViewController.swift in Sources */,

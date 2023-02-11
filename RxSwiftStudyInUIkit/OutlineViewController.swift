@@ -94,7 +94,17 @@ class OutlineViewController: UIViewController {
                             OutlineItem(title: "Adapter",
                                         viewController: AdapterViewController.self),
                             OutlineItem(title: "Bridge",
-                                        viewController: BridgeViewController.self)
+                                        viewController: BridgeViewController.self),
+                            OutlineItem(title: "Composite",
+                                        viewController: BridgeViewController.self),
+                            OutlineItem(title: "Decorator",
+                                        viewController: DecoratorViewController.self),
+                            OutlineItem(title: "Facade",
+                                        viewController: FacadeViewController.self),
+                            OutlineItem(title: "Flyweight",
+                                        viewController: FlyweightViewController.self),
+                            OutlineItem(title: "Proxy",
+                                        viewController: ProxyViewController.self)
                         ]
                     ),
                     OutlineItem(
