@@ -45,6 +45,38 @@ final class DecoratorViewController: UIViewController {
         작은 객체들이 많이 늘어난다는 단점이 있지만 상속을 사용하면 더 많은 서브클래스들이 만들어지기 때문에 큰 단점은 아님(by 백기선)
         알고리즘으로 보자면 데코레이터 패턴으로는 O(1)만큼 늘어남
         상속을 사용해서 확장하면 경우의수에 따라 O(2^n)으로 늘어날 수 있음
+        
+        [실사용 사례 (with Java)]
+        1. Adapter 패턴에서 봤던 InputStreamReader
+
+        InputStreamReader isr = new InputStreamReader(is);
+        BufferedReader reader = new BufferedReader(isr);
+        
+        어댑터 패턴이면서 데코레이션으로 볼 수도 있음
+        점점 감싸면서 구체적인 기능을 추가하는 관점으로 보면 데코레이터
+        
+        2. ArrayList의 checkedList
+        ArrayList list = new ArrayList<>(); // 타입제한 없이 만듬
+        list.add(new Book());
+        
+        List books = Collections.checkedList(list, Book.class) // 타입 제한
+        list.add(new Item());
+        books.add(new Item()); // error⚠️
+        
+        3. ArrayList의 syncronizedList
+        순차적으로 접근
+        syncronized 블럭으로 직렬적으로 처리
+        
+        4. unmodifiableList
+        let list = Collections.unmodifiableList(list);
+        list.add(new Item()); // error⚠️
+        해당 객체를 불변객체로 만들어주는 함수
+        wrapper를 이용하여 기능을 제한
+        
+        5. HttpServletRequestWrapper: ServletRequestWrapper
+        명확하게 주석으로도 Decorator패턴을 이용한다고 적혀있음
+        
+        6. Spring의 BeanDefinitionDecorator
         """
         
         client()
