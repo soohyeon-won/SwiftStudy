@@ -107,6 +107,15 @@ class OutlineViewController: UIViewController {
                                 )
                             )
                         ]
+                    ),
+                    OutlineItem(
+                        title: "🤖Library",
+                        subitems: [
+                            OutlineItem(
+                                title: "Moya",
+                                viewController: MoyaViewController.self
+                            )
+                        ]
                     )
                 ]
             )
@@ -190,6 +199,11 @@ extension OutlineViewController: UICollectionViewDelegate {
         guard let menuItem = self.dataSource.itemIdentifier(for: indexPath) else { return }
         
         collectionView.deselectItem(at: indexPath, animated: true)
+        
+        if menuItem.outlineViewController.self == MoyaViewController.self {
+            navigationController?.pushViewController(MoyaViewController(viewModel: MoyaViewModel()), animated: true)
+            return
+        }
         
         if let viewController = menuItem.outlineViewController {
             navigationController?.pushViewController(viewController.init(), animated: true)
