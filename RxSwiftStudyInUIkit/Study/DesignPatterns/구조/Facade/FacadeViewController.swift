@@ -59,7 +59,7 @@ final class FacadeViewController: UIViewController {
         // 각각 interface를 두고 개발하면 다른 Sender들을 적용시킬 수 있음
         let emailSettings = EmailSettings(host: "127.0.0.1")
         let emailSender = EmailSender(emailSetngs: emailSettings)
-        let emailMessage = EmailMessage(title: "오징어게임", text: "밖은 더 지옥이더라고..", to: "나", from: "너")
+        let emailMessage = EmailMessage(title: "이메일 제목", text: "email contents", to: "jhon", from: "sujin")
         
         emailSender.sendEmail(emailMessage: emailMessage)
     }
