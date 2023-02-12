@@ -35,9 +35,10 @@ final class FlyweightViewController: UIViewController {
         Fliyweight
         
         [장점]
+        어플리케이션에서 사용하는 메모리를 줄일 수 있다.
         
         [단점]
-        
+        코드의 복잡도가 증가한다.
         """
         
         client()
