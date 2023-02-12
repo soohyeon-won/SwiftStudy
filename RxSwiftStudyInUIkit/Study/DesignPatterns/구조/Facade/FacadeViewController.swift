@@ -42,5 +42,48 @@ final class FacadeViewController: UIViewController {
     }
     
     private func client() {
+        // email을 보내는 기능을 여러곳에서 쓴다고 했을때 유용하게 쓸 수 있다.
+        // 각각 interface를 두고 개발하면 다른 Sender들을 적용시킬 수 있음
+        let emailSettings = EmailSettings(host: "127.0.0.1")
+        let emailSender = EmailSender(emailSetngs: emailSettings)
+        let emailMessage = EmailMessage(title: "오징어게임", text: "밖은 더 지옥이더라고..", to: "나", from: "너")
+        
+        emailSender.sendEmail(emailMessage: emailMessage)
+    }
+}
+
+class EmailSender {
+    
+    let emailSetngs: EmailSettings
+    
+    init(emailSetngs: EmailSettings) {
+        self.emailSetngs = emailSetngs
+    }
+    
+    func sendEmail(emailMessage: EmailMessage) {
+        print("send email use this settings - host: \(emailSetngs.host)")
+        print("send email - from: \(emailMessage.from) title: \(emailMessage.title)")
+    }
+}
+
+class EmailSettings {
+    var host: String
+    
+    init(host: String) {
+        self.host = host
+    }
+}
+
+class EmailMessage {
+    let title: String
+    let text: String
+    let to: String
+    let from: String
+    
+    init(title: String, text: String, to: String, from: String) {
+        self.title = title
+        self.text = text
+        self.to = to
+        self.from = from
     }
 }
