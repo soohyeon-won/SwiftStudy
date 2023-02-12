@@ -40,6 +40,15 @@ final class FacadeViewController: UIViewController {
         코드가 읽기 편해지면 리팩토링을 했다라고 생각한다(by 백기선)
         내부구조를 디테일하게 알지 않아도됨
         
+        [사용예시]
+        1. 이미지 다운로드
+        UIImageView에 이미지를 적용하는 기능을 만들때
+        downloadImage(url...) 함수를 만든다고 생각해보자
+        
+        우리는 downloadImage 함수를 갖는 퍼사드 클래스를 만들고,
+        ImageDownloader를 주입해주고 사용할 수 있을것이다.
+        # https://refactoring.guru/ko/design-patterns/facade/swift/example#example-1
+        
         """
         
         client()
