@@ -44,5 +44,73 @@ final class FlyweightViewController: UIViewController {
     }
     
     private func client() {
+        let fontFactory = FontFactory()
+        // 아래처럼 여러번 재사용될때 메모리 사용을 줄일 수 있음
+        // 이때 Intrinsic 속성을 모아놓은 클래스는 다른 곳들에서 공유하는 클래스이기때문에 Immutable해야함
+        Characters(
+            value: "h",
+            color: "white",
+            font: fontFactory.getFont(font: Font(family: "nanum", size: 12.0))
+        )
+        Characters(
+            value: "h",
+            color: "white",
+            font: fontFactory.getFont(font: Font(family: "nanum", size: 12))
+        )
+        Characters(
+            value: "h",
+            color: "white",
+            font: fontFactory.getFont(font: Font(family: "nanum", size: 12))
+        )
+    }
+}
+
+class Characters {
+    let value: Character
+    let color: String
+    let font: Font
+    
+    init(value: Character, color: String, font: Font) {
+        self.value = value
+        self.color = color
+        self.font = font
+    }
+}
+
+// Intrinsic, Immutable
+// 누군가가 받아서 데이터를 변경하지 못하게함
+// 다른 여러 클래스에서 공유되는 클래스이기 때문
+final class Font {
+    final let family: String
+    final let size: CGFloat
+    
+    init(family: String, size: CGFloat) {
+        self.family = family
+        self.size = size
+    }
+    
+    func getFamily() -> String {
+        family
+    }
+    
+    func getSize() -> CGFloat {
+        size
+    }
+}
+
+// FlyweightFactory
+class FontFactory {
+    var cache = [String:Font]()
+    
+    init(cache: [String : Font] = [String:Font]()) {
+        self.cache = cache
+    }
+    
+    func getFont(font: Font) -> Font {
+        if let beforeValue = cache.updateValue(font, forKey: font.getFamily()) {
+            return beforeValue
+        }
+        cache[font.getFamily()] = font
+        return font
     }
 }
