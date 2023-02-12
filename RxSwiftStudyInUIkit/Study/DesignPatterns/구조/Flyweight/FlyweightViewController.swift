@@ -39,6 +39,11 @@ final class FlyweightViewController: UIViewController {
         
         [단점]
         코드의 복잡도가 증가한다.
+        
+        [사용예시]
+        1. java Integer valueOf(int i)
+        자주사용되는 범위에 있는 값들을 캐싱하여 리턴해준다.
+        자바에서 int1 == int2 보다 isEqual 사용을 권장하는 이유
         """
         
         client()
