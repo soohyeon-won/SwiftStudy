@@ -46,19 +46,30 @@ final class ProxyViewController: UIViewController {
         [단점]
         코드의 복잡도가 증가한다.
         
+        [사용 예시]
+        1. Mirror.init(reflecting subject: Any)
+        ex) JAVA - 다이나믹(runtime과 관련) 프록시 (reflect.Proxy)
+        Mirror의 기능은 다른 객체의 기능을 제어하거나 대신하는 기능을 제공하기 때문에 프록시 패턴과 관련이 있음
         """
-        
         client()
     }
     
     private func client() {
+        // before
 //        DefaultGameService().startGame()
-//
 //        GameServiceProxy().startGame()
         
+        // after
         GameServiceProxy(gameService: DefaultGameService()).startGame()
-        
         GameServiceProxy2().startGame()
+        
+        // Swift에서 reflection을 사용하면
+        // struct, class 또는 기타 타입에 관계 없이 타입에 있는 stored property의 값을 읽을 수 있다
+        let c = DefaultChampion(championName: "championName", skin: 정복자Skin())
+        let mirror = Mirror(reflecting: c)
+        mirror.children.forEach {
+            print($0)
+        }
     }
 }
 
