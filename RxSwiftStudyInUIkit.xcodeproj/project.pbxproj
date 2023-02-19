@@ -25,6 +25,17 @@
 		E636139728B22E5A0050C070 /* RxSwiftStudyInUIkitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636139628B22E5A0050C070 /* RxSwiftStudyInUIkitUITests.swift */; };
 		E636139928B22E5A0050C070 /* RxSwiftStudyInUIkitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636139828B22E5A0050C070 /* RxSwiftStudyInUIkitUITestsLaunchTests.swift */; };
 		E63613A628B22E6A0050C070 /* ShareStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63613A528B22E6A0050C070 /* ShareStudy.swift */; };
+		E640F24529A20C9A00E0F749 /* ChainOfResponsibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F24429A20C9A00E0F749 /* ChainOfResponsibilityViewController.swift */; };
+		E640F24829A20CEB00E0F749 /* CommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F24729A20CEB00E0F749 /* CommandViewController.swift */; };
+		E640F24B29A20D5B00E0F749 /* InterpreterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F24A29A20D5B00E0F749 /* InterpreterViewController.swift */; };
+		E640F24E29A20D9300E0F749 /* IteratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F24D29A20D9300E0F749 /* IteratorViewController.swift */; };
+		E640F25129A20DD200E0F749 /* MediatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F25029A20DD200E0F749 /* MediatorViewController.swift */; };
+		E640F25929A20EB700E0F749 /* MementoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F25829A20EB700E0F749 /* MementoViewController.swift */; };
+		E640F25B29A20ED200E0F749 /* ObserverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F25A29A20ED200E0F749 /* ObserverViewController.swift */; };
+		E640F25D29A20EEF00E0F749 /* StateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F25C29A20EEF00E0F749 /* StateViewController.swift */; };
+		E640F25F29A20F0900E0F749 /* StrategyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F25E29A20F0900E0F749 /* StrategyViewController.swift */; };
+		E640F26129A20F2100E0F749 /* TemplateMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F26029A20F2100E0F749 /* TemplateMethodViewController.swift */; };
+		E640F26329A20F4000E0F749 /* VisitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F26229A20F4000E0F749 /* VisitorViewController.swift */; };
 		E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */; };
 		E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */; };
 		E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */; };
@@ -145,6 +156,17 @@
 		E636139628B22E5A0050C070 /* RxSwiftStudyInUIkitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftStudyInUIkitUITests.swift; sourceTree = "<group>"; };
 		E636139828B22E5A0050C070 /* RxSwiftStudyInUIkitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftStudyInUIkitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E63613A528B22E6A0050C070 /* ShareStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareStudy.swift; sourceTree = "<group>"; };
+		E640F24429A20C9A00E0F749 /* ChainOfResponsibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainOfResponsibilityViewController.swift; sourceTree = "<group>"; };
+		E640F24729A20CEB00E0F749 /* CommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandViewController.swift; sourceTree = "<group>"; };
+		E640F24A29A20D5B00E0F749 /* InterpreterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterViewController.swift; sourceTree = "<group>"; };
+		E640F24D29A20D9300E0F749 /* IteratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorViewController.swift; sourceTree = "<group>"; };
+		E640F25029A20DD200E0F749 /* MediatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorViewController.swift; sourceTree = "<group>"; };
+		E640F25829A20EB700E0F749 /* MementoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoViewController.swift; sourceTree = "<group>"; };
+		E640F25A29A20ED200E0F749 /* ObserverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverViewController.swift; sourceTree = "<group>"; };
+		E640F25C29A20EEF00E0F749 /* StateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViewController.swift; sourceTree = "<group>"; };
+		E640F25E29A20F0900E0F749 /* StrategyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyViewController.swift; sourceTree = "<group>"; };
+		E640F26029A20F2100E0F749 /* TemplateMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethodViewController.swift; sourceTree = "<group>"; };
+		E640F26229A20F4000E0F749 /* VisitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorViewController.swift; sourceTree = "<group>"; };
 		E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
@@ -265,6 +287,7 @@
 			children = (
 				E9F71BFA2974FE9200BDD86B /* Create */,
 				E6AD8E80297FB9E100208D8C /* Structural */,
+				E640F24229A20BE400E0F749 /* Behavioral */,
 			);
 			path = DesignPatterns;
 			sourceTree = "<group>";
@@ -348,6 +371,112 @@
 				E636139828B22E5A0050C070 /* RxSwiftStudyInUIkitUITestsLaunchTests.swift */,
 			);
 			path = RxSwiftStudyInUIkitUITests;
+			sourceTree = "<group>";
+		};
+		E640F24229A20BE400E0F749 /* Behavioral */ = {
+			isa = PBXGroup;
+			children = (
+				E640F24329A20C7900E0F749 /* Chain of Responsibility */,
+				E640F24629A20CDE00E0F749 /* Command */,
+				E640F24929A20D4000E0F749 /* Interpreter */,
+				E640F24C29A20D8400E0F749 /* Iterator */,
+				E640F24F29A20DC200E0F749 /* Mediator */,
+				E640F25229A20E4800E0F749 /* Memento */,
+				E640F25329A20E5800E0F749 /* Observer */,
+				E640F25429A20E6D00E0F749 /* State */,
+				E640F25529A20E7900E0F749 /* Strategy */,
+				E640F25629A20E8B00E0F749 /* Template Method */,
+				E640F25729A20EA000E0F749 /* Visitor */,
+			);
+			path = Behavioral;
+			sourceTree = "<group>";
+		};
+		E640F24329A20C7900E0F749 /* Chain of Responsibility */ = {
+			isa = PBXGroup;
+			children = (
+				E640F24429A20C9A00E0F749 /* ChainOfResponsibilityViewController.swift */,
+			);
+			path = "Chain of Responsibility";
+			sourceTree = "<group>";
+		};
+		E640F24629A20CDE00E0F749 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				E640F24729A20CEB00E0F749 /* CommandViewController.swift */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		E640F24929A20D4000E0F749 /* Interpreter */ = {
+			isa = PBXGroup;
+			children = (
+				E640F24A29A20D5B00E0F749 /* InterpreterViewController.swift */,
+			);
+			path = Interpreter;
+			sourceTree = "<group>";
+		};
+		E640F24C29A20D8400E0F749 /* Iterator */ = {
+			isa = PBXGroup;
+			children = (
+				E640F24D29A20D9300E0F749 /* IteratorViewController.swift */,
+			);
+			path = Iterator;
+			sourceTree = "<group>";
+		};
+		E640F24F29A20DC200E0F749 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				E640F25029A20DD200E0F749 /* MediatorViewController.swift */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		E640F25229A20E4800E0F749 /* Memento */ = {
+			isa = PBXGroup;
+			children = (
+				E640F25829A20EB700E0F749 /* MementoViewController.swift */,
+			);
+			path = Memento;
+			sourceTree = "<group>";
+		};
+		E640F25329A20E5800E0F749 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				E640F25A29A20ED200E0F749 /* ObserverViewController.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
+		E640F25429A20E6D00E0F749 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				E640F25C29A20EEF00E0F749 /* StateViewController.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		E640F25529A20E7900E0F749 /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				E640F25E29A20F0900E0F749 /* StrategyViewController.swift */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
+		E640F25629A20E8B00E0F749 /* Template Method */ = {
+			isa = PBXGroup;
+			children = (
+				E640F26029A20F2100E0F749 /* TemplateMethodViewController.swift */,
+			);
+			path = "Template Method";
+			sourceTree = "<group>";
+		};
+		E640F25729A20EA000E0F749 /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				E640F26229A20F4000E0F749 /* VisitorViewController.swift */,
+			);
+			path = Visitor;
 			sourceTree = "<group>";
 		};
 		E6A16EA128BA1B1600921D78 /* UIKit */ = {
@@ -952,11 +1081,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E640F24E29A20D9300E0F749 /* IteratorViewController.swift in Sources */,
 				E6AE13B629974F870077DEDC /* DecoratorViewController.swift in Sources */,
 				E6AE13BF299750230077DEDC /* ProxyViewController.swift in Sources */,
+				E640F24829A20CEB00E0F749 /* CommandViewController.swift in Sources */,
 				E997CBE62966814300A5B0B5 /* Builder.swift in Sources */,
+				E640F25129A20DD200E0F749 /* MediatorViewController.swift in Sources */,
 				E6AE13852986612D0077DEDC /* BridgeViewController.swift in Sources */,
 				E6AD8E82297FBA2F00208D8C /* AdapterViewController.swift in Sources */,
+				E640F24B29A20D5B00E0F749 /* InterpreterViewController.swift in Sources */,
 				E6AE13B929974FB80077DEDC /* FacadeViewController.swift in Sources */,
 				E62AE6F629447DE40054EA97 /* FactoryMethod.swift in Sources */,
 				E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */,
@@ -965,8 +1098,10 @@
 				E9F71BFD2974FEB500BDD86B /* PrototypeViewController.swift in Sources */,
 				E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */,
 				E6AE13BC29974FF10077DEDC /* FlyweightViewController.swift in Sources */,
+				E640F24529A20C9A00E0F749 /* ChainOfResponsibilityViewController.swift in Sources */,
 				E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */,
 				E6AE13B329974F120077DEDC /* CompositeViewController.swift in Sources */,
+				E640F25B29A20ED200E0F749 /* ObserverViewController.swift in Sources */,
 				E6AD8E7F296948E600208D8C /* DynamicMemberLookup.swift in Sources */,
 				E6AE13AF298947C40077DEDC /* MoyaViewController.swift in Sources */,
 				E62AE6F229447D9C0054EA97 /* SingletonViewController.swift in Sources */,
@@ -974,20 +1109,25 @@
 				E9D1A21028D4230A00C46741 /* SwfitUIView.swift in Sources */,
 				E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */,
 				E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */,
+				E640F25F29A20F0900E0F749 /* StrategyViewController.swift in Sources */,
 				E63613A628B22E6A0050C070 /* ShareStudy.swift in Sources */,
 				E6AD8E6F29692FB400208D8C /* WebviewDirector.swift in Sources */,
+				E640F26329A20F4000E0F749 /* VisitorViewController.swift in Sources */,
 				E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */,
 				E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */,
+				E640F25D29A20EEF00E0F749 /* StateViewController.swift in Sources */,
 				E90654B3295951760027A47C /* AbstractFactory.swift in Sources */,
 				E94DDCBE28B5CFE4005451EA /* Map.swift in Sources */,
 				E94DDCBC28B5CFD7005451EA /* MapStudyViewController.swift in Sources */,
 				E636137628B22E570050C070 /* AppDelegate.swift in Sources */,
 				E908D72229652EAA0062B85F /* Ship.swift in Sources */,
+				E640F25929A20EB700E0F749 /* MementoViewController.swift in Sources */,
 				E636137828B22E570050C070 /* SceneDelegate.swift in Sources */,
 				E62AE6EE2944680A0054EA97 /* Singleton.swift in Sources */,
 				E950C91628B8709600E0C80A /* Reduce.swift in Sources */,
 				E6AD8E7D296948AA00208D8C /* SwiftStudyView.swift in Sources */,
 				E6A16EAE28BB3FEA00921D78 /* UITableView+Extension.swift in Sources */,
+				E640F26129A20F2100E0F749 /* TemplateMethodViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
