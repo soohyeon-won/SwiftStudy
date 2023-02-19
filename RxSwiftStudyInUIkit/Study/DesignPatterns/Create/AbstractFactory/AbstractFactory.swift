@@ -41,11 +41,13 @@ struct BlackWheel: Wheel {
 
 final class WhiteshipPartsFactory: ShipPartsFactory {
     func createAnchor() -> Anchor {
-        WhiteAnchor()
+        print("white anchor 추가")
+        return WhiteAnchor()
     }
     
     func createWheel() -> Wheel {
-        WhiteWheel()
+        print("white wheel 추가")
+        return WhiteWheel()
     }
 }
 

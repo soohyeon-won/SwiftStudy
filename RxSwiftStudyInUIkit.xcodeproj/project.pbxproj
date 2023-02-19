@@ -664,8 +664,8 @@
 		E90654B1295951590027A47C /* AbstractFactory */ = {
 			isa = PBXGroup;
 			children = (
-				E90654B2295951760027A47C /* AbstractFactory.swift */,
 				E90654B4295951820027A47C /* AbstractFactoryViewController.swift */,
+				E90654B2295951760027A47C /* AbstractFactory.swift */,
 			);
 			path = AbstractFactory;
 			sourceTree = "<group>";

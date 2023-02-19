@@ -44,6 +44,8 @@ final class AbstractFactoryViewController: UIViewController {
         배에 바퀴, 닻을 추가하는 코드를 추가할 때 추상팩토리 패턴을 이용하여
         이미 만들어진 인스턴스에 의존적이지 않도록 바퀴와 닻을 생성하는 코드를 구현할 수 있는것이다.
         
+        기존에 사용하던 FactoryMethod 클래스에 추상팩토리 protocol을 주입하여 사용할 수 있다.
+        
         실무에선 어떻게 쓰이나?
         Java
         DocumentBuilderActory
@@ -54,17 +56,7 @@ final class AbstractFactoryViewController: UIViewController {
     }
     
     private func client() {
-        // 1. Factory 클라이언트에서 직접 호출
-        let whiteship = WhiteshipFactory().ordershiip(name: "WhiteShip", email: "test@naver.com")
-        print(whiteship)
-        
-        let blackship = BlackshipFactory().ordershiip(name: "BlackShip", email: "test1@naver.com")
-        print(blackship)
-        
-        // 2. 의존성 주입을 통한 FactoryMethod 인터페이스 호출
-        // 클라이언트 변경 최소화
-        printShip(shipFactory: WhiteshipFactory(), name: "WhiteShip", email: "test@naver.com")
-        printShip(shipFactory: BlackshipFactory(), name: "BlackShip", email: "test1@naver.com")
+        printShip(shipFactory: WhiteshipFactory2(shipPartsFactory: WhiteshipPartsFactory()), name: "WhiteShip", email: "test@naver.com")
     }
     
     private func printShip(shipFactory: ShipFactory, name: String, email: String) {
