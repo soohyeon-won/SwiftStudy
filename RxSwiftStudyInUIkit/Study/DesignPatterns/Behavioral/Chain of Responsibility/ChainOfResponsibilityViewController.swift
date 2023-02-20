@@ -33,8 +33,14 @@ final class ChainOfResponsibilityViewController: UIViewController {
         클라이언트가 구체적인 핸들러 타입을 알지 않아도 된다.
         
         [장점]
+        client코드를 변경하지 않고 Chain에 Handler를 추가할 수 있다. // OCP
+        각각의 Handler마다 본인이 해야할 일만 하도록 할 수 있다. // SRP
+        체인을 다양한 형태로 구성할 수 있다.
+        - 순서를 가지고 있는 체인
+        - 순차적으로 실행된 후 특정 핸들러에서 해당 요청만 처리하게끔 할 수 있음
         
         [단점]
+        체인으로 인해 핸들러가 중첩되면서 디버깅이 어려울 수 있음
         
         [사용 예제]
         """
