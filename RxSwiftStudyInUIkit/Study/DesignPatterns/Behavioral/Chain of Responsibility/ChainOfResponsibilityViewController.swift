@@ -43,6 +43,28 @@ final class ChainOfResponsibilityViewController: UIViewController {
         체인으로 인해 핸들러가 중첩되면서 디버깅이 어려울 수 있음
         
         [사용 예제]
+        요청을 처리하는 과정 중에 필터, 인터셉터를 거치는 곳에서 많이 활용됨
+        
+        1. 자바 서블릿필터
+        
+        Java의 Filter Interface
+        - ServletRequest
+        FilterChain을 전달시켜서 순차적으로 진행시킬 수 있음
+        
+        public void doFilter(..) {
+            //TODO 전처리
+            chain.doFilter(request, response);
+            //TODO 후처리
+        }
+        
+        2. 스프링 시큐리티 필터
+        스프링부트에서 request 로그인을 하면서 SecurityConfig extends WebSecurityConfigurerAdapter
+        http.authorizeRequests().anyRequest().permitAll().and()
+        .addFilter(...)
+        
+        별다른 필터를 설정하지 않아도 이미 시큐리티 필터가 적용되어있음.
+        필터를 추가할 수 있음.
+        
         """
         
         client()
