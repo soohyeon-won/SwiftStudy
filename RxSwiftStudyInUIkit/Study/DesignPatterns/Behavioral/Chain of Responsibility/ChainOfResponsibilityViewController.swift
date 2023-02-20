@@ -44,8 +44,21 @@ final class ChainOfResponsibilityViewController: UIViewController {
     
     private func client() {
         let handler = AuthRequestHandler()
-//        let handler = LoggingRequestHandler()
         handler.handler()
+        
+        print("====책임 연쇄 패턴 로그====")
+        // COR
+        let reqeust = Request()
+        // 요청을 하는 쪽과 요청을 처리하는 쪽을 몰라도됨.
+        // 체인을 구성해주는 곳에서 앱의 특징에 따라 순서에 의미가 있거나 특정 부분은 바이패쓰하거나 등을 이용할 수 있음.
+        // 경우에 따라 다른 체인을 다녀온다음 그 이후에 실행하도록 설계할 수도 있음
+        // 요청을 처리, 응답을 처리할 때 많이 사용되는 패턴이다.
+        let chain = CheckAuthRequestHandler(
+            nextHandler: ContentLoggingRequestHandler(
+                nextHandler: PrintRequestHandler(nextHandler: nil)
+            )
+        )
+        chain.handler(request: reqeust)
     }
 }
 
@@ -87,7 +100,17 @@ protocol RequestHandlerProtocol {
     func handler(request: Request)
 }
 
-extension RequestHandlerProtocol {
+class Request {
+    
+}
+
+class CORRequestHandler: RequestHandlerProtocol {
+    
+    var nextHandler: RequestHandlerProtocol?
+    
+    init(nextHandler: RequestHandlerProtocol?) {
+        self.nextHandler = nextHandler
+    }
     
     func handler(request: Request) {
         if nextHandler != nil {
@@ -96,6 +119,38 @@ extension RequestHandlerProtocol {
     }
 }
 
-class Request {
+final class PrintRequestHandler: CORRequestHandler {
     
+    override init(nextHandler: RequestHandlerProtocol?) {
+        super.init(nextHandler: nextHandler)
+    }
+    
+    override func handler(request: Request) {
+        print("프린트 핸들러")
+        super.handler(request: request)
+    }
+}
+
+final class CheckAuthRequestHandler: CORRequestHandler {
+    
+    override init(nextHandler: RequestHandlerProtocol?) {
+        super.init(nextHandler: nextHandler)
+    }
+    
+    override func handler(request: Request) {
+        print("인증여부 체크 핸들러")
+        super.handler(request: request)
+    }
+}
+
+final class ContentLoggingRequestHandler: CORRequestHandler {
+    
+    override init(nextHandler: RequestHandlerProtocol?) {
+        super.init(nextHandler: nextHandler)
+    }
+    
+    override func handler(request: Request) {
+        print("로깅 핸들러")
+        super.handler(request: request)
+    }
 }
