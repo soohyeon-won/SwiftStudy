@@ -47,7 +47,16 @@ final class CommandViewController: UIViewController {
     }
     
     private func client() {
+        // Command들을 재사용할 수 있는 장점이 있음
+        let button = CommandButton(command: LightOnCommand(light: Light()))
+        button.press()
         
+        let button2 = CommandButton(command: GameStartCommand(game: Game()))
+        button2.press()
+        
+        // Command를 만드는 작업은 늘어나지만
+        // Receiver의 코드가 바뀌면 모든 invoker의 코드가 바뀌는 기존 구조와 달리
+        // 커맨드 부분만 변경, 추가하면 되어서 변화의 범위가 축소됨
     }
 }
 
@@ -73,3 +82,68 @@ struct Light {
         
     }
 }
+
+// JAVA에서의 Runable이라는 인터페이스와 동일한 기능을 제공하기 위해 생성
+public protocol Command {
+    
+    func excute()
+}
+
+final class CommandButton {
+    
+    let command: Command
+    
+    init(command: Command) {
+        self.command = command
+    }
+    
+    func press() {
+        command.excute()
+    }
+}
+
+final class LightOnCommand: Command {
+    
+    private let light: Light
+    
+    init(light: Light) {
+        self.light = light
+    }
+    
+    func excute() {
+        light.on()
+    }
+}
+
+final class LightOffCommand: Command {
+    
+    private let light: Light
+    
+    init(light: Light) {
+        self.light = light
+    }
+    
+    func excute() {
+        light.off()
+    }
+}
+
+struct Game {
+            func start() {
+                
+            }
+}
+
+final class GameStartCommand: Command {
+    
+    private let game: Game
+    
+    init(game: Game) {
+        self.game = game
+    }
+    
+    func excute() {
+        game.start()
+    }
+}
+
