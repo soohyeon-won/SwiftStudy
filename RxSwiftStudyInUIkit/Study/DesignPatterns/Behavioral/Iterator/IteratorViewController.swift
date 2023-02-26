@@ -43,6 +43,10 @@ final class IteratorViewController: UIViewController {
         - 클래스가 늘어나고 복잡도가 증가한다.
         
         [사용 예제]
+        1. JAVA Enumeration, Iterator
+        2. JAVA StAX(Streaming API for XML)의 Iterator 기반 API
+        - XmlEventReader, XmlEventWriter
+        3. Spring - CompositeIterator
         """
         
         client()
