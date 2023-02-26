@@ -24,10 +24,16 @@ final class IteratorViewController: UIViewController {
         }
         
         textView.text = """
-        [ 이터레이터 패턴 ]
+        [ 이터레이터(반복자) 패턴 ]
+        - 집합객체를 순회하는 패턴, 내부 구조를 노출하지 않고 순회하는 방법을 제공
+        
+        [구조도]
+        Iterator(interface) <- client -> Aggregate(interface)
+                ↑                                 ↑
+        ConcreteIterator    <- ------- -> ConcreateAggregate
         
         [장점]
-        
+        - 집합 객체를 순회하는 클라이언트 코드를 변경하지 않고 다양한 순회 방법을 제공할 수 있다.
         [단점]
         
         [사용 예제]
@@ -37,6 +43,16 @@ final class IteratorViewController: UIViewController {
     }
     
     private func client() {
+        let board = Board()
+        var iterator = board.list.makeIterator()
         
+        while iterator.next() == nil {
+            let _ = iterator.next()
+        }
     }
+}
+
+class Board {
+    
+    var list = [String]()
 }
