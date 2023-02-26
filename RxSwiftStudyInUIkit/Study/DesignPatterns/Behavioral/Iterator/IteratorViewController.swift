@@ -43,16 +43,45 @@ final class IteratorViewController: UIViewController {
     }
     
     private func client() {
-        let board = Board()
-        var iterator = board.list.makeIterator()
+//        let board = Board()
+//        var iterator = board.list.makeIterator()
+//
+//        while iterator.next() == nil {
+//            let _ = iterator.next()
+//        }
         
-        while iterator.next() == nil {
-            let _ = iterator.next()
+        let board = Board()
+        board.list.append(Post(title: "test1"))
+        board.list.append(Post(title: "test2"))
+        board.list.append(Post(title: "test3"))
+        
+        let itorator = BoardIterator(posts: board.list.makeIterator())
+        while let value = itorator.next() {
+            print("value: \(value)")
         }
     }
 }
 
 class Board {
     
-    var list = [String]()
+    var list = [Post]()
+}
+
+struct Post {
+    let title: String
+}
+
+class BoardIterator: IteratorProtocol {
+    
+    typealias Element = Post
+    
+    private var posts: IndexingIterator<[Post]>
+    
+    init(posts: IndexingIterator<[Post]>) {
+        self.posts = posts
+    }
+    
+    func next() -> Post? {
+        return posts.next()
+    }
 }
