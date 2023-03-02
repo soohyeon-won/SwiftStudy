@@ -61,12 +61,19 @@ final class MediatorViewController: UIViewController {
 
 final class CleaningService {
     
+    let frontDesk = FrontDesk()
+    
     func clean(gym: Gym) {
         print("clean up gym: \(gym)")
     }
     
-    func getTower(guest: Guest, numberOfTower: Int) {
-        print("numberOfTower: \(numberOfTower) towers to \(guest)")
+//    func getTower(guest: Guest, numberOfTower: Int) {
+//        print("numberOfTower: \(numberOfTower) towers to \(guest)")
+//    }
+    // Guest => Int Guest에 대한 의존성이 사라짐
+    func getTower(guestID: Int, numberOfTower: Int) {
+        let roomNumber = frontDesk.getRoomNumberFor(guestID: guestID)
+        print("numberOfTower: \(numberOfTower) towers to \(guestID) provider roomNumber: \(roomNumber)")
     }
     
     func clean(restaurant: Restaurant) {
@@ -74,14 +81,70 @@ final class CleaningService {
     }
 }
 
-class Gym {
+
+// Mediator 역할 : 각 객체들의 의존성을 모아놓음
+class FrontDesk {
+    
+    let cleanService = CleaningService()
+    let restaurant = Restaurant()
+    
+    func getTower(guest: Guest, numberOfTower: Int) {
+        cleanService.getTower(guestID: guest.getID(), numberOfTower: numberOfTower)
+    }
+    
+    func getRoomNumberFor(guestID: Int) -> String {
+        return "111"
+    }
+    
+    func dinner(guest: Guest, date: Date) {
+        restaurant.dinner(guestID: guest.getID(), date: date)
+    }
+}
+
+// Colleague
+final class Guest {
+    
+    let frontDesk = FrontDesk()
+    private var id: Int = 0
+    
+    func geTower(numberOfTower: Int) {
+        frontDesk.getTower(guest: self, numberOfTower: numberOfTower)
+    }
+    
+    func getID() -> Int {
+        return id
+    }
+}
+
+// Colleague
+final class Gym {
     
 }
 
-class Guest {
-    
-}
-
+// Colleague
 class Restaurant {
-    
+    func dinner(guestID: Int, date: Date) {
+        print("restaurant dinner")
+    }
 }
+
+//MARK: - before
+/**
+ class Gym {
+     
+ }
+
+ class Guest {
+     let cleanService = CleaningService()
+     let restaurant = Restaurant()
+     
+     func dinner() {
+         restaurant.dinner()
+     }
+     
+     func geTower(numberOfTower: Int) {
+         cleanService.getTower(guest: self, numberOfTower: numberOfTower)
+     }
+ }
+
+ */
