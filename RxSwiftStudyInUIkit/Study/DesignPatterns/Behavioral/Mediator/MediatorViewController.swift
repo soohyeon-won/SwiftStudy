@@ -43,11 +43,17 @@ final class MediatorViewController: UIViewController {
         A비행기 > 관제탑 > B비행기
         
         [장점]
+        1. 컴포넌트 코드를 변경하지않고 새로운 중재자를 만들어 사용할 수 있다. // Mediator Interface를 생성하여 쓰면됨
+        2. 각각의 Colleague(컴포넌트) 코드가 간단해진다.
+        의존성이 중재자에 모여있기 때문에 중재자에서 제공하는 함수만 신경쓰면 됨
         
         [단점]
+        1. 의존성이 한 곳으로 집중됨
+        중재자 역할을 하는 클래스의 복잡도와 결합도가 증가한다.
         
         [사용 예제]
         before예제 코드에서는 Guest가 cleaningService를 직접 호출하고 있음
+        frontDesk(중재자)에 의존을 모아서 사용
         
         """
         
@@ -63,10 +69,6 @@ final class CleaningService {
     
     let frontDesk = FrontDesk()
     
-    func clean(gym: Gym) {
-        print("clean up gym: \(gym)")
-    }
-    
 //    func getTower(guest: Guest, numberOfTower: Int) {
 //        print("numberOfTower: \(numberOfTower) towers to \(guest)")
 //    }
@@ -74,10 +76,6 @@ final class CleaningService {
     func getTower(guestID: Int, numberOfTower: Int) {
         let roomNumber = frontDesk.getRoomNumberFor(guestID: guestID)
         print("numberOfTower: \(numberOfTower) towers to \(guestID) provider roomNumber: \(roomNumber)")
-    }
-    
-    func clean(restaurant: Restaurant) {
-        print("clean up restaurant: \(restaurant)")
     }
 }
 
@@ -117,11 +115,6 @@ final class Guest {
 }
 
 // Colleague
-final class Gym {
-    
-}
-
-// Colleague
 class Restaurant {
     func dinner(guestID: Int, date: Date) {
         print("restaurant dinner")
@@ -130,9 +123,6 @@ class Restaurant {
 
 //MARK: - before
 /**
- class Gym {
-     
- }
 
  class Guest {
      let cleanService = CleaningService()
