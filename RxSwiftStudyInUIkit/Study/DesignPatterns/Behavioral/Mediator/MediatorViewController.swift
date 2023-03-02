@@ -55,6 +55,10 @@ final class MediatorViewController: UIViewController {
         before예제 코드에서는 Guest가 cleaningService를 직접 호출하고 있음
         frontDesk(중재자)에 의존을 모아서 사용
         
+        1. Java - ExcutorService, Executor
+        2. Spring - DispatcherServlet
+        DispatcherServlet(중재자) 클래스가 여러 컴포넌트들의 인터페이스를 갖고 있음
+        
         """
         
         client()
