@@ -54,6 +54,19 @@ final class ObserverViewController: UIViewController {
         print("text: ", user2.getMessage(subject: "디자인패턴"))
         
         user1.sendMessage(subject: "디자인패턴", message: "메멘토 패턴")
+        print("text: ", user2.getMessage(subject: "디자인패턴"))
+        
+        let observerUser1 = ObserverUser(name: "observerUser1")
+        let observerUser2 = ObserverUser(name: "observerUser2")
+        
+        let observerChatServer = ObserverChatServer()
+        observerChatServer.register(subject: "오징어게임", subscriber: observerUser1)
+        observerChatServer.register(subject: "오징어게임", subscriber: observerUser2)
+        
+        observerChatServer.register(subject: "디자인패턴", subscriber: observerUser1)
+        
+        observerChatServer.sendMessage(user: observerUser1, subject: "오징어게임", message: "이름이 기억났어")
+        observerChatServer.sendMessage(user: observerUser2, subject: "디자인패턴", message: "옵저버 패턴으로 만든 채팅")
     }
 }
 
@@ -78,5 +91,54 @@ class ChatServer {
     
     func sendMessage() {
         
+    }
+}
+
+protocol Subscriber {
+    func handleMessage(message: String)
+}
+
+class ObserverUser: Subscriber {
+    
+    private let name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    func getName() -> String {
+        return name
+    }
+    
+    func handleMessage(message: String) {
+        print("handleName\(name): message: \(message)")
+    }
+}
+
+class ObserverChatServer {
+    
+    private var subscribers = [String: [Subscriber]]()
+    
+    func register(subject: String, subscriber: Subscriber) {
+        if subscribers.keys.filter({ $0 == subject }).first != nil {
+            subscribers[subject]?.append(subscriber)
+        } else {
+            subscribers[subject] = [subscriber]
+        }
+    }
+    
+    func unregister(subject: String, subscriber: Subscriber) {
+        if subscribers.keys.filter({ $0 == subject }).first != nil {
+            subscribers.removeValue(forKey: subject)
+        }
+    }
+    
+    func sendMessage(user: ObserverUser, subject: String, message: String) {
+        if subscribers.keys.filter({ $0 == subject }).first != nil {
+            let userMessage = "\(user.getName()): \(message)"
+            self.subscribers[subject]?.forEach {
+                $0.handleMessage(message: userMessage)
+            }
+        }
     }
 }
