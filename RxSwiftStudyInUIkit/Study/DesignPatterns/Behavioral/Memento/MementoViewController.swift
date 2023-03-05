@@ -25,18 +25,58 @@ final class MementoViewController: UIViewController {
         
         textView.text = """
         [ 메멘토 패턴 ]
+        - 캡슐화를 유지하면서 객체 내부 상태를 외부에 저장하는 방법
+        - 객체 상체를 외부에 저장했다가 해당 상태로 복구할 수 있다.
+        
+        객체 내부의 상태를 외부에 저장해놓고 저장된 정보를 복원
+        일반적으로 내부의 상태를 외부에 저장하려면 객체 상태가 외부에 노출됨
+        메멘토를 사용하면 캡슐화를 유지하면서 외부에 디테일하게 객체 내부의 상태를 공개하지 않으면서 외부에 저장
+        저장된 데이터로 복원하는 방법
         
         [장점]
         
         [단점]
         
         [사용 예제]
+        게임에 대해 저장해놓고 다시 시작할 수 있게 하는 코드
         """
         
         client()
     }
     
     private func client() {
+        let game = GameInfo()
+        game.setBlueTeamScore(score: 10)
+        game.setRedTeamScore(score: 20)
         
+        let reGame = GameInfo()
+        // 클라 내부 코드를 외부에서 알고 있고
+        // 내부 코드가 변경되면 클라코드도 변경해줘야함
+        let redTeamScore = game.getRedTeamScore()
+        let blueTeamScore = game.getBlueTeamScore()
+        reGame.setBlueTeamScore(score: blueTeamScore)
+        reGame.setRedTeamScore(score: redTeamScore)
+    }
+}
+
+class GameInfo {
+    
+    var redTeamScore: Int = 0
+    var blueTeamScore: Int = 0
+    
+    func setBlueTeamScore(score: Int) {
+        blueTeamScore = score
+    }
+    
+    func setRedTeamScore(score: Int) {
+        redTeamScore = score
+    }
+    
+    func getBlueTeamScore() -> Int {
+        return blueTeamScore
+    }
+    
+    func getRedTeamScore() -> Int {
+        return redTeamScore
     }
 }
