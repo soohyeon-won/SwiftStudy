@@ -56,13 +56,28 @@ final class MementoViewController: UIViewController {
         let blueTeamScore = game.getBlueTeamScore()
         reGame.setBlueTeamScore(score: blueTeamScore)
         reGame.setRedTeamScore(score: redTeamScore)
+        
+        /// Memento
+        let mementoGame = GameInfo()
+        mementoGame.setBlueTeamScore(score: 10)
+        mementoGame.setRedTeamScore(score: 20)
+        
+        let save = mementoGame.gameSave()
+        
+        mementoGame.setBlueTeamScore(score: 999)
+        mementoGame.setRedTeamScore(score: 111)
+        
+        mementoGame.restore(gameSave: save)
+        
+        print(mementoGame.getBlueTeamScore())
+        print(mementoGame.getRedTeamScore())
     }
 }
 
 class GameInfo {
     
-    var redTeamScore: Int = 0
-    var blueTeamScore: Int = 0
+    private var redTeamScore: Int = 0
+    private var blueTeamScore: Int = 0
     
     func setBlueTeamScore(score: Int) {
         blueTeamScore = score
@@ -70,6 +85,34 @@ class GameInfo {
     
     func setRedTeamScore(score: Int) {
         redTeamScore = score
+    }
+    
+    func getBlueTeamScore() -> Int {
+        return blueTeamScore
+    }
+    
+    func getRedTeamScore() -> Int {
+        return redTeamScore
+    }
+    
+    func gameSave() -> GameSave {
+        GameSave(redTeamScore: getRedTeamScore(), blueTeamScore: getBlueTeamScore())
+    }
+    
+    func restore(gameSave: GameSave) {
+        setRedTeamScore(score: gameSave.getRedTeamScore())
+        setBlueTeamScore(score: gameSave.getBlueTeamScore())
+    }
+}
+
+final class GameSave {
+    
+    private var redTeamScore: Int = 0
+    private var blueTeamScore: Int = 0
+    
+    init(redTeamScore: Int, blueTeamScore: Int) {
+        self.redTeamScore = redTeamScore
+        self.blueTeamScore = blueTeamScore
     }
     
     func getBlueTeamScore() -> Int {
