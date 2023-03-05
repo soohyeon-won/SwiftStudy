@@ -59,13 +59,28 @@ final class MediatorViewController: UIViewController {
         2. Spring - DispatcherServlet
         DispatcherServlet(중재자) 클래스가 여러 컴포넌트들의 인터페이스를 갖고 있음
         
+        [추가 의견]
+        Delegate패턴은 OOP에서 자주 사용하는 방법중 하나로 객체 간의 상호작용을 구현하는 데 사용
+        Delegate 패턴은 하나의 객체가 다른 객체를 대신해서 일부 기능을 수행하는 방식
+        
+        중재자 패턴은 객체들 사이의 복잡한 상호작용을 처리
+        중재자는 객체들 사이에서 상호작용을 조정하고 중개하는 역할을 수행
         """
         
         client()
     }
     
     private func client() {
-        
+        let mediator = ConcreteMediator()
+
+        let colleague1 = ConcreteColleague(mediator: mediator, name: "Colleague 1")
+        let colleague2 = ConcreteColleague(mediator: mediator, name: "Colleague 2")
+
+        mediator.addColleague(colleague: colleague1)
+        mediator.addColleague(colleague: colleague2)
+
+        colleague1.send(message: "Hello, colleague 2!")
+        colleague2.send(message: "Hi, colleague 1!")
     }
 }
 
@@ -142,3 +157,53 @@ class Restaurant {
  }
 
  */
+
+
+// 중재자 프로토콜
+protocol Mediator {
+    func sendMessage(message: String, sender: Colleague)
+}
+
+// 동료 프로토콜
+protocol Colleague {
+    var mediator: Mediator? { get set }
+    func send(message: String)
+    func receive(message: String)
+}
+
+// 실제 동료 클래스
+class ConcreteColleague: Colleague {
+
+    var mediator: Mediator?
+    var name: String
+    
+    init(mediator: Mediator, name: String) {
+        self.mediator = mediator
+        self.name = name
+    }
+    
+    func send(message: String) {
+        mediator?.sendMessage(message: message, sender: self)
+    }
+    
+    func receive(message: String) {
+        print("\(name) received: \(message)")
+    }
+}
+
+// 중재자 클래스
+class ConcreteMediator: Mediator {
+    var colleagues: [Colleague] = []
+    
+    func addColleague(colleague: Colleague) {
+        colleagues.append(colleague)
+    }
+    
+    func sendMessage(message: String, sender: Colleague) {
+        for colleague in colleagues {
+            if let colleague = colleague as? ConcreteColleague, colleague !== sender as? ConcreteColleague {
+                colleague.receive(message: message)
+            }
+        }
+    }
+}
