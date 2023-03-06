@@ -48,12 +48,15 @@ final class ObserverViewController: UIViewController {
           Java에서는 HashMap 에 WeakReference를 적용하여 사용하기도 함
         
         [사용 예제]
+        1. 대화방 메시지 get
+        2. 주식 가격 알림
         """
         
-        client()
+        clientChat()
+        clientStock()
     }
     
-    private func client() {
+    private func clientChat() {
         let server = ChatServer()
         
         let user1 = User(chatServer: server)
@@ -80,6 +83,22 @@ final class ObserverViewController: UIViewController {
         
         observerChatServer.unregister(subject: "디자인패턴", subscriber: observerUser1) // • 런타임에 옵저버를 추가하거나 제거할 수 있다.
         observerChatServer.sendMessage(user: observerUser2, subject: "디자인패턴", message: "디자인패턴 장, 단점 듣는중")
+    }
+    
+    func clientStock() {
+        // 주식 시장 시뮬레이션
+        let stockPrice = StockPrice()
+        let investor1 = Investor(name: "John")
+        let investor2 = Investor(name: "Sarah")
+
+        stockPrice.addObserver(observer: investor1)
+        stockPrice.addObserver(observer: investor2)
+
+        stockPrice.price = 100.0 // "John received a notification: the stock price is now 100.0" "Sarah received a notification: the stock price is now 100.0"
+
+        stockPrice.removeObserver(observer: investor2)
+
+        stockPrice.price = 110.0 // "John received a notification: the stock price is now 110.0"
     }
 }
 
@@ -153,5 +172,49 @@ class ObserverChatServer {
                 $0.handleMessage(message: userMessage)
             }
         }
+    }
+}
+
+//MARK: - 주식 가격 알림
+// 주식 가격을 표현하는 클래스
+class StockPrice {
+    var price: Double = 0.0 {
+        didSet {
+            // 가격이 변동되면 알림을 보냅니다.
+            notifyObservers()
+        }
+    }
+    
+    // 옵저버들을 저장할 배열
+    private var observers = [Investor]()
+    
+    // 옵저버를 추가하는 메서드
+    func addObserver(observer: Investor) {
+        observers.append(observer)
+    }
+    
+    // 옵저버를 제거하는 메서드
+    func removeObserver(observer: Investor) {
+        observers = observers.filter { $0 !== observer }
+    }
+    
+    // 옵저버들에게 알림을 보내는 메서드
+    private func notifyObservers() {
+        for observer in observers {
+            observer.update(price: price)
+        }
+    }
+}
+
+// 주식 가격 변동에 대한 알림을 받는 클래스
+class Investor {
+    let name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    func update(price: Double) {
+        print("\(name) received a notification: the stock price is now \(price)")
     }
 }
