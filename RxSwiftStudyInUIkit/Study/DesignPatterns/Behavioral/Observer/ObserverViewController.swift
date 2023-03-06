@@ -14,6 +14,10 @@ final class ObserverViewController: UIViewController {
         $0.font = .systemFont(ofSize: 24)
     }
     
+    // for KVO
+    let objectToObserve = MyClass()
+    var observation: NSKeyValueObservation?
+    
     override func viewDidLoad() {
         view.backgroundColor = .white
         
@@ -50,10 +54,15 @@ final class ObserverViewController: UIViewController {
         [사용 예제]
         1. 대화방 메시지 get
         2. 주식 가격 알림
+        
+        [사용 예시]
+        1. NotificationCenter
+        2. KVO
         """
         
         clientChat()
         clientStock()
+        exampleKVO()
     }
     
     private func clientChat() {
@@ -99,6 +108,14 @@ final class ObserverViewController: UIViewController {
         stockPrice.removeObserver(observer: investor2)
 
         stockPrice.price = 110.0 // "John received a notification: the stock price is now 110.0"
+    }
+    
+    func exampleKVO() {
+        observation = objectToObserve.observe(\.myProperty) { object, change in
+            print("myProperty changed to \(object.myProperty)")
+        }
+        
+        objectToObserve.myProperty = 10
     }
 }
 
@@ -218,3 +235,11 @@ class Investor {
         print("\(name) received a notification: the stock price is now \(price)")
     }
 }
+
+// MARK: - KVO
+
+class MyClass: NSObject {
+    @objc dynamic var myProperty: Int = 0
+}
+
+
