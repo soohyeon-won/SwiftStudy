@@ -34,8 +34,18 @@ final class ObserverViewController: UIViewController {
         - 주기적으로 무언가를 요청해서 가져오는 것 : 폴링 매커니즘
         
         [장점]
-        
+        옵저버 (Observer) 패턴
+        다수의 객체가 특정 객체 상태 변화를 감지하고 알림을 받는 패턴.
+        • 상태를 변경하는 객체(publisher)와 변경을 감지하는 객체(subsriber)의 관계를 느슨하게 유지할 수 있다.
+        • Subject의 상태 변경을 주기적으로 조회하지 않고 자동으로 감지할 수 있다.
+        • 런타임에 옵저버를 추가하거나 제거할 수 있다.
+
         [단점]
+        • 복잡도가 증가한다.
+        • 다수의 Observer 객체를 등록 이후 해지 않는다면 memory leak이 발생할 수도 있다.
+          적절하게 메모리 참조를 해제해주어야 한다.
+          자동으로 reference를 해지하도록 할 수 도 있음.
+          Java에서는 HashMap 에 WeakReference를 적용하여 사용하기도 함
         
         [사용 예제]
         """
@@ -67,6 +77,9 @@ final class ObserverViewController: UIViewController {
         
         observerChatServer.sendMessage(user: observerUser1, subject: "오징어게임", message: "이름이 기억났어")
         observerChatServer.sendMessage(user: observerUser2, subject: "디자인패턴", message: "옵저버 패턴으로 만든 채팅")
+        
+        observerChatServer.unregister(subject: "디자인패턴", subscriber: observerUser1) // • 런타임에 옵저버를 추가하거나 제거할 수 있다.
+        observerChatServer.sendMessage(user: observerUser2, subject: "디자인패턴", message: "디자인패턴 장, 단점 듣는중")
     }
 }
 
