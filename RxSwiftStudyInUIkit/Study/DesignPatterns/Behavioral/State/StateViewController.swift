@@ -44,6 +44,10 @@ final class StateViewController: UIViewController {
         - 자판기
         - 수강 신청
         - 배포 상태 변경
+        
+        [추가 의견 by ChatGPT]
+        스위프트에서는 상태 패턴을 구현할 수 있는 다양한 방법이 있지만, 내장된 라이브러리나 함수는 없습니다.
+        하지만 스위프트의 다형성과 프로토콜을 활용하여 쉽게 상태 패턴을 구현할 수 있습니다.
         """
         
         client()
