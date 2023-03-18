@@ -64,11 +64,11 @@ final class VisitorViewController: UIViewController {
         rectangle.accept(device: watch)
         
         // 지도에 마커그리기
-        let map = Map()
+        let map = Map() // concrete visitor
         let markers: [Marker] = [
-            LocalMarker(name: "Seoul"),
-            ComplexMarker(id: "1234"),
-            VillaMarker(location: "Jeju")
+            LocalMarker(name: "Seoul"), // element
+            ComplexMarker(id: "1234"), // element
+            VillaMarker(location: "Jeju") // element
         ]
         
         let mapDrawer = MapDrawer()
