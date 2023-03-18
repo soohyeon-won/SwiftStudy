@@ -18,6 +18,7 @@
 		E62ACA0E29C576EF009ED371 /* TemplateCallbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62ACA0D29C576EF009ED371 /* TemplateCallbackViewController.swift */; };
 		E62ACA1029C5867C009ED371 /* TemplateMethodSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62ACA0F29C5867C009ED371 /* TemplateMethodSkeleton.swift */; };
 		E62ACA1229C587BC009ED371 /* TemplateCallbackSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62ACA1129C587BC009ED371 /* TemplateCallbackSkeleton.swift */; };
+		E62ACA1429C58D93009ED371 /* VisitorExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62ACA1329C58D93009ED371 /* VisitorExample.swift */; };
 		E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6EA2944618F0054EA97 /* Materialize.swift */; };
 		E62AE6EE2944680A0054EA97 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6ED2944680A0054EA97 /* Singleton.swift */; };
 		E62AE6F229447D9C0054EA97 /* SingletonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6F129447D9C0054EA97 /* SingletonViewController.swift */; };
@@ -152,6 +153,7 @@
 		E62ACA0D29C576EF009ED371 /* TemplateCallbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateCallbackViewController.swift; sourceTree = "<group>"; };
 		E62ACA0F29C5867C009ED371 /* TemplateMethodSkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethodSkeleton.swift; sourceTree = "<group>"; };
 		E62ACA1129C587BC009ED371 /* TemplateCallbackSkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateCallbackSkeleton.swift; sourceTree = "<group>"; };
+		E62ACA1329C58D93009ED371 /* VisitorExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorExample.swift; sourceTree = "<group>"; };
 		E62AE6EA2944618F0054EA97 /* Materialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materialize.swift; sourceTree = "<group>"; };
 		E62AE6ED2944680A0054EA97 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		E62AE6F129447D9C0054EA97 /* SingletonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonViewController.swift; sourceTree = "<group>"; };
@@ -504,6 +506,7 @@
 			isa = PBXGroup;
 			children = (
 				E640F26229A20F4000E0F749 /* VisitorViewController.swift */,
+				E62ACA1329C58D93009ED371 /* VisitorExample.swift */,
 			);
 			path = Visitor;
 			sourceTree = "<group>";
@@ -1132,6 +1135,7 @@
 				E640F24529A20C9A00E0F749 /* ChainOfResponsibilityViewController.swift in Sources */,
 				E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */,
 				E6AE13B329974F120077DEDC /* CompositeViewController.swift in Sources */,
+				E62ACA1429C58D93009ED371 /* VisitorExample.swift in Sources */,
 				E640F25B29A20ED200E0F749 /* ObserverViewController.swift in Sources */,
 				E6AD8E7F296948E600208D8C /* DynamicMemberLookup.swift in Sources */,
 				E6AE13AF298947C40077DEDC /* MoyaViewController.swift in Sources */,
