@@ -136,6 +136,8 @@ class OutlineViewController: UIViewController {
                                                 viewController: StrategyViewController.self),
                                     OutlineItem(title: "Template Method",
                                                 viewController: TemplateMethodViewController.self),
+                                    OutlineItem(title: "Template Callback",
+                                                viewController: TemplateCallbackViewController.self),
                                     OutlineItem(title: "Visitor",
                                                 viewController: VisitorViewController.self)
                                 ]

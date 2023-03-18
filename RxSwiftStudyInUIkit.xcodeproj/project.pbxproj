@@ -11,6 +11,11 @@
 		73D05364EAE7903224645227 /* Pods_RxSwiftStudyInUIkit_RxSwiftStudyInUIkitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E70DBCE021C4AB8D5DD1209 /* Pods_RxSwiftStudyInUIkit_RxSwiftStudyInUIkitUITests.framework */; };
 		7FEEF84FC535043198A9999F /* Pods_RxSwiftStudyInUIkit_DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33EDDCC682938997BE13473 /* Pods_RxSwiftStudyInUIkit_DataLayer.framework */; };
 		E596EED8C77ACC046C67384C /* Pods_RxSwiftStudyInUIkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775483CC6DC2A4CE03C1F742 /* Pods_RxSwiftStudyInUIkit.framework */; };
+		E62ACA0529C5701B009ED371 /* DocumentGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62ACA0429C5701B009ED371 /* DocumentGenerator.swift */; };
+		E62ACA0729C5704B009ED371 /* DatabaseConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62ACA0629C5704B009ED371 /* DatabaseConnection.swift */; };
+		E62ACA0929C574C8009ED371 /* CalaculatorProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62ACA0829C574C8009ED371 /* CalaculatorProcessor.swift */; };
+		E62ACA0C29C576DA009ED371 /* FileProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62ACA0B29C576DA009ED371 /* FileProcessor.swift */; };
+		E62ACA0E29C576EF009ED371 /* TemplateCallbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62ACA0D29C576EF009ED371 /* TemplateCallbackViewController.swift */; };
 		E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6EA2944618F0054EA97 /* Materialize.swift */; };
 		E62AE6EE2944680A0054EA97 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6ED2944680A0054EA97 /* Singleton.swift */; };
 		E62AE6F229447D9C0054EA97 /* SingletonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6F129447D9C0054EA97 /* SingletonViewController.swift */; };
@@ -138,6 +143,11 @@
 		B049730E5F148BC0E5363DE8 /* Pods-RxSwiftStudyInUIkitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftStudyInUIkitTests.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftStudyInUIkitTests/Pods-RxSwiftStudyInUIkitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C33EDDCC682938997BE13473 /* Pods_RxSwiftStudyInUIkit_DataLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftStudyInUIkit_DataLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7131D024753E8F077981069 /* Pods-RxSwiftStudyInUIkit-DataLayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftStudyInUIkit-DataLayer.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftStudyInUIkit-DataLayer/Pods-RxSwiftStudyInUIkit-DataLayer.debug.xcconfig"; sourceTree = "<group>"; };
+		E62ACA0429C5701B009ED371 /* DocumentGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentGenerator.swift; sourceTree = "<group>"; };
+		E62ACA0629C5704B009ED371 /* DatabaseConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseConnection.swift; sourceTree = "<group>"; };
+		E62ACA0829C574C8009ED371 /* CalaculatorProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalaculatorProcessor.swift; sourceTree = "<group>"; };
+		E62ACA0B29C576DA009ED371 /* FileProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProcessor.swift; sourceTree = "<group>"; };
+		E62ACA0D29C576EF009ED371 /* TemplateCallbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateCallbackViewController.swift; sourceTree = "<group>"; };
 		E62AE6EA2944618F0054EA97 /* Materialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materialize.swift; sourceTree = "<group>"; };
 		E62AE6ED2944680A0054EA97 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		E62AE6F129447D9C0054EA97 /* SingletonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonViewController.swift; sourceTree = "<group>"; };
@@ -274,6 +284,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E62ACA0A29C576C6009ED371 /* TemplateCallback */ = {
+			isa = PBXGroup;
+			children = (
+				E62ACA0D29C576EF009ED371 /* TemplateCallbackViewController.swift */,
+				E62ACA0B29C576DA009ED371 /* FileProcessor.swift */,
+			);
+			path = TemplateCallback;
+			sourceTree = "<group>";
+		};
 		E62AE6E8294461290054EA97 /* Materialize */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,6 +405,7 @@
 				E640F25429A20E6D00E0F749 /* State */,
 				E640F25529A20E7900E0F749 /* Strategy */,
 				E640F25629A20E8B00E0F749 /* Template Method */,
+				E62ACA0A29C576C6009ED371 /* TemplateCallback */,
 				E640F25729A20EA000E0F749 /* Visitor */,
 			);
 			path = Behavioral;
@@ -467,6 +487,9 @@
 			isa = PBXGroup;
 			children = (
 				E640F26029A20F2100E0F749 /* TemplateMethodViewController.swift */,
+				E62ACA0429C5701B009ED371 /* DocumentGenerator.swift */,
+				E62ACA0629C5704B009ED371 /* DatabaseConnection.swift */,
+				E62ACA0829C574C8009ED371 /* CalaculatorProcessor.swift */,
 			);
 			path = "Template Method";
 			sourceTree = "<group>";
@@ -1092,10 +1115,12 @@
 				E640F24B29A20D5B00E0F749 /* InterpreterViewController.swift in Sources */,
 				E6AE13B929974FB80077DEDC /* FacadeViewController.swift in Sources */,
 				E62AE6F629447DE40054EA97 /* FactoryMethod.swift in Sources */,
+				E62ACA0E29C576EF009ED371 /* TemplateCallbackViewController.swift in Sources */,
 				E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */,
 				E62AE6F429447DB40054EA97 /* FactoryMethodViewController.swift in Sources */,
 				E997CBE82966819D00A5B0B5 /* BuilderPattern.swift in Sources */,
 				E9F71BFD2974FEB500BDD86B /* PrototypeViewController.swift in Sources */,
+				E62ACA0729C5704B009ED371 /* DatabaseConnection.swift in Sources */,
 				E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */,
 				E6AE13BC29974FF10077DEDC /* FlyweightViewController.swift in Sources */,
 				E640F24529A20C9A00E0F749 /* ChainOfResponsibilityViewController.swift in Sources */,
@@ -1107,9 +1132,11 @@
 				E62AE6F229447D9C0054EA97 /* SingletonViewController.swift in Sources */,
 				E950C91828B87BD800E0C80A /* ReduceStudyViewController.swift in Sources */,
 				E9D1A21028D4230A00C46741 /* SwfitUIView.swift in Sources */,
+				E62ACA0529C5701B009ED371 /* DocumentGenerator.swift in Sources */,
 				E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */,
 				E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */,
 				E640F25F29A20F0900E0F749 /* StrategyViewController.swift in Sources */,
+				E62ACA0C29C576DA009ED371 /* FileProcessor.swift in Sources */,
 				E63613A628B22E6A0050C070 /* ShareStudy.swift in Sources */,
 				E6AD8E6F29692FB400208D8C /* WebviewDirector.swift in Sources */,
 				E640F26329A20F4000E0F749 /* VisitorViewController.swift in Sources */,
@@ -1121,6 +1148,7 @@
 				E94DDCBC28B5CFD7005451EA /* MapStudyViewController.swift in Sources */,
 				E636137628B22E570050C070 /* AppDelegate.swift in Sources */,
 				E908D72229652EAA0062B85F /* Ship.swift in Sources */,
+				E62ACA0929C574C8009ED371 /* CalaculatorProcessor.swift in Sources */,
 				E640F25929A20EB700E0F749 /* MementoViewController.swift in Sources */,
 				E636137828B22E570050C070 /* SceneDelegate.swift in Sources */,
 				E62AE6EE2944680A0054EA97 /* Singleton.swift in Sources */,
