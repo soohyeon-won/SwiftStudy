@@ -36,6 +36,16 @@ final class TemplateCallbackViewController: UIViewController {
     }
     
     private func client() {
+        let algorithmA = TemplateCallbackSkeletonA()
+        algorithmA.execute {
+            print("Completion callback for algorithmA")
+        }
+
+        let algorithmB = TemplateCallbackSkeletonB()
+        algorithmB.execute {
+            print("Completion callback for algorithmB")
+        }
+        
         TextFileProcessor().processFile(at: "processFile/path")
         ImageFileProcessor().processFile(at: "processFile/path")
         
