@@ -80,6 +80,8 @@ final class TemplateMethodViewController: UIViewController {
     }
     
     private func client() {
+        ConcreteAlgorithmA().execute()
+        
         PlusCalaculatorProcessor().process(a: 10, b: 10)
         MultiplicationCalaculatorProcessor().process(a: 10, b: 10)
     }

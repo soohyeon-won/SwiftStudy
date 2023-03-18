@@ -16,6 +16,7 @@
 		E62ACA0929C574C8009ED371 /* CalaculatorProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62ACA0829C574C8009ED371 /* CalaculatorProcessor.swift */; };
 		E62ACA0C29C576DA009ED371 /* FileProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62ACA0B29C576DA009ED371 /* FileProcessor.swift */; };
 		E62ACA0E29C576EF009ED371 /* TemplateCallbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62ACA0D29C576EF009ED371 /* TemplateCallbackViewController.swift */; };
+		E62ACA1029C5867C009ED371 /* TemplateMethodSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62ACA0F29C5867C009ED371 /* TemplateMethodSkeleton.swift */; };
 		E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6EA2944618F0054EA97 /* Materialize.swift */; };
 		E62AE6EE2944680A0054EA97 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6ED2944680A0054EA97 /* Singleton.swift */; };
 		E62AE6F229447D9C0054EA97 /* SingletonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6F129447D9C0054EA97 /* SingletonViewController.swift */; };
@@ -148,6 +149,7 @@
 		E62ACA0829C574C8009ED371 /* CalaculatorProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalaculatorProcessor.swift; sourceTree = "<group>"; };
 		E62ACA0B29C576DA009ED371 /* FileProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProcessor.swift; sourceTree = "<group>"; };
 		E62ACA0D29C576EF009ED371 /* TemplateCallbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateCallbackViewController.swift; sourceTree = "<group>"; };
+		E62ACA0F29C5867C009ED371 /* TemplateMethodSkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethodSkeleton.swift; sourceTree = "<group>"; };
 		E62AE6EA2944618F0054EA97 /* Materialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materialize.swift; sourceTree = "<group>"; };
 		E62AE6ED2944680A0054EA97 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		E62AE6F129447D9C0054EA97 /* SingletonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonViewController.swift; sourceTree = "<group>"; };
@@ -487,6 +489,7 @@
 			isa = PBXGroup;
 			children = (
 				E640F26029A20F2100E0F749 /* TemplateMethodViewController.swift */,
+				E62ACA0F29C5867C009ED371 /* TemplateMethodSkeleton.swift */,
 				E62ACA0429C5701B009ED371 /* DocumentGenerator.swift */,
 				E62ACA0629C5704B009ED371 /* DatabaseConnection.swift */,
 				E62ACA0829C574C8009ED371 /* CalaculatorProcessor.swift */,
@@ -1149,6 +1152,7 @@
 				E636137628B22E570050C070 /* AppDelegate.swift in Sources */,
 				E908D72229652EAA0062B85F /* Ship.swift in Sources */,
 				E62ACA0929C574C8009ED371 /* CalaculatorProcessor.swift in Sources */,
+				E62ACA1029C5867C009ED371 /* TemplateMethodSkeleton.swift in Sources */,
 				E640F25929A20EB700E0F749 /* MementoViewController.swift in Sources */,
 				E636137828B22E570050C070 /* SceneDelegate.swift in Sources */,
 				E62AE6EE2944680A0054EA97 /* Singleton.swift in Sources */,
