@@ -25,18 +25,11 @@ final class TemplateCallbackViewController: UIViewController {
         
         textView.text = """
         [템플릿 콜백 패턴]
+        Gof가 정의한 디자인패턴에 속하지는 않는다.
         콜백으로 상속 대신 위임을 사용하는 템플릿 패턴
         상속 대신 익명 내부 클래스 또는 람다 표현식을 활용할 수 있다.
         
         템플릿 콜백 패턴은 알고리즘의 구조 자체를 사용자 정의해야 하는 경우에 유용합니다.
-        
-        [장점]
-        
-        [단점]
-        
-        [사용 예제]
-        
-        [추가 개념]
         """
         
         client()
