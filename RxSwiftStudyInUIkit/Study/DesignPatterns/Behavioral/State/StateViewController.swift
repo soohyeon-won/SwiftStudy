@@ -55,6 +55,7 @@ final class StateViewController: UIViewController {
     
     private func client() {
         example1_vendingMachine()
+        example2_community()
     }
     
     private func example1_vendingMachine() {
@@ -65,6 +66,13 @@ final class StateViewController: UIViewController {
 
         vendingMachine.insertCoin(100) // 동전을 삽입했습니다.
         vendingMachine.pressButton()   // 음료수가 나왔습니다.
+    }
+    
+    private func example2_community() {
+        let isWriter = false
+        let community = Community()
+        community.getUseState(isWriter: isWriter)
+        community.excuteEntryAction()
     }
 }
 
