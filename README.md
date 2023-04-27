@@ -25,6 +25,11 @@
 - MVVM
 - MVVM CleanArchitecture
 - ReactorKit
+- MVI
+- Redux
+
+### Library
+* Moya
 
 ## ✨ Study
 * 디자인패턴
