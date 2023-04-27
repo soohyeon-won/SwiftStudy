@@ -26,6 +26,7 @@
 		E62AE6F229447D9C0054EA97 /* SingletonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6F129447D9C0054EA97 /* SingletonViewController.swift */; };
 		E62AE6F429447DB40054EA97 /* FactoryMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6F329447DB40054EA97 /* FactoryMethodViewController.swift */; };
 		E62AE6F629447DE40054EA97 /* FactoryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6F529447DE40054EA97 /* FactoryMethod.swift */; };
+		E62DB4E129FAAB1E007F4C7F /* MVCArchitecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4E029FAAB1E007F4C7F /* MVCArchitecture.swift */; };
 		E636137628B22E570050C070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636137528B22E570050C070 /* AppDelegate.swift */; };
 		E636137828B22E570050C070 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636137728B22E570050C070 /* SceneDelegate.swift */; };
 		E636137D28B22E570050C070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E636137B28B22E570050C070 /* Main.storyboard */; };
@@ -163,6 +164,7 @@
 		E62AE6F129447D9C0054EA97 /* SingletonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonViewController.swift; sourceTree = "<group>"; };
 		E62AE6F329447DB40054EA97 /* FactoryMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodViewController.swift; sourceTree = "<group>"; };
 		E62AE6F529447DE40054EA97 /* FactoryMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethod.swift; sourceTree = "<group>"; };
+		E62DB4E029FAAB1E007F4C7F /* MVCArchitecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCArchitecture.swift; sourceTree = "<group>"; };
 		E636137228B22E570050C070 /* RxSwiftStudyInUIkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftStudyInUIkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E636137528B22E570050C070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E636137728B22E570050C070 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -339,6 +341,14 @@
 				E908D72129652EAA0062B85F /* Ship.swift */,
 			);
 			path = FactoryMethod;
+			sourceTree = "<group>";
+		};
+		E62DB4DF29FAAAA6007F4C7F /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				E62DB4E029FAAB1E007F4C7F /* MVCArchitecture.swift */,
+			);
+			path = Architecture;
 			sourceTree = "<group>";
 		};
 		E636136928B22E570050C070 = {
@@ -571,6 +581,7 @@
 		E6AD8E7A2969488600208D8C /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				E62DB4DF29FAAAA6007F4C7F /* Architecture */,
 				E62AE6EC294466AA0054EA97 /* DesignPatterns */,
 				E6AD8E7B2969489700208D8C /* SwiftStudy */,
 				E6AE13AD298947B30077DEDC /* Library */,
@@ -1144,6 +1155,7 @@
 				E62ACA1429C58D93009ED371 /* Before_VisitorExample.swift in Sources */,
 				E640F25B29A20ED200E0F749 /* ObserverViewController.swift in Sources */,
 				E6AD8E7F296948E600208D8C /* DynamicMemberLookup.swift in Sources */,
+				E62DB4E129FAAB1E007F4C7F /* MVCArchitecture.swift in Sources */,
 				E6AE13AF298947C40077DEDC /* MoyaViewController.swift in Sources */,
 				E62AE6F229447D9C0054EA97 /* SingletonViewController.swift in Sources */,
 				E950C91828B87BD800E0C80A /* ReduceStudyViewController.swift in Sources */,
