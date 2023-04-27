@@ -346,9 +346,65 @@
 		E62DB4DF29FAAAA6007F4C7F /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
-				E62DB4E029FAAB1E007F4C7F /* MVCArchitecture.swift */,
+				E62DB4E829FAAB9C007F4C7F /* MVI */,
+				E62DB4E629FAAB8C007F4C7F /* Framework */,
+				E62DB4E529FAAB82007F4C7F /* MVVM CleanArchitecture */,
+				E62DB4E429FAAB79007F4C7F /* MVP  */,
+				E62DB4E229FAAB55007F4C7F /* MVC */,
+				E62DB4E329FAAB62007F4C7F /* MVVM */,
 			);
 			path = Architecture;
+			sourceTree = "<group>";
+		};
+		E62DB4E229FAAB55007F4C7F /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				E62DB4E029FAAB1E007F4C7F /* MVCArchitecture.swift */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		E62DB4E329FAAB62007F4C7F /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		E62DB4E429FAAB79007F4C7F /* MVP  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "MVP ";
+			sourceTree = "<group>";
+		};
+		E62DB4E529FAAB82007F4C7F /* MVVM CleanArchitecture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "MVVM CleanArchitecture";
+			sourceTree = "<group>";
+		};
+		E62DB4E629FAAB8C007F4C7F /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				E62DB4E729FAAB95007F4C7F /* ReactorKit  */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		E62DB4E729FAAB95007F4C7F /* ReactorKit  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "ReactorKit ";
+			sourceTree = "<group>";
+		};
+		E62DB4E829FAAB9C007F4C7F /* MVI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MVI;
 			sourceTree = "<group>";
 		};
 		E636136928B22E570050C070 = {
