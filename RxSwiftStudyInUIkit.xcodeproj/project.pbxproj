@@ -26,6 +26,13 @@
 		E62AE6F229447D9C0054EA97 /* SingletonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6F129447D9C0054EA97 /* SingletonViewController.swift */; };
 		E62AE6F429447DB40054EA97 /* FactoryMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6F329447DB40054EA97 /* FactoryMethodViewController.swift */; };
 		E62AE6F629447DE40054EA97 /* FactoryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6F529447DE40054EA97 /* FactoryMethod.swift */; };
+		E62DB4E129FAAB1E007F4C7F /* MVCArchitecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4E029FAAB1E007F4C7F /* MVCArchitecture.swift */; };
+		E62DB4EC29FF89E7007F4C7F /* OutlineViewController+Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4EB29FF89E7007F4C7F /* OutlineViewController+Item.swift */; };
+		E62DB4EE29FF8D1B007F4C7F /* MVPArchitecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4ED29FF8D1B007F4C7F /* MVPArchitecture.swift */; };
+		E62DB4F029FF8D4E007F4C7F /* MVVMArchitecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4EF29FF8D4E007F4C7F /* MVVMArchitecture.swift */; };
+		E62DB4F229FF8D66007F4C7F /* MVIArchitecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4F129FF8D66007F4C7F /* MVIArchitecture.swift */; };
+		E62DB4F429FF8D82007F4C7F /* ReactorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4F329FF8D82007F4C7F /* ReactorKit.swift */; };
+		E62DB4F629FF8DA8007F4C7F /* MVVMCleanArchitecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4F529FF8DA8007F4C7F /* MVVMCleanArchitecture.swift */; };
 		E636137628B22E570050C070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636137528B22E570050C070 /* AppDelegate.swift */; };
 		E636137828B22E570050C070 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636137728B22E570050C070 /* SceneDelegate.swift */; };
 		E636137D28B22E570050C070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E636137B28B22E570050C070 /* Main.storyboard */; };
@@ -163,6 +170,13 @@
 		E62AE6F129447D9C0054EA97 /* SingletonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonViewController.swift; sourceTree = "<group>"; };
 		E62AE6F329447DB40054EA97 /* FactoryMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodViewController.swift; sourceTree = "<group>"; };
 		E62AE6F529447DE40054EA97 /* FactoryMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethod.swift; sourceTree = "<group>"; };
+		E62DB4E029FAAB1E007F4C7F /* MVCArchitecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCArchitecture.swift; sourceTree = "<group>"; };
+		E62DB4EB29FF89E7007F4C7F /* OutlineViewController+Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OutlineViewController+Item.swift"; sourceTree = "<group>"; };
+		E62DB4ED29FF8D1B007F4C7F /* MVPArchitecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPArchitecture.swift; sourceTree = "<group>"; };
+		E62DB4EF29FF8D4E007F4C7F /* MVVMArchitecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMArchitecture.swift; sourceTree = "<group>"; };
+		E62DB4F129FF8D66007F4C7F /* MVIArchitecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVIArchitecture.swift; sourceTree = "<group>"; };
+		E62DB4F329FF8D82007F4C7F /* ReactorKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorKit.swift; sourceTree = "<group>"; };
+		E62DB4F529FF8DA8007F4C7F /* MVVMCleanArchitecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCleanArchitecture.swift; sourceTree = "<group>"; };
 		E636137228B22E570050C070 /* RxSwiftStudyInUIkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftStudyInUIkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E636137528B22E570050C070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E636137728B22E570050C070 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -341,6 +355,93 @@
 			path = FactoryMethod;
 			sourceTree = "<group>";
 		};
+		E62DB4DF29FAAAA6007F4C7F /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				E62DB4E229FAAB55007F4C7F /* MVC */,
+				E62DB4E429FAAB79007F4C7F /* MVP  */,
+				E62DB4E329FAAB62007F4C7F /* MVVM */,
+				E62DB4E829FAAB9C007F4C7F /* MVI */,
+				E62DB4E629FAAB8C007F4C7F /* Framework */,
+				E62DB4E529FAAB82007F4C7F /* MVVM CleanArchitecture */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		E62DB4E229FAAB55007F4C7F /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				E62DB4E029FAAB1E007F4C7F /* MVCArchitecture.swift */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		E62DB4E329FAAB62007F4C7F /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				E62DB4EF29FF8D4E007F4C7F /* MVVMArchitecture.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		E62DB4E429FAAB79007F4C7F /* MVP  */ = {
+			isa = PBXGroup;
+			children = (
+				E62DB4ED29FF8D1B007F4C7F /* MVPArchitecture.swift */,
+			);
+			path = "MVP ";
+			sourceTree = "<group>";
+		};
+		E62DB4E529FAAB82007F4C7F /* MVVM CleanArchitecture */ = {
+			isa = PBXGroup;
+			children = (
+				E62DB4F529FF8DA8007F4C7F /* MVVMCleanArchitecture.swift */,
+			);
+			path = "MVVM CleanArchitecture";
+			sourceTree = "<group>";
+		};
+		E62DB4E629FAAB8C007F4C7F /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				E62DB4E729FAAB95007F4C7F /* ReactorKit  */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		E62DB4E729FAAB95007F4C7F /* ReactorKit  */ = {
+			isa = PBXGroup;
+			children = (
+				E62DB4F329FF8D82007F4C7F /* ReactorKit.swift */,
+			);
+			path = "ReactorKit ";
+			sourceTree = "<group>";
+		};
+		E62DB4E829FAAB9C007F4C7F /* MVI */ = {
+			isa = PBXGroup;
+			children = (
+				E62DB4F129FF8D66007F4C7F /* MVIArchitecture.swift */,
+			);
+			path = MVI;
+			sourceTree = "<group>";
+		};
+		E62DB4E929FF89CA007F4C7F /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				E636137528B22E570050C070 /* AppDelegate.swift */,
+				E636137728B22E570050C070 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		E62DB4EA29FF89D4007F4C7F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E958D9B128B47FA100D05AC4 /* OutlineViewController.swift */,
+				E62DB4EB29FF89E7007F4C7F /* OutlineViewController+Item.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		E636136928B22E570050C070 = {
 			isa = PBXGroup;
 			children = (
@@ -370,9 +471,8 @@
 		E636137428B22E570050C070 /* RxSwiftStudyInUIkit */ = {
 			isa = PBXGroup;
 			children = (
-				E636137528B22E570050C070 /* AppDelegate.swift */,
-				E636137728B22E570050C070 /* SceneDelegate.swift */,
-				E958D9B128B47FA100D05AC4 /* OutlineViewController.swift */,
+				E62DB4E929FF89CA007F4C7F /* Delegate */,
+				E62DB4EA29FF89D4007F4C7F /* Main */,
 				E958D9AE28B47E3700D05AC4 /* RxSwift */,
 				E6A16EA128BA1B1600921D78 /* UIKit */,
 				E9D1A20E28D4228F00C46741 /* SwiftUI */,
@@ -571,6 +671,7 @@
 		E6AD8E7A2969488600208D8C /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				E62DB4DF29FAAAA6007F4C7F /* Architecture */,
 				E62AE6EC294466AA0054EA97 /* DesignPatterns */,
 				E6AD8E7B2969489700208D8C /* SwiftStudy */,
 				E6AE13AD298947B30077DEDC /* Library */,
@@ -1121,6 +1222,7 @@
 			files = (
 				E640F24E29A20D9300E0F749 /* IteratorViewController.swift in Sources */,
 				E6AE13B629974F870077DEDC /* DecoratorViewController.swift in Sources */,
+				E62DB4F629FF8DA8007F4C7F /* MVVMCleanArchitecture.swift in Sources */,
 				E6AE13BF299750230077DEDC /* ProxyViewController.swift in Sources */,
 				E640F24829A20CEB00E0F749 /* CommandViewController.swift in Sources */,
 				E997CBE62966814300A5B0B5 /* Builder.swift in Sources */,
@@ -1128,6 +1230,7 @@
 				E6AE13852986612D0077DEDC /* BridgeViewController.swift in Sources */,
 				E6AD8E82297FBA2F00208D8C /* AdapterViewController.swift in Sources */,
 				E640F24B29A20D5B00E0F749 /* InterpreterViewController.swift in Sources */,
+				E62DB4F429FF8D82007F4C7F /* ReactorKit.swift in Sources */,
 				E6AE13B929974FB80077DEDC /* FacadeViewController.swift in Sources */,
 				E62AE6F629447DE40054EA97 /* FactoryMethod.swift in Sources */,
 				E62ACA0E29C576EF009ED371 /* TemplateCallbackViewController.swift in Sources */,
@@ -1139,12 +1242,15 @@
 				E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */,
 				E6AE13BC29974FF10077DEDC /* FlyweightViewController.swift in Sources */,
 				E640F24529A20C9A00E0F749 /* ChainOfResponsibilityViewController.swift in Sources */,
+				E62DB4F029FF8D4E007F4C7F /* MVVMArchitecture.swift in Sources */,
 				E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */,
 				E6AE13B329974F120077DEDC /* CompositeViewController.swift in Sources */,
 				E62ACA1429C58D93009ED371 /* Before_VisitorExample.swift in Sources */,
 				E640F25B29A20ED200E0F749 /* ObserverViewController.swift in Sources */,
 				E6AD8E7F296948E600208D8C /* DynamicMemberLookup.swift in Sources */,
+				E62DB4E129FAAB1E007F4C7F /* MVCArchitecture.swift in Sources */,
 				E6AE13AF298947C40077DEDC /* MoyaViewController.swift in Sources */,
+				E62DB4EE29FF8D1B007F4C7F /* MVPArchitecture.swift in Sources */,
 				E62AE6F229447D9C0054EA97 /* SingletonViewController.swift in Sources */,
 				E950C91828B87BD800E0C80A /* ReduceStudyViewController.swift in Sources */,
 				E9D1A21028D4230A00C46741 /* SwfitUIView.swift in Sources */,
@@ -1155,6 +1261,7 @@
 				E62ACA0C29C576DA009ED371 /* FileProcessor.swift in Sources */,
 				E63613A628B22E6A0050C070 /* ShareStudy.swift in Sources */,
 				E6AD8E6F29692FB400208D8C /* WebviewDirector.swift in Sources */,
+				E62DB4F229FF8D66007F4C7F /* MVIArchitecture.swift in Sources */,
 				E640F26329A20F4000E0F749 /* VisitorViewController.swift in Sources */,
 				E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */,
 				E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */,
@@ -1171,6 +1278,7 @@
 				E640F25929A20EB700E0F749 /* MementoViewController.swift in Sources */,
 				E636137828B22E570050C070 /* SceneDelegate.swift in Sources */,
 				E62AE6EE2944680A0054EA97 /* Singleton.swift in Sources */,
+				E62DB4EC29FF89E7007F4C7F /* OutlineViewController+Item.swift in Sources */,
 				E62ACA1229C587BC009ED371 /* TemplateCallbackSkeleton.swift in Sources */,
 				E950C91628B8709600E0C80A /* Reduce.swift in Sources */,
 				E6AD8E7D296948AA00208D8C /* SwiftStudyView.swift in Sources */,
