@@ -52,10 +52,79 @@ final class MVCArchitecture: UIViewController {
         4. 이런 상황을 비유해 많은 사람들이 Massive View Contorller라고 부르기도 한다
         5. 이렇게 복잡해진 코드는 프로젝트 규모가 커질수록 유지보수하기 힘들게 만든다.
         """
+    }
+}
+
+import UIKit
+
+import RxSwift
+import RxCocoa
+import SnapKit
+import Then
+
+extension MVCArchitecture {
+    
+    final class Model {
+        var labelText: String = "Hello, World!"
         
-        client()
+        func updateLabelText() {
+            labelText = "Button tapped!"
+        }
     }
     
-    private func client() {
+    final class ViewController: UIViewController {
+        
+        private let disposeBag = DisposeBag()
+        
+        private let model = Model()
+        
+        private let label = UILabel().then {
+            $0.text = model.labelText
+            $0.textAlignment = .center
+            $0.textColor = .black
+        }
+        
+        private let button = UIButton().then {
+            $0.setTitle("Click me!", for: .normal)
+            $0.backgroundColor = .blue
+            $0.layer.cornerRadius = 5
+        }
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            view.backgroundColor = .white
+            setupViews()
+            setupConstraints()
+            bind()
+        }
+        
+        private func setupViews() {
+            view.addSubview(label)
+            label.snp.makeConstraints {
+                $0.centerX.equalToSuperview()
+                $0.centerY.equalToSuperview().offset(-50)
+                $0.width.equalToSuperview().multipliedBy(0.8)
+            }
+            
+            view.addSubview(button)
+            button.snp.makeConstraints {
+                $0.centerX.equalToSuperview()
+                $0.top.equalTo(label.snp.bottom).offset(20)
+                $0.width.equalTo(100)
+                $0.height.equalTo(50)
+            }
+        }
+        
+        private func bind() {
+            button.rx.tap
+                .subscribe(onNext: { [weak self] in
+                    guard let self else { return }
+                    self.model.updateLabelText()
+                    self.label.text = self.model.labelText
+                })
+                .disposed(by: disposeBag)
+        }
     }
+    
 }
