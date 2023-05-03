@@ -104,7 +104,7 @@ extension MVVMArchitecture {
         }
         
         func transform() {
-            let input = MyViewModel.Input(buttonTap: button.rx.tap.asSignal()) //signal: 구독 이후에 발행된 값을 받음
+            let input = ViewModel.Input(buttonTap: button.rx.tap.asSignal()) //signal: 구독 이후에 발행된 값을 받음
             let output = viewModel.transform(input: input)
 
             output.labelText
