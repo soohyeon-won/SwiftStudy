@@ -33,6 +33,8 @@
 		E62DB4F229FF8D66007F4C7F /* MVIArchitecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4F129FF8D66007F4C7F /* MVIArchitecture.swift */; };
 		E62DB4F429FF8D82007F4C7F /* ReactorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4F329FF8D82007F4C7F /* ReactorKit.swift */; };
 		E62DB4F629FF8DA8007F4C7F /* MVVMCleanArchitecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4F529FF8DA8007F4C7F /* MVVMCleanArchitecture.swift */; };
+		E62DB4F92A050BE7007F4C7F /* VIPERArchitecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4F82A050BE7007F4C7F /* VIPERArchitecture.swift */; };
+		E62DB4FB2A050C83007F4C7F /* Architecture-Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4FA2A050C83007F4C7F /* Architecture-Index.swift */; };
 		E636137628B22E570050C070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636137528B22E570050C070 /* AppDelegate.swift */; };
 		E636137828B22E570050C070 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636137728B22E570050C070 /* SceneDelegate.swift */; };
 		E636137D28B22E570050C070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E636137B28B22E570050C070 /* Main.storyboard */; };
@@ -178,6 +180,8 @@
 		E62DB4F129FF8D66007F4C7F /* MVIArchitecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVIArchitecture.swift; sourceTree = "<group>"; };
 		E62DB4F329FF8D82007F4C7F /* ReactorKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorKit.swift; sourceTree = "<group>"; };
 		E62DB4F529FF8DA8007F4C7F /* MVVMCleanArchitecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCleanArchitecture.swift; sourceTree = "<group>"; };
+		E62DB4F82A050BE7007F4C7F /* VIPERArchitecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERArchitecture.swift; sourceTree = "<group>"; };
+		E62DB4FA2A050C83007F4C7F /* Architecture-Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Architecture-Index.swift"; sourceTree = "<group>"; };
 		E636137228B22E570050C070 /* RxSwiftStudyInUIkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftStudyInUIkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E636137528B22E570050C070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E636137728B22E570050C070 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -360,10 +364,12 @@
 		E62DB4DF29FAAAA6007F4C7F /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				E62DB4FA2A050C83007F4C7F /* Architecture-Index.swift */,
 				E62DB4E229FAAB55007F4C7F /* MVC */,
 				E62DB4E429FAAB79007F4C7F /* MVP  */,
 				E62DB4E329FAAB62007F4C7F /* MVVM */,
 				E62DB4E829FAAB9C007F4C7F /* MVI */,
+				E62DB4F72A050BC6007F4C7F /* VIPER */,
 				E62DB4E629FAAB8C007F4C7F /* Framework */,
 				E62DB4E529FAAB82007F4C7F /* MVVM CleanArchitecture */,
 			);
@@ -442,6 +448,14 @@
 				E62DB4EB29FF89E7007F4C7F /* OutlineViewController+Item.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		E62DB4F72A050BC6007F4C7F /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				E62DB4F82A050BE7007F4C7F /* VIPERArchitecture.swift */,
+			);
+			path = VIPER;
 			sourceTree = "<group>";
 		};
 		E636136928B22E570050C070 = {
@@ -1253,7 +1267,9 @@
 				E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */,
 				E6AE13BC29974FF10077DEDC /* FlyweightViewController.swift in Sources */,
 				E640F24529A20C9A00E0F749 /* ChainOfResponsibilityViewController.swift in Sources */,
+				E62DB4FB2A050C83007F4C7F /* Architecture-Index.swift in Sources */,
 				E62DB4F029FF8D4E007F4C7F /* MVVMArchitecture.swift in Sources */,
+				E62DB4F92A050BE7007F4C7F /* VIPERArchitecture.swift in Sources */,
 				E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */,
 				E6AE13B329974F120077DEDC /* CompositeViewController.swift in Sources */,
 				E62ACA1429C58D93009ED371 /* Before_VisitorExample.swift in Sources */,
