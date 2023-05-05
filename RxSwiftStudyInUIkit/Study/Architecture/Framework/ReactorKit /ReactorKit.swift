@@ -26,6 +26,7 @@ final class ReactorKit: UIViewController {
         textView.text =
         """
         [ ReactorKit ]
+        MVVM 패턴을 기반으로 하며 RxSwift를 사용하여 구현된 라이브러리입니다. 이 패턴에서는 상태를 중심으로 앱을 설계합니다. 앱의 모든 상태는 하나의 상태 스트림으로 관리되고, 상태 변화는 반응형으로 처리됩니다.
         
         [ 장점 ]
         

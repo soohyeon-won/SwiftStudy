@@ -14,6 +14,8 @@ pod 'RxSwift'
 pod 'RxCocoa'
 pod 'SnapKit'
 pod 'Then'
+pod 'ReactorKit'
+
   # Pods for RxSwiftStudyInUIkit
 
   target 'RxSwiftStudyInUIkitTests' do
