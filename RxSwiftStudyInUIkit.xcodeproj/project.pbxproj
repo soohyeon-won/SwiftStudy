@@ -86,6 +86,7 @@
 		E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E958D9B128B47FA100D05AC4 /* OutlineViewController.swift */; };
 		E997CBE62966814300A5B0B5 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997CBE52966814300A5B0B5 /* Builder.swift */; };
 		E997CBE82966819D00A5B0B5 /* BuilderPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997CBE72966819D00A5B0B5 /* BuilderPattern.swift */; };
+		E9983B082A0211B900C1444A /* MVVMArchtectureViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9983B072A0211B900C1444A /* MVVMArchtectureViewModelTests.swift */; };
 		E9D1A21028D4230A00C46741 /* SwfitUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1A20F28D4230A00C46741 /* SwfitUIView.swift */; };
 		E9F71BFD2974FEB500BDD86B /* PrototypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F71BFC2974FEB500BDD86B /* PrototypeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -233,6 +234,7 @@
 		E958D9B128B47FA100D05AC4 /* OutlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineViewController.swift; sourceTree = "<group>"; };
 		E997CBE52966814300A5B0B5 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		E997CBE72966819D00A5B0B5 /* BuilderPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderPattern.swift; sourceTree = "<group>"; };
+		E9983B072A0211B900C1444A /* MVVMArchtectureViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMArchtectureViewModelTests.swift; sourceTree = "<group>"; };
 		E9D1A20F28D4230A00C46741 /* SwfitUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwfitUIView.swift; sourceTree = "<group>"; };
 		E9F71BFC2974FEB500BDD86B /* PrototypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -489,6 +491,7 @@
 		E636138B28B22E5A0050C070 /* RxSwiftStudyInUIkitTests */ = {
 			isa = PBXGroup;
 			children = (
+				E9983B062A0211A400C1444A /* ArchitectureTests */,
 				E636138C28B22E5A0050C070 /* RxSwiftStudyInUIkitTests.swift */,
 			);
 			path = RxSwiftStudyInUIkitTests;
@@ -855,6 +858,14 @@
 				E6AD8E6E29692FB400208D8C /* WebviewDirector.swift */,
 			);
 			path = Builder;
+			sourceTree = "<group>";
+		};
+		E9983B062A0211A400C1444A /* ArchitectureTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9983B072A0211B900C1444A /* MVVMArchtectureViewModelTests.swift */,
+			);
+			path = ArchitectureTests;
 			sourceTree = "<group>";
 		};
 		E9D1A20E28D4228F00C46741 /* SwiftUI */ = {
@@ -1292,6 +1303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E636138D28B22E5A0050C070 /* RxSwiftStudyInUIkitTests.swift in Sources */,
+				E9983B082A0211B900C1444A /* MVVMArchtectureViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
