@@ -65,10 +65,10 @@ import Then
 extension MVCArchitecture {
     
     final class Model {
-        var labelText: String = "Hello, World!"
+        var title: String = "Hello, World!"
         
         func updateLabelText() {
-            labelText = "Button tapped!"
+            title = "Button tapped!"
         }
     }
     
@@ -76,10 +76,10 @@ extension MVCArchitecture {
         
         private let disposeBag = DisposeBag()
         
-        private let model = Model()
+        private var model = MVCArchitecture.Model()
         
-        private let label = UILabel().then {
-            $0.text = model.labelText
+        private lazy var label = UILabel().then {
+            $0.text = model.title
             $0.textAlignment = .center
             $0.textColor = .black
         }
@@ -95,15 +95,13 @@ extension MVCArchitecture {
             
             view.backgroundColor = .white
             setupViews()
-            setupConstraints()
             bind()
         }
         
         private func setupViews() {
             view.addSubview(label)
             label.snp.makeConstraints {
-                $0.centerX.equalToSuperview()
-                $0.centerY.equalToSuperview().offset(-50)
+                $0.center.equalToSuperview()
                 $0.width.equalToSuperview().multipliedBy(0.8)
             }
             
@@ -121,7 +119,7 @@ extension MVCArchitecture {
                 .subscribe(onNext: { [weak self] in
                     guard let self else { return }
                     self.model.updateLabelText()
-                    self.label.text = self.model.labelText
+                    self.label.text = self.model.title
                 })
                 .disposed(by: disposeBag)
         }
