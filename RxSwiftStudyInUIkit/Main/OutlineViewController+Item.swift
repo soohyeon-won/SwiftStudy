@@ -31,7 +31,7 @@ extension OutlineViewController {
                 ),
                 OutlineItem(
                     title: "ReactorKit",
-                    viewController: ReactorKit.self
+                    viewController: ReactorKit.ViewController.self
                 ),
                 OutlineItem(
                     title: "MVVMCleanArchitecture",

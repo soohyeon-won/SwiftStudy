@@ -56,7 +56,6 @@ final class ReactorKit: UIViewController {
     
     private func client() {
         let viewController = ReactorKit.ViewController()
-        viewController.bind(reactor: ButtonReactor())
     }
 }
 
@@ -64,41 +63,46 @@ import ReactorKit
 
 extension ReactorKit {
 
-    final class ViewController: UIViewController {
+    final class ViewController: UIViewController, View {
+        typealias Reactor = ButtonReactor
         
-        let label = UILabel().then {
+        private let label = UILabel().then {
             $0.text = "Press the button"
         }
-        
-        let button = UIButton().then {
+
+        private let button = UIButton().then {
             $0.setTitle("Press me", for: .normal)
             $0.setTitleColor(.white, for: .normal)
             $0.backgroundColor = .systemBlue
         }
+        var disposeBag = DisposeBag()
         
         override func viewDidLoad() {
             super.viewDidLoad()
             
+            view.backgroundColor = .white
+            
             view.addSubview(label)
-            label.snp.makeConstraints { make in
-                make.center.equalToSuperview()
+            label.snp.makeConstraints {
+                $0.center.equalToSuperview()
             }
             
             view.addSubview(button)
-            button.snp.makeConstraints { make in
-                make.top.equalTo(label.snp.bottom).offset(16)
-                make.centerX.equalToSuperview()
-                make.width.equalTo(120)
-                make.height.equalTo(44)
+            button.snp.makeConstraints {
+                $0.top.equalTo(label.snp.bottom).offset(16)
+                $0.centerX.equalToSuperview()
+                $0.width.equalTo(120)
+                $0.height.equalTo(44)
             }
+            
+            reactor = Reactor()
         }
         
-        func bind(reactor: ButtonReactor) {
-            
+        func bind(reactor: Reactor) {
             button.rx.tap
                 .map { ButtonReactor.Action.changeText }
                 .bind(to: reactor.action)
-                .disposed(by: self.disposeBag)
+                .disposed(by: disposeBag)
             
             reactor.state.map { $0.text }
                 .distinctUntilChanged()
@@ -106,7 +110,6 @@ extension ReactorKit {
                 .disposed(by: self.disposeBag)
         }
         
-        private let disposeBag = DisposeBag()
     }
 
     final class ButtonReactor: Reactor {
