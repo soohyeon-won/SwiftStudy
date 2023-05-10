@@ -33,7 +33,6 @@
 		E62DB4F429FF8D82007F4C7F /* ReactorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4F329FF8D82007F4C7F /* ReactorKit.swift */; };
 		E62DB4F629FF8DA8007F4C7F /* MVVMCleanArchitecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4F529FF8DA8007F4C7F /* MVVMCleanArchitecture.swift */; };
 		E62DB4F92A050BE7007F4C7F /* VIPERArchitecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4F82A050BE7007F4C7F /* VIPERArchitecture.swift */; };
-		E62DB4FB2A050C83007F4C7F /* Architecture-Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4FA2A050C83007F4C7F /* Architecture-Index.swift */; };
 		E62DB5002A0A84BE007F4C7F /* ButtonReactorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4FF2A0A84BE007F4C7F /* ButtonReactorTests.swift */; };
 		E636137628B22E570050C070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636137528B22E570050C070 /* AppDelegate.swift */; };
 		E636137828B22E570050C070 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636137728B22E570050C070 /* SceneDelegate.swift */; };
@@ -180,7 +179,6 @@
 		E62DB4F329FF8D82007F4C7F /* ReactorKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorKit.swift; sourceTree = "<group>"; };
 		E62DB4F529FF8DA8007F4C7F /* MVVMCleanArchitecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCleanArchitecture.swift; sourceTree = "<group>"; };
 		E62DB4F82A050BE7007F4C7F /* VIPERArchitecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERArchitecture.swift; sourceTree = "<group>"; };
-		E62DB4FA2A050C83007F4C7F /* Architecture-Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Architecture-Index.swift"; sourceTree = "<group>"; };
 		E62DB4FF2A0A84BE007F4C7F /* ButtonReactorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonReactorTests.swift; sourceTree = "<group>"; };
 		E636137228B22E570050C070 /* RxSwiftStudyInUIkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftStudyInUIkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E636137528B22E570050C070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -379,7 +377,6 @@
 			isa = PBXGroup;
 			children = (
 				E69AB6052A0BD2B700BBE8FD /* README.md */,
-				E62DB4FA2A050C83007F4C7F /* Architecture-Index.swift */,
 				E62DB4E229FAAB55007F4C7F /* MVC */,
 				E62DB4E429FAAB79007F4C7F /* MVP  */,
 				E62DB4E329FAAB62007F4C7F /* MVVM */,
@@ -1269,7 +1266,6 @@
 				E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */,
 				E6AE13BC29974FF10077DEDC /* FlyweightViewController.swift in Sources */,
 				E640F24529A20C9A00E0F749 /* ChainOfResponsibilityViewController.swift in Sources */,
-				E62DB4FB2A050C83007F4C7F /* Architecture-Index.swift in Sources */,
 				E62DB4F029FF8D4E007F4C7F /* MVVMArchitecture.swift in Sources */,
 				E62DB4F92A050BE7007F4C7F /* VIPERArchitecture.swift in Sources */,
 				E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */,
