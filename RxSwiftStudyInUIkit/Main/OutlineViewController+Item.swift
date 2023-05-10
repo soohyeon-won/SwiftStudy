@@ -15,11 +15,11 @@ extension OutlineViewController {
             subitems: [
                 OutlineItem(
                     title: "MVC",
-                    viewController: MVCArchitecture.self
+                    viewController: MVCArchitecture.ViewController.self
                 ),
                 OutlineItem(
                     title: "MVP",
-                    viewController: MVPArchitecture.self
+                    viewController: MVPArchitecture.ViewController.self
                 ),
                 OutlineItem(
                     title: "MVVM",
@@ -29,18 +29,18 @@ extension OutlineViewController {
                     title: "ReactorKit",
                     viewController: ReactorKit.ViewController.self
                 ),
-                OutlineItem(
-                    title: "MVI",
-                    viewController: MVIArchitecture.self
-                ),
+//                OutlineItem(
+//                    title: "MVI",
+//                    viewController: MVIArchitecture.ViewController.self
+//                ),
                 OutlineItem(
                     title: "Ribs",
                     viewController: MVVMArchitecture.ViewController.self
                 ),
-                OutlineItem(
-                    title: "MVVMCleanArchitecture",
-                    viewController: MVVMCleanArchitecture.self
-                )
+//                OutlineItem(
+//                    title: "MVVMCleanArchitecture",
+//                    viewController: MVVMCleanArchitecture.ViewController.self
+//                )
             ]
         )
     }

@@ -422,8 +422,8 @@
 		E62DB4E529FAAB82007F4C7F /* MVVM CleanArchitecture */ = {
 			isa = PBXGroup;
 			children = (
-				E62DB4F529FF8DA8007F4C7F /* MVVMCleanArchitecture.swift */,
 				E69AB6042A0BD27A00BBE8FD /* README.md */,
+				E62DB4F529FF8DA8007F4C7F /* MVVMCleanArchitecture.swift */,
 			);
 			path = "MVVM CleanArchitecture";
 			sourceTree = "<group>";
@@ -448,8 +448,8 @@
 		E62DB4E829FAAB9C007F4C7F /* MVI */ = {
 			isa = PBXGroup;
 			children = (
-				E62DB4F129FF8D66007F4C7F /* MVIArchitecture.swift */,
 				E69AB6022A0BD1FD00BBE8FD /* README.md */,
+				E62DB4F129FF8D66007F4C7F /* MVIArchitecture.swift */,
 			);
 			path = MVI;
 			sourceTree = "<group>";
@@ -475,8 +475,8 @@
 		E62DB4F72A050BC6007F4C7F /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
-				E62DB4F82A050BE7007F4C7F /* VIPERArchitecture.swift */,
 				E69AB6032A0BD26B00BBE8FD /* README.md */,
+				E62DB4F82A050BE7007F4C7F /* VIPERArchitecture.swift */,
 			);
 			path = VIPER;
 			sourceTree = "<group>";

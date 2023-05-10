@@ -3,4 +3,22 @@
    uuid = "2239CF59-A565-4E68-BE20-3438E87E116D"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BAC2E6C0-FF54-4FA5-920D-635AA999EAB4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RxSwiftStudyInUIkit/Main/OutlineViewController+Item.swift"
+            startingColumnNumber = "55"
+            endingColumnNumber = "55"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "makeArchitectureItem()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

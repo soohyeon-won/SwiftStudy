@@ -7,7 +7,6 @@
 
 import Foundation
 import RxSwift
-import RxRelay
 import RxCocoa
 
 final class ShareStudy {
