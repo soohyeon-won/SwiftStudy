@@ -85,7 +85,7 @@
 		E950C91828B87BD800E0C80A /* ReduceStudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E950C91728B87BD800E0C80A /* ReduceStudyViewController.swift */; };
 		E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E958D9AF28B47E4000D05AC4 /* ShareStudyViewController.swift */; };
 		E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E958D9B128B47FA100D05AC4 /* OutlineViewController.swift */; };
-		E97AC0612A0B4B6A00147FCE /* Architecture.md in Resources */ = {isa = PBXBuildFile; fileRef = E97AC0602A0B4B6A00147FCE /* Architecture.md */; };
+		E97AC0612A0B4B6A00147FCE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E97AC0602A0B4B6A00147FCE /* README.md */; };
 		E997CBE62966814300A5B0B5 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997CBE52966814300A5B0B5 /* Builder.swift */; };
 		E997CBE82966819D00A5B0B5 /* BuilderPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997CBE72966819D00A5B0B5 /* BuilderPattern.swift */; };
 		E9983B082A0211B900C1444A /* MVVMArchtectureViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9983B072A0211B900C1444A /* MVVMArchtectureViewModelTests.swift */; };
@@ -233,7 +233,7 @@
 		E950C91728B87BD800E0C80A /* ReduceStudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceStudyViewController.swift; sourceTree = "<group>"; };
 		E958D9AF28B47E4000D05AC4 /* ShareStudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareStudyViewController.swift; sourceTree = "<group>"; };
 		E958D9B128B47FA100D05AC4 /* OutlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineViewController.swift; sourceTree = "<group>"; };
-		E97AC0602A0B4B6A00147FCE /* Architecture.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Architecture.md; sourceTree = "<group>"; };
+		E97AC0602A0B4B6A00147FCE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E997CBE52966814300A5B0B5 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		E997CBE72966819D00A5B0B5 /* BuilderPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderPattern.swift; sourceTree = "<group>"; };
 		E9983B072A0211B900C1444A /* MVVMArchtectureViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMArchtectureViewModelTests.swift; sourceTree = "<group>"; };
@@ -360,7 +360,7 @@
 		E62DB4DF29FAAAA6007F4C7F /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
-				E97AC0602A0B4B6A00147FCE /* Architecture.md */,
+				E97AC0602A0B4B6A00147FCE /* README.md */,
 				E62DB4FA2A050C83007F4C7F /* Architecture-Index.swift */,
 				E62DB4E229FAAB55007F4C7F /* MVC */,
 				E62DB4E429FAAB79007F4C7F /* MVP  */,
@@ -1077,7 +1077,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E636138228B22E5A0050C070 /* LaunchScreen.storyboard in Resources */,
-				E97AC0612A0B4B6A00147FCE /* Architecture.md in Resources */,
+				E97AC0612A0B4B6A00147FCE /* README.md in Resources */,
 				E636137F28B22E5A0050C070 /* Assets.xcassets in Resources */,
 				E636137D28B22E570050C070 /* Main.storyboard in Resources */,
 			);
