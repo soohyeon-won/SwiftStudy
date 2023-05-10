@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4833208F3BBC0C99D4C964CC /* Pods_RxSwiftStudyInUIkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF536F5F65DE6E4B8D37ECED /* Pods_RxSwiftStudyInUIkit.framework */; };
 		B0E2514C333B0813843A82EB /* Pods_RxSwiftStudyInUIkitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9EB24DAEE59F486B26EABC8 /* Pods_RxSwiftStudyInUIkitTests.framework */; };
+		E6186C3B2A0BCD0C004FD75C /* Ribs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6186C3A2A0BCD0C004FD75C /* Ribs.swift */; };
 		E62ACA0529C5701B009ED371 /* DocumentGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62ACA0429C5701B009ED371 /* DocumentGenerator.swift */; };
 		E62ACA0729C5704B009ED371 /* DatabaseConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62ACA0629C5704B009ED371 /* DatabaseConnection.swift */; };
 		E62ACA0929C574C8009ED371 /* CalaculatorProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62ACA0829C574C8009ED371 /* CalaculatorProcessor.swift */; };
@@ -153,6 +154,9 @@
 		810F08681F05C4727978AB4C /* Pods-RxSwiftStudyInUIkitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftStudyInUIkitTests.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftStudyInUIkitTests/Pods-RxSwiftStudyInUIkitTests.release.xcconfig"; sourceTree = "<group>"; };
 		891B7A46D53FD5EBB1959782 /* Pods-RxSwiftStudyInUIkitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftStudyInUIkitTests.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftStudyInUIkitTests/Pods-RxSwiftStudyInUIkitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CF536F5F65DE6E4B8D37ECED /* Pods_RxSwiftStudyInUIkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftStudyInUIkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6186C3A2A0BCD0C004FD75C /* Ribs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ribs.swift; sourceTree = "<group>"; };
+		E6186C3C2A0BCD2E004FD75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E6186C402A0BCD9A004FD75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E62ACA0429C5701B009ED371 /* DocumentGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentGenerator.swift; sourceTree = "<group>"; };
 		E62ACA0629C5704B009ED371 /* DatabaseConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseConnection.swift; sourceTree = "<group>"; };
 		E62ACA0829C574C8009ED371 /* CalaculatorProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalaculatorProcessor.swift; sourceTree = "<group>"; };
@@ -202,6 +206,13 @@
 		E640F25E29A20F0900E0F749 /* StrategyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyViewController.swift; sourceTree = "<group>"; };
 		E640F26029A20F2100E0F749 /* TemplateMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethodViewController.swift; sourceTree = "<group>"; };
 		E640F26229A20F4000E0F749 /* VisitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorViewController.swift; sourceTree = "<group>"; };
+		E69AB5FF2A0BCF8B00BBE8FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E69AB6002A0BD0A700BBE8FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E69AB6012A0BD16600BBE8FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E69AB6022A0BD1FD00BBE8FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E69AB6032A0BD26B00BBE8FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E69AB6042A0BD27A00BBE8FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E69AB6052A0BD2B700BBE8FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
@@ -308,6 +319,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E6186C392A0BCCF3004FD75C /* Ribs */ = {
+			isa = PBXGroup;
+			children = (
+				E6186C3C2A0BCD2E004FD75C /* README.md */,
+				E6186C3A2A0BCD0C004FD75C /* Ribs.swift */,
+			);
+			path = Ribs;
+			sourceTree = "<group>";
+		};
 		E62ACA0A29C576C6009ED371 /* TemplateCallback */ = {
 			isa = PBXGroup;
 			children = (
@@ -358,13 +378,14 @@
 		E62DB4DF29FAAAA6007F4C7F /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				E69AB6052A0BD2B700BBE8FD /* README.md */,
 				E62DB4FA2A050C83007F4C7F /* Architecture-Index.swift */,
 				E62DB4E229FAAB55007F4C7F /* MVC */,
 				E62DB4E429FAAB79007F4C7F /* MVP  */,
 				E62DB4E329FAAB62007F4C7F /* MVVM */,
 				E62DB4E829FAAB9C007F4C7F /* MVI */,
+				E6186C392A0BCCF3004FD75C /* Ribs */,
 				E62DB4F72A050BC6007F4C7F /* VIPER */,
-				E62DB4E629FAAB8C007F4C7F /* Framework */,
 				E62DB4E529FAAB82007F4C7F /* MVVM CleanArchitecture */,
 			);
 			path = Architecture;
@@ -373,6 +394,7 @@
 		E62DB4E229FAAB55007F4C7F /* MVC */ = {
 			isa = PBXGroup;
 			children = (
+				E69AB6012A0BD16600BBE8FD /* README.md */,
 				E62DB4E029FAAB1E007F4C7F /* MVCArchitecture.swift */,
 			);
 			path = MVC;
@@ -381,6 +403,8 @@
 		E62DB4E329FAAB62007F4C7F /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				E62DB4E629FAAB8C007F4C7F /* Framework */,
+				E6186C402A0BCD9A004FD75C /* README.md */,
 				E62DB4EF29FF8D4E007F4C7F /* MVVMArchitecture.swift */,
 			);
 			path = MVVM;
@@ -389,6 +413,7 @@
 		E62DB4E429FAAB79007F4C7F /* MVP  */ = {
 			isa = PBXGroup;
 			children = (
+				E69AB6002A0BD0A700BBE8FD /* README.md */,
 				E62DB4ED29FF8D1B007F4C7F /* MVPArchitecture.swift */,
 			);
 			path = "MVP ";
@@ -398,6 +423,7 @@
 			isa = PBXGroup;
 			children = (
 				E62DB4F529FF8DA8007F4C7F /* MVVMCleanArchitecture.swift */,
+				E69AB6042A0BD27A00BBE8FD /* README.md */,
 			);
 			path = "MVVM CleanArchitecture";
 			sourceTree = "<group>";
@@ -413,6 +439,7 @@
 		E62DB4E729FAAB95007F4C7F /* ReactorKit  */ = {
 			isa = PBXGroup;
 			children = (
+				E69AB5FF2A0BCF8B00BBE8FD /* README.md */,
 				E62DB4F329FF8D82007F4C7F /* ReactorKit.swift */,
 			);
 			path = "ReactorKit ";
@@ -422,6 +449,7 @@
 			isa = PBXGroup;
 			children = (
 				E62DB4F129FF8D66007F4C7F /* MVIArchitecture.swift */,
+				E69AB6022A0BD1FD00BBE8FD /* README.md */,
 			);
 			path = MVI;
 			sourceTree = "<group>";
@@ -448,6 +476,7 @@
 			isa = PBXGroup;
 			children = (
 				E62DB4F82A050BE7007F4C7F /* VIPERArchitecture.swift */,
+				E69AB6032A0BD26B00BBE8FD /* README.md */,
 			);
 			path = VIPER;
 			sourceTree = "<group>";
@@ -1222,6 +1251,7 @@
 				E62DB4F629FF8DA8007F4C7F /* MVVMCleanArchitecture.swift in Sources */,
 				E6AE13BF299750230077DEDC /* ProxyViewController.swift in Sources */,
 				E640F24829A20CEB00E0F749 /* CommandViewController.swift in Sources */,
+				E6186C3B2A0BCD0C004FD75C /* Ribs.swift in Sources */,
 				E997CBE62966814300A5B0B5 /* Builder.swift in Sources */,
 				E640F25129A20DD200E0F749 /* MediatorViewController.swift in Sources */,
 				E6AE13852986612D0077DEDC /* BridgeViewController.swift in Sources */,
