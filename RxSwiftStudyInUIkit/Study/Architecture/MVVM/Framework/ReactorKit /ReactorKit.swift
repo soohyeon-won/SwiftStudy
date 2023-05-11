@@ -9,6 +9,8 @@ import UIKit
 
 import ReactorKit
 
+import RxSwift
+
 struct ReactorKit {
 
     final class ViewController: UIViewController, View {

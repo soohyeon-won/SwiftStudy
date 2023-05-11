@@ -25,9 +25,9 @@ class MaterializeViewController: UIViewController {
         }
         
         testBtn.rx.tap
-            .withUnretained(self)
-            .subscribe(onNext: { owner, _ in
-                owner.observable()
+            .subscribe(onNext: { [weak self] _ in
+                guard let self = self else { return }
+                self.observable()
                     .materialize()
                     .map { event -> Event<Int> in
                         switch event {
@@ -42,7 +42,7 @@ class MaterializeViewController: UIViewController {
                         print(element)
                     }, onCompleted: {
                         print("completed")
-                    }).disposed(by: owner.disposeBag)
+                    }).disposed(by: self.disposeBag)
             })
             .disposed(by: disposeBag)
     }

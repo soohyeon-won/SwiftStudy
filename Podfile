@@ -10,12 +10,12 @@ target 'RxSwiftStudyInUIkit' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-pod 'RxSwift'
-pod 'RxCocoa'
+pod 'RxSwift', '~> 4.0'
+pod 'RxCocoa', '~> 4.0'
 pod 'SnapKit'
 pod 'Then'
 pod 'ReactorKit'
-#pod 'RIBs'
+pod 'RIBs'
 
   # Pods for RxSwiftStudyInUIkit
 

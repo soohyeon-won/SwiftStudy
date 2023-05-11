@@ -1,31 +1,31 @@
 PODS:
-  - Alamofire (5.6.4)
-  - Moya/Core (15.0.0):
-    - Alamofire (~> 5.0)
-  - Moya/RxSwift (15.0.0):
+  - Alamofire (4.9.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Moya/RxSwift (13.0.1):
     - Moya/Core
-    - RxSwift (~> 6.0)
-  - ReactorKit (3.2.0):
-    - RxSwift (~> 6.0)
-    - WeakMapTable (~> 1.1)
-  - RxCocoa (6.5.0):
-    - RxRelay (= 6.5.0)
-    - RxSwift (= 6.5.0)
-  - RxRelay (6.5.0):
-    - RxSwift (= 6.5.0)
-  - RxSwift (6.5.0)
-  - RxTest (6.5.0):
-    - RxSwift (= 6.5.0)
+    - RxSwift (~> 4.0)
+  - ReactorKit (1.2.1):
+    - RxSwift (>= 4.0.0)
+  - Result (4.1.0)
+  - RIBs (0.9.1):
+    - RxSwift (~> 4.0)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxSwift (4.5.0)
+  - RxTest (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
   - SnapKit (5.6.0)
   - Then (3.0.0)
-  - WeakMapTable (1.2.0)
 
 DEPENDENCIES:
   - Alamofire
   - Moya/RxSwift
   - ReactorKit
-  - RxCocoa
-  - RxSwift
+  - RIBs
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
   - RxTest
   - SnapKit
   - Then
@@ -35,26 +35,26 @@ SPEC REPOS:
     - Alamofire
     - Moya
     - ReactorKit
+    - Result
+    - RIBs
     - RxCocoa
-    - RxRelay
     - RxSwift
     - RxTest
     - SnapKit
     - Then
-    - WeakMapTable
 
 SPEC CHECKSUMS:
-  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
-  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
-  ReactorKit: e8b11d6b9c415405f381669b095c154a05b59eca
-  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
-  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
-  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
-  RxTest: eb2d23adefc5a5ebf5779c7792fa3edfe6ebcc17
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  ReactorKit: 8be57f0527ad1ac2963cd5c338274a46a01e57a3
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RIBs: 879184fbca567425c488d6b3d14a9c5abfbf9d47
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  RxTest: 3ccb66bfbace0bf7df1c43a7c75d046f8ce60372
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
-  WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: c65c9be3af86e59053788d8a8fa8339eaf788a03
+PODFILE CHECKSUM: 8c6263dd030067f61a222ebb98b257fa254088e9
 
 COCOAPODS: 1.12.0

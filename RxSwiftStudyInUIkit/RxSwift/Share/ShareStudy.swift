@@ -147,29 +147,29 @@ final class ShareStudy {
     }
     
     func bindInput() {
-        let observable = input.observable
-            .withUnretained(self)
-            .flatMapLatest { owner, _ in
-                owner.createSingleRequester()
-            }
-            .asObservable()
-            .share()
-        
-        observable
-            .bind(to: output.relay)
-            .disposed(by: disposeBag)
-        
-        observable
-            .bind(to: output.subject)
-            .disposed(by: disposeBag)
-        
-        observable
-            .bind(to: output.behaviorRelay)
-            .disposed(by: disposeBag)
-        
-        observable
-            .bind(to: output.behaviorSubject)
-            .disposed(by: disposeBag)
+//        let observable = input.observable
+//            .flatMapLatest { [weak self] _ in
+//                guard let self = self else { return }
+//                self.createSingleRequester()
+//            }
+//            .asObservable()
+//            .share()
+//        
+//        observable
+//            .bind(to: output.relay)
+//            .disposed(by: disposeBag)
+//        
+//        observable
+//            .bind(to: output.subject)
+//            .disposed(by: disposeBag)
+//        
+//        observable
+//            .bind(to: output.behaviorRelay)
+//            .disposed(by: disposeBag)
+//        
+//        observable
+//            .bind(to: output.behaviorSubject)
+//            .disposed(by: disposeBag)
     }
     
     func bindOutput() {
