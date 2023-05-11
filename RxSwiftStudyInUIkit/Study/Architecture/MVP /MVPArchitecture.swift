@@ -43,8 +43,9 @@ struct MVPArchitecture {
     final class ViewController: UIViewController, MVP_View {
         
         private let button = UIButton().then {
-            $0.setTitle("Change Label Text", for: .normal)
-            $0.setTitleColor(.black, for: .normal)
+            $0.setTitle("Click me!", for: .normal)
+            $0.backgroundColor = .blue
+            $0.layer.cornerRadius = 5
         }
         private let label = UILabel().then {
             $0.textAlignment = .center
@@ -53,12 +54,15 @@ struct MVPArchitecture {
         }
         private let disposeBag = DisposeBag()
         
+        private let presenter = Presenter(model: Model())
+        
         var buttonTap: Observable<Void> {
             return button.rx.tap.asObservable()
         }
         
         override func viewDidLoad() {
             super.viewDidLoad()
+            view.backgroundColor = .white
             
             view.addSubview(button)
             button.snp.makeConstraints {
@@ -70,6 +74,8 @@ struct MVPArchitecture {
                 $0.centerX.equalToSuperview()
                 $0.top.equalTo(button.snp.bottom).offset(20)
             }
+            
+            presenter.bind(view: self)
         }
         
         func updateLabel(with text: String) {
