@@ -35,7 +35,7 @@ extension OutlineViewController {
 //                ),
                 OutlineItem(
                     title: "Ribs",
-                    viewController: MVVMArchitecture.ViewController.self
+                    viewController: Ribs.ViewController.self
                 ),
 //                OutlineItem(
 //                    title: "MVVMCleanArchitecture",

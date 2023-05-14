@@ -16,6 +16,9 @@ RIB => (Interactor, View, Router, Builder)
 이러한 구성요소들은 서로 강한 의존성을 가지고 있으며 Hierarchical Structure을 가짐. 
 즉, 한 RIB이 다른 RIB의 부모가 될 수 있으며, RIB들 간의 관계는 Tree 형태로 구성됨
 
+Ribs Template를 설치할 수 있음
+
+
 ## [ 장점 ]
 - 큰 규모의 애플리케이션 개발에 적합 
 - 코드의 재사용성이 높아지고 유지보수가 용이, 테스트하기 쉬운 구조
@@ -23,3 +26,4 @@ RIB => (Interactor, View, Router, Builder)
 >https://github.com/uber/RIBs
 >
 >https://pfxstudio21.medium.com/architecture-ribs-290b68829be1
+>youtube.com/watch?v=3XS6xLzKRjc

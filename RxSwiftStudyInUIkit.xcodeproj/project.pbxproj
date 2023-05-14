@@ -54,6 +54,10 @@
 		E640F25F29A20F0900E0F749 /* StrategyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F25E29A20F0900E0F749 /* StrategyViewController.swift */; };
 		E640F26129A20F2100E0F749 /* TemplateMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F26029A20F2100E0F749 /* TemplateMethodViewController.swift */; };
 		E640F26329A20F4000E0F749 /* VisitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F26229A20F4000E0F749 /* VisitorViewController.swift */; };
+		E69AB6132A10AB9F00BBE8FD /* RibsChangeTextRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69AB60F2A10AB9F00BBE8FD /* RibsChangeTextRouter.swift */; };
+		E69AB6142A10AB9F00BBE8FD /* RibsChangeTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69AB6102A10AB9F00BBE8FD /* RibsChangeTextViewController.swift */; };
+		E69AB6152A10AB9F00BBE8FD /* RibsChangeTextBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69AB6112A10AB9F00BBE8FD /* RibsChangeTextBuilder.swift */; };
+		E69AB6162A10AB9F00BBE8FD /* RibsChangeTextInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69AB6122A10AB9F00BBE8FD /* RibsChangeTextInteractor.swift */; };
 		E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */; };
 		E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */; };
 		E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */; };
@@ -74,6 +78,11 @@
 		E6AE13B929974FB80077DEDC /* FacadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13B829974FB80077DEDC /* FacadeViewController.swift */; };
 		E6AE13BC29974FF10077DEDC /* FlyweightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13BB29974FF10077DEDC /* FlyweightViewController.swift */; };
 		E6AE13BF299750230077DEDC /* ProxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13BE299750230077DEDC /* ProxyViewController.swift */; };
+		E6C3157E2A10C54D0010111B /* RootComponent+LoggedOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C315792A10C54D0010111B /* RootComponent+LoggedOut.swift */; };
+		E6C3157F2A10C54D0010111B /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C3157A2A10C54D0010111B /* RootInteractor.swift */; };
+		E6C315802A10C54D0010111B /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C3157B2A10C54D0010111B /* RootBuilder.swift */; };
+		E6C315812A10C54D0010111B /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C3157C2A10C54D0010111B /* RootRouter.swift */; };
+		E6C315822A10C54D0010111B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C3157D2A10C54D0010111B /* RootViewController.swift */; };
 		E90654B3295951760027A47C /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B2295951760027A47C /* AbstractFactory.swift */; };
 		E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B4295951820027A47C /* AbstractFactoryViewController.swift */; };
 		E908D72229652EAA0062B85F /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908D72129652EAA0062B85F /* Ship.swift */; };
@@ -211,6 +220,10 @@
 		E69AB6032A0BD26B00BBE8FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E69AB6042A0BD27A00BBE8FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E69AB6052A0BD2B700BBE8FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E69AB60F2A10AB9F00BBE8FD /* RibsChangeTextRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibsChangeTextRouter.swift; sourceTree = "<group>"; };
+		E69AB6102A10AB9F00BBE8FD /* RibsChangeTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibsChangeTextViewController.swift; sourceTree = "<group>"; };
+		E69AB6112A10AB9F00BBE8FD /* RibsChangeTextBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibsChangeTextBuilder.swift; sourceTree = "<group>"; };
+		E69AB6122A10AB9F00BBE8FD /* RibsChangeTextInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibsChangeTextInteractor.swift; sourceTree = "<group>"; };
 		E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
@@ -232,6 +245,11 @@
 		E6AE13B829974FB80077DEDC /* FacadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadeViewController.swift; sourceTree = "<group>"; };
 		E6AE13BB29974FF10077DEDC /* FlyweightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightViewController.swift; sourceTree = "<group>"; };
 		E6AE13BE299750230077DEDC /* ProxyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyViewController.swift; sourceTree = "<group>"; };
+		E6C315792A10C54D0010111B /* RootComponent+LoggedOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RootComponent+LoggedOut.swift"; sourceTree = "<group>"; };
+		E6C3157A2A10C54D0010111B /* RootInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		E6C3157B2A10C54D0010111B /* RootBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
+		E6C3157C2A10C54D0010111B /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		E6C3157D2A10C54D0010111B /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		E90654B2295951760027A47C /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		E90654B4295951820027A47C /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
 		E908D72129652EAA0062B85F /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
@@ -320,6 +338,8 @@
 		E6186C392A0BCCF3004FD75C /* Ribs */ = {
 			isa = PBXGroup;
 			children = (
+				E6C315782A10C51B0010111B /* Root */,
+				E69AB6062A10AB5B00BBE8FD /* Example1 */,
 				E6186C3C2A0BCD2E004FD75C /* README.md */,
 				E6186C3A2A0BCD0C004FD75C /* Ribs.swift */,
 			);
@@ -654,6 +674,17 @@
 			path = Visitor;
 			sourceTree = "<group>";
 		};
+		E69AB6062A10AB5B00BBE8FD /* Example1 */ = {
+			isa = PBXGroup;
+			children = (
+				E69AB60F2A10AB9F00BBE8FD /* RibsChangeTextRouter.swift */,
+				E69AB6102A10AB9F00BBE8FD /* RibsChangeTextViewController.swift */,
+				E69AB6112A10AB9F00BBE8FD /* RibsChangeTextBuilder.swift */,
+				E69AB6122A10AB9F00BBE8FD /* RibsChangeTextInteractor.swift */,
+			);
+			path = Example1;
+			sourceTree = "<group>";
+		};
 		E6A16EA128BA1B1600921D78 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -835,6 +866,18 @@
 				E6AE13BE299750230077DEDC /* ProxyViewController.swift */,
 			);
 			path = Proxy;
+			sourceTree = "<group>";
+		};
+		E6C315782A10C51B0010111B /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				E6C3157B2A10C54D0010111B /* RootBuilder.swift */,
+				E6C315792A10C54D0010111B /* RootComponent+LoggedOut.swift */,
+				E6C3157A2A10C54D0010111B /* RootInteractor.swift */,
+				E6C3157C2A10C54D0010111B /* RootRouter.swift */,
+				E6C3157D2A10C54D0010111B /* RootViewController.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 		E90654B1295951590027A47C /* AbstractFactory */ = {
@@ -1244,9 +1287,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E640F24E29A20D9300E0F749 /* IteratorViewController.swift in Sources */,
+				E69AB6132A10AB9F00BBE8FD /* RibsChangeTextRouter.swift in Sources */,
 				E6AE13B629974F870077DEDC /* DecoratorViewController.swift in Sources */,
+				E69AB6152A10AB9F00BBE8FD /* RibsChangeTextBuilder.swift in Sources */,
 				E62DB4F629FF8DA8007F4C7F /* MVVMCleanArchitecture.swift in Sources */,
 				E6AE13BF299750230077DEDC /* ProxyViewController.swift in Sources */,
+				E6C3157F2A10C54D0010111B /* RootInteractor.swift in Sources */,
 				E640F24829A20CEB00E0F749 /* CommandViewController.swift in Sources */,
 				E6186C3B2A0BCD0C004FD75C /* Ribs.swift in Sources */,
 				E997CBE62966814300A5B0B5 /* Builder.swift in Sources */,
@@ -1256,6 +1302,8 @@
 				E640F24B29A20D5B00E0F749 /* InterpreterViewController.swift in Sources */,
 				E62DB4F429FF8D82007F4C7F /* ReactorKit.swift in Sources */,
 				E6AE13B929974FB80077DEDC /* FacadeViewController.swift in Sources */,
+				E6C315812A10C54D0010111B /* RootRouter.swift in Sources */,
+				E6C315802A10C54D0010111B /* RootBuilder.swift in Sources */,
 				E62AE6F629447DE40054EA97 /* FactoryMethod.swift in Sources */,
 				E62ACA0E29C576EF009ED371 /* TemplateCallbackViewController.swift in Sources */,
 				E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */,
@@ -1274,9 +1322,11 @@
 				E640F25B29A20ED200E0F749 /* ObserverViewController.swift in Sources */,
 				E6AD8E7F296948E600208D8C /* DynamicMemberLookup.swift in Sources */,
 				E62DB4E129FAAB1E007F4C7F /* MVCArchitecture.swift in Sources */,
+				E6C3157E2A10C54D0010111B /* RootComponent+LoggedOut.swift in Sources */,
 				E6AE13AF298947C40077DEDC /* MoyaViewController.swift in Sources */,
 				E62DB4EE29FF8D1B007F4C7F /* MVPArchitecture.swift in Sources */,
 				E62AE6F229447D9C0054EA97 /* SingletonViewController.swift in Sources */,
+				E69AB6142A10AB9F00BBE8FD /* RibsChangeTextViewController.swift in Sources */,
 				E950C91828B87BD800E0C80A /* ReduceStudyViewController.swift in Sources */,
 				E9D1A21028D4230A00C46741 /* SwfitUIView.swift in Sources */,
 				E62ACA0529C5701B009ED371 /* DocumentGenerator.swift in Sources */,
@@ -1301,8 +1351,10 @@
 				E62ACA0929C574C8009ED371 /* CalaculatorProcessor.swift in Sources */,
 				E62ACA1029C5867C009ED371 /* TemplateMethodSkeleton.swift in Sources */,
 				E640F25929A20EB700E0F749 /* MementoViewController.swift in Sources */,
+				E6C315822A10C54D0010111B /* RootViewController.swift in Sources */,
 				E636137828B22E570050C070 /* SceneDelegate.swift in Sources */,
 				E62AE6EE2944680A0054EA97 /* Singleton.swift in Sources */,
+				E69AB6162A10AB9F00BBE8FD /* RibsChangeTextInteractor.swift in Sources */,
 				E62DB4EC29FF89E7007F4C7F /* OutlineViewController+Item.swift in Sources */,
 				E62ACA1229C587BC009ED371 /* TemplateCallbackSkeleton.swift in Sources */,
 				E950C91628B8709600E0C80A /* Reduce.swift in Sources */,
