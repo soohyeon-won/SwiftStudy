@@ -6,7 +6,7 @@ RIBs는 기능 단위로 모듈화되어 있다.
 기능은 대개 독립된 작업 흐름을 가지고 있으며, 입력을 받아 처리하고 출력을 생성
 이러한 기능은 RIB이라고 불리는 모듈로 나타낼 수 있음
 
-RIB => (Interactor, View, Router, Builder)
+RIB => (Interactor, Router, Builder)
 
 - Interactor: RIB의 핵심 비즈니스 로직을 처리, 다른 RIB들과의 상호작용을 처리. 다른 RIBs와 연결되어 있으며, 외부로부터 전달받은 입력에 따라 적절한 출력을 생성
 - View: Interactor로부터 입력을 받아 화면을 그리고, 사용자 입력에 대한 이벤트를 Interactor로 전달
@@ -17,7 +17,6 @@ RIB => (Interactor, View, Router, Builder)
 즉, 한 RIB이 다른 RIB의 부모가 될 수 있으며, RIB들 간의 관계는 Tree 형태로 구성됨
 
 Ribs Template를 설치할 수 있음
-
 
 ## [ 장점 ]
 - 큰 규모의 애플리케이션 개발에 적합 
