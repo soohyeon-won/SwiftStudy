@@ -56,7 +56,7 @@ final class VisitorViewController: UIViewController {
         
         errorExample() // 아래에서 개선
         
-        let rectangle: ShapeProtocol = Rectangle()
+        let rectangle: ShapeProtocol = RectangleImpl()
         let phone: Device = Phone()
         rectangle.accept(device: phone)
         
