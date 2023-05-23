@@ -12,6 +12,7 @@ protocol Marker {
     func draw(on map: Map) // excute
 }
 
+// Concrete element
 class LocalMarker: Marker {
     var name: String
     
@@ -25,6 +26,7 @@ class LocalMarker: Marker {
     }
 }
 
+// Concrete element
 class ComplexMarker: Marker {
     var id: String
     
@@ -38,6 +40,7 @@ class ComplexMarker: Marker {
     }
 }
 
+// Concrete element
 class VillaMarker: Marker {
     var location: String
     
@@ -51,7 +54,7 @@ class VillaMarker: Marker {
     }
 }
 
-// Visitor
+// MARK: - Visitor
 protocol MapDrawProtocol {
     
     func draw(marker: LocalMarker)

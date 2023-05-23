@@ -48,6 +48,15 @@ final class StateViewController: UIViewController {
         [추가 의견 by ChatGPT]
         스위프트에서는 상태 패턴을 구현할 수 있는 다양한 방법이 있지만, 내장된 라이브러리나 함수는 없습니다.
         하지만 스위프트의 다형성과 프로토콜을 활용하여 쉽게 상태 패턴을 구현할 수 있습니다.
+        
+        [전략패턴과의 차이점]
+        전략 패턴과 상태 패턴은 객체의 행동을 변경하는 디자인 패턴입니다.
+        전략 패턴은 객체가 특정한 행동을 수행할 때, 그 행동을 구현한 전략 객체를 사용합니다.
+        반면, 상태 패턴은 객체의 상태에 따라 객체의 행동을 변경합니다. 상태 패턴에서는 상태를 클래스로 정의하고, 각 상태마다 클래스를 만들어서 객체가 상태를 변경할 때마다 새로운 클래스의 인스턴스를 생성합니다.
+
+        전략 패턴과 상태 패턴의 차이점은 객체의 행동을 변경하는 방식입니다.
+        전략 패턴은 객체가 사용할 전략 객체를 외부에서 주입받아 사용합니다.
+        반면, 상태 패턴은 객체가 스스로 상태를 변경하고, 그에 따라 적절한 행동을 수행합니다.
         """
         
         client()
@@ -55,6 +64,7 @@ final class StateViewController: UIViewController {
     
     private func client() {
         example1_vendingMachine()
+        example2_community()
     }
     
     private func example1_vendingMachine() {
@@ -65,6 +75,13 @@ final class StateViewController: UIViewController {
 
         vendingMachine.insertCoin(100) // 동전을 삽입했습니다.
         vendingMachine.pressButton()   // 음료수가 나왔습니다.
+    }
+    
+    private func example2_community() {
+        let isWriter = false
+        let community = Community()
+        community.getUseState(isWriter: isWriter)
+        community.excuteEntryAction()
     }
 }
 

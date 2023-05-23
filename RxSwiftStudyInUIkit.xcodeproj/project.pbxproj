@@ -25,6 +25,7 @@
 		E62AE6F229447D9C0054EA97 /* SingletonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6F129447D9C0054EA97 /* SingletonViewController.swift */; };
 		E62AE6F429447DB40054EA97 /* FactoryMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6F329447DB40054EA97 /* FactoryMethodViewController.swift */; };
 		E62AE6F629447DE40054EA97 /* FactoryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6F529447DE40054EA97 /* FactoryMethod.swift */; };
+		E62DB4DC29F39D82007F4C7F /* StatePatternExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4DB29F39D82007F4C7F /* StatePatternExample.swift */; };
 		E62DB4E129FAAB1E007F4C7F /* MVCArchitecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4E029FAAB1E007F4C7F /* MVCArchitecture.swift */; };
 		E62DB4EC29FF89E7007F4C7F /* OutlineViewController+Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4EB29FF89E7007F4C7F /* OutlineViewController+Item.swift */; };
 		E62DB4EE29FF8D1B007F4C7F /* MVPArchitecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4ED29FF8D1B007F4C7F /* MVPArchitecture.swift */; };
@@ -180,6 +181,7 @@
 		E62AE6F129447D9C0054EA97 /* SingletonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonViewController.swift; sourceTree = "<group>"; };
 		E62AE6F329447DB40054EA97 /* FactoryMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodViewController.swift; sourceTree = "<group>"; };
 		E62AE6F529447DE40054EA97 /* FactoryMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethod.swift; sourceTree = "<group>"; };
+		E62DB4DB29F39D82007F4C7F /* StatePatternExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePatternExample.swift; sourceTree = "<group>"; };
 		E62DB4E029FAAB1E007F4C7F /* MVCArchitecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCArchitecture.swift; sourceTree = "<group>"; };
 		E62DB4EB29FF89E7007F4C7F /* OutlineViewController+Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OutlineViewController+Item.swift"; sourceTree = "<group>"; };
 		E62DB4ED29FF8D1B007F4C7F /* MVPArchitecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPArchitecture.swift; sourceTree = "<group>"; };
@@ -639,6 +641,7 @@
 			isa = PBXGroup;
 			children = (
 				E640F25C29A20EEF00E0F749 /* StateViewController.swift */,
+				E62DB4DB29F39D82007F4C7F /* StatePatternExample.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -1311,6 +1314,7 @@
 				E997CBE82966819D00A5B0B5 /* BuilderPattern.swift in Sources */,
 				E9F71BFD2974FEB500BDD86B /* PrototypeViewController.swift in Sources */,
 				E62ACA0729C5704B009ED371 /* DatabaseConnection.swift in Sources */,
+				E62DB4DC29F39D82007F4C7F /* StatePatternExample.swift in Sources */,
 				E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */,
 				E6AE13BC29974FF10077DEDC /* FlyweightViewController.swift in Sources */,
 				E640F24529A20C9A00E0F749 /* ChainOfResponsibilityViewController.swift in Sources */,
