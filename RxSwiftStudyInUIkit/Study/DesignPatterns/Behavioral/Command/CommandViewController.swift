@@ -110,19 +110,6 @@ final class CommandViewController: UIViewController {
     }
 }
 
-final class Button {
-    private let light: Light
-    
-    public init(light: Light) {
-        self.light = light
-    }
-    
-    func press() {
-        light.off()
-    }
-    
-}
-
 struct Light {
     func on() {
         print("불을 켰습니다.")
