@@ -9,4 +9,6 @@ import UIKit
 
 struct MVIArchitecture {
     
+    final class ViewController: UIViewController {
+    }
 }
