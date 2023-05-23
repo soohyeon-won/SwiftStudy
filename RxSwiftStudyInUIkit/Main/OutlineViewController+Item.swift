@@ -15,11 +15,11 @@ extension OutlineViewController {
             subitems: [
                 OutlineItem(
                     title: "MVC",
-                    viewController: MVCArchitecture.self
+                    viewController: MVCArchitecture.ViewController.self
                 ),
                 OutlineItem(
                     title: "MVP",
-                    viewController: MVPArchitecture.self
+                    viewController: MVPArchitecture.ViewController.self
                 ),
                 OutlineItem(
                     title: "MVVM",
@@ -31,7 +31,7 @@ extension OutlineViewController {
                 ),
                 OutlineItem(
                     title: "MVI",
-                    viewController: MVIArchitecture.self
+                    viewController: MVIArchitecture.ViewController.self
                 ),
                 OutlineItem(
                     title: "Ribs",
@@ -39,7 +39,7 @@ extension OutlineViewController {
                 ),
                 OutlineItem(
                     title: "MVVMCleanArchitecture",
-                    viewController: MVVMCleanArchitecture.self
+                    viewController: MVVMCleanArchitecture.ViewController.self
                 )
             ]
         )
