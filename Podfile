@@ -14,15 +14,14 @@ pod 'RxSwift'
 pod 'RxCocoa'
 pod 'SnapKit'
 pod 'Then'
+pod 'ReactorKit'
+
   # Pods for RxSwiftStudyInUIkit
 
   target 'RxSwiftStudyInUIkitTests' do
     inherit! :search_paths
     # Pods for testing
-  end
-
-  target 'RxSwiftStudyInUIkitUITests' do
-    # Pods for testing
+    pod 'RxTest'
   end
 
   target 'DataLayer' do

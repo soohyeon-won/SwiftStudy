@@ -1,6 +1,0 @@
-framework module Pods_RxSwiftStudyInUIkit {
-  umbrella header "Pods-RxSwiftStudyInUIkit-umbrella.h"
-
-  export *
-  module * { export * }
-}
