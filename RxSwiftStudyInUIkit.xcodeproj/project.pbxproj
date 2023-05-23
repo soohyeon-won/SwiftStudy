@@ -61,7 +61,7 @@
 		E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */; };
 		E6A16EAE28BB3FEA00921D78 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EAD28BB3FEA00921D78 /* UITableView+Extension.swift */; };
 		E6AD8E6F29692FB400208D8C /* WebviewDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD8E6E29692FB400208D8C /* WebviewDirector.swift */; };
-		E6AD8E7D296948AA00208D8C /* SwiftStudyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD8E7C296948AA00208D8C /* SwiftStudyView.swift */; };
+		E6AD8E7D296948AA00208D8C /* GCDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD8E7C296948AA00208D8C /* GCDView.swift */; };
 		E6AD8E7F296948E600208D8C /* DynamicMemberLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD8E7E296948E600208D8C /* DynamicMemberLookup.swift */; };
 		E6AD8E82297FBA2F00208D8C /* AdapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD8E81297FBA2F00208D8C /* AdapterViewController.swift */; };
 		E6AE13852986612D0077DEDC /* BridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13842986612D0077DEDC /* BridgeViewController.swift */; };
@@ -220,7 +220,7 @@
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
 		E6A16EAD28BB3FEA00921D78 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		E6AD8E6E29692FB400208D8C /* WebviewDirector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewDirector.swift; sourceTree = "<group>"; };
-		E6AD8E7C296948AA00208D8C /* SwiftStudyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStudyView.swift; sourceTree = "<group>"; };
+		E6AD8E7C296948AA00208D8C /* GCDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDView.swift; sourceTree = "<group>"; };
 		E6AD8E7E296948E600208D8C /* DynamicMemberLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicMemberLookup.swift; sourceTree = "<group>"; };
 		E6AD8E81297FBA2F00208D8C /* AdapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterViewController.swift; sourceTree = "<group>"; };
 		E6AE13842986612D0077DEDC /* BridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeViewController.swift; sourceTree = "<group>"; };
@@ -518,6 +518,7 @@
 				E6A16EA128BA1B1600921D78 /* UIKit */,
 				E9D1A20E28D4228F00C46741 /* SwiftUI */,
 				E6AD8E7A2969488600208D8C /* Study */,
+				E6AD8E7B2969489700208D8C /* SwiftStudy */,
 				E6A16EA828BB3FAA00921D78 /* Common */,
 				E636137B28B22E570050C070 /* Main.storyboard */,
 				E636137E28B22E5A0050C070 /* Assets.xcassets */,
@@ -716,7 +717,6 @@
 			children = (
 				E62DB4DF29FAAAA6007F4C7F /* Architecture */,
 				E62AE6EC294466AA0054EA97 /* DesignPatterns */,
-				E6AD8E7B2969489700208D8C /* SwiftStudy */,
 				E6AE13AD298947B30077DEDC /* Library */,
 			);
 			path = Study;
@@ -725,7 +725,7 @@
 		E6AD8E7B2969489700208D8C /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
-				E6AD8E7C296948AA00208D8C /* SwiftStudyView.swift */,
+				E6AD8E7C296948AA00208D8C /* GCDView.swift */,
 				E6AD8E7E296948E600208D8C /* DynamicMemberLookup.swift */,
 			);
 			path = SwiftStudy;
@@ -1314,7 +1314,7 @@
 				E62DB4EC29FF89E7007F4C7F /* OutlineViewController+Item.swift in Sources */,
 				E62ACA1229C587BC009ED371 /* TemplateCallbackSkeleton.swift in Sources */,
 				E950C91628B8709600E0C80A /* Reduce.swift in Sources */,
-				E6AD8E7D296948AA00208D8C /* SwiftStudyView.swift in Sources */,
+				E6AD8E7D296948AA00208D8C /* GCDView.swift in Sources */,
 				E6A16EAE28BB3FEA00921D78 /* UITableView+Extension.swift in Sources */,
 				E640F26129A20F2100E0F749 /* TemplateMethodViewController.swift in Sources */,
 			);
