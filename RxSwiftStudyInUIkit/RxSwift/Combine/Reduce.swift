@@ -7,7 +7,6 @@
 
 import Foundation
 import RxSwift
-import RxRelay
 import RxCocoa
 
 final class ReduceStudy {
@@ -64,23 +63,22 @@ final class ReduceStudy {
     
     func bindInput() {
         input.reduceTest
-            .withUnretained(self)
-            .subscribe(onNext: { owner, _ in
-                owner.reduceTest()
+            .subscribe(onNext: { [weak self] _ in
+                guard let self = self else { return }
+                self.reduceTest()
             })
             .disposed(by: disposeBag)
         
         
         input.reduceTestWithoutOnCompleted
-            .withUnretained(self)
-            .subscribe(onNext: { owner, _ in
-                owner.reduceTestWithoutOnCompleted()
+            .subscribe(onNext: { [weak self] _ in
+                guard let self = self else { return }
+                self.reduceTestWithoutOnCompleted()
             })
             .disposed(by: disposeBag)
         
         input.scanTest
-            .withUnretained(self)
-            .subscribe(onNext: { owner, test in
+            .subscribe(onNext: { test in
                 print("🫥 \(test)")
             })
             .disposed(by: disposeBag)

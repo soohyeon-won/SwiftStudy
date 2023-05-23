@@ -5,9 +5,9 @@
 //  Created by won soohyeon on 2022/08/21.
 //
 
-import Foundation
+import UIKit
+
 import RxSwift
-import RxRelay
 import RxCocoa
 
 final class MapStudy {
@@ -50,25 +50,24 @@ final class MapStudy {
         mapBasicTest()
         
         input.flatMap
-            .withUnretained(self)
-            .subscribe(onNext: { owner, _ in
-                owner.flatMapTest()
+            .subscribe(onNext: { [weak self] _ in
+                guard let self = self else { return }
+                self.flatMapTest()
             })
             .disposed(by: disposeBag)
         
         input.flatMapLatest
-            .withUnretained(self)
-            .subscribe(onNext: { owner, _ in
-                owner.flatMapLatestTest()
+            .subscribe(onNext: { [weak self] _ in
+                guard let self = self else { return }
+                self.flatMapLatestTest()
             })
             .disposed(by: disposeBag)
     }
     
     private func mapBasicTest() {
         let observable = input.mapBasic
-            .withUnretained(self)
-            .flatMap { owner, _ in
-                owner.createSingleRequester()
+            .flatMap { _ in
+                self.createSingleRequester()
             }
             .asObservable()
             .share()
@@ -119,17 +118,17 @@ final class MapStudy {
      🔶
      */
     private func flatMapTest() {
-        Observable<Int>.timer(.seconds(0), period: .seconds(1), scheduler: MainScheduler.instance)
-            .take(3)
-            .flatMap({ element in
-                return Observable<Int>.timer(.seconds(0), period: .seconds(2), scheduler: MainScheduler.instance)
-                    .take(2)
-                    .map { innerElement in
-                        return "\(Shape(rawValue: element)!.diamond)"
-                    }
-            }).subscribe(onNext: { element in
-                print(element)
-            }).disposed(by: disposeBag)
+//        Observable<Int>.timer(RxTimeInterval.seconds(0), period: RxTimeInterval.seconds(1), scheduler: MainScheduler.instance)
+//            .take(3)
+//            .flatMap({ element in
+//                return Observable<Int>.timer(.seconds(0), period: .seconds(2), scheduler: MainScheduler.instance)
+//                    .take(2)
+//                    .map { innerElement in
+//                        return "\(Shape(rawValue: element)!.diamond)"
+//                    }
+//            }).subscribe(onNext: { element in
+//                print(element)
+//            }).disposed(by: disposeBag)
     }
     
     /**
@@ -139,10 +138,14 @@ final class MapStudy {
      🔶
      */
     private func flatMapLatestTest() {
-        Observable<Int>.timer(.seconds(0), period: .seconds(1), scheduler: MainScheduler.instance)
+        let zero: RxTimeInterval = 0
+        let one: RxTimeInterval = 1
+        let two: RxTimeInterval = 2
+        
+        Observable<Int>.timer(zero, period: one, scheduler: MainScheduler.instance)
             .take(3)
             .flatMapLatest({ element in
-                return Observable<Int>.timer(.seconds(0), period: .seconds(2), scheduler: MainScheduler.instance)
+                return Observable<Int>.timer(one, period: two, scheduler: MainScheduler.instance)
                     .take(2)
                     .map { innerElement in
                         return "\(Shape(rawValue: element)!.diamond)"

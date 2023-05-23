@@ -67,16 +67,16 @@ final class CompositeViewController: UIViewController {
     }
     
     // OCP
-    func printPrice(component: Component) {
+    func printPrice(component: CompositeComponent) {
         print("price: \(component.getPrice())")
     }
 }
 
-protocol Component {
+protocol CompositeComponent {
     func getPrice() -> Int
 }
 
-class Item: Component { // leef
+class Item: CompositeComponent { // leef
     
     var price: Int
     
@@ -89,11 +89,11 @@ class Item: Component { // leef
     }
 }
 
-class Bag: Component {
+class Bag: CompositeComponent {
     
-    var list: [Component] = [Component]()
+    var list: [CompositeComponent] = [CompositeComponent]()
     
-    func add(component: Component) {
+    func add(component: CompositeComponent) {
         list.append(component)
     }
     
