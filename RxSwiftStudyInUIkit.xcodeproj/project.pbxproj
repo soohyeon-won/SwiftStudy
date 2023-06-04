@@ -241,6 +241,7 @@
 		E6AE13B829974FB80077DEDC /* FacadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadeViewController.swift; sourceTree = "<group>"; };
 		E6AE13BB29974FF10077DEDC /* FlyweightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightViewController.swift; sourceTree = "<group>"; };
 		E6AE13BE299750230077DEDC /* ProxyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyViewController.swift; sourceTree = "<group>"; };
+		E6C3158F2A2C92ED0010111B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E90654B2295951760027A47C /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		E90654B4295951820027A47C /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
 		E908D72129652EAA0062B85F /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
@@ -925,6 +926,7 @@
 			isa = PBXGroup;
 			children = (
 				E9D1A20F28D4230A00C46741 /* SwfitUIView.swift */,
+				E6C3158F2A2C92ED0010111B /* README.md */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
