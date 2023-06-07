@@ -78,6 +78,8 @@
 		E6AE13B929974FB80077DEDC /* FacadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13B829974FB80077DEDC /* FacadeViewController.swift */; };
 		E6AE13BC29974FF10077DEDC /* FlyweightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13BB29974FF10077DEDC /* FlyweightViewController.swift */; };
 		E6AE13BF299750230077DEDC /* ProxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13BE299750230077DEDC /* ProxyViewController.swift */; };
+		E6B63B682A30A1FC00BE7893 /* MoyaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B63B672A30A1FC00BE7893 /* MoyaViewModel.swift */; };
+		E6B63B6A2A30A25F00BE7893 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B63B692A30A25F00BE7893 /* GithubAPI.swift */; };
 		E90654B3295951760027A47C /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B2295951760027A47C /* AbstractFactory.swift */; };
 		E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B4295951820027A47C /* AbstractFactoryViewController.swift */; };
 		E908D72229652EAA0062B85F /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908D72129652EAA0062B85F /* Ship.swift */; };
@@ -241,6 +243,9 @@
 		E6AE13B829974FB80077DEDC /* FacadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadeViewController.swift; sourceTree = "<group>"; };
 		E6AE13BB29974FF10077DEDC /* FlyweightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightViewController.swift; sourceTree = "<group>"; };
 		E6AE13BE299750230077DEDC /* ProxyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyViewController.swift; sourceTree = "<group>"; };
+		E6B63B672A30A1FC00BE7893 /* MoyaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaViewModel.swift; sourceTree = "<group>"; };
+		E6B63B692A30A25F00BE7893 /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
+		E6B63B6C2A30A3D700BE7893 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E6C3158F2A2C92ED0010111B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E90654B2295951760027A47C /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		E90654B4295951820027A47C /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
@@ -804,6 +809,7 @@
 			isa = PBXGroup;
 			children = (
 				E6AE13AB298937B50077DEDC /* NetworkProvider.swift */,
+				E6B63B692A30A25F00BE7893 /* GithubAPI.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -811,7 +817,8 @@
 		E6AE13AD298947B30077DEDC /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				E6AE13AE298947C40077DEDC /* MoyaViewController.swift */,
+				E6B63B662A30A1EE00BE7893 /* Moya */,
+				E6B63B6B2A30A3B600BE7893 /* Realm */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -854,6 +861,23 @@
 				E6AE13BE299750230077DEDC /* ProxyViewController.swift */,
 			);
 			path = Proxy;
+			sourceTree = "<group>";
+		};
+		E6B63B662A30A1EE00BE7893 /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+				E6AE13AE298947C40077DEDC /* MoyaViewController.swift */,
+				E6B63B672A30A1FC00BE7893 /* MoyaViewModel.swift */,
+			);
+			path = Moya;
+			sourceTree = "<group>";
+		};
+		E6B63B6B2A30A3B600BE7893 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				E6B63B6C2A30A3D700BE7893 /* README.md */,
+			);
+			path = Realm;
 			sourceTree = "<group>";
 		};
 		E90654B1295951590027A47C /* AbstractFactory */ = {
@@ -1323,6 +1347,7 @@
 				E62AE6F429447DB40054EA97 /* FactoryMethodViewController.swift in Sources */,
 				E997CBE82966819D00A5B0B5 /* BuilderPattern.swift in Sources */,
 				E9F71BFD2974FEB500BDD86B /* PrototypeViewController.swift in Sources */,
+				E6B63B682A30A1FC00BE7893 /* MoyaViewModel.swift in Sources */,
 				E62ACA0729C5704B009ED371 /* DatabaseConnection.swift in Sources */,
 				E62DB4DC29F39D82007F4C7F /* StatePatternExample.swift in Sources */,
 				E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */,
@@ -1399,6 +1424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6AE1390298937910077DEDC /* DataLayer.docc in Sources */,
+				E6B63B6A2A30A25F00BE7893 /* GithubAPI.swift in Sources */,
 				E6AE13AC298937B50077DEDC /* NetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1585,7 +1611,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z294R55SRP;
+				DEVELOPMENT_TEAM = 5G8BGQX7US;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RxSwiftStudyInUIkit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1614,7 +1640,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z294R55SRP;
+				DEVELOPMENT_TEAM = 5G8BGQX7US;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RxSwiftStudyInUIkit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1643,7 +1669,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z294R55SRP;
+				DEVELOPMENT_TEAM = 5G8BGQX7US;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1669,7 +1695,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z294R55SRP;
+				DEVELOPMENT_TEAM = 5G8BGQX7US;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1693,7 +1719,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z294R55SRP;
+				DEVELOPMENT_TEAM = 5G8BGQX7US;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1716,7 +1742,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z294R55SRP;
+				DEVELOPMENT_TEAM = 5G8BGQX7US;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
