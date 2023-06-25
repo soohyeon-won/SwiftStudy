@@ -10,9 +10,7 @@ import SwiftUI
 struct GCDView: View {
     var body: some View {
         VStack {
-            Text("📚 Swift Study")
-        }.onAppear {
-            Person().test()
+            Text("📚 GCD Study")
         }
     }
 }
