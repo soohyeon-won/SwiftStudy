@@ -9,9 +9,8 @@ import SwiftUI
 
 struct BaseView: View {
     var body: some View {
-        VStack { //VStack => 수직 스택
-            Text("Hello, world!")
-            Text("Goodbye, world!")
+        VStack {
+            Text("Hello") + Text("world!")
         }
     }
 }

@@ -21,7 +21,7 @@ protocol ShapeProtocol {
 }
 
 // Concrete Element1
-class Rectangle: ShapeProtocol {
+class RectangleImpl: ShapeProtocol {
     
     func accept(device: Device) {
         device.printTo(device: self)
@@ -39,14 +39,14 @@ class Triangle: ShapeProtocol {
 // MARK: - Visitor
 protocol Device {
     
-    func printTo(device: Rectangle)
+    func printTo(device: RectangleImpl)
     func printTo(device: Triangle)
 }
 
 // Concrete Visitor1
 class Phone: Device {
     
-    func printTo(device: Rectangle) {
+    func printTo(device: RectangleImpl) {
         print("Rectangle device Phone")
     }
     func printTo(device: Triangle) {
@@ -57,7 +57,7 @@ class Phone: Device {
 // Concrete Visitor2
 class Watch: Device {
     
-    func printTo(device: Rectangle) {
+    func printTo(device: RectangleImpl) {
         print("Rectangle device Watch")
     }
     func printTo(device: Triangle) {

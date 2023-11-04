@@ -80,6 +80,7 @@
 		E6AE13BF299750230077DEDC /* ProxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13BE299750230077DEDC /* ProxyViewController.swift */; };
 		E6B63B682A30A1FC00BE7893 /* MoyaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B63B672A30A1FC00BE7893 /* MoyaViewModel.swift */; };
 		E6B63B6A2A30A25F00BE7893 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B63B692A30A25F00BE7893 /* GithubAPI.swift */; };
+		E6B660C42AF620A1002CEE18 /* SwfitUIGenerateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B660C32AF620A1002CEE18 /* SwfitUIGenerateView.swift */; };
 		E90654B3295951760027A47C /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B2295951760027A47C /* AbstractFactory.swift */; };
 		E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B4295951820027A47C /* AbstractFactoryViewController.swift */; };
 		E908D72229652EAA0062B85F /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908D72129652EAA0062B85F /* Ship.swift */; };
@@ -246,6 +247,8 @@
 		E6B63B672A30A1FC00BE7893 /* MoyaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaViewModel.swift; sourceTree = "<group>"; };
 		E6B63B692A30A25F00BE7893 /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
 		E6B63B6C2A30A3D700BE7893 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E6B660C32AF620A1002CEE18 /* SwfitUIGenerateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwfitUIGenerateView.swift; sourceTree = "<group>"; };
+		E6B660C52AF62284002CEE18 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E6C3158F2A2C92ED0010111B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E90654B2295951760027A47C /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		E90654B4295951820027A47C /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
@@ -880,6 +883,23 @@
 			path = Realm;
 			sourceTree = "<group>";
 		};
+		E6B660BF2AF62045002CEE18 /* Chapter1-Hello,SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				E9D1A20F28D4230A00C46741 /* SwfitUIView.swift */,
+				E6B660C52AF62284002CEE18 /* README.md */,
+			);
+			path = "Chapter1-Hello,SwiftUI";
+			sourceTree = "<group>";
+		};
+		E6B660C22AF620A1002CEE18 /* Chapter2-Generate View */ = {
+			isa = PBXGroup;
+			children = (
+				E6B660C32AF620A1002CEE18 /* SwfitUIGenerateView.swift */,
+			);
+			path = "Chapter2-Generate View";
+			sourceTree = "<group>";
+		};
 		E90654B1295951590027A47C /* AbstractFactory */ = {
 			isa = PBXGroup;
 			children = (
@@ -949,7 +969,8 @@
 		E9D1A20E28D4228F00C46741 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				E9D1A20F28D4230A00C46741 /* SwfitUIView.swift */,
+				E6B660BF2AF62045002CEE18 /* Chapter1-Hello,SwiftUI */,
+				E6B660C22AF620A1002CEE18 /* Chapter2-Generate View */,
 				E6C3158F2A2C92ED0010111B /* README.md */,
 			);
 			path = SwiftUI;
@@ -1345,6 +1366,7 @@
 				E62ACA0E29C576EF009ED371 /* TemplateCallbackViewController.swift in Sources */,
 				E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */,
 				E62AE6F429447DB40054EA97 /* FactoryMethodViewController.swift in Sources */,
+				E6B660C42AF620A1002CEE18 /* SwfitUIGenerateView.swift in Sources */,
 				E997CBE82966819D00A5B0B5 /* BuilderPattern.swift in Sources */,
 				E9F71BFD2974FEB500BDD86B /* PrototypeViewController.swift in Sources */,
 				E6B63B682A30A1FC00BE7893 /* MoyaViewModel.swift in Sources */,
