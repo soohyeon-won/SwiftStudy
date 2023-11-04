@@ -5,7 +5,7 @@
 //  Created by won soohyeon on 2023/01/31.
 //
 
-import Foundation
+import UIKit
 
 final class MoyaViewController: UIViewController {
     
@@ -24,25 +24,5 @@ final class MoyaViewController: UIViewController {
         super.viewDidLoad()
         
         viewModel.fetch()
-    }
-}
-
-import Moya
-import RxSwift
-
-import DataLayer
-
-final class MoyaViewModel {
-    
-    let provider: APIProvider<GithubAPI>
-    
-    init(provider: APIProvider<GithubAPI> = .init()) {
-        self.provider = provider
-    }
-    
-    func fetch() {
-        provider.request(.emogi) { result in
-            print("result: \(result)")
-        }
     }
 }

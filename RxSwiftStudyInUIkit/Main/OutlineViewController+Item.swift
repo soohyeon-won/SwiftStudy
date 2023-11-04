@@ -29,17 +29,17 @@ extension OutlineViewController {
                     title: "ReactorKit",
                     viewController: ReactorKit.ViewController.self
                 ),
-//                OutlineItem(
-//                    title: "MVI",
-//                    viewController: MVIArchitecture.self
-//                ),
+                OutlineItem(
+                    title: "MVI",
+                    viewController: MVIArchitecture.ViewController.self
+                ),
                 OutlineItem(
                     title: "Ribs",
                     viewController: MVVMArchitecture.ViewController.self
                 ),
                 OutlineItem(
                     title: "MVVMCleanArchitecture",
-                    viewController: MVVMCleanArchitecture.self
+                    viewController: MVVMCleanArchitecture.ViewController.self
                 )
             ]
         )

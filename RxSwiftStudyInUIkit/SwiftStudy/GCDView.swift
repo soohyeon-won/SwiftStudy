@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SwiftStudyView: View {
+struct GCDView: View {
     var body: some View {
         VStack {
             Text("📚 Swift Study")

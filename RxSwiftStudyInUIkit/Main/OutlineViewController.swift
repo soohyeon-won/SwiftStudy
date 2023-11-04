@@ -74,29 +74,29 @@ class OutlineViewController: UIViewController {
                 ]
             ),
             OutlineItem(
-                title: "✨ Study",
+                title: "✨ Develop Study",
                 subitems: [
                     makeDisgnPatternItem(),
-                    makeArchitectureItem(),
+                    makeArchitectureItem()
+                ]
+            ),
+            OutlineItem(
+                title: "📚 Swift",
+                subitems: [
                     OutlineItem(
-                        title: "📚Swift study",
-                        subitems: [
-                            OutlineItem(
-                                title: "SwiftStudy",
-                                swiftUIController: UIHostingController(
-                                    rootView: AnyView(SwiftStudyView())
-                                )
-                            )
-                        ]
-                    ),
+                        title: "GCD",
+                        swiftUIController: UIHostingController(
+                            rootView: AnyView(GCDView())
+                        )
+                    )
+                ]
+            ),
+            OutlineItem(
+                title: "🤖 Library",
+                subitems: [
                     OutlineItem(
-                        title: "🤖Library",
-                        subitems: [
-                            OutlineItem(
-                                title: "Moya",
-                                viewController: MoyaViewController.self
-                            )
-                        ]
+                        title: "Moya",
+                        viewController: MoyaViewController.self
                     )
                 ]
             )

@@ -5,9 +5,12 @@ PODS:
   - Moya/RxSwift (15.0.0):
     - Moya/Core
     - RxSwift (~> 6.0)
+  - Nimble (12.0.0)
   - ReactorKit (3.2.0):
     - RxSwift (~> 6.0)
     - WeakMapTable (~> 1.1)
+  - RxBlocking (6.5.0):
+    - RxSwift (= 6.5.0)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
@@ -23,7 +26,9 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - Moya/RxSwift
+  - Nimble
   - ReactorKit
+  - RxBlocking
   - RxCocoa
   - RxSwift
   - RxTest
@@ -34,7 +39,9 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - Moya
+    - Nimble
     - ReactorKit
+    - RxBlocking
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -46,7 +53,9 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  Nimble: 02a4990866e51868303a466970cd1c81bb84a192
   ReactorKit: e8b11d6b9c415405f381669b095c154a05b59eca
+  RxBlocking: 04b5fd28bb5ea49f7d64b80db8bbfe50d9cc1c7d
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
@@ -55,6 +64,6 @@ SPEC CHECKSUMS:
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: 42d61f37526f3cba28cfc59ea5bd665df75941a5
+PODFILE CHECKSUM: 6fb128089ba80b77fd26a75aee4c992f30a09126
 
 COCOAPODS: 1.12.0

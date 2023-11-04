@@ -4,22 +4,23 @@
 - [🦉 UIKit](#-UIKit)
 - [🕊 SwiftUI](#-SwiftUI)
 - [🏗 Architecture](#-Architecture)
+- [☀️ DesignPattern](#-Study)
 - [✨ Study](#-Study)
 
-## 🦅 RxSwift
+## 🦅 [RxSwift](https://github.com/soohyeon-won/SwiftStudy/tree/master/RxSwiftStudyInUIkit/RxSwift)
 - share 
 - Map, flatMap, flatMapLatest
 - Reduce, Scan
 - materialize/dematerialize
 
-## 🦉 UIKit
+## 🦉 [UIKit](https://github.com/soohyeon-won/SwiftStudy/tree/master/RxSwiftStudyInUIkit/UIKit)
 - Expandable UITableView
 - Paging
 
-### 🕊 SwiftUI
+### 🕊 [SwiftUI](https://github.com/soohyeon-won/SwiftStudy/tree/master/RxSwiftStudyInUIkit/SwiftUI)
 - UIKit에서 Preview 활용하기
 
-### 🏗 Architecture
+### 🏗 [Architecture](https://github.com/soohyeon-won/SwiftStudy/tree/master/RxSwiftStudyInUIkit/Study/Architecture)
 - MVC
 - MVP
 - MVVM
@@ -28,12 +29,14 @@
 - MVI
 - Redux
 
-### Library
+### ⚒️ [Library](https://github.com/soohyeon-won/SwiftStudy/tree/master/RxSwiftStudyInUIkit/Study/Library)
 * Moya
+* Realm
+
+### ☀️ [DesignPattern](https://github.com/soohyeon-won/SwiftStudy/tree/master/RxSwiftStudyInUIkit/Study/DesignPatterns)
 
 ## ✨ Study
-* 디자인패턴
-* Swift_강의
+* [Swift_강의](https://github.com/soohyeon-won/SwiftStudy/tree/master/Swift_%EA%B0%95%EC%9D%98)
   - Swift API Design Guidelines
 * SwiftStudy
   - DynamicMemberLookup
