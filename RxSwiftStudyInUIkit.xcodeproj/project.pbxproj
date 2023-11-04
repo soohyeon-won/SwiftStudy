@@ -248,6 +248,7 @@
 		E6B63B692A30A25F00BE7893 /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
 		E6B63B6C2A30A3D700BE7893 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E6B660C32AF620A1002CEE18 /* SwfitUIGenerateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwfitUIGenerateView.swift; sourceTree = "<group>"; };
+		E6B660C52AF62284002CEE18 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E6C3158F2A2C92ED0010111B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E90654B2295951760027A47C /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		E90654B4295951820027A47C /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
@@ -886,6 +887,7 @@
 			isa = PBXGroup;
 			children = (
 				E9D1A20F28D4230A00C46741 /* SwfitUIView.swift */,
+				E6B660C52AF62284002CEE18 /* README.md */,
 			);
 			path = "Chapter1-Hello,SwiftUI";
 			sourceTree = "<group>";
