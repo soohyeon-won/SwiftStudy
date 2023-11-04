@@ -10,7 +10,7 @@ import SwiftUI
 struct BaseView: View {
     var body: some View {
         VStack {
-            Text("Hello, world!")
+            Text("Hello") + Text("world!")
         }
     }
 }
