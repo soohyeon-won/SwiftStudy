@@ -18,7 +18,7 @@
 - Paging
 
 ### 🕊 [SwiftUI](https://github.com/soohyeon-won/SwiftStudy/tree/master/RxSwiftStudyInUIkit/SwiftUI)
-- UIKit에서 Preview 활용하기
+- 스윗한 SwiftUI 리뷰
 
 ### 🏗 [Architecture](https://github.com/soohyeon-won/SwiftStudy/tree/master/RxSwiftStudyInUIkit/Study/Architecture)
 - MVC
