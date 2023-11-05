@@ -70,7 +70,8 @@ class OutlineViewController: UIViewController {
             OutlineItem(
                 title: "🕊 SwiftUI",
                 subitems: [
-                    OutlineItem(title: "swiftUIController", swiftUIController: UIHostingController(rootView: AnyView(BaseView())))
+                    OutlineItem(title: "Hello, SwiftUI", swiftUIController: UIHostingController(rootView: AnyView(BaseView()))),
+                    OutlineItem(title: "뷰 구성하기", swiftUIController: UIHostingController(rootView: AnyView(SwfitUIGenerateView())))
                 ]
             ),
             OutlineItem(
