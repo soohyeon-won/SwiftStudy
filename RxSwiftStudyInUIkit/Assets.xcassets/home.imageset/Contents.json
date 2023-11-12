@@ -1,6 +1,7 @@
 {
-  "colors" : [
+  "images" : [
     {
+      "filename" : "icons8-home.svg",
       "idiom" : "universal"
     }
   ],

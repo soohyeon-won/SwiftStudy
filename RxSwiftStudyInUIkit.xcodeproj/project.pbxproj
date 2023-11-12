@@ -60,6 +60,7 @@
 		E640F26329A20F4000E0F749 /* VisitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F26229A20F4000E0F749 /* VisitorViewController.swift */; };
 		E69C823A2AFA5BFB00586158 /* SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C82392AFA5BFB00586158 /* SafeArea.swift */; };
 		E69C823D2AFA5C3200586158 /* SwiftUI-Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C823C2AFA5C3200586158 /* SwiftUI-Image.swift */; };
+		E69C823F2B00B10D00586158 /* SwiftUI-Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C823E2B00B10D00586158 /* SwiftUI-Stack.swift */; };
 		E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */; };
 		E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */; };
 		E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */; };
@@ -228,6 +229,7 @@
 		E69C82382AF771E900586158 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E69C82392AFA5BFB00586158 /* SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeArea.swift; sourceTree = "<group>"; };
 		E69C823C2AFA5C3200586158 /* SwiftUI-Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI-Image.swift"; sourceTree = "<group>"; };
+		E69C823E2B00B10D00586158 /* SwiftUI-Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI-Stack.swift"; sourceTree = "<group>"; };
 		E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
@@ -891,8 +893,8 @@
 		E6B660BF2AF62045002CEE18 /* Chapter1-Hello,SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				E9D1A20F28D4230A00C46741 /* SwfitUIView.swift */,
 				E6B660C52AF62284002CEE18 /* README.md */,
+				E9D1A20F28D4230A00C46741 /* SwfitUIView.swift */,
 			);
 			path = "Chapter1-Hello,SwiftUI";
 			sourceTree = "<group>";
@@ -900,10 +902,11 @@
 		E6B660C22AF620A1002CEE18 /* Chapter2-Generate View */ = {
 			isa = PBXGroup;
 			children = (
+				E69C82382AF771E900586158 /* README.md */,
 				E69C82392AFA5BFB00586158 /* SafeArea.swift */,
 				E6B660C32AF620A1002CEE18 /* SwfitUI-TextView.swift */,
 				E69C823C2AFA5C3200586158 /* SwiftUI-Image.swift */,
-				E69C82382AF771E900586158 /* README.md */,
+				E69C823E2B00B10D00586158 /* SwiftUI-Stack.swift */,
 			);
 			path = "Chapter2-Generate View";
 			sourceTree = "<group>";
@@ -1399,6 +1402,7 @@
 				E69C823A2AFA5BFB00586158 /* SafeArea.swift in Sources */,
 				E9D1A21028D4230A00C46741 /* SwfitUIView.swift in Sources */,
 				E69C823D2AFA5C3200586158 /* SwiftUI-Image.swift in Sources */,
+				E69C823F2B00B10D00586158 /* SwiftUI-Stack.swift in Sources */,
 				E62ACA0529C5701B009ED371 /* DocumentGenerator.swift in Sources */,
 				E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */,
 				E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */,

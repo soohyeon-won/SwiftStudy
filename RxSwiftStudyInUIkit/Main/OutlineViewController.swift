@@ -78,7 +78,8 @@ class OutlineViewController: UIViewController {
                         title: "뷰 구성하기",
                         subitems: [
                             OutlineItem(title: "Text", swiftUIController: UIHostingController(rootView: AnyView(SwiftUI_Text()))),
-                            OutlineItem(title: "Image", swiftUIController: UIHostingController(rootView: AnyView(SwiftUI_Image())))
+                            OutlineItem(title: "Image", swiftUIController: UIHostingController(rootView: AnyView(SwiftUI_Image()))),
+                            OutlineItem(title: "Stack", swiftUIController: UIHostingController(rootView: AnyView(SwiftUI_Stack())))
                         ]
                     )
                 ]
