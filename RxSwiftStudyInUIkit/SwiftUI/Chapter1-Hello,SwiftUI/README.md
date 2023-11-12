@@ -51,7 +51,7 @@ protocol View {
 typealias Body = Never
 ```
 
-##UIHostingController
+## UIHostingController
 * UIViewController를 상속받는 제내릭 클래스
 * swiftUI를 이용해 만들어진 뷰를 UIkit의 개발 환경에서 사용해야 할 때 사용
 * SceneDelegate.swift
