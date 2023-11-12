@@ -58,6 +58,10 @@
 		E640F25F29A20F0900E0F749 /* StrategyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F25E29A20F0900E0F749 /* StrategyViewController.swift */; };
 		E640F26129A20F2100E0F749 /* TemplateMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F26029A20F2100E0F749 /* TemplateMethodViewController.swift */; };
 		E640F26329A20F4000E0F749 /* VisitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F26229A20F4000E0F749 /* VisitorViewController.swift */; };
+		E69C823A2AFA5BFB00586158 /* SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C82392AFA5BFB00586158 /* SafeArea.swift */; };
+		E69C823D2AFA5C3200586158 /* SwiftUI-Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C823C2AFA5C3200586158 /* SwiftUI-Image.swift */; };
+		E69C823F2B00B10D00586158 /* SwiftUI-Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C823E2B00B10D00586158 /* SwiftUI-Stack.swift */; };
+		E69C82412B00B8A500586158 /* SwiftUI-StackComb.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C82402B00B8A500586158 /* SwiftUI-StackComb.swift */; };
 		E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */; };
 		E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */; };
 		E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */; };
@@ -80,7 +84,7 @@
 		E6AE13BF299750230077DEDC /* ProxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13BE299750230077DEDC /* ProxyViewController.swift */; };
 		E6B63B682A30A1FC00BE7893 /* MoyaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B63B672A30A1FC00BE7893 /* MoyaViewModel.swift */; };
 		E6B63B6A2A30A25F00BE7893 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B63B692A30A25F00BE7893 /* GithubAPI.swift */; };
-		E6B660C42AF620A1002CEE18 /* SwfitUIGenerateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B660C32AF620A1002CEE18 /* SwfitUIGenerateView.swift */; };
+		E6B660C42AF620A1002CEE18 /* SwfitUI-TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B660C32AF620A1002CEE18 /* SwfitUI-TextView.swift */; };
 		E90654B3295951760027A47C /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B2295951760027A47C /* AbstractFactory.swift */; };
 		E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B4295951820027A47C /* AbstractFactoryViewController.swift */; };
 		E908D72229652EAA0062B85F /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908D72129652EAA0062B85F /* Ship.swift */; };
@@ -223,6 +227,11 @@
 		E69AB6032A0BD26B00BBE8FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E69AB6042A0BD27A00BBE8FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E69AB6052A0BD2B700BBE8FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E69C82382AF771E900586158 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E69C82392AFA5BFB00586158 /* SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeArea.swift; sourceTree = "<group>"; };
+		E69C823C2AFA5C3200586158 /* SwiftUI-Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI-Image.swift"; sourceTree = "<group>"; };
+		E69C823E2B00B10D00586158 /* SwiftUI-Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI-Stack.swift"; sourceTree = "<group>"; };
+		E69C82402B00B8A500586158 /* SwiftUI-StackComb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI-StackComb.swift"; sourceTree = "<group>"; };
 		E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
@@ -247,7 +256,7 @@
 		E6B63B672A30A1FC00BE7893 /* MoyaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaViewModel.swift; sourceTree = "<group>"; };
 		E6B63B692A30A25F00BE7893 /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
 		E6B63B6C2A30A3D700BE7893 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E6B660C32AF620A1002CEE18 /* SwfitUIGenerateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwfitUIGenerateView.swift; sourceTree = "<group>"; };
+		E6B660C32AF620A1002CEE18 /* SwfitUI-TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwfitUI-TextView.swift"; sourceTree = "<group>"; };
 		E6B660C52AF62284002CEE18 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E6C3158F2A2C92ED0010111B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E90654B2295951760027A47C /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
@@ -886,8 +895,8 @@
 		E6B660BF2AF62045002CEE18 /* Chapter1-Hello,SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				E9D1A20F28D4230A00C46741 /* SwfitUIView.swift */,
 				E6B660C52AF62284002CEE18 /* README.md */,
+				E9D1A20F28D4230A00C46741 /* SwfitUIView.swift */,
 			);
 			path = "Chapter1-Hello,SwiftUI";
 			sourceTree = "<group>";
@@ -895,7 +904,12 @@
 		E6B660C22AF620A1002CEE18 /* Chapter2-Generate View */ = {
 			isa = PBXGroup;
 			children = (
-				E6B660C32AF620A1002CEE18 /* SwfitUIGenerateView.swift */,
+				E69C82382AF771E900586158 /* README.md */,
+				E69C82392AFA5BFB00586158 /* SafeArea.swift */,
+				E6B660C32AF620A1002CEE18 /* SwfitUI-TextView.swift */,
+				E69C823C2AFA5C3200586158 /* SwiftUI-Image.swift */,
+				E69C823E2B00B10D00586158 /* SwiftUI-Stack.swift */,
+				E69C82402B00B8A500586158 /* SwiftUI-StackComb.swift */,
 			);
 			path = "Chapter2-Generate View";
 			sourceTree = "<group>";
@@ -1358,6 +1372,7 @@
 				E997CBE62966814300A5B0B5 /* Builder.swift in Sources */,
 				E640F25129A20DD200E0F749 /* MediatorViewController.swift in Sources */,
 				E6AE13852986612D0077DEDC /* BridgeViewController.swift in Sources */,
+				E69C82412B00B8A500586158 /* SwiftUI-StackComb.swift in Sources */,
 				E6AD8E82297FBA2F00208D8C /* AdapterViewController.swift in Sources */,
 				E640F24B29A20D5B00E0F749 /* InterpreterViewController.swift in Sources */,
 				E62DB4F429FF8D82007F4C7F /* ReactorKit.swift in Sources */,
@@ -1366,7 +1381,7 @@
 				E62ACA0E29C576EF009ED371 /* TemplateCallbackViewController.swift in Sources */,
 				E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */,
 				E62AE6F429447DB40054EA97 /* FactoryMethodViewController.swift in Sources */,
-				E6B660C42AF620A1002CEE18 /* SwfitUIGenerateView.swift in Sources */,
+				E6B660C42AF620A1002CEE18 /* SwfitUI-TextView.swift in Sources */,
 				E997CBE82966819D00A5B0B5 /* BuilderPattern.swift in Sources */,
 				E9F71BFD2974FEB500BDD86B /* PrototypeViewController.swift in Sources */,
 				E6B63B682A30A1FC00BE7893 /* MoyaViewModel.swift in Sources */,
@@ -1388,7 +1403,10 @@
 				E62DB4EE29FF8D1B007F4C7F /* MVPArchitecture.swift in Sources */,
 				E62AE6F229447D9C0054EA97 /* SingletonViewController.swift in Sources */,
 				E950C91828B87BD800E0C80A /* ReduceStudyViewController.swift in Sources */,
+				E69C823A2AFA5BFB00586158 /* SafeArea.swift in Sources */,
 				E9D1A21028D4230A00C46741 /* SwfitUIView.swift in Sources */,
+				E69C823D2AFA5C3200586158 /* SwiftUI-Image.swift in Sources */,
+				E69C823F2B00B10D00586158 /* SwiftUI-Stack.swift in Sources */,
 				E62ACA0529C5701B009ED371 /* DocumentGenerator.swift in Sources */,
 				E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */,
 				E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */,

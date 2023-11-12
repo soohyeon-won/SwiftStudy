@@ -1,4 +1,4 @@
-#  SwiftUI
+#  SwiftUI Chapter1. Hello, SwiftUI
 
 ## SwiftUI의 4가지 원칙
 
