@@ -110,7 +110,7 @@ final class CommandViewController: UIViewController {
     }
 }
 
-final class Button {
+final class CMDButton {
     private let light: Light
     
     public init(light: Light) {

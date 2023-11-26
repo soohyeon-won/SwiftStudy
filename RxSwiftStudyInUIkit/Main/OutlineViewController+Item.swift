@@ -5,7 +5,7 @@
 //  Created by won soohyeon on 2023/05/01.
 //
 
-import Foundation
+import SwiftUI
 
 extension OutlineViewController {
     
@@ -40,7 +40,8 @@ extension OutlineViewController {
                 OutlineItem(
                     title: "MVVMCleanArchitecture",
                     viewController: MVVMCleanArchitecture.ViewController.self
-                )
+                ),
+//                OutlineItem(title: "TCA", swiftUIController: UIHostingController(rootView: AnyView(TCAView(store: counterStore))))
             ]
         )
     }

@@ -2,7 +2,7 @@
 
 - Point-Free에서 개발한 아키텍처로 앱 상태의 단방향 데이터 흐름을 중심으로 구성됨
 
-## 구조
+## 구조 (View - Action - reduce - State)
 - State: 앱의 상태를 나타냅니다. 모든 데이터와 UI 상태는 단일 상태 트리로 관리됩니다.
 - Action: 상태를 변경하기 위한 이벤트 또는 액션을 나타냅니다. 사용자 입력, 네트워크 응답 등 다양한 이벤트를 액션으로 정의할 수 있습니다.
 - Reducer: 액션을 통해 상태를 변경하는 로직이 담긴 함수입니다. 현재 상태와 액션을 받아 새로운 상태를 반환합니다.
@@ -19,4 +19,6 @@
 - 러닝커브
 
 ## 참고
-https://axiomatic-fuschia-666.notion.site/SwiftUI-iOS-TCA-1-0-596f01cfa306427ea47779406da676e1
+- https://github.com/pointfreeco/swift-composable-architecture
+- https://axiomatic-fuschia-666.notion.site/SwiftUI-iOS-TCA-1-0-596f01cfa306427ea47779406da676e1
+- https://github.com/pointfreeco/swift-composable-architecture/issues/557
