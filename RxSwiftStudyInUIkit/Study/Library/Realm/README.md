@@ -22,6 +22,64 @@ DispatchQueue.global().async {
 }
 ```
 
+## CRUD (Create, Read, Update, Delete) 
+
+-Create
+```
+do {
+    let realm = try Realm()
+    let newItem = TodoItem()
+    newItem.title = "Buy groceries"
+    
+    try realm.write {
+        realm.add(newItem)
+    }
+} catch {
+    print("Error adding item: \(error)")
+}
+```
+
+- Read
+```
+do {
+    let realm = try Realm()
+    let items = realm.objects(TodoItem.self)
+    
+    for item in items {
+        print("Title: \(item.title), Completed: \(item.isCompleted)")
+    }
+} catch {
+    print("Error retrieving items: \(error)")
+}
+```
+
+- Update
+```
+do {
+    let realm = try Realm()
+    if let item = realm.object(ofType: TodoItem.self, forPrimaryKey: "itemID") {
+        try realm.write {
+            item.isCompleted = true
+        }
+    }
+} catch {
+    print("Error updating item: \(error)")
+}
+```
+- Delete
+```
+do {
+    let realm = try Realm()
+    if let item = realm.object(ofType: TodoItem.self, forPrimaryKey: "itemID") {
+        try realm.write {
+            realm.delete(item)
+        }
+    }
+} catch {
+    print("Error deleting item: \(error)")
+}
+```
+
 
 ## 링크
 - [공식문서](https://www.mongodb.com/docs/legacy/realm/swift/latest/#property-attributes)
