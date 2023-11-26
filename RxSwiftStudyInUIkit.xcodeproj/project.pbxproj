@@ -232,6 +232,7 @@
 		E69C823C2AFA5C3200586158 /* SwiftUI-Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI-Image.swift"; sourceTree = "<group>"; };
 		E69C823E2B00B10D00586158 /* SwiftUI-Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI-Stack.swift"; sourceTree = "<group>"; };
 		E69C82402B00B8A500586158 /* SwiftUI-StackComb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI-StackComb.swift"; sourceTree = "<group>"; };
+		E69C82432B133F8A00586158 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
@@ -419,6 +420,7 @@
 				E6186C392A0BCCF3004FD75C /* Ribs */,
 				E62DB4F72A050BC6007F4C7F /* VIPER */,
 				E62DB4E529FAAB82007F4C7F /* MVVM CleanArchitecture */,
+				E69C82422B133F6E00586158 /* TCA */,
 			);
 			path = Architecture;
 			sourceTree = "<group>";
@@ -689,6 +691,14 @@
 				E62ACA1729C59944009ED371 /* MarkerExample.swift */,
 			);
 			path = Visitor;
+			sourceTree = "<group>";
+		};
+		E69C82422B133F6E00586158 /* TCA */ = {
+			isa = PBXGroup;
+			children = (
+				E69C82432B133F8A00586158 /* README.md */,
+			);
+			path = TCA;
 			sourceTree = "<group>";
 		};
 		E6A16EA128BA1B1600921D78 /* UIKit */ = {
