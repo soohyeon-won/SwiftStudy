@@ -82,6 +82,10 @@ class OutlineViewController: UIViewController {
                             OutlineItem(title: "Stack", swiftUIController: UIHostingController(rootView: AnyView(SwiftUI_Stack()))),
                             OutlineItem(title: "Stack-도형만들기", swiftUIController: UIHostingController(rootView: AnyView(SwiftUI_StackComb())))
                         ]
+                    ),
+                    OutlineItem(
+                        title: "실전 앱 구현하기",
+                        swiftUIController: UIHostingController(rootView: AnyView(SU_test()))
                     )
                 ]
             ),
