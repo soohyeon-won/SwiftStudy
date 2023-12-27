@@ -65,6 +65,7 @@
 		E69C82CE2B3BFD2D00586158 /* Pods_DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1866EAC4775D5F3AA093C5CD /* Pods_DataLayer.framework */; };
 		E69C82D12B3BFD6500586158 /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6AE138C298937910077DEDC /* DataLayer.framework */; };
 		E69C82D22B3BFD6600586158 /* DataLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6AE138C298937910077DEDC /* DataLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E69C82D52B3C17E400586158 /* OpaqueTypeStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C82D42B3C17E400586158 /* OpaqueTypeStudy.swift */; };
 		E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */; };
 		E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */; };
 		E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */; };
@@ -234,6 +235,7 @@
 		E69C823E2B00B10D00586158 /* SwiftUI-Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI-Stack.swift"; sourceTree = "<group>"; };
 		E69C82402B00B8A500586158 /* SwiftUI-StackComb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI-StackComb.swift"; sourceTree = "<group>"; };
 		E69C82492B134AB400586158 /* Chapter2-2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chapter2-2.swift"; sourceTree = "<group>"; };
+		E69C82D42B3C17E400586158 /* OpaqueTypeStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpaqueTypeStudy.swift; sourceTree = "<group>"; };
 		E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
@@ -913,6 +915,7 @@
 				E69C823E2B00B10D00586158 /* SwiftUI-Stack.swift */,
 				E69C82402B00B8A500586158 /* SwiftUI-StackComb.swift */,
 				E69C82492B134AB400586158 /* Chapter2-2.swift */,
+				E69C82D42B3C17E400586158 /* OpaqueTypeStudy.swift */,
 			);
 			path = "Chapter2-Generate View";
 			sourceTree = "<group>";
@@ -1404,6 +1407,7 @@
 				E62DB4E129FAAB1E007F4C7F /* MVCArchitecture.swift in Sources */,
 				E6AE13AF298947C40077DEDC /* MoyaViewController.swift in Sources */,
 				E62DB4EE29FF8D1B007F4C7F /* MVPArchitecture.swift in Sources */,
+				E69C82D52B3C17E400586158 /* OpaqueTypeStudy.swift in Sources */,
 				E62AE6F229447D9C0054EA97 /* SingletonViewController.swift in Sources */,
 				E950C91828B87BD800E0C80A /* ReduceStudyViewController.swift in Sources */,
 				E69C823A2AFA5BFB00586158 /* SafeArea.swift in Sources */,
