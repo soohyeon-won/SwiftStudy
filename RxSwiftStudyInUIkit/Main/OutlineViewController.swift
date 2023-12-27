@@ -86,6 +86,10 @@ class OutlineViewController: UIViewController {
                     OutlineItem(
                         title: "실전 앱 구현하기",
                         swiftUIController: UIHostingController(rootView: AnyView(SweeterChapter2()))
+                    ),
+                    OutlineItem(
+                        title: "네비게이션 뷰와 리스트",
+                        swiftUIController: UIHostingController(rootView: AnyView(SweeterChapter3()))
                     )
                 ]
             ),

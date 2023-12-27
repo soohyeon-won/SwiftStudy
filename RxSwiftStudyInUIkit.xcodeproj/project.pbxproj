@@ -66,6 +66,7 @@
 		E69C82D12B3BFD6500586158 /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6AE138C298937910077DEDC /* DataLayer.framework */; };
 		E69C82D22B3BFD6600586158 /* DataLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6AE138C298937910077DEDC /* DataLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E69C82D52B3C17E400586158 /* OpaqueTypeStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C82D42B3C17E400586158 /* OpaqueTypeStudy.swift */; };
+		E69C82DA2B3C238800586158 /* SweeterChapter3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C82D92B3C238800586158 /* SweeterChapter3.swift */; };
 		E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */; };
 		E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */; };
 		E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */; };
@@ -236,6 +237,8 @@
 		E69C82402B00B8A500586158 /* SwiftUI-StackComb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI-StackComb.swift"; sourceTree = "<group>"; };
 		E69C82492B134AB400586158 /* Chapter2-2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chapter2-2.swift"; sourceTree = "<group>"; };
 		E69C82D42B3C17E400586158 /* OpaqueTypeStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpaqueTypeStudy.swift; sourceTree = "<group>"; };
+		E69C82D72B3C234000586158 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E69C82D92B3C238800586158 /* SweeterChapter3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweeterChapter3.swift; sourceTree = "<group>"; };
 		E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
@@ -695,6 +698,23 @@
 			path = Visitor;
 			sourceTree = "<group>";
 		};
+		E69C82D62B3C230800586158 /* Chapter3-NavigationView and List */ = {
+			isa = PBXGroup;
+			children = (
+				E69C82D82B3C235200586158 /* Chapter3-1 */,
+				E69C82D72B3C234000586158 /* README.md */,
+			);
+			path = "Chapter3-NavigationView and List";
+			sourceTree = "<group>";
+		};
+		E69C82D82B3C235200586158 /* Chapter3-1 */ = {
+			isa = PBXGroup;
+			children = (
+				E69C82D92B3C238800586158 /* SweeterChapter3.swift */,
+			);
+			path = "Chapter3-1";
+			sourceTree = "<group>";
+		};
 		E6A16EA128BA1B1600921D78 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -991,6 +1011,7 @@
 			children = (
 				E6B660BF2AF62045002CEE18 /* Chapter1-Hello,SwiftUI */,
 				E6B660C22AF620A1002CEE18 /* Chapter2-Generate View */,
+				E69C82D62B3C230800586158 /* Chapter3-NavigationView and List */,
 				E6C3158F2A2C92ED0010111B /* README.md */,
 			);
 			path = SwiftUI;
@@ -1381,6 +1402,7 @@
 				E69C82412B00B8A500586158 /* SwiftUI-StackComb.swift in Sources */,
 				E6AD8E82297FBA2F00208D8C /* AdapterViewController.swift in Sources */,
 				E640F24B29A20D5B00E0F749 /* InterpreterViewController.swift in Sources */,
+				E69C82DA2B3C238800586158 /* SweeterChapter3.swift in Sources */,
 				E62DB4F429FF8D82007F4C7F /* ReactorKit.swift in Sources */,
 				E6AE13B929974FB80077DEDC /* FacadeViewController.swift in Sources */,
 				E62AE6F629447DE40054EA97 /* FactoryMethod.swift in Sources */,
