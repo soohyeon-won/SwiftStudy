@@ -182,3 +182,19 @@ return .random() ? AnyView(Rectangle()) : AnyView(Circle())
     /// Create an instance that type-erases `view`.
     public init<V>(_ view: V) where V : View
 ```
+
+some 키워드는 프로퍼티와 첨자, 함수 반환타입에 적용 가능
+some 다음에 올 수 있는 타입은 protocol, class, Any, AnyObject로 한정
+
+## 정리
+
+### 불투명 타입의 장점
+- 구현 숨김: some 키워드는 구현을 추상화하여 프로토콜을 따르는 어떤 구현체를 반환하여 코드의 의도를 명확하게 함.
+- 간결성: some을 사용하면 코드가 더 간결해지며, 구현체의 실제 타입을 명시할 필요 없이 프로토콜을 따르는 구현체를 반환함.
+- 유연성: 불투명한 타입은 반환되는 구체적인 타입을 변경할 수 있어 코드를 유연하게 함.
+
+### 불투명 타입의 단점
+- 몇 가지 제한과 함께 사용해야 할 때도 있음
+- 때로는 명시적인 타입이 더 명확할 수 있음 
+
+> 불투명 타입인 some을 선택하는 좋은 예시 중 하나는 SwiftUI의 some View 를 보면 됨!

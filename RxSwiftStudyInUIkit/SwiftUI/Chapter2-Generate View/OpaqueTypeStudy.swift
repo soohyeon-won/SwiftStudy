@@ -38,9 +38,8 @@ func randomShape(isCircle: Bool) -> OpaqueShape {
 }
 
 /// OpaqueType 이용
-/// some 키워드는 프로퍼티와 첨자, 함수 반환타입에 적용 가능
-/// some 다음에 올 수 있는 타입은 protocol, class, Any, AnyObject로 한정
-func randomShape(isCircle: Bool) -> some OpaqueShape {
+/// 동일한 프로토콜을 따르는 구현체를 반환하면서도, 호출자에게는 실제 반환되는 타입을 숨기는 효과를
+func opqaueCircleRandomShape(isCircle: Bool) -> some OpaqueShape {
     if isCircle {
         return OpaqueCircle(radius: 5.0) // 실제 구현체를 리턴 (1.실제타입)
     } else {
@@ -49,3 +48,6 @@ func randomShape(isCircle: Bool) -> some OpaqueShape {
 //        return OpaqueRectangle(width: 3.0, height: 4.0) // 컴파일 에러
     }
 }
+
+/// Useage
+let shape: some OpaqueShape = opqaueCircleRandomShape(isCircle: true)
