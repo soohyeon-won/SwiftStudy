@@ -85,7 +85,7 @@ class OutlineViewController: UIViewController {
                     ),
                     OutlineItem(
                         title: "실전 앱 구현하기",
-                        swiftUIController: UIHostingController(rootView: AnyView(SU_test()))
+                        swiftUIController: UIHostingController(rootView: AnyView(SweeterChapter2()))
                     )
                 ]
             ),

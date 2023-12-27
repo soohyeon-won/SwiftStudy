@@ -7,9 +7,38 @@
 
 import SwiftUI
 
-struct SU_test: View {
+struct SweeterChapter2: View {
+    
+    var productImage: some View {
+        Image("apple")
+            .resizable()
+            .scaledToFill()
+            .frame(width: 140, height: 100)
+            .clipped()
+    }
+    
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
+            ExtractedView() // cmd+left click => extract Subview
+            productImage
+        }
+    }
+}
+
+struct SweeterChapter2_Previews: PreviewProvider {
+    static var previews: some View {
+        SweeterChapter2()
+    }
+}
+
+struct ExtractedView: View {
+    var body: some View {
+        HStack {
+            Image("apple")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 140)
+                .clipped()
         }
     }
 }
