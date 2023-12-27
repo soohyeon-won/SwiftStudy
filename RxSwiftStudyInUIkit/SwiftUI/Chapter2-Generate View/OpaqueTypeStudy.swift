@@ -42,10 +42,10 @@ func randomShape(isCircle: Bool) -> OpaqueShape {
 /// some 다음에 올 수 있는 타입은 protocol, class, Any, AnyObject로 한정
 func randomShape(isCircle: Bool) -> some OpaqueShape {
     if isCircle {
-        return OpaqueCircle(radius: 5.0)
+        return OpaqueCircle(radius: 5.0) // 실제 구현체를 리턴 (1.실제타입)
     } else {
         return OpaqueCircle(radius: 4.0)
-        /// 해당 프로토콜 타입을 반환하면서도 탙입에 대한 정체성을 보장!
+        /// 해당 프로토콜 타입을 반환하면서도 타입에 대한 정체성을 보장! (2. 동일 타입)
 //        return OpaqueRectangle(width: 3.0, height: 4.0) // 컴파일 에러
     }
 }
