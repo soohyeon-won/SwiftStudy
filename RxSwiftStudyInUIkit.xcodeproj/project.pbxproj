@@ -62,6 +62,7 @@
 		E68999412B42B138006283E9 /* SweeterChapter3_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68999402B42B138006283E9 /* SweeterChapter3_List.swift */; };
 		E68999432B42B685006283E9 /* SweeterChapter3_Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68999422B42B685006283E9 /* SweeterChapter3_Section.swift */; };
 		E68999452B42BAAE006283E9 /* SweeterChapter3_GeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68999442B42BAAE006283E9 /* SweeterChapter3_GeometryReader.swift */; };
+		E68999472B42C47D006283E9 /* SweeterChapter3_Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68999462B42C47D006283E9 /* SweeterChapter3_Frame.swift */; };
 		E69C823A2AFA5BFB00586158 /* SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C82392AFA5BFB00586158 /* SafeArea.swift */; };
 		E69C823D2AFA5C3200586158 /* SwiftUI-Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C823C2AFA5C3200586158 /* SwiftUI-Image.swift */; };
 		E69C823F2B00B10D00586158 /* SwiftUI-Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C823E2B00B10D00586158 /* SwiftUI-Stack.swift */; };
@@ -233,6 +234,7 @@
 		E68999402B42B138006283E9 /* SweeterChapter3_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweeterChapter3_List.swift; sourceTree = "<group>"; };
 		E68999422B42B685006283E9 /* SweeterChapter3_Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweeterChapter3_Section.swift; sourceTree = "<group>"; };
 		E68999442B42BAAE006283E9 /* SweeterChapter3_GeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweeterChapter3_GeometryReader.swift; sourceTree = "<group>"; };
+		E68999462B42C47D006283E9 /* SweeterChapter3_Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweeterChapter3_Frame.swift; sourceTree = "<group>"; };
 		E69AB5FF2A0BCF8B00BBE8FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E69AB6002A0BD0A700BBE8FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E69AB6012A0BD16600BBE8FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -725,6 +727,7 @@
 				E68999402B42B138006283E9 /* SweeterChapter3_List.swift */,
 				E68999422B42B685006283E9 /* SweeterChapter3_Section.swift */,
 				E68999442B42BAAE006283E9 /* SweeterChapter3_GeometryReader.swift */,
+				E68999462B42C47D006283E9 /* SweeterChapter3_Frame.swift */,
 			);
 			path = "Chapter3-1";
 			sourceTree = "<group>";
@@ -1406,6 +1409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E640F24E29A20D9300E0F749 /* IteratorViewController.swift in Sources */,
+				E68999472B42C47D006283E9 /* SweeterChapter3_Frame.swift in Sources */,
 				E6AE13B629974F870077DEDC /* DecoratorViewController.swift in Sources */,
 				E62DB4F629FF8DA8007F4C7F /* MVVMCleanArchitecture.swift in Sources */,
 				E6AE13BF299750230077DEDC /* ProxyViewController.swift in Sources */,
