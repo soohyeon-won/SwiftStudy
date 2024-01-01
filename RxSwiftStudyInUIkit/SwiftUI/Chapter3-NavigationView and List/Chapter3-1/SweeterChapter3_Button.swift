@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SweeterChapter3: View {
+struct SweeterChapter3_Button: View {
     
     private func extractedFunc() -> some View {
         return HStack {
@@ -74,5 +74,5 @@ struct SweeterChapter3: View {
 }
 
 #Preview {
-    SweeterChapter3()
+    SweeterChapter3_Button()
 }

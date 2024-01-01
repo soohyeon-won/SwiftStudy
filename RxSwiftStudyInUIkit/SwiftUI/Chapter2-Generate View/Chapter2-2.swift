@@ -22,6 +22,8 @@ struct SweeterChapter2: View {
             ExtractedView() // cmd+left click => extract Subview
             productImage
         }
+//        .navigationTitle("title") // ""안에 어떤내용이든 hidden처리됨
+//        .navigationBarHidden(true)
     }
 }
 
