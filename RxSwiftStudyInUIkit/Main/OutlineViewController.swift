@@ -105,12 +105,16 @@ class OutlineViewController: UIViewController {
                         title: "3. 네비게이션 뷰와 리스트",
                         subitems: [
                             OutlineItem(
-                                title: "3-1 기본기 다지기",
+                                title: "3-1 Button",
                                 swiftUIController: UIHostingController(rootView: AnyView(SweeterChapter3_Button()))
                             ),
                             OutlineItem(
-                                title: "3-1 실전 앱 구현하기",
+                                title: "3-1 Navigation",
                                 swiftUIController: UIHostingController(rootView: AnyView(SweeterChapter3_Navigation()))
+                            ),
+                            OutlineItem(
+                                title: "3-1 List",
+                                swiftUIController: UIHostingController(rootView: AnyView(SweeterChapter3_List()))
                             )
                         ]
                     )

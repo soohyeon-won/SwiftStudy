@@ -59,6 +59,7 @@
 		E640F26329A20F4000E0F749 /* VisitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F26229A20F4000E0F749 /* VisitorViewController.swift */; };
 		E689993A2B427F81006283E9 /* SweeterChapter3_Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68999392B427F81006283E9 /* SweeterChapter3_Navigation.swift */; };
 		E689993D2B4298BC006283E9 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E689993C2B4298BC006283E9 /* UINavigationController+Extensions.swift */; };
+		E68999412B42B138006283E9 /* SweeterChapter3_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68999402B42B138006283E9 /* SweeterChapter3_List.swift */; };
 		E69C823A2AFA5BFB00586158 /* SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C82392AFA5BFB00586158 /* SafeArea.swift */; };
 		E69C823D2AFA5C3200586158 /* SwiftUI-Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C823C2AFA5C3200586158 /* SwiftUI-Image.swift */; };
 		E69C823F2B00B10D00586158 /* SwiftUI-Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C823E2B00B10D00586158 /* SwiftUI-Stack.swift */; };
@@ -227,6 +228,7 @@
 		E640F26229A20F4000E0F749 /* VisitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorViewController.swift; sourceTree = "<group>"; };
 		E68999392B427F81006283E9 /* SweeterChapter3_Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweeterChapter3_Navigation.swift; sourceTree = "<group>"; };
 		E689993C2B4298BC006283E9 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		E68999402B42B138006283E9 /* SweeterChapter3_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweeterChapter3_List.swift; sourceTree = "<group>"; };
 		E69AB5FF2A0BCF8B00BBE8FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E69AB6002A0BD0A700BBE8FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E69AB6012A0BD16600BBE8FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -716,6 +718,7 @@
 			children = (
 				E69C82D92B3C238800586158 /* SweeterChapter3_Button.swift */,
 				E68999392B427F81006283E9 /* SweeterChapter3_Navigation.swift */,
+				E68999402B42B138006283E9 /* SweeterChapter3_List.swift */,
 			);
 			path = "Chapter3-1";
 			sourceTree = "<group>";
@@ -1453,6 +1456,7 @@
 				E62DB4F229FF8D66007F4C7F /* MVIArchitecture.swift in Sources */,
 				E640F26329A20F4000E0F749 /* VisitorViewController.swift in Sources */,
 				E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */,
+				E68999412B42B138006283E9 /* SweeterChapter3_List.swift in Sources */,
 				E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */,
 				E640F25D29A20EEF00E0F749 /* StateViewController.swift in Sources */,
 				E90654B3295951760027A47C /* AbstractFactory.swift in Sources */,
