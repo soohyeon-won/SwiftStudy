@@ -115,6 +115,10 @@ class OutlineViewController: UIViewController {
                             OutlineItem(
                                 title: "3-1 List",
                                 swiftUIController: UIHostingController(rootView: AnyView(SweeterChapter3_List()))
+                            ),
+                            OutlineItem(
+                                title: "3-1 Section",
+                                swiftUIController: UIHostingController(rootView: AnyView(SweeterChapter3_Section()))
                             )
                         ]
                     )
