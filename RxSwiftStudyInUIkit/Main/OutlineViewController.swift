@@ -44,9 +44,23 @@ class OutlineViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "soohyeon-won Study"
+        navigationItem.title = nil
+        navigationItem.backBarButtonItem = nil
+        navigationItem.rightBarButtonItems = nil
+
         configureCollectionView()
         configureDataSource()
+    }
+    
+    /// NavigationView와 사용할 때 네비게이션바를 숨기면서 navigation 기능은 유지
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: true) // 설정하면 swipeBack 기능 X
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        /// 아래 코드를 삽입해주면 swipeBack기능이 유지되지만 SwiftUIView에서 navigationBarHidden(true)시에 swipeBack 기능이 안됨
+        /// UINavigationController+Extensions 에 delegate 설정해주면 된다!
+//      navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     private lazy var menuItems: [OutlineItem] = {
@@ -75,17 +89,38 @@ class OutlineViewController: UIViewController {
                         swiftUIController: UIHostingController(rootView: AnyView(BaseView()))
                     ),
                     OutlineItem(
-                        title: "뷰 구성하기",
+                        title: "2. 뷰 구성하기",
                         subitems: [
                             OutlineItem(title: "Text", swiftUIController: UIHostingController(rootView: AnyView(SwiftUI_Text()))),
                             OutlineItem(title: "Image", swiftUIController: UIHostingController(rootView: AnyView(SwiftUI_Image()))),
                             OutlineItem(title: "Stack", swiftUIController: UIHostingController(rootView: AnyView(SwiftUI_Stack()))),
-                            OutlineItem(title: "Stack-도형만들기", swiftUIController: UIHostingController(rootView: AnyView(SwiftUI_StackComb())))
+                            OutlineItem(title: "Stack-도형만들기", swiftUIController: UIHostingController(rootView: AnyView(SwiftUI_StackComb()))),
+                            OutlineItem(
+                                title: "2-2 실전 앱 구현하기",
+                                swiftUIController: UIHostingController(rootView: AnyView(SweeterChapter2()))
+                            )
                         ]
                     ),
                     OutlineItem(
-                        title: "실전 앱 구현하기",
-                        swiftUIController: UIHostingController(rootView: AnyView(SweeterChapter2()))
+                        title: "3. 네비게이션 뷰와 리스트",
+                        subitems: [
+                            OutlineItem(
+                                title: "3-1 Button",
+                                swiftUIController: UIHostingController(rootView: AnyView(SweeterChapter3_Button()))
+                            ),
+                            OutlineItem(
+                                title: "3-1 Navigation",
+                                swiftUIController: UIHostingController(rootView: AnyView(SweeterChapter3_Navigation()))
+                            ),
+                            OutlineItem(
+                                title: "3-1 List",
+                                swiftUIController: UIHostingController(rootView: AnyView(SweeterChapter3_List()))
+                            ),
+                            OutlineItem(
+                                title: "3-1 Section",
+                                swiftUIController: UIHostingController(rootView: AnyView(SweeterChapter3_Section()))
+                            )
+                        ]
                     )
                 ]
             ),
@@ -211,7 +246,12 @@ extension OutlineViewController: UICollectionViewDelegate {
         }
         
         if let swiftUIView = menuItem.swiftUIController {
+            addChild(swiftUIView)
+            view.addSubview(swiftUIView.view)
+            
             navigationController?.pushViewController(swiftUIView, animated: true)
+            
+            swiftUIView.didMove(toParent: self)
         }
         
     }
