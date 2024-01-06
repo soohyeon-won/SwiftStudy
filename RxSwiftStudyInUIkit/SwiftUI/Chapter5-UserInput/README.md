@@ -1,27 +1,34 @@
 #  Chapter5. 유저 입력 다루기
 
-@State 
+## @State 
 뷰 자체에서 가져야 할 상대 프로퍼티 원천 자료
+
 데이터의 상태를 저장하고 관찰
 
-@Binding
-상위 뷰가 가진 상태를 하위 뷰에서 사용하고 수정할 수 있게 해주는 파생 자료
-직접 값을 보유하는 대신, 값을 읽고 수정하여 다른 뷰에 갱신된 데이터를 전달하는 역할을 합니다.
+## @Binding
 
 - 뷰 외부의 모델이 가진 원천 자료를 다루기 위한 도구
+ 
+상위 뷰가 가진 상태를 하위 뷰에서 사용하고 수정할 수 있게 해주는 파생 자료
 
-ObserverbleObject
+직접 값을 보유하는 대신, 값을 읽고 수정하여 다른 뷰에 갱신된 데이터를 전달하는 역할을 수행
+
+## ObserverbleObject
+- 프로토콜
+
 Reference type을 사용하는 경우
-프로토콜
+
 AnyObject를 채택하고 있으므로 구조체와 열거형 타입에 사용X
 
-@ObservableObject
+## @ObservableObject
 ObservableObject 프로토콜을 준수하는 모델에 해당뷰가 의존성을 가진다는 것을 알리기 위해 사용하는 속성
+
 뷰 외부의 모델에 의존성을 가지고 그 데이터의 변화를 감지하기 위해 사용
 (@State는 뷰 자신이 상태값을 가진다고 생각하면 됨)
 
-@Published
+## @Published
 변경 시점에 즉시 알림
+
 어떤 변경 사항을 어느 시점에 뷰에 전달할 것인지 알려준다
 
-objectWillChange
+## objectWillChange
