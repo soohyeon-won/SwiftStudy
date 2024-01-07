@@ -8,6 +8,8 @@
 import UIKit
 import SwiftUI
 
+import ComposableArchitecture
+
 extension OutlineViewController {
     
     func makeArchitectureItem() -> OutlineItem {
@@ -44,7 +46,9 @@ extension OutlineViewController {
                 ),
                 OutlineItem(
                     title: "TheComposableArchitecture",
-                    swiftUIController: UIHostingController(rootView: AnyView(TCAView()))
+                    swiftUIController: UIHostingController(
+                        rootView: AnyView(TCAView())
+                    )
                 )
             ]
         )
