@@ -123,6 +123,27 @@ class OutlineViewController: UIViewController {
                                 swiftUIController: UIHostingController(rootView: AnyView(SweeterChapter3_Section()))
                             )
                         ]
+                    ),
+                    OutlineItem(
+                        title: "5. 유저 입력 다루기",
+                        subitems: [
+                            OutlineItem(
+                                title: "5-1 데이터 흐름 이해하기",
+                                swiftUIController: UIHostingController(rootView: AnyView(Chapter5_Environment()))
+                            ),
+                            OutlineItem(
+                                title: "3-1 Navigation",
+                                swiftUIController: UIHostingController(rootView: AnyView(SweeterChapter3_Navigation()))
+                            ),
+                            OutlineItem(
+                                title: "3-1 List",
+                                swiftUIController: UIHostingController(rootView: AnyView(SweeterChapter3_List()))
+                            ),
+                            OutlineItem(
+                                title: "3-1 Section",
+                                swiftUIController: UIHostingController(rootView: AnyView(SweeterChapter3_Section()))
+                            )
+                        ]
                     )
                 ]
             ),

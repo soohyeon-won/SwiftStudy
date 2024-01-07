@@ -98,6 +98,7 @@
 		E6B63B682A30A1FC00BE7893 /* MoyaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B63B672A30A1FC00BE7893 /* MoyaViewModel.swift */; };
 		E6B63B6A2A30A25F00BE7893 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B63B692A30A25F00BE7893 /* GithubAPI.swift */; };
 		E6B660C42AF620A1002CEE18 /* SwfitUI-TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B660C32AF620A1002CEE18 /* SwfitUI-TextView.swift */; };
+		E6ED90892B4976F7007A980A /* Chapter5-Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED90882B4976F7007A980A /* Chapter5-Environment.swift */; };
 		E90654B3295951760027A47C /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B2295951760027A47C /* AbstractFactory.swift */; };
 		E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B4295951820027A47C /* AbstractFactoryViewController.swift */; };
 		E908D72229652EAA0062B85F /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908D72129652EAA0062B85F /* Ship.swift */; };
@@ -282,6 +283,8 @@
 		E6B660C32AF620A1002CEE18 /* SwfitUI-TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwfitUI-TextView.swift"; sourceTree = "<group>"; };
 		E6B660C52AF62284002CEE18 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E6C3158F2A2C92ED0010111B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E6ED90872B46EBF7007A980A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E6ED90882B4976F7007A980A /* Chapter5-Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chapter5-Environment.swift"; sourceTree = "<group>"; };
 		E90654B2295951760027A47C /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		E90654B4295951820027A47C /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
 		E908D72129652EAA0062B85F /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
@@ -973,6 +976,15 @@
 			path = "Chapter2-Generate View";
 			sourceTree = "<group>";
 		};
+		E6ED90862B46EBCB007A980A /* Chapter5-UserInput */ = {
+			isa = PBXGroup;
+			children = (
+				E6ED90882B4976F7007A980A /* Chapter5-Environment.swift */,
+				E6ED90872B46EBF7007A980A /* README.md */,
+			);
+			path = "Chapter5-UserInput";
+			sourceTree = "<group>";
+		};
 		E90654B1295951590027A47C /* AbstractFactory */ = {
 			isa = PBXGroup;
 			children = (
@@ -1045,6 +1057,7 @@
 				E6B660BF2AF62045002CEE18 /* Chapter1-Hello,SwiftUI */,
 				E6B660C22AF620A1002CEE18 /* Chapter2-Generate View */,
 				E69C82D62B3C230800586158 /* Chapter3-NavigationView and List */,
+				E6ED90862B46EBCB007A980A /* Chapter5-UserInput */,
 				E6C3158F2A2C92ED0010111B /* README.md */,
 			);
 			path = SwiftUI;
@@ -1501,6 +1514,7 @@
 				E68999432B42B685006283E9 /* SweeterChapter3_Section.swift in Sources */,
 				E94DDCBC28B5CFD7005451EA /* MapStudyViewController.swift in Sources */,
 				E636137628B22E570050C070 /* AppDelegate.swift in Sources */,
+				E6ED90892B4976F7007A980A /* Chapter5-Environment.swift in Sources */,
 				E908D72229652EAA0062B85F /* Ship.swift in Sources */,
 				E62ACA0929C574C8009ED371 /* CalaculatorProcessor.swift in Sources */,
 				E62ACA1029C5867C009ED371 /* TemplateMethodSkeleton.swift in Sources */,
