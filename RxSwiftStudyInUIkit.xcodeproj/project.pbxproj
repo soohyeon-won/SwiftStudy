@@ -57,6 +57,8 @@
 		E640F25F29A20F0900E0F749 /* StrategyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F25E29A20F0900E0F749 /* StrategyViewController.swift */; };
 		E640F26129A20F2100E0F749 /* TemplateMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F26029A20F2100E0F749 /* TemplateMethodViewController.swift */; };
 		E640F26329A20F4000E0F749 /* VisitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F26229A20F4000E0F749 /* VisitorViewController.swift */; };
+		E68999362B4032E1006283E9 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = E68999352B4032E1006283E9 /* ComposableArchitecture */; };
+		E68999382B403351006283E9 /* TCA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68999372B403351006283E9 /* TCA.swift */; };
 		E689993A2B427F81006283E9 /* SweeterChapter3_Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68999392B427F81006283E9 /* SweeterChapter3_Navigation.swift */; };
 		E689993D2B4298BC006283E9 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E689993C2B4298BC006283E9 /* UINavigationController+Extensions.swift */; };
 		E68999412B42B138006283E9 /* SweeterChapter3_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68999402B42B138006283E9 /* SweeterChapter3_List.swift */; };
@@ -229,6 +231,7 @@
 		E640F25E29A20F0900E0F749 /* StrategyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyViewController.swift; sourceTree = "<group>"; };
 		E640F26029A20F2100E0F749 /* TemplateMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethodViewController.swift; sourceTree = "<group>"; };
 		E640F26229A20F4000E0F749 /* VisitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorViewController.swift; sourceTree = "<group>"; };
+		E68999372B403351006283E9 /* TCA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCA.swift; sourceTree = "<group>"; };
 		E68999392B427F81006283E9 /* SweeterChapter3_Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweeterChapter3_Navigation.swift; sourceTree = "<group>"; };
 		E689993C2B4298BC006283E9 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
 		E68999402B42B138006283E9 /* SweeterChapter3_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweeterChapter3_List.swift; sourceTree = "<group>"; };
@@ -247,6 +250,7 @@
 		E69C823C2AFA5C3200586158 /* SwiftUI-Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI-Image.swift"; sourceTree = "<group>"; };
 		E69C823E2B00B10D00586158 /* SwiftUI-Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI-Stack.swift"; sourceTree = "<group>"; };
 		E69C82402B00B8A500586158 /* SwiftUI-StackComb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI-StackComb.swift"; sourceTree = "<group>"; };
+		E69C82432B133F8A00586158 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E69C82492B134AB400586158 /* Chapter2-2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chapter2-2.swift"; sourceTree = "<group>"; };
 		E69C82D42B3C17E400586158 /* OpaqueTypeStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpaqueTypeStudy.swift; sourceTree = "<group>"; };
 		E69C82D72B3C234000586158 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -304,6 +308,7 @@
 			files = (
 				E69C82D12B3BFD6500586158 /* DataLayer.framework in Frameworks */,
 				4833208F3BBC0C99D4C964CC /* Pods_RxSwiftStudyInUIkit.framework in Frameworks */,
+				E68999362B4032E1006283E9 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 				E6186C392A0BCCF3004FD75C /* Ribs */,
 				E62DB4F72A050BC6007F4C7F /* VIPER */,
 				E62DB4E529FAAB82007F4C7F /* MVVM CleanArchitecture */,
+				E69C82422B133F6E00586158 /* TCA */,
 			);
 			path = Architecture;
 			sourceTree = "<group>";
@@ -708,6 +714,15 @@
 				E62ACA1729C59944009ED371 /* MarkerExample.swift */,
 			);
 			path = Visitor;
+			sourceTree = "<group>";
+		};
+		E69C82422B133F6E00586158 /* TCA */ = {
+			isa = PBXGroup;
+			children = (
+				E69C82432B133F8A00586158 /* README.md */,
+				E68999372B403351006283E9 /* TCA.swift */,
+			);
+			path = TCA;
 			sourceTree = "<group>";
 		};
 		E69C82D62B3C230800586158 /* Chapter3-NavigationView and List */ = {
@@ -1086,6 +1101,9 @@
 				E6AE13A0298937910077DEDC /* PBXTargetDependency */,
 			);
 			name = RxSwiftStudyInUIkit;
+			packageProductDependencies = (
+				E68999352B4032E1006283E9 /* ComposableArchitecture */,
+			);
 			productName = RxSwiftStudyInUIkit;
 			productReference = E636137228B22E570050C070 /* RxSwiftStudyInUIkit.app */;
 			productType = "com.apple.product-type.application";
@@ -1207,6 +1225,9 @@
 				Base,
 			);
 			mainGroup = E636136928B22E570050C070;
+			packageReferences = (
+				E68999342B4032E1006283E9 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = E636137328B22E570050C070 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1463,6 +1484,7 @@
 				E63613A628B22E6A0050C070 /* ShareStudy.swift in Sources */,
 				E689993A2B427F81006283E9 /* SweeterChapter3_Navigation.swift in Sources */,
 				E6AD8E6F29692FB400208D8C /* WebviewDirector.swift in Sources */,
+				E68999382B403351006283E9 /* TCA.swift in Sources */,
 				E62DB4F229FF8D66007F4C7F /* MVIArchitecture.swift in Sources */,
 				E640F26329A20F4000E0F749 /* VisitorViewController.swift in Sources */,
 				E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */,
@@ -2027,6 +2049,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E68999342B4032E1006283E9 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E68999352B4032E1006283E9 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E68999342B4032E1006283E9 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E636136A28B22E570050C070 /* Project object */;
 }

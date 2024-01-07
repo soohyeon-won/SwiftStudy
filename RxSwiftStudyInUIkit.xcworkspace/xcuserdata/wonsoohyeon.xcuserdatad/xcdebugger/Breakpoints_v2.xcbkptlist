@@ -14,8 +14,8 @@
             filePath = "RxSwiftStudyInUIkit/Main/OutlineViewController+Item.swift"
             startingColumnNumber = "57"
             endingColumnNumber = "57"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "makeArchitectureItem()"
             landmarkType = "7">
          </BreakpointContent>

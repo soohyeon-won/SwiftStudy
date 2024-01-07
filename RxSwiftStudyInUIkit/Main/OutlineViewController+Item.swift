@@ -5,7 +5,10 @@
 //  Created by won soohyeon on 2023/05/01.
 //
 
-import Foundation
+import UIKit
+import SwiftUI
+
+import ComposableArchitecture
 
 extension OutlineViewController {
     
@@ -40,6 +43,12 @@ extension OutlineViewController {
                 OutlineItem(
                     title: "MVVMCleanArchitecture",
                     viewController: MVVMCleanArchitecture.ViewController.self
+                ),
+                OutlineItem(
+                    title: "TheComposableArchitecture",
+                    swiftUIController: UIHostingController(
+                        rootView: AnyView(TCAView())
+                    )
                 )
             ]
         )
