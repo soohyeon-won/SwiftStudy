@@ -1,4 +1,4 @@
-##index
+## index
 
 1. MVC(Model-View-Controller) : iOS 개발에서 가장 기본적으로 사용되는 패턴으로, 애플의 프레임워크에서 기본적으로 제공됩니다.✅
 
