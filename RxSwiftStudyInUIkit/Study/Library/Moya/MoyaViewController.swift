@@ -25,7 +25,3 @@ final class MoyaViewController: UIViewController {
           
     }
 }
-
-struct GithubModel: Codable {
-    
-}

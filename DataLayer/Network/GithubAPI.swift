@@ -31,8 +31,7 @@ extension GithubAPI: TargetType {
     }
     
     public var parameters: [String: Any]? {
-        var params: [String: Any] = [:]
-        return params
+        return [String: Any]()
     }
     
     public var parameterEncoding: ParameterEncoding {
