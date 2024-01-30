@@ -9,6 +9,7 @@ import Moya
 
 public enum GithubAPI {
     case emogi
+    case errorTest
 }
 
 extension GithubAPI: TargetType {
@@ -17,7 +18,12 @@ extension GithubAPI: TargetType {
     }
     
     public var path: String {
-        return "/emojis"
+        switch self {
+        case .emogi:
+            return "/emojis"
+        case .errorTest:
+            return "error"
+        }
     }
     
     public var method: Moya.Method {
@@ -25,8 +31,7 @@ extension GithubAPI: TargetType {
     }
     
     public var parameters: [String: Any]? {
-        var params: [String: Any] = [:]
-        return params
+        return [String: Any]()
     }
     
     public var parameterEncoding: ParameterEncoding {

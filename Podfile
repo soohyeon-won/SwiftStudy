@@ -10,6 +10,7 @@ end
 def network_libs
   pod 'Alamofire'
   pod 'Moya/RxSwift'
+  pod 'Moya/'
 end
 
 target 'RxSwiftStudyInUIkit' do

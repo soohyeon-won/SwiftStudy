@@ -22,7 +22,6 @@ final class MoyaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        viewModel.fetch()
+          
     }
 }

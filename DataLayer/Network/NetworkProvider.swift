@@ -4,22 +4,30 @@
 //
 //  Created by won soohyeon on 2023/01/31.
 //
+import Foundation
 
 import RxSwift
-
 import Moya
 
-public class APIProvider<T: TargetType>: MoyaProvider<T> {
-    private let tokenProvider = MoyaProvider<GithubAPI>()
-    private let disposebag = DisposeBag()
-
-    private func reqRefreshToken() {
-        tokenProvider.rx.request(.emogi)
-    }
+public extension MoyaProvider where Target: TargetType {
     
-    func request(target: T) {
-        rx.request(target).map { response in
-            
-        }
+    func request<M: Codable>(api: Target) -> Single<M> {
+        rx.request(api)
+            .flatMap { response in
+                do {
+                    let model = try JSONDecoder().decode(M.self, from: response.data)
+                    print(String(data: response.data, encoding: .utf8) ?? "can not response")
+                    return Single.just(model)
+                } catch {
+                    return Single.error(error)
+                }
+            }
+            .catch { error in
+                return Single.error(error)
+            }
     }
+}
+
+public struct GithubModel: Codable {
+    
 }
