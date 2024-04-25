@@ -57,6 +57,7 @@
 		E640F25F29A20F0900E0F749 /* StrategyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F25E29A20F0900E0F749 /* StrategyViewController.swift */; };
 		E640F26129A20F2100E0F749 /* TemplateMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F26029A20F2100E0F749 /* TemplateMethodViewController.swift */; };
 		E640F26329A20F4000E0F749 /* VisitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F26229A20F4000E0F749 /* VisitorViewController.swift */; };
+		E659A9E72BDA7D5E00EF6998 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E659A9E62BDA7D5E00EF6998 /* README.md */; };
 		E68999362B4032E1006283E9 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = E68999352B4032E1006283E9 /* ComposableArchitecture */; };
 		E68999382B403351006283E9 /* TCA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68999372B403351006283E9 /* TCA.swift */; };
 		E689993A2B427F81006283E9 /* SweeterChapter3_Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68999392B427F81006283E9 /* SweeterChapter3_Navigation.swift */; };
@@ -231,6 +232,7 @@
 		E640F25E29A20F0900E0F749 /* StrategyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyViewController.swift; sourceTree = "<group>"; };
 		E640F26029A20F2100E0F749 /* TemplateMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethodViewController.swift; sourceTree = "<group>"; };
 		E640F26229A20F4000E0F749 /* VisitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorViewController.swift; sourceTree = "<group>"; };
+		E659A9E62BDA7D5E00EF6998 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E68999372B403351006283E9 /* TCA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCA.swift; sourceTree = "<group>"; };
 		E68999392B427F81006283E9 /* SweeterChapter3_Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweeterChapter3_Navigation.swift; sourceTree = "<group>"; };
 		E689993C2B4298BC006283E9 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
@@ -716,6 +718,14 @@
 			path = Visitor;
 			sourceTree = "<group>";
 		};
+		E659A9E42BDA7D2F00EF6998 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				E659A9E62BDA7D5E00EF6998 /* README.md */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
 		E69C82422B133F6E00586158 /* TCA */ = {
 			isa = PBXGroup;
 			children = (
@@ -802,6 +812,7 @@
 		E6AD8E7A2969488600208D8C /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				E659A9E42BDA7D2F00EF6998 /* Combine */,
 				E62DB4DF29FAAAA6007F4C7F /* Architecture */,
 				E62AE6EC294466AA0054EA97 /* DesignPatterns */,
 				E6AE13AD298947B30077DEDC /* Library */,
@@ -1248,6 +1259,7 @@
 			files = (
 				E636138228B22E5A0050C070 /* LaunchScreen.storyboard in Resources */,
 				E636137F28B22E5A0050C070 /* Assets.xcassets in Resources */,
+				E659A9E72BDA7D5E00EF6998 /* README.md in Resources */,
 				E636137D28B22E570050C070 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
