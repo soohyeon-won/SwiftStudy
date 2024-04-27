@@ -77,6 +77,7 @@
 		E69C82DA2B3C238800586158 /* SweeterChapter3_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C82D92B3C238800586158 /* SweeterChapter3_Button.swift */; };
 		E69F23332BDCF09F00F6DC40 /* READMEReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23322BDCF09F00F6DC40 /* READMEReader.swift */; };
 		E69F23462BDD1EF100F6DC40 /* Combine.README.md in Resources */ = {isa = PBXBuildFile; fileRef = E69F23452BDD1EF100F6DC40 /* Combine.README.md */; };
+		E69F23482BDD1FEC00F6DC40 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23472BDD1FEC00F6DC40 /* Config.swift */; };
 		E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */; };
 		E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */; };
 		E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */; };
@@ -260,6 +261,7 @@
 		E69F23322BDCF09F00F6DC40 /* READMEReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = READMEReader.swift; sourceTree = "<group>"; };
 		E69F233F2BDD0F6E00F6DC40 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E69F23452BDD1EF100F6DC40 /* Combine.README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = Combine.README.md; path = RxSwiftStudyInUIkit/Study/Combine.README.md; sourceTree = SOURCE_ROOT; };
+		E69F23472BDD1FEC00F6DC40 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
@@ -527,6 +529,7 @@
 		E62DB4EA29FF89D4007F4C7F /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E69F23472BDD1FEC00F6DC40 /* Config.swift */,
 				E69F23312BDCF08800F6DC40 /* READMEReader */,
 				E958D9B128B47FA100D05AC4 /* OutlineViewController.swift */,
 				E62DB4EB29FF89E7007F4C7F /* OutlineViewController+Item.swift */,
@@ -1463,6 +1466,7 @@
 				E640F25129A20DD200E0F749 /* MediatorViewController.swift in Sources */,
 				E6AE13852986612D0077DEDC /* BridgeViewController.swift in Sources */,
 				E69C82412B00B8A500586158 /* SwiftUI-StackComb.swift in Sources */,
+				E69F23482BDD1FEC00F6DC40 /* Config.swift in Sources */,
 				E6AD8E82297FBA2F00208D8C /* AdapterViewController.swift in Sources */,
 				E640F24B29A20D5B00E0F749 /* InterpreterViewController.swift in Sources */,
 				E69C82DA2B3C238800586158 /* SweeterChapter3_Button.swift in Sources */,

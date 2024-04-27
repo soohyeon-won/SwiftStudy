@@ -28,9 +28,7 @@ struct MarkdownView: View {
     }
 
     func readMarkdownFile(from path: String) -> String? {
-        // /Users/wonsoohyeon/study/RxSwiftStudy/RxSwiftStudyInUIkit/SwiftUI/Chapter1-Hello,SwiftUI
-        
-        if let file = Bundle.main.path(forResource: "Combine.README.md", ofType: nil),
+        if let file = Bundle.main.path(forResource: "README.md", ofType: nil),
            let content = try? String(contentsOf: URL(fileURLWithPath: file)) {
             return content
         }

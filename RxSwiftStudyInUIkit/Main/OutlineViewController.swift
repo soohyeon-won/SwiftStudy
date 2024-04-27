@@ -89,8 +89,7 @@ class OutlineViewController: UIViewController {
                     OutlineItem(
                         title: "README.md",
                         swiftUIController: UIHostingController(rootView: AnyView(
-                            MarkdownView(filePath: "/Users/wonsoohyeon/study/RxSwiftStudy/RxSwiftStudyInUIkit/SwiftUI/Chapter1-Hello,SwiftUI/README.md"
-                                        )
+                            MarkdownView(filePath: "README.md")
                         ))
                     ),
                     OutlineItem(
@@ -98,9 +97,7 @@ class OutlineViewController: UIViewController {
                         subitems: [
                             OutlineItem(
                                 title: "README.md",
-                                swiftUIController: UIHostingController(rootView: AnyView(
-                                    WebContentView(url: "https://github.com/soohyeon-won/SwiftStudy/blob/master/RxSwiftStudyInUIkit/SwiftUI/Chapter2-Generate%20View/README.md")
-                                ))
+                                swiftUIController: WebContentView(url: "\(githubPath)SwiftUI/Chapter2-Generate%20View/README.md").toHostingController()
                             ),
                             OutlineItem(title: "Text", swiftUIController: UIHostingController(rootView: AnyView(SwiftUI_Text()))),
                             OutlineItem(title: "Image", swiftUIController: UIHostingController(rootView: AnyView(SwiftUI_Image()))),

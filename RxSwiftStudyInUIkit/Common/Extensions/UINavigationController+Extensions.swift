@@ -18,3 +18,12 @@ extension UINavigationController: UIGestureRecognizerDelegate {
         return viewControllers.count > 1
     }
 }
+
+import SwiftUI
+
+extension View {
+    
+    func toHostingController() -> UIHostingController<AnyView>? {
+        UIHostingController(rootView: AnyView(self))
+    }
+}
