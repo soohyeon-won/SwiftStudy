@@ -28,10 +28,15 @@ struct MarkdownView: View {
     }
 
     func readMarkdownFile(from path: String) -> String? {
-        // 파일 경로에서 내용을 읽습니다.
+        // /Users/wonsoohyeon/study/RxSwiftStudy/RxSwiftStudyInUIkit/SwiftUI/Chapter1-Hello,SwiftUI
+        
+        if let file = Bundle.main.path(forResource: "Combine.README.md", ofType: nil),
+           let content = try? String(contentsOf: URL(fileURLWithPath: file)) {
+            return content
+        }
+        
         let fileURL = URL(fileURLWithPath: path)
         do {
-            // 파일 내용을 문자열로 읽습니다.
             let fileContent = try String(contentsOf: fileURL, encoding: .utf8)
             return fileContent
         } catch {
