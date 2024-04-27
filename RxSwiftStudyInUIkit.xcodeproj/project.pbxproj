@@ -76,6 +76,7 @@
 		E69C82D22B3BFD6600586158 /* DataLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6AE138C298937910077DEDC /* DataLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E69C82D52B3C17E400586158 /* OpaqueTypeStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C82D42B3C17E400586158 /* OpaqueTypeStudy.swift */; };
 		E69C82DA2B3C238800586158 /* SweeterChapter3_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C82D92B3C238800586158 /* SweeterChapter3_Button.swift */; };
+		E69F23332BDCF09F00F6DC40 /* READMEReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23322BDCF09F00F6DC40 /* READMEReader.swift */; };
 		E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */; };
 		E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */; };
 		E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */; };
@@ -257,6 +258,8 @@
 		E69C82D42B3C17E400586158 /* OpaqueTypeStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpaqueTypeStudy.swift; sourceTree = "<group>"; };
 		E69C82D72B3C234000586158 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E69C82D92B3C238800586158 /* SweeterChapter3_Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweeterChapter3_Button.swift; sourceTree = "<group>"; };
+		E69F23322BDCF09F00F6DC40 /* READMEReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = READMEReader.swift; sourceTree = "<group>"; };
+		E69F233F2BDD0F6E00F6DC40 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
@@ -282,7 +285,6 @@
 		E6B63B692A30A25F00BE7893 /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
 		E6B63B6C2A30A3D700BE7893 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E6B660C32AF620A1002CEE18 /* SwfitUI-TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwfitUI-TextView.swift"; sourceTree = "<group>"; };
-		E6B660C52AF62284002CEE18 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E6C3158F2A2C92ED0010111B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E90654B2295951760027A47C /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		E90654B4295951820027A47C /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
@@ -525,6 +527,7 @@
 		E62DB4EA29FF89D4007F4C7F /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E69F23312BDCF08800F6DC40 /* READMEReader */,
 				E958D9B128B47FA100D05AC4 /* OutlineViewController.swift */,
 				E62DB4EB29FF89E7007F4C7F /* OutlineViewController+Item.swift */,
 			);
@@ -757,6 +760,14 @@
 			path = "Chapter3-1";
 			sourceTree = "<group>";
 		};
+		E69F23312BDCF08800F6DC40 /* READMEReader */ = {
+			isa = PBXGroup;
+			children = (
+				E69F23322BDCF09F00F6DC40 /* READMEReader.swift */,
+			);
+			path = READMEReader;
+			sourceTree = "<group>";
+		};
 		E6A16EA128BA1B1600921D78 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -963,7 +974,7 @@
 		E6B660BF2AF62045002CEE18 /* Chapter1-Hello,SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				E6B660C52AF62284002CEE18 /* README.md */,
+				E69F233F2BDD0F6E00F6DC40 /* README.md */,
 				E9D1A20F28D4230A00C46741 /* SwfitUIView.swift */,
 			);
 			path = "Chapter1-Hello,SwiftUI";
@@ -1481,6 +1492,7 @@
 				E62DB4E129FAAB1E007F4C7F /* MVCArchitecture.swift in Sources */,
 				E6AE13AF298947C40077DEDC /* MoyaViewController.swift in Sources */,
 				E62DB4EE29FF8D1B007F4C7F /* MVPArchitecture.swift in Sources */,
+				E69F23332BDCF09F00F6DC40 /* READMEReader.swift in Sources */,
 				E69C82D52B3C17E400586158 /* OpaqueTypeStudy.swift in Sources */,
 				E62AE6F229447D9C0054EA97 /* SingletonViewController.swift in Sources */,
 				E950C91828B87BD800E0C80A /* ReduceStudyViewController.swift in Sources */,

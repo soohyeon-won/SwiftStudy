@@ -87,12 +87,21 @@ class OutlineViewController: UIViewController {
                 title: "🕊 SwiftUI",
                 subitems: [
                     OutlineItem(
-                        title: "Hello, SwiftUI",
-                        swiftUIController: UIHostingController(rootView: AnyView(BaseView()))
+                        title: "README.md",
+                        swiftUIController: UIHostingController(rootView: AnyView(
+                            MarkdownView(filePath: "/Users/wonsoohyeon/study/RxSwiftStudy/RxSwiftStudyInUIkit/SwiftUI/Chapter1-Hello,SwiftUI/README.md"
+                                        )
+                        ))
                     ),
                     OutlineItem(
                         title: "2. 뷰 구성하기",
                         subitems: [
+                            OutlineItem(
+                                title: "README.md",
+                                swiftUIController: UIHostingController(rootView: AnyView(
+                                    WebContentView(url: "https://github.com/soohyeon-won/SwiftStudy/blob/master/RxSwiftStudyInUIkit/SwiftUI/Chapter2-Generate%20View/README.md")
+                                ))
+                            ),
                             OutlineItem(title: "Text", swiftUIController: UIHostingController(rootView: AnyView(SwiftUI_Text()))),
                             OutlineItem(title: "Image", swiftUIController: UIHostingController(rootView: AnyView(SwiftUI_Image()))),
                             OutlineItem(title: "Stack", swiftUIController: UIHostingController(rootView: AnyView(SwiftUI_Stack()))),
