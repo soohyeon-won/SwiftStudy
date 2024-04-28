@@ -76,7 +76,7 @@
 		E69C82D52B3C17E400586158 /* OpaqueTypeStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C82D42B3C17E400586158 /* OpaqueTypeStudy.swift */; };
 		E69C82DA2B3C238800586158 /* SweeterChapter3_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C82D92B3C238800586158 /* SweeterChapter3_Button.swift */; };
 		E69F23332BDCF09F00F6DC40 /* READMEReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23322BDCF09F00F6DC40 /* READMEReader.swift */; };
-		E69F23462BDD1EF100F6DC40 /* Combine.README.md in Resources */ = {isa = PBXBuildFile; fileRef = E69F23452BDD1EF100F6DC40 /* Combine.README.md */; };
+		E69F23462BDD1EF100F6DC40 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E69F23452BDD1EF100F6DC40 /* README.md */; };
 		E69F23482BDD1FEC00F6DC40 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23472BDD1FEC00F6DC40 /* Config.swift */; };
 		E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */; };
 		E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */; };
@@ -260,7 +260,7 @@
 		E69C82D92B3C238800586158 /* SweeterChapter3_Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweeterChapter3_Button.swift; sourceTree = "<group>"; };
 		E69F23322BDCF09F00F6DC40 /* READMEReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = READMEReader.swift; sourceTree = "<group>"; };
 		E69F233F2BDD0F6E00F6DC40 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E69F23452BDD1EF100F6DC40 /* Combine.README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = Combine.README.md; path = RxSwiftStudyInUIkit/Study/Combine.README.md; sourceTree = SOURCE_ROOT; };
+		E69F23452BDD1EF100F6DC40 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = RxSwiftStudyInUIkit/Study/README.md; sourceTree = SOURCE_ROOT; };
 		E69F23472BDD1FEC00F6DC40 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
@@ -727,7 +727,7 @@
 		E659A9E42BDA7D2F00EF6998 /* Combine */ = {
 			isa = PBXGroup;
 			children = (
-				E69F23452BDD1EF100F6DC40 /* Combine.README.md */,
+				E69F23452BDD1EF100F6DC40 /* README.md */,
 			);
 			path = Combine;
 			sourceTree = "<group>";
@@ -1272,7 +1272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E636138228B22E5A0050C070 /* LaunchScreen.storyboard in Resources */,
-				E69F23462BDD1EF100F6DC40 /* Combine.README.md in Resources */,
+				E69F23462BDD1EF100F6DC40 /* README.md in Resources */,
 				E636137F28B22E5A0050C070 /* Assets.xcassets in Resources */,
 				E636137D28B22E570050C070 /* Main.storyboard in Resources */,
 			);

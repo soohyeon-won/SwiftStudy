@@ -87,17 +87,20 @@ class OutlineViewController: UIViewController {
                 title: "🕊 SwiftUI",
                 subitems: [
                     OutlineItem(
-                        title: "README.md",
-                        swiftUIController: UIHostingController(rootView: AnyView(
-                            MarkdownView(filePath: "README.md")
-                        ))
+                        title: "1. Hello,SwiftUI",
+                        subitems: [
+                            OutlineItem(
+                                title: "README.md",
+                                swiftUIController: WebContentView(url: "\(githubPath)/SwiftUI/README.md").toHostingController()
+                            )
+                        ]
                     ),
                     OutlineItem(
                         title: "2. 뷰 구성하기",
                         subitems: [
                             OutlineItem(
                                 title: "README.md",
-                                swiftUIController: WebContentView(url: "\(githubPath)SwiftUI/Chapter2-Generate%20View/README.md").toHostingController()
+                                swiftUIController: WebContentView(url: "\(githubPath)/SwiftUI/Chapter2-Generate%20View/README.md").toHostingController()
                             ),
                             OutlineItem(title: "Text", swiftUIController: UIHostingController(rootView: AnyView(SwiftUI_Text()))),
                             OutlineItem(title: "Image", swiftUIController: UIHostingController(rootView: AnyView(SwiftUI_Image()))),
@@ -112,6 +115,10 @@ class OutlineViewController: UIViewController {
                     OutlineItem(
                         title: "3. 네비게이션 뷰와 리스트",
                         subitems: [
+                            OutlineItem(
+                                title: "README.md",
+                                swiftUIController: WebContentView(url: "\(githubPath)/SwiftUI/Chapter3-NavigationView%20and%20List/README.md").toHostingController()
+                            ),
                             OutlineItem(
                                 title: "3-1 Button",
                                 swiftUIController: UIHostingController(rootView: AnyView(SweeterChapter3_Button()))
@@ -147,6 +154,15 @@ class OutlineViewController: UIViewController {
                         swiftUIController: UIHostingController(
                             rootView: AnyView(GCDView())
                         )
+                    )
+                ]
+            ),
+            OutlineItem(
+                title: "🐣 Combine",
+                subitems: [
+                    OutlineItem(
+                        title: "README.md",
+                        swiftUIController: WebContentView(url: "\(githubPath)/Study/Combine/README.md").toHostingController()
                     )
                 ]
             ),

@@ -7,4 +7,4 @@
 
 import Foundation
 
-let githubPath: String = "https://github.com/soohyeon-won/SwiftStudy/blob/master/RxSwiftStudyInUIkit/"
+let githubPath: String = "https://github.com/soohyeon-won/SwiftStudy/blob/master/RxSwiftStudyInUIkit"
