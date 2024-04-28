@@ -161,8 +161,12 @@ class OutlineViewController: UIViewController {
                 title: "🐣 Combine",
                 subitems: [
                     OutlineItem(
-                        title: "README.md",
+                        title: "Chapter",
                         swiftUIController: WebContentView(url: "\(githubPath)/Study/Combine/README.md").toHostingController()
+                    ),
+                    OutlineItem(
+                        title: "Example",
+                        swiftUIController: PublishersEx1View().toHostingController()
                     )
                 ]
             ),
