@@ -260,10 +260,10 @@
 		E69C82D92B3C238800586158 /* SweeterChapter3_Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweeterChapter3_Button.swift; sourceTree = "<group>"; };
 		E69F23322BDCF09F00F6DC40 /* READMEReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = READMEReader.swift; sourceTree = "<group>"; };
 		E69F233F2BDD0F6E00F6DC40 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E69F23452BDD1EF100F6DC40 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = RxSwiftStudyInUIkit/Study/README.md; sourceTree = SOURCE_ROOT; };
 		E69F23472BDD1FEC00F6DC40 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		E69F234A2BDE4EB100F6DC40 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E69F23542BDE514300F6DC40 /* PublishersEx1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishersEx1.swift; sourceTree = "<group>"; };
+		E69F23562BDE5C2100F6DC40 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
@@ -729,9 +729,9 @@
 		E659A9E42BDA7D2F00EF6998 /* Combine */ = {
 			isa = PBXGroup;
 			children = (
+				E69F23562BDE5C2100F6DC40 /* README.md */,
 				E69F23532BDE504500F6DC40 /* Example */,
 				E69F23492BDE4E8C00F6DC40 /* Notion */,
-				E69F23452BDD1EF100F6DC40 /* README.md */,
 			);
 			path = Combine;
 			sourceTree = "<group>";
