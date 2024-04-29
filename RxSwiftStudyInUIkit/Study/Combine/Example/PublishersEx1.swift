@@ -11,32 +11,92 @@ import Combine
 
 struct PublishersEx1View: View {
     
-    let handler: PublishersEx1Handler = .init()
+    @ObservedObject var handler: PublishersEx1Handler = .init()
     
     var body: some View {
-        VStack(spacing: 12) {
-            Button {
-                handler.example_just()
-            } label: {
-                Text("just")
+        VStack {
+            HStack(alignment: .top) {
+                Text("2. Combine의 핵심 구성 요소")
+                    .frame(height: 44)
+                    .padding(.horizontal, 12)
+                    .background(
+                        RoundedRectangle(cornerRadius: 12)
+                            .fill(.blue.opacity(0.3))
+                    )
+                
+                Spacer()
+            }
+            .padding(12)
+            
+            VStack(spacing: 12) {
+                VStack {
+                    Text("Publishers")
+                        .font(.title)
+                        .frame(height: 38)
+                        .frame(maxWidth: .infinity)
+                        .padding(.horizontal, 16)
+                    
+                    Button {
+                        handler.example_just()
+                    } label: {
+                        Text("1. just")
+                    }
+                    
+                    Button {
+                        handler.example_future()
+                    } label: {
+                        Text("2. future")
+                    }
+                    
+                    Button {
+                        handler.example_passthroughSubject()
+                    } label: {
+                        Text("3. passthroughSubject")
+                    }
+                }
+                .padding(.vertical, 16)
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color.blue.opacity(0.7), lineWidth: 2)
+                )
+                .padding(.horizontal, 16)
             }
             
-            Button {
-                handler.example_future()
-            } label: {
-                Text("future")
+            VStack(spacing: 12) {
+                VStack {
+                    Text("Subscribers")
+                        .font(.title)
+                        .frame(height: 38)
+                        .frame(maxWidth: .infinity)
+                        .padding(.horizontal, 16)
+                    
+                    Button {
+                        handler.example_just()
+                    } label: {
+                        Text("1. sink")
+                    }
+                    
+                    Button {
+                        handler.example_assign()
+                    } label: {
+                        Text("2. assign \(handler.value)")
+                    }
+                }
+                .padding(.vertical, 16)
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color.blue.opacity(0.7), lineWidth: 2)
+                )
+                .padding(.horizontal, 16)
             }
-            
-            Button {
-                handler.example_passthroughSubject()
-            } label: {
-                Text("passthroughSubject")
-            }
+            Spacer()
         }
     }
 }
 
-class PublishersEx1Handler {
+class PublishersEx1Handler: ObservableObject {
+    
+    @Published var value: Int = 0
     
     var cancellables = Set<AnyCancellable>()
     // Just는 단일 값을 즉시 생성하여 전달하는 Publisher입니다. 데이터가 한 번만 발생하며 완료됩니다.
@@ -46,6 +106,12 @@ class PublishersEx1Handler {
         justPublisher
             .sink { completion in
                 print("Completion: \(completion)")
+                switch completion {
+                case .finished:
+                    print("Completion: finished")
+                case .failure(let error):
+                    print("Error: \(error)")
+                }
             } receiveValue: { value in
                 print("Received value: \(value)")
             }
@@ -99,5 +165,12 @@ class PublishersEx1Handler {
         subject.send("Hello, PassthroughSubject!")
         subject.send("Another value")
         subject.send(completion: .finished)
+    }
+    
+    func example_assign() {
+        let justPublisher = Just(42)
+        justPublisher
+            .assign(to: \.value, on: self)
+            .store(in: &cancellables)
     }
 }
