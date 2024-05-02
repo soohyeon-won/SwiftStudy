@@ -11,7 +11,7 @@ import Combine
 
 struct PublishersEx1View: View {
     
-    @ObservedObject var handler: PublishersEx1Handler = .init()
+    @StateObject var handler: PublishersEx1Handler = .init()
     
     var body: some View {
         VStack {
@@ -96,19 +96,29 @@ struct PublishersEx1View: View {
                 .padding(.horizontal, 16)
             }
             Spacer()
+        }.onDisappear {
+            handler.disappear()
         }
     }
 }
 
-class PublishersEx1Handler: ObservableObject {
+final class PublishersEx1Handler: ObservableObject {
+    
+    deinit {
+        print("deinit PublishersEx1Handler")
+    }
     
     @Published var value: Int = 0
-    let currentValueSubject = CurrentValueSubject<String, Error>("Initial value")
+    private let currentValueSubject = CurrentValueSubject<String, Error>("Initial value")
     
-    var cancellables = Set<AnyCancellable>()
+    private var cancellables: Set<AnyCancellable> = .init()
     
     init() {
         subscribeCurrentValueSubject()
+    }
+    
+    func disappear() {
+        
     }
     
     // Just는 단일 값을 즉시 생성하여 전달하는 Publisher입니다. 데이터가 한 번만 발생하며 완료됩니다.
