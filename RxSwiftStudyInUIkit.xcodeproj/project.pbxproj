@@ -78,6 +78,13 @@
 		E69F23332BDCF09F00F6DC40 /* READMEReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23322BDCF09F00F6DC40 /* READMEReader.swift */; };
 		E69F23482BDD1FEC00F6DC40 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23472BDD1FEC00F6DC40 /* Config.swift */; };
 		E69F23552BDE514300F6DC40 /* PublishersEx1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23542BDE514300F6DC40 /* PublishersEx1.swift */; };
+		E69F23742BE3B0DF00F6DC40 /* FacadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23672BE3B0DE00F6DC40 /* FacadeViewController.swift */; };
+		E69F23752BE3B0DF00F6DC40 /* DecoratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23692BE3B0DE00F6DC40 /* DecoratorViewController.swift */; };
+		E69F23762BE3B0DF00F6DC40 /* CompositeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F236B2BE3B0DE00F6DC40 /* CompositeViewController.swift */; };
+		E69F23772BE3B0DF00F6DC40 /* AdapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F236D2BE3B0DE00F6DC40 /* AdapterViewController.swift */; };
+		E69F23782BE3B0DF00F6DC40 /* BridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F236F2BE3B0DE00F6DC40 /* BridgeViewController.swift */; };
+		E69F23792BE3B0DF00F6DC40 /* FlyweightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23712BE3B0DF00F6DC40 /* FlyweightViewController.swift */; };
+		E69F237A2BE3B0DF00F6DC40 /* ProxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23732BE3B0DF00F6DC40 /* ProxyViewController.swift */; };
 		E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */; };
 		E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */; };
 		E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */; };
@@ -85,19 +92,12 @@
 		E6AD8E6F29692FB400208D8C /* WebviewDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD8E6E29692FB400208D8C /* WebviewDirector.swift */; };
 		E6AD8E7D296948AA00208D8C /* GCDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD8E7C296948AA00208D8C /* GCDView.swift */; };
 		E6AD8E7F296948E600208D8C /* DynamicMemberLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD8E7E296948E600208D8C /* DynamicMemberLookup.swift */; };
-		E6AD8E82297FBA2F00208D8C /* AdapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD8E81297FBA2F00208D8C /* AdapterViewController.swift */; };
-		E6AE13852986612D0077DEDC /* BridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13842986612D0077DEDC /* BridgeViewController.swift */; };
 		E6AE1390298937910077DEDC /* DataLayer.docc in Sources */ = {isa = PBXBuildFile; fileRef = E6AE138F298937910077DEDC /* DataLayer.docc */; };
 		E6AE1396298937910077DEDC /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6AE138C298937910077DEDC /* DataLayer.framework */; };
 		E6AE139D298937910077DEDC /* DataLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE139C298937910077DEDC /* DataLayerTests.swift */; };
 		E6AE139E298937910077DEDC /* DataLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E6AE138E298937910077DEDC /* DataLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6AE13AC298937B50077DEDC /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13AB298937B50077DEDC /* NetworkProvider.swift */; };
 		E6AE13AF298947C40077DEDC /* MoyaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13AE298947C40077DEDC /* MoyaViewController.swift */; };
-		E6AE13B329974F120077DEDC /* CompositeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13B229974F120077DEDC /* CompositeViewController.swift */; };
-		E6AE13B629974F870077DEDC /* DecoratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13B529974F870077DEDC /* DecoratorViewController.swift */; };
-		E6AE13B929974FB80077DEDC /* FacadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13B829974FB80077DEDC /* FacadeViewController.swift */; };
-		E6AE13BC29974FF10077DEDC /* FlyweightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13BB29974FF10077DEDC /* FlyweightViewController.swift */; };
-		E6AE13BF299750230077DEDC /* ProxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE13BE299750230077DEDC /* ProxyViewController.swift */; };
 		E6B63B682A30A1FC00BE7893 /* MoyaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B63B672A30A1FC00BE7893 /* MoyaViewModel.swift */; };
 		E6B63B6A2A30A25F00BE7893 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B63B692A30A25F00BE7893 /* GithubAPI.swift */; };
 		E6B660C42AF620A1002CEE18 /* SwfitUI-TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B660C32AF620A1002CEE18 /* SwfitUI-TextView.swift */; };
@@ -264,6 +264,13 @@
 		E69F234A2BDE4EB100F6DC40 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E69F23542BDE514300F6DC40 /* PublishersEx1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishersEx1.swift; sourceTree = "<group>"; };
 		E69F23562BDE5C2100F6DC40 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E69F23672BE3B0DE00F6DC40 /* FacadeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeViewController.swift; sourceTree = "<group>"; };
+		E69F23692BE3B0DE00F6DC40 /* DecoratorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecoratorViewController.swift; sourceTree = "<group>"; };
+		E69F236B2BE3B0DE00F6DC40 /* CompositeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeViewController.swift; sourceTree = "<group>"; };
+		E69F236D2BE3B0DE00F6DC40 /* AdapterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterViewController.swift; sourceTree = "<group>"; };
+		E69F236F2BE3B0DE00F6DC40 /* BridgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeViewController.swift; sourceTree = "<group>"; };
+		E69F23712BE3B0DF00F6DC40 /* FlyweightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightViewController.swift; sourceTree = "<group>"; };
+		E69F23732BE3B0DF00F6DC40 /* ProxyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyViewController.swift; sourceTree = "<group>"; };
 		E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
@@ -271,8 +278,6 @@
 		E6AD8E6E29692FB400208D8C /* WebviewDirector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewDirector.swift; sourceTree = "<group>"; };
 		E6AD8E7C296948AA00208D8C /* GCDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDView.swift; sourceTree = "<group>"; };
 		E6AD8E7E296948E600208D8C /* DynamicMemberLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicMemberLookup.swift; sourceTree = "<group>"; };
-		E6AD8E81297FBA2F00208D8C /* AdapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterViewController.swift; sourceTree = "<group>"; };
-		E6AE13842986612D0077DEDC /* BridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeViewController.swift; sourceTree = "<group>"; };
 		E6AE138C298937910077DEDC /* DataLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6AE138E298937910077DEDC /* DataLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataLayer.h; sourceTree = "<group>"; };
 		E6AE138F298937910077DEDC /* DataLayer.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DataLayer.docc; sourceTree = "<group>"; };
@@ -280,11 +285,6 @@
 		E6AE139C298937910077DEDC /* DataLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayerTests.swift; sourceTree = "<group>"; };
 		E6AE13AB298937B50077DEDC /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		E6AE13AE298947C40077DEDC /* MoyaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaViewController.swift; sourceTree = "<group>"; };
-		E6AE13B229974F120077DEDC /* CompositeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeViewController.swift; sourceTree = "<group>"; };
-		E6AE13B529974F870077DEDC /* DecoratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorViewController.swift; sourceTree = "<group>"; };
-		E6AE13B829974FB80077DEDC /* FacadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadeViewController.swift; sourceTree = "<group>"; };
-		E6AE13BB29974FF10077DEDC /* FlyweightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightViewController.swift; sourceTree = "<group>"; };
-		E6AE13BE299750230077DEDC /* ProxyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyViewController.swift; sourceTree = "<group>"; };
 		E6B63B672A30A1FC00BE7893 /* MoyaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaViewModel.swift; sourceTree = "<group>"; };
 		E6B63B692A30A25F00BE7893 /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
 		E6B63B6C2A30A3D700BE7893 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -791,6 +791,69 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
+		E69F23662BE3B0DE00F6DC40 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				E69F23672BE3B0DE00F6DC40 /* FacadeViewController.swift */,
+			);
+			name = Facade;
+			path = RxSwiftStudyInUIkit/Study/DesignPatterns/Structural/Facade;
+			sourceTree = SOURCE_ROOT;
+		};
+		E69F23682BE3B0DE00F6DC40 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				E69F23692BE3B0DE00F6DC40 /* DecoratorViewController.swift */,
+			);
+			name = Decorator;
+			path = RxSwiftStudyInUIkit/Study/DesignPatterns/Structural/Decorator;
+			sourceTree = SOURCE_ROOT;
+		};
+		E69F236A2BE3B0DE00F6DC40 /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				E69F236B2BE3B0DE00F6DC40 /* CompositeViewController.swift */,
+			);
+			name = Composite;
+			path = RxSwiftStudyInUIkit/Study/DesignPatterns/Structural/Composite;
+			sourceTree = SOURCE_ROOT;
+		};
+		E69F236C2BE3B0DE00F6DC40 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				E69F236D2BE3B0DE00F6DC40 /* AdapterViewController.swift */,
+			);
+			name = Adapter;
+			path = RxSwiftStudyInUIkit/Study/DesignPatterns/Structural/Adapter;
+			sourceTree = SOURCE_ROOT;
+		};
+		E69F236E2BE3B0DE00F6DC40 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				E69F236F2BE3B0DE00F6DC40 /* BridgeViewController.swift */,
+			);
+			name = Bridge;
+			path = RxSwiftStudyInUIkit/Study/DesignPatterns/Structural/Bridge;
+			sourceTree = SOURCE_ROOT;
+		};
+		E69F23702BE3B0DF00F6DC40 /* Flyweight */ = {
+			isa = PBXGroup;
+			children = (
+				E69F23712BE3B0DF00F6DC40 /* FlyweightViewController.swift */,
+			);
+			name = Flyweight;
+			path = RxSwiftStudyInUIkit/Study/DesignPatterns/Structural/Flyweight;
+			sourceTree = SOURCE_ROOT;
+		};
+		E69F23722BE3B0DF00F6DC40 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				E69F23732BE3B0DF00F6DC40 /* ProxyViewController.swift */,
+			);
+			name = Proxy;
+			path = RxSwiftStudyInUIkit/Study/DesignPatterns/Structural/Proxy;
+			sourceTree = SOURCE_ROOT;
+		};
 		E6A16EA128BA1B1600921D78 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -866,32 +929,16 @@
 		E6AD8E80297FB9E100208D8C /* Structural */ = {
 			isa = PBXGroup;
 			children = (
-				E6AD8E83297FBA6C00208D8C /* Adapter */,
-				E6AE1383298661180077DEDC /* Bridge */,
-				E6AE13B129974EFF0077DEDC /* Composite */,
-				E6AE13B429974F6A0077DEDC /* Decorator */,
-				E6AE13B729974FA70077DEDC /* Facade */,
-				E6AE13BA29974FD30077DEDC /* Flyweight */,
-				E6AE13BD299750080077DEDC /* Proxy */,
+				E69F236C2BE3B0DE00F6DC40 /* Adapter */,
+				E69F236E2BE3B0DE00F6DC40 /* Bridge */,
+				E69F236A2BE3B0DE00F6DC40 /* Composite */,
+				E69F23682BE3B0DE00F6DC40 /* Decorator */,
+				E69F23662BE3B0DE00F6DC40 /* Facade */,
+				E69F23702BE3B0DF00F6DC40 /* Flyweight */,
+				E69F23722BE3B0DF00F6DC40 /* Proxy */,
 			);
 			name = Structural;
 			path = "구조";
-			sourceTree = "<group>";
-		};
-		E6AD8E83297FBA6C00208D8C /* Adapter */ = {
-			isa = PBXGroup;
-			children = (
-				E6AD8E81297FBA2F00208D8C /* AdapterViewController.swift */,
-			);
-			path = Adapter;
-			sourceTree = "<group>";
-		};
-		E6AE1383298661180077DEDC /* Bridge */ = {
-			isa = PBXGroup;
-			children = (
-				E6AE13842986612D0077DEDC /* BridgeViewController.swift */,
-			);
-			path = Bridge;
 			sourceTree = "<group>";
 		};
 		E6AE1386298937640077DEDC /* Network */ = {
@@ -935,46 +982,6 @@
 				E6B63B6B2A30A3B600BE7893 /* Realm */,
 			);
 			path = Library;
-			sourceTree = "<group>";
-		};
-		E6AE13B129974EFF0077DEDC /* Composite */ = {
-			isa = PBXGroup;
-			children = (
-				E6AE13B229974F120077DEDC /* CompositeViewController.swift */,
-			);
-			path = Composite;
-			sourceTree = "<group>";
-		};
-		E6AE13B429974F6A0077DEDC /* Decorator */ = {
-			isa = PBXGroup;
-			children = (
-				E6AE13B529974F870077DEDC /* DecoratorViewController.swift */,
-			);
-			path = Decorator;
-			sourceTree = "<group>";
-		};
-		E6AE13B729974FA70077DEDC /* Facade */ = {
-			isa = PBXGroup;
-			children = (
-				E6AE13B829974FB80077DEDC /* FacadeViewController.swift */,
-			);
-			path = Facade;
-			sourceTree = "<group>";
-		};
-		E6AE13BA29974FD30077DEDC /* Flyweight */ = {
-			isa = PBXGroup;
-			children = (
-				E6AE13BB29974FF10077DEDC /* FlyweightViewController.swift */,
-			);
-			path = Flyweight;
-			sourceTree = "<group>";
-		};
-		E6AE13BD299750080077DEDC /* Proxy */ = {
-			isa = PBXGroup;
-			children = (
-				E6AE13BE299750230077DEDC /* ProxyViewController.swift */,
-			);
-			path = Proxy;
 			sourceTree = "<group>";
 		};
 		E6B63B662A30A1EE00BE7893 /* Moya */ = {
@@ -1476,22 +1483,18 @@
 			files = (
 				E640F24E29A20D9300E0F749 /* IteratorViewController.swift in Sources */,
 				E68999472B42C47D006283E9 /* SweeterChapter3_Frame.swift in Sources */,
-				E6AE13B629974F870077DEDC /* DecoratorViewController.swift in Sources */,
+				E69F23772BE3B0DF00F6DC40 /* AdapterViewController.swift in Sources */,
 				E62DB4F629FF8DA8007F4C7F /* MVVMCleanArchitecture.swift in Sources */,
 				E69F23552BDE514300F6DC40 /* PublishersEx1.swift in Sources */,
-				E6AE13BF299750230077DEDC /* ProxyViewController.swift in Sources */,
 				E640F24829A20CEB00E0F749 /* CommandViewController.swift in Sources */,
 				E6186C3B2A0BCD0C004FD75C /* Ribs.swift in Sources */,
 				E997CBE62966814300A5B0B5 /* Builder.swift in Sources */,
 				E640F25129A20DD200E0F749 /* MediatorViewController.swift in Sources */,
-				E6AE13852986612D0077DEDC /* BridgeViewController.swift in Sources */,
 				E69C82412B00B8A500586158 /* SwiftUI-StackComb.swift in Sources */,
 				E69F23482BDD1FEC00F6DC40 /* Config.swift in Sources */,
-				E6AD8E82297FBA2F00208D8C /* AdapterViewController.swift in Sources */,
 				E640F24B29A20D5B00E0F749 /* InterpreterViewController.swift in Sources */,
 				E69C82DA2B3C238800586158 /* SweeterChapter3_Button.swift in Sources */,
 				E62DB4F429FF8D82007F4C7F /* ReactorKit.swift in Sources */,
-				E6AE13B929974FB80077DEDC /* FacadeViewController.swift in Sources */,
 				E62AE6F629447DE40054EA97 /* FactoryMethod.swift in Sources */,
 				E62ACA0E29C576EF009ED371 /* TemplateCallbackViewController.swift in Sources */,
 				E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */,
@@ -1499,17 +1502,16 @@
 				E6B660C42AF620A1002CEE18 /* SwfitUI-TextView.swift in Sources */,
 				E997CBE82966819D00A5B0B5 /* BuilderPattern.swift in Sources */,
 				E9F71BFD2974FEB500BDD86B /* PrototypeViewController.swift in Sources */,
+				E69F23782BE3B0DF00F6DC40 /* BridgeViewController.swift in Sources */,
 				E6B63B682A30A1FC00BE7893 /* MoyaViewModel.swift in Sources */,
 				E62ACA0729C5704B009ED371 /* DatabaseConnection.swift in Sources */,
 				E62DB4DC29F39D82007F4C7F /* StatePatternExample.swift in Sources */,
 				E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */,
-				E6AE13BC29974FF10077DEDC /* FlyweightViewController.swift in Sources */,
 				E640F24529A20C9A00E0F749 /* ChainOfResponsibilityViewController.swift in Sources */,
 				E62DB4FB2A050C83007F4C7F /* Architecture-Index.swift in Sources */,
 				E62DB4F029FF8D4E007F4C7F /* MVVMArchitecture.swift in Sources */,
 				E62DB4F92A050BE7007F4C7F /* VIPERArchitecture.swift in Sources */,
 				E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */,
-				E6AE13B329974F120077DEDC /* CompositeViewController.swift in Sources */,
 				E62ACA1429C58D93009ED371 /* Before_VisitorExample.swift in Sources */,
 				E640F25B29A20ED200E0F749 /* ObserverViewController.swift in Sources */,
 				E6AD8E7F296948E600208D8C /* DynamicMemberLookup.swift in Sources */,
@@ -1528,6 +1530,7 @@
 				E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */,
 				E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */,
 				E640F25F29A20F0900E0F749 /* StrategyViewController.swift in Sources */,
+				E69F237A2BE3B0DF00F6DC40 /* ProxyViewController.swift in Sources */,
 				E62ACA0C29C576DA009ED371 /* FileProcessor.swift in Sources */,
 				E63613A628B22E6A0050C070 /* ShareStudy.swift in Sources */,
 				E689993A2B427F81006283E9 /* SweeterChapter3_Navigation.swift in Sources */,
@@ -1542,6 +1545,7 @@
 				E90654B3295951760027A47C /* AbstractFactory.swift in Sources */,
 				E94DDCBE28B5CFE4005451EA /* Map.swift in Sources */,
 				E62ACA1629C59013009ED371 /* After_VisitorExample.swift in Sources */,
+				E69F23742BE3B0DF00F6DC40 /* FacadeViewController.swift in Sources */,
 				E69C824A2B134AB400586158 /* Chapter2-2.swift in Sources */,
 				E68999452B42BAAE006283E9 /* SweeterChapter3_GeometryReader.swift in Sources */,
 				E62ACA1829C59944009ED371 /* MarkerExample.swift in Sources */,
@@ -1556,8 +1560,11 @@
 				E636137828B22E570050C070 /* SceneDelegate.swift in Sources */,
 				E62AE6EE2944680A0054EA97 /* Singleton.swift in Sources */,
 				E62DB4EC29FF89E7007F4C7F /* OutlineViewController+Item.swift in Sources */,
+				E69F23762BE3B0DF00F6DC40 /* CompositeViewController.swift in Sources */,
 				E62ACA1229C587BC009ED371 /* TemplateCallbackSkeleton.swift in Sources */,
+				E69F23792BE3B0DF00F6DC40 /* FlyweightViewController.swift in Sources */,
 				E950C91628B8709600E0C80A /* Reduce.swift in Sources */,
+				E69F23752BE3B0DF00F6DC40 /* DecoratorViewController.swift in Sources */,
 				E6AD8E7D296948AA00208D8C /* GCDView.swift in Sources */,
 				E6A16EAE28BB3FEA00921D78 /* UITableView+Extensions.swift in Sources */,
 				E640F26129A20F2100E0F749 /* TemplateMethodViewController.swift in Sources */,
