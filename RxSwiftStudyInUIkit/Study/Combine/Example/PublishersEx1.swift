@@ -14,88 +14,88 @@ struct PublishersEx1View: View {
     @StateObject var handler: PublishersEx1Handler = .init()
     
     var body: some View {
-        VStack {
-            HStack(alignment: .top) {
-                Text("2. Combine의 핵심 구성 요소")
-                    .frame(height: 44)
-                    .padding(.horizontal, 12)
+        ScrollView {
+            VStack {
+                HStack(alignment: .top) {
+                    Text("2. Combine의 핵심 구성 요소")
+                        .frame(height: 44)
+                        .padding(.horizontal, 12)
+                    Spacer()
+                }
+                .padding(12)
+                
+                VStack(spacing: 12) {
+                    VStack {
+                        Text("Publishers")
+                            .font(.title)
+                            .frame(height: 38)
+                            .frame(maxWidth: .infinity)
+                            .padding(.horizontal, 16)
+                        
+                        Button {
+                            handler.example_just()
+                        } label: {
+                            Text("1. just")
+                        }
+                        
+                        Button {
+                            handler.example_future()
+                        } label: {
+                            Text("2. future")
+                        }
+                        
+                        Button {
+                            handler.example_passthroughSubject()
+                        } label: {
+                            Text("3. passthroughSubject")
+                        }
+                        
+                        Button {
+                            handler.example_currentValueSubject()
+                        } label: {
+                            Text("4. currentValueSubject")
+                        }
+                    }
+                    .padding(.vertical, 16)
                     .background(
-                        RoundedRectangle(cornerRadius: 12)
-                            .fill(.blue.opacity(0.3))
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.blue.opacity(0.7), lineWidth: 2)
                     )
+                    .padding(.horizontal, 16)
+                }
+                
+                VStack(spacing: 12) {
+                    VStack {
+                        Text("Subscribers")
+                            .font(.title)
+                            .frame(height: 38)
+                            .frame(maxWidth: .infinity)
+                            .padding(.horizontal, 16)
+                        
+                        Button {
+                            handler.example_just()
+                        } label: {
+                            Text("1. sink")
+                        }
+                        
+                        Button {
+                            handler.example_assign()
+                        } label: {
+                            Text("2. assign \(handler.value)")
+                        }
+                    }
+                    .padding(.vertical, 16)
+                    .background(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.blue.opacity(0.7), lineWidth: 2)
+                    )
+                    .padding(.horizontal, 16)
+                }
+                
+                PublishersEx2View()
                 
                 Spacer()
             }
-            .padding(12)
-            
-            VStack(spacing: 12) {
-                VStack {
-                    Text("Publishers")
-                        .font(.title)
-                        .frame(height: 38)
-                        .frame(maxWidth: .infinity)
-                        .padding(.horizontal, 16)
-                    
-                    Button {
-                        handler.example_just()
-                    } label: {
-                        Text("1. just")
-                    }
-                    
-                    Button {
-                        handler.example_future()
-                    } label: {
-                        Text("2. future")
-                    }
-                    
-                    Button {
-                        handler.example_passthroughSubject()
-                    } label: {
-                        Text("3. passthroughSubject")
-                    }
-                    
-                    Button {
-                        handler.example_currentValueSubject()
-                    } label: {
-                        Text("4. currentValueSubject")
-                    }
-                }
-                .padding(.vertical, 16)
-                .background(
-                    RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color.blue.opacity(0.7), lineWidth: 2)
-                )
-                .padding(.horizontal, 16)
-            }
-            
-            VStack(spacing: 12) {
-                VStack {
-                    Text("Subscribers")
-                        .font(.title)
-                        .frame(height: 38)
-                        .frame(maxWidth: .infinity)
-                        .padding(.horizontal, 16)
-                    
-                    Button {
-                        handler.example_just()
-                    } label: {
-                        Text("1. sink")
-                    }
-                    
-                    Button {
-                        handler.example_assign()
-                    } label: {
-                        Text("2. assign \(handler.value)")
-                    }
-                }
-                .padding(.vertical, 16)
-                .background(
-                    RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color.blue.opacity(0.7), lineWidth: 2)
-                )
-                .padding(.horizontal, 16)
-            }
-            Spacer()
         }.onDisappear {
             handler.disappear()
         }

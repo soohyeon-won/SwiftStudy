@@ -85,6 +85,7 @@
 		E69F23782BE3B0DF00F6DC40 /* BridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F236F2BE3B0DE00F6DC40 /* BridgeViewController.swift */; };
 		E69F23792BE3B0DF00F6DC40 /* FlyweightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23712BE3B0DF00F6DC40 /* FlyweightViewController.swift */; };
 		E69F237A2BE3B0DF00F6DC40 /* ProxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23732BE3B0DF00F6DC40 /* ProxyViewController.swift */; };
+		E69F237C2BE8A40B00F6DC40 /* PublishersEx2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F237B2BE8A40B00F6DC40 /* PublishersEx2.swift */; };
 		E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */; };
 		E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */; };
 		E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */; };
@@ -271,6 +272,7 @@
 		E69F236F2BE3B0DE00F6DC40 /* BridgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeViewController.swift; sourceTree = "<group>"; };
 		E69F23712BE3B0DF00F6DC40 /* FlyweightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightViewController.swift; sourceTree = "<group>"; };
 		E69F23732BE3B0DF00F6DC40 /* ProxyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyViewController.swift; sourceTree = "<group>"; };
+		E69F237B2BE8A40B00F6DC40 /* PublishersEx2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishersEx2.swift; sourceTree = "<group>"; };
 		E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
@@ -787,6 +789,7 @@
 			isa = PBXGroup;
 			children = (
 				E69F23542BDE514300F6DC40 /* PublishersEx1.swift */,
+				E69F237B2BE8A40B00F6DC40 /* PublishersEx2.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -1559,6 +1562,7 @@
 				E640F25929A20EB700E0F749 /* MementoViewController.swift in Sources */,
 				E636137828B22E570050C070 /* SceneDelegate.swift in Sources */,
 				E62AE6EE2944680A0054EA97 /* Singleton.swift in Sources */,
+				E69F237C2BE8A40B00F6DC40 /* PublishersEx2.swift in Sources */,
 				E62DB4EC29FF89E7007F4C7F /* OutlineViewController+Item.swift in Sources */,
 				E69F23762BE3B0DF00F6DC40 /* CompositeViewController.swift in Sources */,
 				E62ACA1229C587BC009ED371 /* TemplateCallbackSkeleton.swift in Sources */,
