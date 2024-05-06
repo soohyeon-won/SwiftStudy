@@ -86,6 +86,7 @@
 		E69F23792BE3B0DF00F6DC40 /* FlyweightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23712BE3B0DF00F6DC40 /* FlyweightViewController.swift */; };
 		E69F237A2BE3B0DF00F6DC40 /* ProxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23732BE3B0DF00F6DC40 /* ProxyViewController.swift */; };
 		E69F237C2BE8A40B00F6DC40 /* PublishersEx2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F237B2BE8A40B00F6DC40 /* PublishersEx2.swift */; };
+		E69F237E2BE8AF7300F6DC40 /* PublishersEx3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F237D2BE8AF7300F6DC40 /* PublishersEx3.swift */; };
 		E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */; };
 		E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */; };
 		E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */; };
@@ -273,6 +274,7 @@
 		E69F23712BE3B0DF00F6DC40 /* FlyweightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightViewController.swift; sourceTree = "<group>"; };
 		E69F23732BE3B0DF00F6DC40 /* ProxyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyViewController.swift; sourceTree = "<group>"; };
 		E69F237B2BE8A40B00F6DC40 /* PublishersEx2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishersEx2.swift; sourceTree = "<group>"; };
+		E69F237D2BE8AF7300F6DC40 /* PublishersEx3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishersEx3.swift; sourceTree = "<group>"; };
 		E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
@@ -790,6 +792,7 @@
 			children = (
 				E69F23542BDE514300F6DC40 /* PublishersEx1.swift */,
 				E69F237B2BE8A40B00F6DC40 /* PublishersEx2.swift */,
+				E69F237D2BE8AF7300F6DC40 /* PublishersEx3.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -1531,6 +1534,7 @@
 				E69C823F2B00B10D00586158 /* SwiftUI-Stack.swift in Sources */,
 				E62ACA0529C5701B009ED371 /* DocumentGenerator.swift in Sources */,
 				E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */,
+				E69F237E2BE8AF7300F6DC40 /* PublishersEx3.swift in Sources */,
 				E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */,
 				E640F25F29A20F0900E0F749 /* StrategyViewController.swift in Sources */,
 				E69F237A2BE3B0DF00F6DC40 /* ProxyViewController.swift in Sources */,

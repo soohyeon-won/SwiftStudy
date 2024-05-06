@@ -94,6 +94,8 @@ struct PublishersEx1View: View {
                 
                 PublishersEx2View()
                 
+                PublishersEx3View()
+                
                 Spacer()
             }
         }.onDisappear {
