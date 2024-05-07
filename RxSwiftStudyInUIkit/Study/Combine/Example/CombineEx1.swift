@@ -1,5 +1,5 @@
 //
-//  PublishersEx1.swift
+//  CombineEx1.swift
 //  RxSwiftStudyInUIkit
 //
 //  Created by won soohyeon on 4/28/24.
@@ -9,9 +9,9 @@ import SwiftUI
 
 import Combine
 
-struct PublishersEx1View: View {
+struct CombineEx1View: View {
     
-    @StateObject var handler: PublishersEx1Handler = .init()
+    @StateObject var handler: CombineEx1Handler = .init()
     
     var body: some View {
         ScrollView {
@@ -92,9 +92,11 @@ struct PublishersEx1View: View {
                     .padding(.horizontal, 16)
                 }
                 
-                PublishersEx2View()
+                CombineEx2View()
                 
-                PublishersEx3View()
+                CombineEx3View()
+                
+                CombineEx4View()
                 
                 Spacer()
             }
@@ -104,10 +106,10 @@ struct PublishersEx1View: View {
     }
 }
 
-final class PublishersEx1Handler: ObservableObject {
+final class CombineEx1Handler: ObservableObject {
     
     deinit {
-        print("deinit PublishersEx1Handler")
+        print("deinit CombineEx1Handler")
     }
     
     @Published var value: Int = 0

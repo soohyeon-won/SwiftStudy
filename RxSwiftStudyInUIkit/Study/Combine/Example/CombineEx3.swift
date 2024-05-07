@@ -1,5 +1,5 @@
 //
-//  PublishersEx3.swift
+//  CombineEx3.swift
 //  RxSwiftStudyInUIkit
 //
 //  Created by won soohyeon on 4/28/24.
@@ -9,9 +9,9 @@ import SwiftUI
 
 import Combine
 
-struct PublishersEx3View: View {
+struct CombineEx3View: View {
     
-    @StateObject var handler: PublishersEx3Handler = .init()
+    @StateObject var handler: CombineEx3Handler = .init()
     
     var body: some View {
         VStack {
@@ -70,10 +70,10 @@ struct PublishersEx3View: View {
     }
 }
 
-final class PublishersEx3Handler: ObservableObject {
+final class CombineEx3Handler: ObservableObject {
     
     deinit {
-        print("deinit PublishersEx3Handler")
+        print("deinit CombineEx3Handler")
     }
     
     @Published var text: String = ""

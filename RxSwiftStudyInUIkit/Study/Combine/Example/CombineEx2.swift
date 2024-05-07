@@ -1,5 +1,5 @@
 //
-//  PublishersEx2.swift
+//  CombineEx2View.swift
 //  RxSwiftStudyInUIkit
 //
 //  Created by won soohyeon on 4/28/24.
@@ -9,9 +9,9 @@ import SwiftUI
 
 import Combine
 
-struct PublishersEx2View: View {
+struct CombineEx2View: View {
     
-    @StateObject var handler: PublishersEx2Handler = .init()
+    @StateObject var handler: CombineEx2Handler = .init()
     
     var body: some View {
         VStack {
@@ -175,10 +175,10 @@ struct PublishersEx2View: View {
     }
 }
 
-final class PublishersEx2Handler: ObservableObject {
+final class CombineEx2Handler: ObservableObject {
     
     deinit {
-        print("deinit PublishersEx2Handler")
+        print("deinit CombineEx2Handler")
     }
     
     private var cancellables: Set<AnyCancellable> = .init()

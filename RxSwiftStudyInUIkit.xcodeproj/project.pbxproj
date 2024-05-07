@@ -77,7 +77,7 @@
 		E69C82DA2B3C238800586158 /* SweeterChapter3_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69C82D92B3C238800586158 /* SweeterChapter3_Button.swift */; };
 		E69F23332BDCF09F00F6DC40 /* READMEReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23322BDCF09F00F6DC40 /* READMEReader.swift */; };
 		E69F23482BDD1FEC00F6DC40 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23472BDD1FEC00F6DC40 /* Config.swift */; };
-		E69F23552BDE514300F6DC40 /* PublishersEx1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23542BDE514300F6DC40 /* PublishersEx1.swift */; };
+		E69F23552BDE514300F6DC40 /* CombineEx1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23542BDE514300F6DC40 /* CombineEx1.swift */; };
 		E69F23742BE3B0DF00F6DC40 /* FacadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23672BE3B0DE00F6DC40 /* FacadeViewController.swift */; };
 		E69F23752BE3B0DF00F6DC40 /* DecoratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23692BE3B0DE00F6DC40 /* DecoratorViewController.swift */; };
 		E69F23762BE3B0DF00F6DC40 /* CompositeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F236B2BE3B0DE00F6DC40 /* CompositeViewController.swift */; };
@@ -85,8 +85,9 @@
 		E69F23782BE3B0DF00F6DC40 /* BridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F236F2BE3B0DE00F6DC40 /* BridgeViewController.swift */; };
 		E69F23792BE3B0DF00F6DC40 /* FlyweightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23712BE3B0DF00F6DC40 /* FlyweightViewController.swift */; };
 		E69F237A2BE3B0DF00F6DC40 /* ProxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23732BE3B0DF00F6DC40 /* ProxyViewController.swift */; };
-		E69F237C2BE8A40B00F6DC40 /* PublishersEx2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F237B2BE8A40B00F6DC40 /* PublishersEx2.swift */; };
-		E69F237E2BE8AF7300F6DC40 /* PublishersEx3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F237D2BE8AF7300F6DC40 /* PublishersEx3.swift */; };
+		E69F237C2BE8A40B00F6DC40 /* CombineEx2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F237B2BE8A40B00F6DC40 /* CombineEx2.swift */; };
+		E69F237E2BE8AF7300F6DC40 /* CombineEx3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F237D2BE8AF7300F6DC40 /* CombineEx3.swift */; };
+		E69F23802BEA6BA500F6DC40 /* CombineEx4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F237F2BEA6BA500F6DC40 /* CombineEx4.swift */; };
 		E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */; };
 		E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */; };
 		E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */; };
@@ -264,7 +265,7 @@
 		E69F233F2BDD0F6E00F6DC40 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E69F23472BDD1FEC00F6DC40 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		E69F234A2BDE4EB100F6DC40 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E69F23542BDE514300F6DC40 /* PublishersEx1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishersEx1.swift; sourceTree = "<group>"; };
+		E69F23542BDE514300F6DC40 /* CombineEx1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineEx1.swift; sourceTree = "<group>"; };
 		E69F23562BDE5C2100F6DC40 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E69F23672BE3B0DE00F6DC40 /* FacadeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeViewController.swift; sourceTree = "<group>"; };
 		E69F23692BE3B0DE00F6DC40 /* DecoratorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecoratorViewController.swift; sourceTree = "<group>"; };
@@ -273,8 +274,9 @@
 		E69F236F2BE3B0DE00F6DC40 /* BridgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeViewController.swift; sourceTree = "<group>"; };
 		E69F23712BE3B0DF00F6DC40 /* FlyweightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightViewController.swift; sourceTree = "<group>"; };
 		E69F23732BE3B0DF00F6DC40 /* ProxyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyViewController.swift; sourceTree = "<group>"; };
-		E69F237B2BE8A40B00F6DC40 /* PublishersEx2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishersEx2.swift; sourceTree = "<group>"; };
-		E69F237D2BE8AF7300F6DC40 /* PublishersEx3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishersEx3.swift; sourceTree = "<group>"; };
+		E69F237B2BE8A40B00F6DC40 /* CombineEx2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineEx2.swift; sourceTree = "<group>"; };
+		E69F237D2BE8AF7300F6DC40 /* CombineEx3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineEx3.swift; sourceTree = "<group>"; };
+		E69F237F2BEA6BA500F6DC40 /* CombineEx4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineEx4.swift; sourceTree = "<group>"; };
 		E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
@@ -790,9 +792,10 @@
 		E69F23532BDE504500F6DC40 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				E69F23542BDE514300F6DC40 /* PublishersEx1.swift */,
-				E69F237B2BE8A40B00F6DC40 /* PublishersEx2.swift */,
-				E69F237D2BE8AF7300F6DC40 /* PublishersEx3.swift */,
+				E69F23542BDE514300F6DC40 /* CombineEx1.swift */,
+				E69F237B2BE8A40B00F6DC40 /* CombineEx2.swift */,
+				E69F237D2BE8AF7300F6DC40 /* CombineEx3.swift */,
+				E69F237F2BEA6BA500F6DC40 /* CombineEx4.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -1491,7 +1494,7 @@
 				E68999472B42C47D006283E9 /* SweeterChapter3_Frame.swift in Sources */,
 				E69F23772BE3B0DF00F6DC40 /* AdapterViewController.swift in Sources */,
 				E62DB4F629FF8DA8007F4C7F /* MVVMCleanArchitecture.swift in Sources */,
-				E69F23552BDE514300F6DC40 /* PublishersEx1.swift in Sources */,
+				E69F23552BDE514300F6DC40 /* CombineEx1.swift in Sources */,
 				E640F24829A20CEB00E0F749 /* CommandViewController.swift in Sources */,
 				E6186C3B2A0BCD0C004FD75C /* Ribs.swift in Sources */,
 				E997CBE62966814300A5B0B5 /* Builder.swift in Sources */,
@@ -1534,7 +1537,7 @@
 				E69C823F2B00B10D00586158 /* SwiftUI-Stack.swift in Sources */,
 				E62ACA0529C5701B009ED371 /* DocumentGenerator.swift in Sources */,
 				E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */,
-				E69F237E2BE8AF7300F6DC40 /* PublishersEx3.swift in Sources */,
+				E69F237E2BE8AF7300F6DC40 /* CombineEx3.swift in Sources */,
 				E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */,
 				E640F25F29A20F0900E0F749 /* StrategyViewController.swift in Sources */,
 				E69F237A2BE3B0DF00F6DC40 /* ProxyViewController.swift in Sources */,
@@ -1546,6 +1549,7 @@
 				E62DB4F229FF8D66007F4C7F /* MVIArchitecture.swift in Sources */,
 				E640F26329A20F4000E0F749 /* VisitorViewController.swift in Sources */,
 				E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */,
+				E69F23802BEA6BA500F6DC40 /* CombineEx4.swift in Sources */,
 				E68999412B42B138006283E9 /* SweeterChapter3_List.swift in Sources */,
 				E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */,
 				E640F25D29A20EEF00E0F749 /* StateViewController.swift in Sources */,
@@ -1566,7 +1570,7 @@
 				E640F25929A20EB700E0F749 /* MementoViewController.swift in Sources */,
 				E636137828B22E570050C070 /* SceneDelegate.swift in Sources */,
 				E62AE6EE2944680A0054EA97 /* Singleton.swift in Sources */,
-				E69F237C2BE8A40B00F6DC40 /* PublishersEx2.swift in Sources */,
+				E69F237C2BE8A40B00F6DC40 /* CombineEx2.swift in Sources */,
 				E62DB4EC29FF89E7007F4C7F /* OutlineViewController+Item.swift in Sources */,
 				E69F23762BE3B0DF00F6DC40 /* CompositeViewController.swift in Sources */,
 				E62ACA1229C587BC009ED371 /* TemplateCallbackSkeleton.swift in Sources */,
@@ -1798,6 +1802,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1827,6 +1832,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
