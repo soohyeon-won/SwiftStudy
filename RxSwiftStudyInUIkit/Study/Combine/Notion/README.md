@@ -116,3 +116,12 @@ Combine 프레임워크를 심도 있게 이해하고 활용하기 위해 고급
     - `print` 연산자 또는 디버거를 사용하여 데이터 흐름을 모니터링하고 디버깅합니다.
     - 성능 병목 현상을 최소화하기 위해 병렬 실행 및 연산자 선택을 고려합니다.
     - 메모리 관리를 위한 `Cancellable` 및 `Subscribers`의 올바른 활용법을 배웁니다.
+
+- Q&A
+1. @Published 와 ObservedObject의 명확한 차이
+2. RxSwift 프로젝트를 Combine으로 치환하려고 할 때, 어떤 방식이 있을까? (샘플링)
+
+- 앞으로의 주제
+1. Cache
+2. Deeplink
+3. Session (SSL)

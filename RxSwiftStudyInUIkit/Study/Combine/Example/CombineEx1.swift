@@ -17,6 +17,35 @@ struct CombineEx1View: View {
         ScrollView {
             VStack {
                 HStack(alignment: .top) {
+                    Text("1. 기본 개념 이해")
+                        .frame(height: 44)
+                        .padding(.horizontal, 12)
+                    Spacer()
+                }
+                .padding(12)
+                
+                VStack(spacing: 12) {
+                    VStack {
+                        Text("Reactive Programming")
+                            .font(.title)
+                            .frame(height: 38)
+                            .frame(maxWidth: .infinity)
+                            .padding(.horizontal, 16)
+                        
+                        Text("""
+                            반응형 프로그래밍: 이벤트와 데이터 흐름으로 동작하는 패러다임
+                            변화에 따라 시스템이 반응하며 동작
+                            Publisher(배포 주체) -> Subscriber(구독자)
+                            """)
+                    }
+                    .padding(.vertical, 16)
+                    .background(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.blue.opacity(0.7), lineWidth: 2)
+                    )
+                    .padding(.horizontal, 16)
+                }
+                HStack(alignment: .top) {
                     Text("2. Combine의 핵심 구성 요소")
                         .frame(height: 44)
                         .padding(.horizontal, 12)
