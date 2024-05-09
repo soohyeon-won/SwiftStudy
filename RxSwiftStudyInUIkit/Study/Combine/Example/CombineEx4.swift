@@ -75,6 +75,29 @@ struct CombineEx4View: View {
                 )
                 .padding(.horizontal, 16)
             }
+            
+            VStack(spacing: 12) {
+                VStack {
+                    Text("@Published vs ObservedObject")
+                        .font(.title)
+                        .frame(height: 38)
+                        .frame(maxWidth: .infinity)
+                        .padding(.horizontal, 16)
+                    
+                    Button {
+                        handler.example_debug()
+                    } label: {
+                        Text("")
+                    }
+                    
+                }
+                .padding(.vertical, 16)
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color.blue.opacity(0.7), lineWidth: 2)
+                )
+                .padding(.horizontal, 16)
+            }
             Spacer()
         }
     }
@@ -149,4 +172,10 @@ final class CombineEx4Handler: ObservableObject {
             }
             .store(in: &cancellables)
     }
+}
+
+// MARK: - @Publised vs ObservedObject
+
+class MyModel: ObservableObject {
+    @Published var myValue: Int = 0
 }

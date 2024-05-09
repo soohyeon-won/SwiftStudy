@@ -88,6 +88,7 @@
 		E69F237C2BE8A40B00F6DC40 /* CombineEx2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F237B2BE8A40B00F6DC40 /* CombineEx2.swift */; };
 		E69F237E2BE8AF7300F6DC40 /* CombineEx3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F237D2BE8AF7300F6DC40 /* CombineEx3.swift */; };
 		E69F23802BEA6BA500F6DC40 /* CombineEx4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F237F2BEA6BA500F6DC40 /* CombineEx4.swift */; };
+		E69F23842BED0C9D00F6DC40 /* CombineEx5.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23832BED0C9D00F6DC40 /* CombineEx5.swift */; };
 		E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */; };
 		E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */; };
 		E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */; };
@@ -277,6 +278,8 @@
 		E69F237B2BE8A40B00F6DC40 /* CombineEx2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineEx2.swift; sourceTree = "<group>"; };
 		E69F237D2BE8AF7300F6DC40 /* CombineEx3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineEx3.swift; sourceTree = "<group>"; };
 		E69F237F2BEA6BA500F6DC40 /* CombineEx4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineEx4.swift; sourceTree = "<group>"; };
+		E69F23822BED0B1400F6DC40 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E69F23832BED0C9D00F6DC40 /* CombineEx5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineEx5.swift; sourceTree = "<group>"; };
 		E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
@@ -796,6 +799,7 @@
 				E69F237B2BE8A40B00F6DC40 /* CombineEx2.swift */,
 				E69F237D2BE8AF7300F6DC40 /* CombineEx3.swift */,
 				E69F237F2BEA6BA500F6DC40 /* CombineEx4.swift */,
+				E69F23832BED0C9D00F6DC40 /* CombineEx5.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -863,6 +867,14 @@
 			path = RxSwiftStudyInUIkit/Study/DesignPatterns/Structural/Proxy;
 			sourceTree = SOURCE_ROOT;
 		};
+		E69F23812BED0AF300F6DC40 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				E69F23822BED0B1400F6DC40 /* README.md */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 		E6A16EA128BA1B1600921D78 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -918,6 +930,7 @@
 		E6AD8E7A2969488600208D8C /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				E69F23812BED0AF300F6DC40 /* Cache */,
 				E659A9E42BDA7D2F00EF6998 /* Combine */,
 				E62DB4DF29FAAAA6007F4C7F /* Architecture */,
 				E62AE6EC294466AA0054EA97 /* DesignPatterns */,
@@ -1496,6 +1509,7 @@
 				E62DB4F629FF8DA8007F4C7F /* MVVMCleanArchitecture.swift in Sources */,
 				E69F23552BDE514300F6DC40 /* CombineEx1.swift in Sources */,
 				E640F24829A20CEB00E0F749 /* CommandViewController.swift in Sources */,
+				E69F23842BED0C9D00F6DC40 /* CombineEx5.swift in Sources */,
 				E6186C3B2A0BCD0C004FD75C /* Ribs.swift in Sources */,
 				E997CBE62966814300A5B0B5 /* Builder.swift in Sources */,
 				E640F25129A20DD200E0F749 /* MediatorViewController.swift in Sources */,

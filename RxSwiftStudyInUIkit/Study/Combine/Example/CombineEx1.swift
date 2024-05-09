@@ -127,6 +127,8 @@ struct CombineEx1View: View {
                 
                 CombineEx4View()
                 
+                CombineEx5View()
+                
                 Spacer()
             }
         }.onDisappear {
