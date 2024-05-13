@@ -147,8 +147,21 @@ class OutlineViewController: UIViewController {
                 ]
             ),
             OutlineItem(
-                title: "📚 Swift",
+                title: "📚 Study",
                 subitems: [
+                    OutlineItem(
+                        title: "Cache",
+                        subitems: [
+                            OutlineItem(
+                                title: "README.md",
+                                swiftUIController: WebContentView(url: "\(githubPath)/Study/Cache/README.md").toHostingController()
+                            ),
+                            OutlineItem(
+                                title: "캐시의 개념",
+                                swiftUIController: CacheEx1View().toHostingController()
+                            )
+                        ]
+                    ),
                     OutlineItem(
                         title: "GCD",
                         swiftUIController: UIHostingController(
