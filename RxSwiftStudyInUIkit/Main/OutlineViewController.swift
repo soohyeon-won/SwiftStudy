@@ -77,13 +77,6 @@ class OutlineViewController: UIViewController {
                 ]
             ),
             OutlineItem(
-                title: "🦉 UIKit",
-                subitems: [
-                    OutlineItem(title: "PagingViewController", viewController: PagingViewController.self),
-                    OutlineItem(title: "ExpandableViewController", viewController: ExpandableViewController.self)
-                ]
-            ),
-            OutlineItem(
                 title: "🕊 SwiftUI",
                 subitems: [
                     OutlineItem(
@@ -139,37 +132,8 @@ class OutlineViewController: UIViewController {
                     )
                 ]
             ),
-            OutlineItem(
-                title: "✨ Develop Study",
-                subitems: [
-                    makeDisgnPatternItem(),
-                    makeArchitectureItem()
-                ]
-            ),
-            OutlineItem(
-                title: "📚 Study",
-                subitems: [
-                    OutlineItem(
-                        title: "Cache",
-                        subitems: [
-                            OutlineItem(
-                                title: "README.md",
-                                swiftUIController: WebContentView(url: "\(githubPath)/Study/Cache/README.md").toHostingController()
-                            ),
-                            OutlineItem(
-                                title: "캐시의 개념",
-                                swiftUIController: CacheEx1View().toHostingController()
-                            )
-                        ]
-                    ),
-                    OutlineItem(
-                        title: "GCD",
-                        swiftUIController: UIHostingController(
-                            rootView: AnyView(GCDView())
-                        )
-                    )
-                ]
-            ),
+            makeDisgnPatternItem(),
+            makeArchitectureItem(),
             OutlineItem(
                 title: "🐣 Combine",
                 subitems: [
@@ -180,6 +144,50 @@ class OutlineViewController: UIViewController {
                     OutlineItem(
                         title: "Combine Example",
                         swiftUIController: CombineEx1View().toHostingController()
+                    )
+                ]
+            ),
+            OutlineItem(
+                title: "Cache",
+                subitems: [
+                    OutlineItem(
+                        title: "README.md",
+                        swiftUIController: WebContentView(url: "\(githubPath)/Study/Cache/README.md").toHostingController()
+                    ),
+                    OutlineItem(
+                        title: "1. 캐시의 개념",
+                        swiftUIController: CacheEx1View().toHostingController()
+                    ),
+                    OutlineItem(
+                        title: "2. Swift의 기본캐시 (NSCache)",
+                        swiftUIController: BasicCacheView().toHostingController()
+                    ),
+                    OutlineItem(
+                        title: "3. Data/Image 캐싱",
+                        swiftUIController: PracticalCacheView().toHostingController()
+                    ),
+                    OutlineItem(
+                        title: "4. 무효화/디스크캐싱",
+                        swiftUIController: AdvancedCachingView().toHostingController()
+                    ),
+                    OutlineItem(
+                        title: "5. 성능 및 최적화",
+                        swiftUIController: ImageCacheView().toHostingController()
+                    ),
+                    OutlineItem(
+                        title: "6. NSCache + File System vs UserDefaults",
+                        swiftUIController: CacheComparisonView().toHostingController()
+                    )
+                ]
+            ),
+            OutlineItem(
+                title: "📚 Study",
+                subitems: [
+                    OutlineItem(
+                        title: "GCD",
+                        swiftUIController: UIHostingController(
+                            rootView: AnyView(GCDView())
+                        )
                     )
                 ]
             ),

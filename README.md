@@ -1,7 +1,6 @@
 # iOS develop study
 
 - [🦅 RxSwift](#-RxSwift)
-- [🦉 UIKit](#-UIKit)
 - [🕊 SwiftUI](#-SwiftUI)
 - [🐣 Combine](#-Combine)
 - [🏗 Architecture](#-Architecture)
@@ -13,10 +12,6 @@
 - Map, flatMap, flatMapLatest
 - Reduce, Scan
 - materialize/dematerialize
-
-## 🦉 [UIKit](https://github.com/soohyeon-won/SwiftStudy/tree/master/RxSwiftStudyInUIkit/UIKit)
-- Expandable UITableView
-- Paging
 
 ## 🕊 [SwiftUI](https://github.com/soohyeon-won/SwiftStudy/tree/master/RxSwiftStudyInUIkit/SwiftUI)
 - [스윗한 SwiftUI 리뷰](https://github.com/soohyeon-won/SwiftStudy/tree/master/RxSwiftStudyInUIkit/SwiftUI)

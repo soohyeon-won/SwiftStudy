@@ -89,9 +89,11 @@
 		E69F237E2BE8AF7300F6DC40 /* CombineEx3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F237D2BE8AF7300F6DC40 /* CombineEx3.swift */; };
 		E69F23802BEA6BA500F6DC40 /* CombineEx4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F237F2BEA6BA500F6DC40 /* CombineEx4.swift */; };
 		E69F23842BED0C9D00F6DC40 /* CombineEx5.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23832BED0C9D00F6DC40 /* CombineEx5.swift */; };
-		E69F23872BF226C200F6DC40 /* CacheExample1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23862BF226C200F6DC40 /* CacheExample1.swift */; };
-		E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */; };
-		E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */; };
+		E69F23872BF226C200F6DC40 /* CacheEx1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23862BF226C200F6DC40 /* CacheEx1View.swift */; };
+		E69F23892BF4976D00F6DC40 /* BasicCacheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23882BF4976D00F6DC40 /* BasicCacheView.swift */; };
+		E69F238B2BF4A0FC00F6DC40 /* PracticalCacheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F238A2BF4A0FC00F6DC40 /* PracticalCacheView.swift */; };
+		E69F238D2BF4A21500F6DC40 /* AdvancedCachingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F238C2BF4A21500F6DC40 /* AdvancedCachingView.swift */; };
+		E69F238F2BF4AC8200F6DC40 /* ImageCacheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F238E2BF4AC8200F6DC40 /* ImageCacheView.swift */; };
 		E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */; };
 		E6A16EAE28BB3FEA00921D78 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EAD28BB3FEA00921D78 /* UITableView+Extensions.swift */; };
 		E6AD8E6F29692FB400208D8C /* WebviewDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD8E6E29692FB400208D8C /* WebviewDirector.swift */; };
@@ -281,9 +283,11 @@
 		E69F237F2BEA6BA500F6DC40 /* CombineEx4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineEx4.swift; sourceTree = "<group>"; };
 		E69F23822BED0B1400F6DC40 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E69F23832BED0C9D00F6DC40 /* CombineEx5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineEx5.swift; sourceTree = "<group>"; };
-		E69F23862BF226C200F6DC40 /* CacheExample1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheExample1.swift; sourceTree = "<group>"; };
-		E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
-		E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
+		E69F23862BF226C200F6DC40 /* CacheEx1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheEx1View.swift; sourceTree = "<group>"; };
+		E69F23882BF4976D00F6DC40 /* BasicCacheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCacheView.swift; sourceTree = "<group>"; };
+		E69F238A2BF4A0FC00F6DC40 /* PracticalCacheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticalCacheView.swift; sourceTree = "<group>"; };
+		E69F238C2BF4A21500F6DC40 /* AdvancedCachingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCachingView.swift; sourceTree = "<group>"; };
+		E69F238E2BF4AC8200F6DC40 /* ImageCacheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheView.swift; sourceTree = "<group>"; };
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
 		E6A16EAD28BB3FEA00921D78 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		E6AD8E6E29692FB400208D8C /* WebviewDirector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewDirector.swift; sourceTree = "<group>"; };
@@ -591,7 +595,6 @@
 				E62DB4E929FF89CA007F4C7F /* Delegate */,
 				E62DB4EA29FF89D4007F4C7F /* Main */,
 				E958D9AE28B47E3700D05AC4 /* RxSwift */,
-				E6A16EA128BA1B1600921D78 /* UIKit */,
 				E9D1A20E28D4228F00C46741 /* SwiftUI */,
 				E6AD8E7A2969488600208D8C /* Study */,
 				E6AD8E7B2969489700208D8C /* SwiftStudy */,
@@ -881,34 +884,13 @@
 		E69F23852BF226B400F6DC40 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				E69F23862BF226C200F6DC40 /* CacheExample1.swift */,
+				E69F23862BF226C200F6DC40 /* CacheEx1View.swift */,
+				E69F23882BF4976D00F6DC40 /* BasicCacheView.swift */,
+				E69F238A2BF4A0FC00F6DC40 /* PracticalCacheView.swift */,
+				E69F238C2BF4A21500F6DC40 /* AdvancedCachingView.swift */,
+				E69F238E2BF4AC8200F6DC40 /* ImageCacheView.swift */,
 			);
 			path = Example;
-			sourceTree = "<group>";
-		};
-		E6A16EA128BA1B1600921D78 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				E6A16EA628BA1B6100921D78 /* Paging */,
-				E6A16EA728BA1B6500921D78 /* Expandable */,
-			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
-		E6A16EA628BA1B6100921D78 /* Paging */ = {
-			isa = PBXGroup;
-			children = (
-				E6A16EA228BA1B4A00921D78 /* PagingViewController.swift */,
-			);
-			path = Paging;
-			sourceTree = "<group>";
-		};
-		E6A16EA728BA1B6500921D78 /* Expandable */ = {
-			isa = PBXGroup;
-			children = (
-				E6A16EA428BA1B5D00921D78 /* ExpandableTableViewController.swift */,
-			);
-			path = Expandable;
 			sourceTree = "<group>";
 		};
 		E6A16EA828BB3FAA00921D78 /* Common */ = {
@@ -1519,7 +1501,7 @@
 				E69F23772BE3B0DF00F6DC40 /* AdapterViewController.swift in Sources */,
 				E62DB4F629FF8DA8007F4C7F /* MVVMCleanArchitecture.swift in Sources */,
 				E69F23552BDE514300F6DC40 /* CombineEx1.swift in Sources */,
-				E69F23872BF226C200F6DC40 /* CacheExample1.swift in Sources */,
+				E69F23872BF226C200F6DC40 /* CacheEx1View.swift in Sources */,
 				E640F24829A20CEB00E0F749 /* CommandViewController.swift in Sources */,
 				E69F23842BED0C9D00F6DC40 /* CombineEx5.swift in Sources */,
 				E6186C3B2A0BCD0C004FD75C /* Ribs.swift in Sources */,
@@ -1539,9 +1521,12 @@
 				E9F71BFD2974FEB500BDD86B /* PrototypeViewController.swift in Sources */,
 				E69F23782BE3B0DF00F6DC40 /* BridgeViewController.swift in Sources */,
 				E6B63B682A30A1FC00BE7893 /* MoyaViewModel.swift in Sources */,
+				E69F238B2BF4A0FC00F6DC40 /* PracticalCacheView.swift in Sources */,
 				E62ACA0729C5704B009ED371 /* DatabaseConnection.swift in Sources */,
 				E62DB4DC29F39D82007F4C7F /* StatePatternExample.swift in Sources */,
 				E958D9B028B47E4000D05AC4 /* ShareStudyViewController.swift in Sources */,
+				E69F238F2BF4AC8200F6DC40 /* ImageCacheView.swift in Sources */,
+				E69F238D2BF4A21500F6DC40 /* AdvancedCachingView.swift in Sources */,
 				E640F24529A20C9A00E0F749 /* ChainOfResponsibilityViewController.swift in Sources */,
 				E62DB4FB2A050C83007F4C7F /* Architecture-Index.swift in Sources */,
 				E62DB4F029FF8D4E007F4C7F /* MVVMArchitecture.swift in Sources */,
@@ -1562,7 +1547,6 @@
 				E69C823D2AFA5C3200586158 /* SwiftUI-Image.swift in Sources */,
 				E69C823F2B00B10D00586158 /* SwiftUI-Stack.swift in Sources */,
 				E62ACA0529C5701B009ED371 /* DocumentGenerator.swift in Sources */,
-				E6A16EA528BA1B5D00921D78 /* ExpandableTableViewController.swift in Sources */,
 				E69F237E2BE8AF7300F6DC40 /* CombineEx3.swift in Sources */,
 				E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */,
 				E640F25F29A20F0900E0F749 /* StrategyViewController.swift in Sources */,
@@ -1577,12 +1561,12 @@
 				E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */,
 				E69F23802BEA6BA500F6DC40 /* CombineEx4.swift in Sources */,
 				E68999412B42B138006283E9 /* SweeterChapter3_List.swift in Sources */,
-				E6A16EA328BA1B4A00921D78 /* PagingViewController.swift in Sources */,
 				E640F25D29A20EEF00E0F749 /* StateViewController.swift in Sources */,
 				E90654B3295951760027A47C /* AbstractFactory.swift in Sources */,
 				E94DDCBE28B5CFE4005451EA /* Map.swift in Sources */,
 				E62ACA1629C59013009ED371 /* After_VisitorExample.swift in Sources */,
 				E69F23742BE3B0DF00F6DC40 /* FacadeViewController.swift in Sources */,
+				E69F23892BF4976D00F6DC40 /* BasicCacheView.swift in Sources */,
 				E69C824A2B134AB400586158 /* Chapter2-2.swift in Sources */,
 				E68999452B42BAAE006283E9 /* SweeterChapter3_GeometryReader.swift in Sources */,
 				E62ACA1829C59944009ED371 /* MarkerExample.swift in Sources */,
