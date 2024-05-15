@@ -177,6 +177,10 @@ class OutlineViewController: UIViewController {
                     OutlineItem(
                         title: "6. NSCache + File System vs UserDefaults",
                         swiftUIController: CacheComparisonView().toHostingController()
+                    ),
+                    OutlineItem(
+                        title: "7. 정리 및 Q&A",
+                        swiftUIController: CacheEx4View().toHostingController()
                     )
                 ]
             ),

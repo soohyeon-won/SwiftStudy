@@ -94,6 +94,7 @@
 		E69F238B2BF4A0FC00F6DC40 /* PracticalCacheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F238A2BF4A0FC00F6DC40 /* PracticalCacheView.swift */; };
 		E69F238D2BF4A21500F6DC40 /* AdvancedCachingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F238C2BF4A21500F6DC40 /* AdvancedCachingView.swift */; };
 		E69F238F2BF4AC8200F6DC40 /* ImageCacheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F238E2BF4AC8200F6DC40 /* ImageCacheView.swift */; };
+		E69F23912BF4B9D600F6DC40 /* CacheEx4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23902BF4B9D500F6DC40 /* CacheEx4View.swift */; };
 		E6A16EAA28BB3FBE00921D78 /* BaseTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */; };
 		E6A16EAE28BB3FEA00921D78 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A16EAD28BB3FEA00921D78 /* UITableView+Extensions.swift */; };
 		E6AD8E6F29692FB400208D8C /* WebviewDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD8E6E29692FB400208D8C /* WebviewDirector.swift */; };
@@ -288,6 +289,7 @@
 		E69F238A2BF4A0FC00F6DC40 /* PracticalCacheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticalCacheView.swift; sourceTree = "<group>"; };
 		E69F238C2BF4A21500F6DC40 /* AdvancedCachingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedCachingView.swift; sourceTree = "<group>"; };
 		E69F238E2BF4AC8200F6DC40 /* ImageCacheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheView.swift; sourceTree = "<group>"; };
+		E69F23902BF4B9D500F6DC40 /* CacheEx4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheEx4View.swift; sourceTree = "<group>"; };
 		E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextTableViewCell.swift; sourceTree = "<group>"; };
 		E6A16EAD28BB3FEA00921D78 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		E6AD8E6E29692FB400208D8C /* WebviewDirector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewDirector.swift; sourceTree = "<group>"; };
@@ -889,6 +891,7 @@
 				E69F238A2BF4A0FC00F6DC40 /* PracticalCacheView.swift */,
 				E69F238C2BF4A21500F6DC40 /* AdvancedCachingView.swift */,
 				E69F238E2BF4AC8200F6DC40 /* ImageCacheView.swift */,
+				E69F23902BF4B9D500F6DC40 /* CacheEx4View.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -1580,6 +1583,7 @@
 				E640F25929A20EB700E0F749 /* MementoViewController.swift in Sources */,
 				E636137828B22E570050C070 /* SceneDelegate.swift in Sources */,
 				E62AE6EE2944680A0054EA97 /* Singleton.swift in Sources */,
+				E69F23912BF4B9D600F6DC40 /* CacheEx4View.swift in Sources */,
 				E69F237C2BE8A40B00F6DC40 /* CombineEx2.swift in Sources */,
 				E62DB4EC29FF89E7007F4C7F /* OutlineViewController+Item.swift in Sources */,
 				E69F23762BE3B0DF00F6DC40 /* CompositeViewController.swift in Sources */,
