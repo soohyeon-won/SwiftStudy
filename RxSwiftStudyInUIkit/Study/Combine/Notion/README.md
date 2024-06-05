@@ -123,6 +123,7 @@ Combine 프레임워크를 심도 있게 이해하고 활용하기 위해 고급
 1. @Published 와 ObservedObject의 명확한 차이
 
 - 앞으로의 주제
-1. Cache
+1. NSCache ✅
 2. Deeplink
 3. Session (SSL)
+4. Animation
