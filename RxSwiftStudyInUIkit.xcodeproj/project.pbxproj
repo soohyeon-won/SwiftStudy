@@ -109,6 +109,9 @@
 		E6B63B682A30A1FC00BE7893 /* MoyaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B63B672A30A1FC00BE7893 /* MoyaViewModel.swift */; };
 		E6B63B6A2A30A25F00BE7893 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B63B692A30A25F00BE7893 /* GithubAPI.swift */; };
 		E6B660C42AF620A1002CEE18 /* SwfitUI-TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B660C32AF620A1002CEE18 /* SwfitUI-TextView.swift */; };
+		E6E0A1FF2C15B5E60038A667 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E6E0A1FE2C15B5E60038A667 /* README.md */; };
+		E6E0A2012C15B8B60038A667 /* AnimationEx1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0A2002C15B8B60038A667 /* AnimationEx1View.swift */; };
+		E6E0A2032C15B9D90038A667 /* AnimationEx1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0A2022C15B9D90038A667 /* AnimationEx1ViewController.swift */; };
 		E90654B3295951760027A47C /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B2295951760027A47C /* AbstractFactory.swift */; };
 		E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B4295951820027A47C /* AbstractFactoryViewController.swift */; };
 		E908D72229652EAA0062B85F /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908D72129652EAA0062B85F /* Ship.swift */; };
@@ -307,6 +310,9 @@
 		E6B63B6C2A30A3D700BE7893 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E6B660C32AF620A1002CEE18 /* SwfitUI-TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwfitUI-TextView.swift"; sourceTree = "<group>"; };
 		E6C3158F2A2C92ED0010111B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E6E0A1FE2C15B5E60038A667 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E6E0A2002C15B8B60038A667 /* AnimationEx1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEx1View.swift; sourceTree = "<group>"; };
+		E6E0A2022C15B9D90038A667 /* AnimationEx1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEx1ViewController.swift; sourceTree = "<group>"; };
 		E90654B2295951760027A47C /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		E90654B4295951820027A47C /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
 		E908D72129652EAA0062B85F /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
@@ -926,6 +932,7 @@
 		E6AD8E7A2969488600208D8C /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				E6E0A1FD2C15B5CC0038A667 /* Animation */,
 				E69F23812BED0AF300F6DC40 /* Cache */,
 				E659A9E42BDA7D2F00EF6998 /* Combine */,
 				E62DB4DF29FAAAA6007F4C7F /* Architecture */,
@@ -1041,6 +1048,16 @@
 				E69C82D42B3C17E400586158 /* OpaqueTypeStudy.swift */,
 			);
 			path = "Chapter2-Generate View";
+			sourceTree = "<group>";
+		};
+		E6E0A1FD2C15B5CC0038A667 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				E6E0A1FE2C15B5E60038A667 /* README.md */,
+				E6E0A2002C15B8B60038A667 /* AnimationEx1View.swift */,
+				E6E0A2022C15B9D90038A667 /* AnimationEx1ViewController.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		E90654B1295951590027A47C /* AbstractFactory */ = {
@@ -1316,6 +1333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6E0A1FF2C15B5E60038A667 /* README.md in Resources */,
 				E636138228B22E5A0050C070 /* LaunchScreen.storyboard in Resources */,
 				E636137F28B22E5A0050C070 /* Assets.xcassets in Resources */,
 				E636137D28B22E570050C070 /* Main.storyboard in Resources */,
@@ -1536,6 +1554,7 @@
 				E62DB4F92A050BE7007F4C7F /* VIPERArchitecture.swift in Sources */,
 				E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */,
 				E62ACA1429C58D93009ED371 /* Before_VisitorExample.swift in Sources */,
+				E6E0A2032C15B9D90038A667 /* AnimationEx1ViewController.swift in Sources */,
 				E640F25B29A20ED200E0F749 /* ObserverViewController.swift in Sources */,
 				E6AD8E7F296948E600208D8C /* DynamicMemberLookup.swift in Sources */,
 				E62DB4E129FAAB1E007F4C7F /* MVCArchitecture.swift in Sources */,
@@ -1557,6 +1576,7 @@
 				E62ACA0C29C576DA009ED371 /* FileProcessor.swift in Sources */,
 				E63613A628B22E6A0050C070 /* ShareStudy.swift in Sources */,
 				E689993A2B427F81006283E9 /* SweeterChapter3_Navigation.swift in Sources */,
+				E6E0A2012C15B8B60038A667 /* AnimationEx1View.swift in Sources */,
 				E6AD8E6F29692FB400208D8C /* WebviewDirector.swift in Sources */,
 				E68999382B403351006283E9 /* TCA.swift in Sources */,
 				E62DB4F229FF8D66007F4C7F /* MVIArchitecture.swift in Sources */,

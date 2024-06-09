@@ -185,6 +185,23 @@ class OutlineViewController: UIViewController {
                 ]
             ),
             OutlineItem(
+                title: "Animation",
+                subitems: [
+                    OutlineItem(
+                        title: "README.md",
+                        swiftUIController: WebContentView(url: "\(githubPath)/Study/Animation/README.md").toHostingController()
+                    ),
+                    OutlineItem(
+                        title: "1. 애니메이션의 기본 원리",
+                        swiftUIController: AnimationEx1View().toHostingController()
+                    ),
+                    OutlineItem(
+                        title: "2. UIView 애니메이션",
+                        viewController: AnimationEx1ViewController.self
+                    )
+                ]
+            ),
+            OutlineItem(
                 title: "📚 Study",
                 subitems: [
                     OutlineItem(
