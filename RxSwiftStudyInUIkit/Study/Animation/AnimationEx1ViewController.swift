@@ -31,6 +31,7 @@ final class AnimationEx1ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupViews()
+        bindEvent()
     }
     
     private func setupViews() {
@@ -59,7 +60,7 @@ final class AnimationEx1ViewController: UIViewController {
     }
     
     private func bindEvent() {
-        springButton.rx.tap
+        basicButton.rx.tap
             .subscribe(onNext: { [weak self] _ in
                 guard let self = self else { return }
                 UIView.animate(withDuration: 1.0) {
@@ -71,7 +72,7 @@ final class AnimationEx1ViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
-        basicButton.rx.tap
+        springButton.rx.tap
             .subscribe(onNext: { [weak self] _ in
                 guard let self = self else { return }
                 UIView.animate(
