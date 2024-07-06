@@ -57,6 +57,8 @@
 		E640F25F29A20F0900E0F749 /* StrategyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F25E29A20F0900E0F749 /* StrategyViewController.swift */; };
 		E640F26129A20F2100E0F749 /* TemplateMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F26029A20F2100E0F749 /* TemplateMethodViewController.swift */; };
 		E640F26329A20F4000E0F749 /* VisitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F26229A20F4000E0F749 /* VisitorViewController.swift */; };
+		E64868A22C391B3900EF0B25 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64868A12C391B3900EF0B25 /* SettingView.swift */; };
+		E64868A42C3920A100EF0B25 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64868A32C3920A100EF0B25 /* CodeView.swift */; };
 		E68999362B4032E1006283E9 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = E68999352B4032E1006283E9 /* ComposableArchitecture */; };
 		E68999382B403351006283E9 /* TCA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68999372B403351006283E9 /* TCA.swift */; };
 		E689993A2B427F81006283E9 /* SweeterChapter3_Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68999392B427F81006283E9 /* SweeterChapter3_Navigation.swift */; };
@@ -245,6 +247,8 @@
 		E640F25E29A20F0900E0F749 /* StrategyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyViewController.swift; sourceTree = "<group>"; };
 		E640F26029A20F2100E0F749 /* TemplateMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethodViewController.swift; sourceTree = "<group>"; };
 		E640F26229A20F4000E0F749 /* VisitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorViewController.swift; sourceTree = "<group>"; };
+		E64868A12C391B3900EF0B25 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		E64868A32C3920A100EF0B25 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		E68999372B403351006283E9 /* TCA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCA.swift; sourceTree = "<group>"; };
 		E68999392B427F81006283E9 /* SweeterChapter3_Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweeterChapter3_Navigation.swift; sourceTree = "<group>"; };
 		E689993C2B4298BC006283E9 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
@@ -603,6 +607,7 @@
 				E62DB4E929FF89CA007F4C7F /* Delegate */,
 				E62DB4EA29FF89D4007F4C7F /* Main */,
 				E958D9AE28B47E3700D05AC4 /* RxSwift */,
+				E64868A02C391B2E00EF0B25 /* Setting */,
 				E9D1A20E28D4228F00C46741 /* SwiftUI */,
 				E6AD8E7A2969488600208D8C /* Study */,
 				E6AD8E7B2969489700208D8C /* SwiftStudy */,
@@ -746,6 +751,14 @@
 				E62ACA1729C59944009ED371 /* MarkerExample.swift */,
 			);
 			path = Visitor;
+			sourceTree = "<group>";
+		};
+		E64868A02C391B2E00EF0B25 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				E64868A12C391B3900EF0B25 /* SettingView.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		E659A9E42BDA7D2F00EF6998 /* Combine */ = {
@@ -925,6 +938,7 @@
 			isa = PBXGroup;
 			children = (
 				E6A16EA928BB3FBE00921D78 /* BaseTextTableViewCell.swift */,
+				E64868A32C3920A100EF0B25 /* CodeView.swift */,
 			);
 			path = UIUtils;
 			sourceTree = "<group>";
@@ -1562,6 +1576,7 @@
 				E62DB4EE29FF8D1B007F4C7F /* MVPArchitecture.swift in Sources */,
 				E69F23332BDCF09F00F6DC40 /* READMEReader.swift in Sources */,
 				E69C82D52B3C17E400586158 /* OpaqueTypeStudy.swift in Sources */,
+				E64868A22C391B3900EF0B25 /* SettingView.swift in Sources */,
 				E62AE6F229447D9C0054EA97 /* SingletonViewController.swift in Sources */,
 				E950C91828B87BD800E0C80A /* ReduceStudyViewController.swift in Sources */,
 				E69C823A2AFA5BFB00586158 /* SafeArea.swift in Sources */,
@@ -1588,6 +1603,7 @@
 				E90654B3295951760027A47C /* AbstractFactory.swift in Sources */,
 				E94DDCBE28B5CFE4005451EA /* Map.swift in Sources */,
 				E62ACA1629C59013009ED371 /* After_VisitorExample.swift in Sources */,
+				E64868A42C3920A100EF0B25 /* CodeView.swift in Sources */,
 				E69F23742BE3B0DF00F6DC40 /* FacadeViewController.swift in Sources */,
 				E69F23892BF4976D00F6DC40 /* BasicCacheView.swift in Sources */,
 				E69C824A2B134AB400586158 /* Chapter2-2.swift in Sources */,

@@ -68,6 +68,12 @@ class OutlineViewController: UIViewController {
     private lazy var menuItems: [OutlineItem] = {
         return [
             OutlineItem(
+                title: "💡Settings",
+                subitems: [
+                    OutlineItem(title: "SettingView", swiftUIController: UIHostingController(rootView: AnyView(SettingView())))
+                ]
+            ),
+            OutlineItem(
                 title: "🦅 RxSwift",
                 subitems: [
                     OutlineItem(title: "ShareStudyViewController", viewController: ShareStudyViewController.self),

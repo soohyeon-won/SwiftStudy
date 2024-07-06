@@ -65,6 +65,7 @@ struct CombineEx1View: View {
                             handler.example_just()
                         } label: {
                             Text("1. just")
+                            CodeView(code: "let justPublisher = Just(42)")
                         }
                         
                         Button {
