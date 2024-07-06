@@ -64,26 +64,63 @@ struct CombineEx1View: View {
                         Button {
                             handler.example_just()
                         } label: {
-                            Text("1. just")
-                            CodeView(code: "let justPublisher = Just(42)")
+                            VStack {
+                                Text("1. just")
+                                CodeView(code: "let justPublisher = Just(42)")
+                            }
                         }
                         
                         Button {
                             handler.example_future()
                         } label: {
-                            Text("2. future")
+                            VStack {
+                                Text("2. future")
+                                CodeView(
+                                    code: """
+                                    // 단일 비동기 작업의 결과 즉, 한 번의 완료 또는 실패 이벤트만 발생 (Network 작업에 유용)
+                                    func fetchData(from url: URL) -> Future<Data, Error> {
+                                        return Future { promise in
+                                            URLSession.shared.dataTask(with: url) { data, response, error in
+                                                if let error = error {
+                                                    promise(.failure(error))
+                                                } else if let data = data {
+                                                    promise(.success(data))
+                                                }
+                                            }.resume()
+                                        }
+                                    }
+                                    """
+                                )
+                            }
                         }
                         
                         Button {
                             handler.example_passthroughSubject()
                         } label: {
-                            Text("3. passthroughSubject")
+                            VStack {
+                                Text("3. passthroughSubject")
+                                CodeView(
+                                    code: """
+                                // 여러 Subscriber에 전달할 때 유용합니다.
+                                // 데이터를 직접 보내거나 완료 신호를 보내는 등의 제어가 가능합니다.
+                                // PublishSubject와 유사하다
+                                let subject = PassthroughSubject<String, Never>()
+                                """
+                                )
+                            }
                         }
                         
                         Button {
                             handler.example_currentValueSubject()
                         } label: {
-                            Text("4. currentValueSubject")
+                            VStack {
+                                Text("4. currentValueSubject")
+                                CodeView(code: """
+                                // 지정된 초기값을 구독자가 알 수 있는 형태
+                                // CurrentValueSubject 는 BehaviorSubject와 유사
+                                CurrentValueSubject<String, Error>(Initial value)
+                                """)
+                            }
                         }
                     }
                     .padding(.vertical, 16)
@@ -180,8 +217,8 @@ final class CombineEx1Handler: ObservableObject {
     // 네트워크 작업에 유용
     // Future는 Error 타입을 Failure로 지정할 수 있어 오류 처리에 유용합니다.
     func example_future() {
-//        오류 없이 성공적으로 완료된다는 확신이 있을 때 Never를 사용
-        let futurePublisher = Future<String, Never> { promise in
+//        오류 없이 성공적으로 완료된다는 확신이 있을 때 Error대신 Never를 사용
+        let futurePublisher = Future<String, Error> { promise in
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 // 1초 후에 비동기 작업을 완료하고 값을 전달
                 promise(.success("Hello, Future!"))
@@ -195,16 +232,6 @@ final class CombineEx1Handler: ObservableObject {
                 print("Received value: \(value)")
             }
             .store(in: &cancellables)
-        
-        // 에러가 있는 경우
-//        let futurePublisher2 = Future<String, Error> { promise in
-//            // 비동기 작업 수행
-//            DispatchQueue.global().asyncAfter(deadline: .now() + 1) {
-//                // 작업 중 오류가 발생했을 때
-//                let error = NSError(domain: "ExampleDomain", code: -1, userInfo: nil)
-//                promise(.failure(error))
-//            }
-//        }
     }
     
     // 여러 Subscriber에 전달할 때 유용합니다.
@@ -260,4 +287,8 @@ final class CombineEx1Handler: ObservableObject {
             .assign(to: \.value, on: self)
             .store(in: &cancellables)
     }
+}
+
+#Preview {
+    CombineEx1View(handler: CombineEx1Handler())
 }

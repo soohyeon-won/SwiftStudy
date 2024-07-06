@@ -59,6 +59,7 @@
 		E640F26329A20F4000E0F749 /* VisitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F26229A20F4000E0F749 /* VisitorViewController.swift */; };
 		E64868A22C391B3900EF0B25 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64868A12C391B3900EF0B25 /* SettingView.swift */; };
 		E64868A42C3920A100EF0B25 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64868A32C3920A100EF0B25 /* CodeView.swift */; };
+		E64868A62C392A4E00EF0B25 /* FutureVsAnyPublisherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64868A52C392A4E00EF0B25 /* FutureVsAnyPublisherView.swift */; };
 		E68999362B4032E1006283E9 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = E68999352B4032E1006283E9 /* ComposableArchitecture */; };
 		E68999382B403351006283E9 /* TCA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68999372B403351006283E9 /* TCA.swift */; };
 		E689993A2B427F81006283E9 /* SweeterChapter3_Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68999392B427F81006283E9 /* SweeterChapter3_Navigation.swift */; };
@@ -249,6 +250,7 @@
 		E640F26229A20F4000E0F749 /* VisitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorViewController.swift; sourceTree = "<group>"; };
 		E64868A12C391B3900EF0B25 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		E64868A32C3920A100EF0B25 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		E64868A52C392A4E00EF0B25 /* FutureVsAnyPublisherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureVsAnyPublisherView.swift; sourceTree = "<group>"; };
 		E68999372B403351006283E9 /* TCA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCA.swift; sourceTree = "<group>"; };
 		E68999392B427F81006283E9 /* SweeterChapter3_Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweeterChapter3_Navigation.swift; sourceTree = "<group>"; };
 		E689993C2B4298BC006283E9 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
@@ -826,6 +828,7 @@
 				E69F237D2BE8AF7300F6DC40 /* CombineEx3.swift */,
 				E69F237F2BEA6BA500F6DC40 /* CombineEx4.swift */,
 				E69F23832BED0C9D00F6DC40 /* CombineEx5.swift */,
+				E64868A52C392A4E00EF0B25 /* FutureVsAnyPublisherView.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -1593,6 +1596,7 @@
 				E689993A2B427F81006283E9 /* SweeterChapter3_Navigation.swift in Sources */,
 				E6E0A2012C15B8B60038A667 /* AnimationEx1View.swift in Sources */,
 				E6AD8E6F29692FB400208D8C /* WebviewDirector.swift in Sources */,
+				E64868A62C392A4E00EF0B25 /* FutureVsAnyPublisherView.swift in Sources */,
 				E68999382B403351006283E9 /* TCA.swift in Sources */,
 				E62DB4F229FF8D66007F4C7F /* MVIArchitecture.swift in Sources */,
 				E640F26329A20F4000E0F749 /* VisitorViewController.swift in Sources */,

@@ -150,6 +150,10 @@ class OutlineViewController: UIViewController {
                     OutlineItem(
                         title: "Combine Example",
                         swiftUIController: CombineEx1View().toHostingController()
+                    ),
+                    OutlineItem(
+                        title: "Future vs AnyPublisher",
+                        swiftUIController: FutureVsAnyPublisherView().toHostingController()
                     )
                 ]
             ),
