@@ -5,39 +5,78 @@
 //  Created by won soohyeon on 2022/12/10.
 //
 
-import UIKit
+import SwiftUI
 
-final class FactoryMethodViewController: UIViewController {
+struct FactoryMethodView: View {
     
-    private let textView = UITextView().then {
-        $0.isEditable = false
-        $0.font = .systemFont(ofSize: 24)
-    }
-    
-    override func viewDidLoad() {
-        view.backgroundColor = .white
-        
-        view.addSubview(textView)
-        
-        textView.snp.makeConstraints{
-            $0.edges.equalToSuperview().inset(24)
+    var body: some View {
+        ScrollView {
+            VStack(spacing: 0) {
+                Text("""
+                [ 팩토리 메서드 패턴 ]
+                구체적으로 어떤 인스턴스를 만들지는 서브 클래스가 정한다.
+                - 다양한 구현체(Product)가 있고 , 그 중에서 특정한 구현체를 만들 수 있는 다양한 팩토리(Creator)를 제공할 수 있다.
+                
+                Q1. 팩토리 메소드 패턴을 적용했을 때 장점, 단점은?
+                A1.
+                장점: 기존 코드를 변경하지 않고 새로운 인스턴스를 생성(확장)할 수 있다. Product와 Creator의 느슨한 결합(Loose Coupling) 덕분.
+                단점: 클래스가 늘어남
+                Q2. 확장에 열려있고 변경에 닫혀있는 객체 지향 원칙
+                A2. 개방-폐쇄 원칙(OCP, Open-Closed Principle)
+                변경에 닫혀있다 == 기존코드 변경X 확장이 가능하다.
+                """)
+                .font(.system(size: 24))
+                .padding(24)
+                .background(Color.white)
+                .cornerRadius(8)
+                
+                CodeView(code: """
+            protocol ShipFactory {
+                func ordershiip(name: String, email: String) -> Ship
+                
+                func createShip() -> Ship
+                func validate(name: String, email: String)
+                func sendEmailTo(email: String, ship: Ship)
+            }
+            
+            extension ShipFactory {
+                
+                func ordershiip(name: String, email: String) -> Ship {
+                    validate(name: name, email: email)
+                    var ship = createShip()
+                    ship.prepareFor(name: name)
+                    sendEmailTo(email: email, ship: ship)
+                    return ship
+                }
+                
+                func validate(name: String, email: String) {
+                    if name.isEmpty {
+                        fatalError("배 이름 지어주세요.")
+                    }
+                    if email.isEmpty {
+                        fatalError("연락처를 남겨주세요.")
+                    }
+                }
+                
+                func sendEmailTo(email: String, ship: Ship) {
+                    print("ship: \\(ship.name) 생성이 완료되었습니다. To: \\(email)")
+                }
+            }
+            
+            final class WhiteshipFactory: ShipFactory {
+                
+                func createShip() -> Ship {
+                    return Whiteship()
+                }
+            }
+            """)
+                .padding(.horizontal, 16)
+            }
         }
-        
-        textView.text = """
-        [ 팩토리 메서드 패턴 ]
-        구체적으로 어떤 인스턴스를 만들지는 서브 클래스가 정한다.
-        - 다양한 구현체(Product)가 있고 , 그 중에서 특정한 구현체를 만들 수 있는 다양한 팩토리(Creator)를 제공할 수 있다.
-        
-        Q1. 팩토리 메소드 패턴을 적용했을 때 장점, 단점은?
-        A1.
-        장점: 기존 코드를 변경하지 않고 새로운 인스턴스를 생성(확장)할 수 있다. Product와 Creator의 느슨한 결합(Loose Coupling) 덕분.
-        단점: 클래스가 늘어남
-        Q2. 확장에 열려있고 변경에 닫혀있는 객체 지향 원칙
-        A2. 개방-폐쇄 원칙(OCP, Open-Closed Principle)
-        변경에 닫혀있다 == 기존코드 변경X 확장이 가능하다.
-        """
-        
-        client()
+        .background(Color(UIColor.systemBackground).edgesIgnoringSafeArea(.all))
+        .onAppear {
+            client()
+        }
     }
     
     private func client() {

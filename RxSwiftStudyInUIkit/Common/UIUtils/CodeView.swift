@@ -19,7 +19,7 @@ struct CodeView: View {
                     .padding(.vertical, 1)
             }
         }
-        .padding()
+        .padding(.all, 0)
         .background(Color(.secondarySystemBackground))
         .cornerRadius(8)
     }

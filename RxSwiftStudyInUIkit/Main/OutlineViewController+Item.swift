@@ -62,9 +62,9 @@ extension OutlineViewController {
                     title: "생성(Create)",
                     subitems: [
                         OutlineItem(title: "Singleton",
-                                    viewController: SingletonViewController.self),
+                                    swiftUIController: UIHostingController(rootView: AnyView(SingletonView()))),
                         OutlineItem(title: "Factory method",
-                                    viewController: FactoryMethodViewController.self),
+                                    swiftUIController: UIHostingController(rootView: AnyView(FactoryMethodView()))),
                         OutlineItem(title: "Absctract factory",
                                     viewController: AbstractFactoryViewController.self),
                         OutlineItem(title: "Builder",
