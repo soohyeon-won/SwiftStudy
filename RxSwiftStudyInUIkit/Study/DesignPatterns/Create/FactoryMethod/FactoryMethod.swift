@@ -53,7 +53,7 @@ final class WhiteshipFactory: ShipFactory {
     }
 }
 
-final class WhiteshipFactory2: ShipFactory {
+final class WhiteshipAbstractFactory: ShipFactory {
     
     private var shipPartsFactory: ShipPartsFactory
     

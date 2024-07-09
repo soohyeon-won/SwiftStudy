@@ -23,7 +23,7 @@ import SwiftUI
 
 extension View {
     
-    func toHostingController() -> UIHostingController<AnyView>? {
+    func toHostingController() -> UIHostingController<AnyView> {
         UIHostingController(rootView: AnyView(self))
     }
 }

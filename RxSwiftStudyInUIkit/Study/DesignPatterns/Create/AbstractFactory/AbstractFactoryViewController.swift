@@ -6,6 +6,13 @@
 //
 import SwiftUI
 
+extension View {
+    
+    func toHostingViewController() -> UIHostingController<AnyView>? {
+        UIHostingController(rootView: AnyView(self))
+    }
+}
+
 struct AbstractFactoryView: View {
     
     private let textViewContent = """
@@ -53,23 +60,30 @@ struct AbstractFactoryView: View {
                     return WhiteWheel()
                 }
             }
-
-            final class BlackhipPartsFactory: ShipPartsFactory {
-                func createAnchor() -> Anchor {
-                    BlackAnchor()
+            
+            final class WhiteshipAbstractFactory: ShipFactory {
+                
+                private var shipPartsFactory: ShipPartsFactory
+                
+                init(shipPartsFactory: ShipPartsFactory) {
+                    self.shipPartsFactory = shipPartsFactory
                 }
                 
-                func createWheel() -> Wheel {
-                    BlackWheel()
+                func createShip() -> Ship {
+                    var whiteShip = Whiteship()
+                    // 직접 객체를 인스턴스화해서 넣는것이 아니라
+                    // 추상화된 인스턴스를 받아서 인스턴스를 주입해준다
+                    // ShipFactory 는 변형없이 사용가능함.
+                    // Open/Closed Principle (OCP) 개방 폐쇄 원칙
+                    whiteShip.setAnchor(anchor: shipPartsFactory.createAnchor())
+                    whiteShip.setWheel(wheel: shipPartsFactory.createWheel())
+                    return whiteShip
                 }
             }
             
             private func client() {
-                printShip(shipFactory: WhiteshipFactory2(shipPartsFactory: WhiteshipPartsFactory()), name: "WhiteShip", email: "test@naver.com")
-            }
-            
-            private func printShip(shipFactory: ShipFactory, name: String, email: String) {
-                print(shipFactory.ordershiip(name: name, email: email))
+                let shipFactory = WhiteshipAbstractFactory(shipPartsFactory: WhiteshipPartsFactory())
+                let ship = shipFactory.ordershiip(name: "whiteShip", email: "test@gmail.com")
             }
             """)
         }
@@ -80,11 +94,8 @@ struct AbstractFactoryView: View {
     }
     
     private func client() {
-        printShip(shipFactory: WhiteshipFactory2(shipPartsFactory: WhiteshipPartsFactory()), name: "WhiteShip", email: "test@naver.com")
-    }
-    
-    private func printShip(shipFactory: ShipFactory, name: String, email: String) {
-        print(shipFactory.ordershiip(name: name, email: email))
+        let shipFactory = WhiteshipAbstractFactory(shipPartsFactory: WhiteshipPartsFactory())
+        let ship = shipFactory.ordershiip(name: "whiteShip", email: "test@gmail.com")
+        print("ship: \(ship)")
     }
 }
-

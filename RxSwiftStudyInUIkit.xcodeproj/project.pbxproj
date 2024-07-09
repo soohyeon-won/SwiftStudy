@@ -81,13 +81,6 @@
 		E69F23332BDCF09F00F6DC40 /* READMEReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23322BDCF09F00F6DC40 /* READMEReader.swift */; };
 		E69F23482BDD1FEC00F6DC40 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23472BDD1FEC00F6DC40 /* Config.swift */; };
 		E69F23552BDE514300F6DC40 /* CombineEx1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23542BDE514300F6DC40 /* CombineEx1.swift */; };
-		E69F23742BE3B0DF00F6DC40 /* FacadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23672BE3B0DE00F6DC40 /* FacadeViewController.swift */; };
-		E69F23752BE3B0DF00F6DC40 /* DecoratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23692BE3B0DE00F6DC40 /* DecoratorViewController.swift */; };
-		E69F23762BE3B0DF00F6DC40 /* CompositeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F236B2BE3B0DE00F6DC40 /* CompositeViewController.swift */; };
-		E69F23772BE3B0DF00F6DC40 /* AdapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F236D2BE3B0DE00F6DC40 /* AdapterViewController.swift */; };
-		E69F23782BE3B0DF00F6DC40 /* BridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F236F2BE3B0DE00F6DC40 /* BridgeViewController.swift */; };
-		E69F23792BE3B0DF00F6DC40 /* FlyweightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23712BE3B0DF00F6DC40 /* FlyweightViewController.swift */; };
-		E69F237A2BE3B0DF00F6DC40 /* ProxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F23732BE3B0DF00F6DC40 /* ProxyViewController.swift */; };
 		E69F237C2BE8A40B00F6DC40 /* CombineEx2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F237B2BE8A40B00F6DC40 /* CombineEx2.swift */; };
 		E69F237E2BE8AF7300F6DC40 /* CombineEx3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F237D2BE8AF7300F6DC40 /* CombineEx3.swift */; };
 		E69F23802BEA6BA500F6DC40 /* CombineEx4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F237F2BEA6BA500F6DC40 /* CombineEx4.swift */; };
@@ -115,6 +108,13 @@
 		E6E0A1FF2C15B5E60038A667 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E6E0A1FE2C15B5E60038A667 /* README.md */; };
 		E6E0A2012C15B8B60038A667 /* AnimationEx1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0A2002C15B8B60038A667 /* AnimationEx1View.swift */; };
 		E6E0A2032C15B9D90038A667 /* AnimationEx1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0A2022C15B9D90038A667 /* AnimationEx1ViewController.swift */; };
+		E6ED787C2C3D80E400C686DC /* ProxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED786F2C3D80E400C686DC /* ProxyViewController.swift */; };
+		E6ED787D2C3D80E400C686DC /* DecoratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78712C3D80E400C686DC /* DecoratorViewController.swift */; };
+		E6ED787E2C3D80E400C686DC /* BridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78732C3D80E400C686DC /* BridgeViewController.swift */; };
+		E6ED787F2C3D80E400C686DC /* FacadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78752C3D80E400C686DC /* FacadeViewController.swift */; };
+		E6ED78802C3D80E400C686DC /* AdapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78772C3D80E400C686DC /* AdapterViewController.swift */; };
+		E6ED78812C3D80E400C686DC /* CompositeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78792C3D80E400C686DC /* CompositeViewController.swift */; };
+		E6ED78822C3D80E400C686DC /* FlyweightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED787B2C3D80E400C686DC /* FlyweightViewController.swift */; };
 		E90654B3295951760027A47C /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B2295951760027A47C /* AbstractFactory.swift */; };
 		E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B4295951820027A47C /* AbstractFactoryViewController.swift */; };
 		E908D72229652EAA0062B85F /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908D72129652EAA0062B85F /* Ship.swift */; };
@@ -281,13 +281,6 @@
 		E69F234A2BDE4EB100F6DC40 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E69F23542BDE514300F6DC40 /* CombineEx1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineEx1.swift; sourceTree = "<group>"; };
 		E69F23562BDE5C2100F6DC40 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E69F23672BE3B0DE00F6DC40 /* FacadeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeViewController.swift; sourceTree = "<group>"; };
-		E69F23692BE3B0DE00F6DC40 /* DecoratorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecoratorViewController.swift; sourceTree = "<group>"; };
-		E69F236B2BE3B0DE00F6DC40 /* CompositeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeViewController.swift; sourceTree = "<group>"; };
-		E69F236D2BE3B0DE00F6DC40 /* AdapterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterViewController.swift; sourceTree = "<group>"; };
-		E69F236F2BE3B0DE00F6DC40 /* BridgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeViewController.swift; sourceTree = "<group>"; };
-		E69F23712BE3B0DF00F6DC40 /* FlyweightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightViewController.swift; sourceTree = "<group>"; };
-		E69F23732BE3B0DF00F6DC40 /* ProxyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyViewController.swift; sourceTree = "<group>"; };
 		E69F237B2BE8A40B00F6DC40 /* CombineEx2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineEx2.swift; sourceTree = "<group>"; };
 		E69F237D2BE8AF7300F6DC40 /* CombineEx3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineEx3.swift; sourceTree = "<group>"; };
 		E69F237F2BEA6BA500F6DC40 /* CombineEx4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineEx4.swift; sourceTree = "<group>"; };
@@ -319,6 +312,13 @@
 		E6E0A1FE2C15B5E60038A667 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E6E0A2002C15B8B60038A667 /* AnimationEx1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEx1View.swift; sourceTree = "<group>"; };
 		E6E0A2022C15B9D90038A667 /* AnimationEx1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEx1ViewController.swift; sourceTree = "<group>"; };
+		E6ED786F2C3D80E400C686DC /* ProxyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyViewController.swift; sourceTree = "<group>"; };
+		E6ED78712C3D80E400C686DC /* DecoratorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecoratorViewController.swift; sourceTree = "<group>"; };
+		E6ED78732C3D80E400C686DC /* BridgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeViewController.swift; sourceTree = "<group>"; };
+		E6ED78752C3D80E400C686DC /* FacadeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeViewController.swift; sourceTree = "<group>"; };
+		E6ED78772C3D80E400C686DC /* AdapterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterViewController.swift; sourceTree = "<group>"; };
+		E6ED78792C3D80E400C686DC /* CompositeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeViewController.swift; sourceTree = "<group>"; };
+		E6ED787B2C3D80E400C686DC /* FlyweightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightViewController.swift; sourceTree = "<group>"; };
 		E90654B2295951760027A47C /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		E90654B4295951820027A47C /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
 		E908D72129652EAA0062B85F /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
@@ -443,7 +443,7 @@
 			isa = PBXGroup;
 			children = (
 				E9F71BFA2974FE9200BDD86B /* Create */,
-				E6AD8E80297FB9E100208D8C /* Structural */,
+				E6ED786D2C3D80E400C686DC /* Structural */,
 				E640F24229A20BE400E0F749 /* Behavioral */,
 			);
 			path = DesignPatterns;
@@ -833,69 +833,6 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
-		E69F23662BE3B0DE00F6DC40 /* Facade */ = {
-			isa = PBXGroup;
-			children = (
-				E69F23672BE3B0DE00F6DC40 /* FacadeViewController.swift */,
-			);
-			name = Facade;
-			path = RxSwiftStudyInUIkit/Study/DesignPatterns/Structural/Facade;
-			sourceTree = SOURCE_ROOT;
-		};
-		E69F23682BE3B0DE00F6DC40 /* Decorator */ = {
-			isa = PBXGroup;
-			children = (
-				E69F23692BE3B0DE00F6DC40 /* DecoratorViewController.swift */,
-			);
-			name = Decorator;
-			path = RxSwiftStudyInUIkit/Study/DesignPatterns/Structural/Decorator;
-			sourceTree = SOURCE_ROOT;
-		};
-		E69F236A2BE3B0DE00F6DC40 /* Composite */ = {
-			isa = PBXGroup;
-			children = (
-				E69F236B2BE3B0DE00F6DC40 /* CompositeViewController.swift */,
-			);
-			name = Composite;
-			path = RxSwiftStudyInUIkit/Study/DesignPatterns/Structural/Composite;
-			sourceTree = SOURCE_ROOT;
-		};
-		E69F236C2BE3B0DE00F6DC40 /* Adapter */ = {
-			isa = PBXGroup;
-			children = (
-				E69F236D2BE3B0DE00F6DC40 /* AdapterViewController.swift */,
-			);
-			name = Adapter;
-			path = RxSwiftStudyInUIkit/Study/DesignPatterns/Structural/Adapter;
-			sourceTree = SOURCE_ROOT;
-		};
-		E69F236E2BE3B0DE00F6DC40 /* Bridge */ = {
-			isa = PBXGroup;
-			children = (
-				E69F236F2BE3B0DE00F6DC40 /* BridgeViewController.swift */,
-			);
-			name = Bridge;
-			path = RxSwiftStudyInUIkit/Study/DesignPatterns/Structural/Bridge;
-			sourceTree = SOURCE_ROOT;
-		};
-		E69F23702BE3B0DF00F6DC40 /* Flyweight */ = {
-			isa = PBXGroup;
-			children = (
-				E69F23712BE3B0DF00F6DC40 /* FlyweightViewController.swift */,
-			);
-			name = Flyweight;
-			path = RxSwiftStudyInUIkit/Study/DesignPatterns/Structural/Flyweight;
-			sourceTree = SOURCE_ROOT;
-		};
-		E69F23722BE3B0DF00F6DC40 /* Proxy */ = {
-			isa = PBXGroup;
-			children = (
-				E69F23732BE3B0DF00F6DC40 /* ProxyViewController.swift */,
-			);
-			name = Proxy;
-			path = RxSwiftStudyInUIkit/Study/DesignPatterns/Structural/Proxy;
-			sourceTree = SOURCE_ROOT;
-		};
 		E69F23812BED0AF300F6DC40 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
@@ -966,21 +903,6 @@
 				E6AD8E7E296948E600208D8C /* DynamicMemberLookup.swift */,
 			);
 			path = SwiftStudy;
-			sourceTree = "<group>";
-		};
-		E6AD8E80297FB9E100208D8C /* Structural */ = {
-			isa = PBXGroup;
-			children = (
-				E69F236C2BE3B0DE00F6DC40 /* Adapter */,
-				E69F236E2BE3B0DE00F6DC40 /* Bridge */,
-				E69F236A2BE3B0DE00F6DC40 /* Composite */,
-				E69F23682BE3B0DE00F6DC40 /* Decorator */,
-				E69F23662BE3B0DE00F6DC40 /* Facade */,
-				E69F23702BE3B0DF00F6DC40 /* Flyweight */,
-				E69F23722BE3B0DF00F6DC40 /* Proxy */,
-			);
-			name = Structural;
-			path = "구조";
 			sourceTree = "<group>";
 		};
 		E6AE1386298937640077DEDC /* Network */ = {
@@ -1075,6 +997,76 @@
 				E6E0A2022C15B9D90038A667 /* AnimationEx1ViewController.swift */,
 			);
 			path = Animation;
+			sourceTree = "<group>";
+		};
+		E6ED786D2C3D80E400C686DC /* Structural */ = {
+			isa = PBXGroup;
+			children = (
+				E6ED786E2C3D80E400C686DC /* Proxy */,
+				E6ED78702C3D80E400C686DC /* Decorator */,
+				E6ED78722C3D80E400C686DC /* Bridge */,
+				E6ED78742C3D80E400C686DC /* Facade */,
+				E6ED78762C3D80E400C686DC /* Adapter */,
+				E6ED78782C3D80E400C686DC /* Composite */,
+				E6ED787A2C3D80E400C686DC /* Flyweight */,
+			);
+			path = Structural;
+			sourceTree = "<group>";
+		};
+		E6ED786E2C3D80E400C686DC /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				E6ED786F2C3D80E400C686DC /* ProxyViewController.swift */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		E6ED78702C3D80E400C686DC /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				E6ED78712C3D80E400C686DC /* DecoratorViewController.swift */,
+			);
+			path = Decorator;
+			sourceTree = "<group>";
+		};
+		E6ED78722C3D80E400C686DC /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				E6ED78732C3D80E400C686DC /* BridgeViewController.swift */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		E6ED78742C3D80E400C686DC /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				E6ED78752C3D80E400C686DC /* FacadeViewController.swift */,
+			);
+			path = Facade;
+			sourceTree = "<group>";
+		};
+		E6ED78762C3D80E400C686DC /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				E6ED78772C3D80E400C686DC /* AdapterViewController.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		E6ED78782C3D80E400C686DC /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				E6ED78792C3D80E400C686DC /* CompositeViewController.swift */,
+			);
+			path = Composite;
+			sourceTree = "<group>";
+		};
+		E6ED787A2C3D80E400C686DC /* Flyweight */ = {
+			isa = PBXGroup;
+			children = (
+				E6ED787B2C3D80E400C686DC /* FlyweightViewController.swift */,
+			);
+			path = Flyweight;
 			sourceTree = "<group>";
 		};
 		E90654B1295951590027A47C /* AbstractFactory */ = {
@@ -1534,15 +1526,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6ED787D2C3D80E400C686DC /* DecoratorViewController.swift in Sources */,
 				E640F24E29A20D9300E0F749 /* IteratorViewController.swift in Sources */,
 				E68999472B42C47D006283E9 /* SweeterChapter3_Frame.swift in Sources */,
-				E69F23772BE3B0DF00F6DC40 /* AdapterViewController.swift in Sources */,
 				E62DB4F629FF8DA8007F4C7F /* MVVMCleanArchitecture.swift in Sources */,
 				E69F23552BDE514300F6DC40 /* CombineEx1.swift in Sources */,
 				E69F23872BF226C200F6DC40 /* CacheEx1View.swift in Sources */,
 				E640F24829A20CEB00E0F749 /* CommandViewController.swift in Sources */,
 				E69F23842BED0C9D00F6DC40 /* CombineEx5.swift in Sources */,
 				E6186C3B2A0BCD0C004FD75C /* Ribs.swift in Sources */,
+				E6ED78812C3D80E400C686DC /* CompositeViewController.swift in Sources */,
 				E997CBE62966814300A5B0B5 /* Builder.swift in Sources */,
 				E640F25129A20DD200E0F749 /* MediatorViewController.swift in Sources */,
 				E69C82412B00B8A500586158 /* SwiftUI-StackComb.swift in Sources */,
@@ -1556,8 +1549,8 @@
 				E62AE6F429447DB40054EA97 /* FactoryMethodViewController.swift in Sources */,
 				E6B660C42AF620A1002CEE18 /* SwfitUI-TextView.swift in Sources */,
 				E997CBE82966819D00A5B0B5 /* BuilderPattern.swift in Sources */,
+				E6ED78802C3D80E400C686DC /* AdapterViewController.swift in Sources */,
 				E9F71BFD2974FEB500BDD86B /* PrototypeViewController.swift in Sources */,
-				E69F23782BE3B0DF00F6DC40 /* BridgeViewController.swift in Sources */,
 				E6B63B682A30A1FC00BE7893 /* MoyaViewModel.swift in Sources */,
 				E69F238B2BF4A0FC00F6DC40 /* PracticalCacheView.swift in Sources */,
 				E62ACA0729C5704B009ED371 /* DatabaseConnection.swift in Sources */,
@@ -1569,6 +1562,7 @@
 				E62DB4FB2A050C83007F4C7F /* Architecture-Index.swift in Sources */,
 				E62DB4F029FF8D4E007F4C7F /* MVVMArchitecture.swift in Sources */,
 				E62DB4F92A050BE7007F4C7F /* VIPERArchitecture.swift in Sources */,
+				E6ED787E2C3D80E400C686DC /* BridgeViewController.swift in Sources */,
 				E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */,
 				E62ACA1429C58D93009ED371 /* Before_VisitorExample.swift in Sources */,
 				E6E0A2032C15B9D90038A667 /* AnimationEx1ViewController.swift in Sources */,
@@ -1588,9 +1582,10 @@
 				E69C823F2B00B10D00586158 /* SwiftUI-Stack.swift in Sources */,
 				E62ACA0529C5701B009ED371 /* DocumentGenerator.swift in Sources */,
 				E69F237E2BE8AF7300F6DC40 /* CombineEx3.swift in Sources */,
+				E6ED787C2C3D80E400C686DC /* ProxyViewController.swift in Sources */,
 				E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */,
 				E640F25F29A20F0900E0F749 /* StrategyViewController.swift in Sources */,
-				E69F237A2BE3B0DF00F6DC40 /* ProxyViewController.swift in Sources */,
+				E6ED78822C3D80E400C686DC /* FlyweightViewController.swift in Sources */,
 				E62ACA0C29C576DA009ED371 /* FileProcessor.swift in Sources */,
 				E63613A628B22E6A0050C070 /* ShareStudy.swift in Sources */,
 				E689993A2B427F81006283E9 /* SweeterChapter3_Navigation.swift in Sources */,
@@ -1608,7 +1603,6 @@
 				E94DDCBE28B5CFE4005451EA /* Map.swift in Sources */,
 				E62ACA1629C59013009ED371 /* After_VisitorExample.swift in Sources */,
 				E64868A42C3920A100EF0B25 /* CodeView.swift in Sources */,
-				E69F23742BE3B0DF00F6DC40 /* FacadeViewController.swift in Sources */,
 				E69F23892BF4976D00F6DC40 /* BasicCacheView.swift in Sources */,
 				E69C824A2B134AB400586158 /* Chapter2-2.swift in Sources */,
 				E68999452B42BAAE006283E9 /* SweeterChapter3_GeometryReader.swift in Sources */,
@@ -1626,11 +1620,9 @@
 				E69F23912BF4B9D600F6DC40 /* CacheEx4View.swift in Sources */,
 				E69F237C2BE8A40B00F6DC40 /* CombineEx2.swift in Sources */,
 				E62DB4EC29FF89E7007F4C7F /* OutlineViewController+Item.swift in Sources */,
-				E69F23762BE3B0DF00F6DC40 /* CompositeViewController.swift in Sources */,
+				E6ED787F2C3D80E400C686DC /* FacadeViewController.swift in Sources */,
 				E62ACA1229C587BC009ED371 /* TemplateCallbackSkeleton.swift in Sources */,
-				E69F23792BE3B0DF00F6DC40 /* FlyweightViewController.swift in Sources */,
 				E950C91628B8709600E0C80A /* Reduce.swift in Sources */,
-				E69F23752BE3B0DF00F6DC40 /* DecoratorViewController.swift in Sources */,
 				E6AD8E7D296948AA00208D8C /* GCDView.swift in Sources */,
 				E6A16EAE28BB3FEA00921D78 /* UITableView+Extensions.swift in Sources */,
 				E640F26129A20F2100E0F749 /* TemplateMethodViewController.swift in Sources */,
