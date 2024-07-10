@@ -6,13 +6,6 @@
 //
 import SwiftUI
 
-extension View {
-    
-    func toHostingViewController() -> UIHostingController<AnyView>? {
-        UIHostingController(rootView: AnyView(self))
-    }
-}
-
 struct AbstractFactoryView: View {
     
     private let textViewContent = """

@@ -68,7 +68,7 @@ extension OutlineViewController {
                         OutlineItem(title: "Absctract factory",
                                     swiftUIController: AbstractFactoryView().toHostingController()),
                         OutlineItem(title: "Builder",
-                                    viewController: BuilderViewController.self),
+                                    swiftUIController: BuilderView().toHostingController()),
                         OutlineItem(title: "Prototype",
                                     viewController: PrototypeViewController.self)
                     ]
