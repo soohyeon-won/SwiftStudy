@@ -70,7 +70,7 @@ extension OutlineViewController {
                         OutlineItem(title: "Builder",
                                     swiftUIController: BuilderView().toHostingController()),
                         OutlineItem(title: "Prototype",
-                                    viewController: PrototypeViewController.self)
+                                    swiftUIController: PrototypeView().toHostingController())
                     ]
                 ),
                 OutlineItem(
@@ -89,7 +89,7 @@ extension OutlineViewController {
                         OutlineItem(title: "Flyweight",
                                     viewController: FlyweightViewController.self),
                         OutlineItem(title: "Proxy",
-                                    viewController: ProxyViewController.self)
+                                    swiftUIController: ProxyView().toHostingController())
                     ]
                 ),
                 OutlineItem(

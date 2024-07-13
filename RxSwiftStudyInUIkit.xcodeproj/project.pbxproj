@@ -37,6 +37,7 @@
 		E62DB4F92A050BE7007F4C7F /* VIPERArchitecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4F82A050BE7007F4C7F /* VIPERArchitecture.swift */; };
 		E62DB4FB2A050C83007F4C7F /* Architecture-Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4FA2A050C83007F4C7F /* Architecture-Index.swift */; };
 		E62DB5002A0A84BE007F4C7F /* ButtonReactorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4FF2A0A84BE007F4C7F /* ButtonReactorTests.swift */; };
+		E62EDD632C427CCA003C23ED /* ProxyPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62EDD622C427CCA003C23ED /* ProxyPattern.swift */; };
 		E636137628B22E570050C070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636137528B22E570050C070 /* AppDelegate.swift */; };
 		E636137828B22E570050C070 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636137728B22E570050C070 /* SceneDelegate.swift */; };
 		E636137D28B22E570050C070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E636137B28B22E570050C070 /* Main.storyboard */; };
@@ -108,13 +109,14 @@
 		E6E0A1FF2C15B5E60038A667 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E6E0A1FE2C15B5E60038A667 /* README.md */; };
 		E6E0A2012C15B8B60038A667 /* AnimationEx1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0A2002C15B8B60038A667 /* AnimationEx1View.swift */; };
 		E6E0A2032C15B9D90038A667 /* AnimationEx1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0A2022C15B9D90038A667 /* AnimationEx1ViewController.swift */; };
-		E6ED787C2C3D80E400C686DC /* ProxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED786F2C3D80E400C686DC /* ProxyViewController.swift */; };
+		E6ED787C2C3D80E400C686DC /* ProxyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED786F2C3D80E400C686DC /* ProxyView.swift */; };
 		E6ED787D2C3D80E400C686DC /* DecoratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78712C3D80E400C686DC /* DecoratorViewController.swift */; };
 		E6ED787E2C3D80E400C686DC /* BridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78732C3D80E400C686DC /* BridgeViewController.swift */; };
 		E6ED787F2C3D80E400C686DC /* FacadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78752C3D80E400C686DC /* FacadeViewController.swift */; };
 		E6ED78802C3D80E400C686DC /* AdapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78772C3D80E400C686DC /* AdapterViewController.swift */; };
 		E6ED78812C3D80E400C686DC /* CompositeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78792C3D80E400C686DC /* CompositeViewController.swift */; };
 		E6ED78822C3D80E400C686DC /* FlyweightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED787B2C3D80E400C686DC /* FlyweightViewController.swift */; };
+		E6ED78842C3E998200C686DC /* PrototypePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78832C3E998200C686DC /* PrototypePattern.swift */; };
 		E90654B3295951760027A47C /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B2295951760027A47C /* AbstractFactory.swift */; };
 		E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B4295951820027A47C /* AbstractFactoryViewController.swift */; };
 		E908D72229652EAA0062B85F /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908D72129652EAA0062B85F /* Ship.swift */; };
@@ -224,6 +226,7 @@
 		E62DB4F82A050BE7007F4C7F /* VIPERArchitecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERArchitecture.swift; sourceTree = "<group>"; };
 		E62DB4FA2A050C83007F4C7F /* Architecture-Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Architecture-Index.swift"; sourceTree = "<group>"; };
 		E62DB4FF2A0A84BE007F4C7F /* ButtonReactorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonReactorTests.swift; sourceTree = "<group>"; };
+		E62EDD622C427CCA003C23ED /* ProxyPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyPattern.swift; sourceTree = "<group>"; };
 		E636137228B22E570050C070 /* RxSwiftStudyInUIkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftStudyInUIkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E636137528B22E570050C070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E636137728B22E570050C070 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -312,13 +315,14 @@
 		E6E0A1FE2C15B5E60038A667 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E6E0A2002C15B8B60038A667 /* AnimationEx1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEx1View.swift; sourceTree = "<group>"; };
 		E6E0A2022C15B9D90038A667 /* AnimationEx1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEx1ViewController.swift; sourceTree = "<group>"; };
-		E6ED786F2C3D80E400C686DC /* ProxyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyViewController.swift; sourceTree = "<group>"; };
+		E6ED786F2C3D80E400C686DC /* ProxyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyView.swift; sourceTree = "<group>"; };
 		E6ED78712C3D80E400C686DC /* DecoratorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecoratorViewController.swift; sourceTree = "<group>"; };
 		E6ED78732C3D80E400C686DC /* BridgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeViewController.swift; sourceTree = "<group>"; };
 		E6ED78752C3D80E400C686DC /* FacadeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeViewController.swift; sourceTree = "<group>"; };
 		E6ED78772C3D80E400C686DC /* AdapterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterViewController.swift; sourceTree = "<group>"; };
 		E6ED78792C3D80E400C686DC /* CompositeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeViewController.swift; sourceTree = "<group>"; };
 		E6ED787B2C3D80E400C686DC /* FlyweightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightViewController.swift; sourceTree = "<group>"; };
+		E6ED78832C3E998200C686DC /* PrototypePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypePattern.swift; sourceTree = "<group>"; };
 		E90654B2295951760027A47C /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		E90654B4295951820027A47C /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
 		E908D72129652EAA0062B85F /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
@@ -1016,7 +1020,8 @@
 		E6ED786E2C3D80E400C686DC /* Proxy */ = {
 			isa = PBXGroup;
 			children = (
-				E6ED786F2C3D80E400C686DC /* ProxyViewController.swift */,
+				E6ED786F2C3D80E400C686DC /* ProxyView.swift */,
+				E62EDD622C427CCA003C23ED /* ProxyPattern.swift */,
 			);
 			path = Proxy;
 			sourceTree = "<group>";
@@ -1162,6 +1167,7 @@
 			isa = PBXGroup;
 			children = (
 				E9F71BFC2974FEB500BDD86B /* PrototypeViewController.swift */,
+				E6ED78832C3E998200C686DC /* PrototypePattern.swift */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -1567,6 +1573,7 @@
 				E62ACA1429C58D93009ED371 /* Before_VisitorExample.swift in Sources */,
 				E6E0A2032C15B9D90038A667 /* AnimationEx1ViewController.swift in Sources */,
 				E640F25B29A20ED200E0F749 /* ObserverViewController.swift in Sources */,
+				E62EDD632C427CCA003C23ED /* ProxyPattern.swift in Sources */,
 				E6AD8E7F296948E600208D8C /* DynamicMemberLookup.swift in Sources */,
 				E62DB4E129FAAB1E007F4C7F /* MVCArchitecture.swift in Sources */,
 				E6AE13AF298947C40077DEDC /* MoyaViewController.swift in Sources */,
@@ -1582,7 +1589,7 @@
 				E69C823F2B00B10D00586158 /* SwiftUI-Stack.swift in Sources */,
 				E62ACA0529C5701B009ED371 /* DocumentGenerator.swift in Sources */,
 				E69F237E2BE8AF7300F6DC40 /* CombineEx3.swift in Sources */,
-				E6ED787C2C3D80E400C686DC /* ProxyViewController.swift in Sources */,
+				E6ED787C2C3D80E400C686DC /* ProxyView.swift in Sources */,
 				E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */,
 				E640F25F29A20F0900E0F749 /* StrategyViewController.swift in Sources */,
 				E6ED78822C3D80E400C686DC /* FlyweightViewController.swift in Sources */,
@@ -1622,6 +1629,7 @@
 				E62DB4EC29FF89E7007F4C7F /* OutlineViewController+Item.swift in Sources */,
 				E6ED787F2C3D80E400C686DC /* FacadeViewController.swift in Sources */,
 				E62ACA1229C587BC009ED371 /* TemplateCallbackSkeleton.swift in Sources */,
+				E6ED78842C3E998200C686DC /* PrototypePattern.swift in Sources */,
 				E950C91628B8709600E0C80A /* Reduce.swift in Sources */,
 				E6AD8E7D296948AA00208D8C /* GCDView.swift in Sources */,
 				E6A16EAE28BB3FEA00921D78 /* UITableView+Extensions.swift in Sources */,

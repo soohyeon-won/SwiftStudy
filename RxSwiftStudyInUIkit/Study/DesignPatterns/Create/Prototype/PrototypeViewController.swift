@@ -5,25 +5,11 @@
 //  Created by soohyeon won on 2023/01/16.
 //
 
-import UIKit
+import SwiftUI
 
-final class PrototypeViewController: UIViewController {
+struct PrototypeView: View {
     
-    private let textView = UITextView().then {
-        $0.isEditable = false
-        $0.font = .systemFont(ofSize: 24)
-    }
-    
-    override func viewDidLoad() {
-        view.backgroundColor = .white
-        
-        view.addSubview(textView)
-        
-        textView.snp.makeConstraints{
-            $0.edges.equalToSuperview().inset(24)
-        }
-        
-        textView.text = """
+    private let textViewContent = """
         [ 프로토타입 패턴 ]
         기존 인스턴스를 복제하여 새로운 인스턴스를 만드는 방법
         
@@ -52,8 +38,101 @@ final class PrototypeViewController: UIViewController {
         NSCoding : Archiving과 distribution을 위해 인코딩/디코딩을 가능하게 해주는 프로토콜
         Codable : 외부에서 표현하는 JSON과 같은 데이터 형식으로 인코딩/디코딩을 가능하게 해주는 프로토콜
         """
-        
-        client()
+    
+    var body: some View {
+        ScrollView {
+            Text(textViewContent)
+                .font(.system(size: 24))
+                .padding(24)
+                .background(Color.white)
+                .cornerRadius(8)
+            
+            CodeView(code: """
+            struct GithubRepo {
+                var issueNumber: Int = 1
+            }
+
+            struct GitIssue: Equatable {
+                
+                var repo: GithubRepo
+                
+                init(repo: GithubRepo) {
+                    self.repo = repo
+                }
+                static func == (lhs: GitIssue, rhs: GitIssue) -> Bool {
+                    lhs.repo.issueNumber == rhs.repo.issueNumber
+                }
+            }
+
+
+            class GithubRepository {
+                
+                var issueNumber: Int = 1
+            }
+
+            class GithubIssue: NSCopying {
+                
+                let repository: GithubRepository
+                var actionNumber = 10
+                
+                init(repository: GithubRepository) {
+                    self.repository = repository
+                }
+                
+                func copy(with zone: NSZone? = nil) -> Any {
+                    return GithubIssue(repository: GithubRepository())
+                }
+            }
+            
+            // 얕은복사 : Shallow copy | 스택영역 | 주소값 복사
+            // 깊은복사 : Deep copy | 힙영역 | 실제값을 메모리 값에 복사
+            
+            // swift는 class로 모델 선언 > clone.repository === githubIssue.repository (true)
+            print("=====CLASS=====")
+            let repository = GithubRepository()
+            let githubIssue = GithubIssue(repository: repository)
+            let clone = githubIssue
+            print("clone.repository === githubIssue.repository", clone.repository === githubIssue.repository) // true
+            print("clone === githubIssue", clone === githubIssue) // true
+            
+            githubIssue.repository.issueNumber = 2
+            print("githubIssue.repository.issueNumber: ", githubIssue.repository.issueNumber)
+            print("clone.repository.issueNumber: ", clone.repository.issueNumber)
+            
+            // struct로 모델 선언 > Equatable채택
+            print("=====STRUCT=====")
+            var gitIssue = GitIssue(repo: GithubRepo())
+            let cloneGitIssue = gitIssue
+            
+            print("cloneGitIssue === gitIssue", cloneGitIssue == gitIssue)
+            
+            gitIssue.repo.issueNumber = 20
+            print("gitIssue.repo.issueNumber: ", gitIssue.repo.issueNumber)
+            print("cloneGitIssue.issueNumber: ", cloneGitIssue.repo.issueNumber)
+            
+            // 참조타입 NSCopying 채택
+            // 깊은복사 가능
+            print("=====NSCopying=====")
+            guard let clone2 = githubIssue.copy() as? GithubIssue else { return }
+            print("clone === clone2", clone === clone2) // false
+            
+            // 깊은 복사가 이루어졌다.
+            githubIssue.actionNumber = 200
+            print("githubIssue.actionNumber: ", githubIssue.actionNumber)
+            print("clone2.actionNumber: ", clone2.actionNumber)
+            
+            // 참조 타입 내부에 참조타입을 갖고 있는 경우이기 때문에
+            // 아래는 func copy 함수의 내부 구현에 따라 달라짐
+            githubIssue.repository.issueNumber = 100
+            print("githubIssue.repository.issueNumber: ", githubIssue.repository.issueNumber)
+            print("clone.repository.issueNumber: ", clone.repository.issueNumber)
+            print("clone2.repository.issueNumber: ", clone2.repository.issueNumber)
+            """)
+        }
+        .background(Color(UIColor.systemBackground).edgesIgnoringSafeArea(.all))
+        .onAppear {
+            client()
+        }
     }
     
     private func client() {
@@ -61,7 +140,7 @@ final class PrototypeViewController: UIViewController {
         // 깊은복사 : Deep copy | 힙영역 | 실제값을 메모리 값에 복사
         
         // swift는 class로 모델 선언 > clone.repository === githubIssue.repository (true)
-        print("=====CLASS=====")
+        print("=====CLASS=====") // shallow copy
         let repository = GithubRepository()
         let githubIssue = GithubIssue(repository: repository)
         let clone = githubIssue
@@ -73,17 +152,18 @@ final class PrototypeViewController: UIViewController {
         print("clone.repository.issueNumber: ", clone.repository.issueNumber)
         
         // struct로 모델 선언 > Equatable채택
-        print("=====STRUCT=====")
+        print("=====STRUCT=====") // deep copy
         var gitIssue = GitIssue(repo: GithubRepo())
         let cloneGitIssue = gitIssue
         
-        print("cloneGitIssue === gitIssue", cloneGitIssue == gitIssue)
+        print("cloneGitIssue === gitIssue", cloneGitIssue == gitIssue) // true
         
         gitIssue.repo.issueNumber = 20
         print("gitIssue.repo.issueNumber: ", gitIssue.repo.issueNumber)
         print("cloneGitIssue.issueNumber: ", cloneGitIssue.repo.issueNumber)
+        print("cloneGitIssue === gitIssue", cloneGitIssue == gitIssue) // false
         
-        // 참조타입 NSCopying 채택
+        // 참조타입 class에 NSCopying 채택
         // 깊은복사 가능
         print("=====NSCopying=====")
         guard let clone2 = githubIssue.copy() as? GithubIssue else { return }
@@ -96,46 +176,10 @@ final class PrototypeViewController: UIViewController {
         
         // 참조 타입 내부에 참조타입을 갖고 있는 경우이기 때문에
         // 아래는 func copy 함수의 내부 구현에 따라 달라짐
+        print("====참조 타입 내부에 참조타입을 갖고 있는 경우=====")
         githubIssue.repository.issueNumber = 100
-        print("githubIssue.repository.issueNumber: ", githubIssue.repository.issueNumber)
-        print("clone.repository.issueNumber: ", clone.repository.issueNumber)
-        print("clone2.repository.issueNumber: ", clone2.repository.issueNumber)
+        print("githubIssue.repository.issueNumber: ", githubIssue.repository.issueNumber) // 100
+        print("clone.repository.issueNumber: ", clone.repository.issueNumber) // 100
+        print("clone2.repository.issueNumber: ", clone2.repository.issueNumber) // 1
     }
 }
-
-struct GithubRepo {
-    var issueNumber: Int = 1
-}
-
-struct GitIssue: Equatable {
-    
-    var repo: GithubRepo
-    
-    init(repo: GithubRepo) {
-        self.repo = repo
-    }
-    static func == (lhs: GitIssue, rhs: GitIssue) -> Bool {
-        lhs.repo.issueNumber == rhs.repo.issueNumber
-    }
-}
-
-
-class GithubRepository {
-    
-    var issueNumber: Int = 1
-}
-
-class GithubIssue: NSCopying {
-    
-    let repository: GithubRepository
-    var actionNumber = 10
-    
-    init(repository: GithubRepository) {
-        self.repository = repository
-    }
-    
-    func copy(with zone: NSZone? = nil) -> Any {
-        return GithubIssue(repository: GithubRepository())
-    }
-}
-
