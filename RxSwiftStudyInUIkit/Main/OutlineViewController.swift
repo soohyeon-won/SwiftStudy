@@ -230,6 +230,22 @@ class OutlineViewController: UIViewController {
                         viewController: MoyaViewController.self
                     )
                 ]
+            ),
+            OutlineItem(
+                title: "🍏 Apple",
+                subitems: [
+                    OutlineItem(
+                        title: "Rejects",
+                        subitems: [
+                            OutlineItem(
+                                title: "Guideline 4.0 - Design",
+                                swiftUIController:  UIHostingController(
+                                    rootView: AnyView(Guideline4_design())
+                                )
+                            )
+                        ]
+                    )
+                ]
             )
         ]
     }()

@@ -38,6 +38,7 @@
 		E62DB4FB2A050C83007F4C7F /* Architecture-Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4FA2A050C83007F4C7F /* Architecture-Index.swift */; };
 		E62DB5002A0A84BE007F4C7F /* ButtonReactorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4FF2A0A84BE007F4C7F /* ButtonReactorTests.swift */; };
 		E62EDD632C427CCA003C23ED /* ProxyPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62EDD622C427CCA003C23ED /* ProxyPattern.swift */; };
+		E62EDD672C4A6E6E003C23ED /* Guideline4_design.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62EDD662C4A6E6E003C23ED /* Guideline4_design.swift */; };
 		E636137628B22E570050C070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636137528B22E570050C070 /* AppDelegate.swift */; };
 		E636137828B22E570050C070 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636137728B22E570050C070 /* SceneDelegate.swift */; };
 		E636137D28B22E570050C070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E636137B28B22E570050C070 /* Main.storyboard */; };
@@ -227,6 +228,7 @@
 		E62DB4FA2A050C83007F4C7F /* Architecture-Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Architecture-Index.swift"; sourceTree = "<group>"; };
 		E62DB4FF2A0A84BE007F4C7F /* ButtonReactorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonReactorTests.swift; sourceTree = "<group>"; };
 		E62EDD622C427CCA003C23ED /* ProxyPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyPattern.swift; sourceTree = "<group>"; };
+		E62EDD662C4A6E6E003C23ED /* Guideline4_design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guideline4_design.swift; sourceTree = "<group>"; };
 		E636137228B22E570050C070 /* RxSwiftStudyInUIkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftStudyInUIkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E636137528B22E570050C070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E636137728B22E570050C070 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -581,6 +583,22 @@
 			path = VIPER;
 			sourceTree = "<group>";
 		};
+		E62EDD642C4A6E39003C23ED /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				E62EDD652C4A6E42003C23ED /* Rejects */,
+			);
+			path = Apple;
+			sourceTree = "<group>";
+		};
+		E62EDD652C4A6E42003C23ED /* Rejects */ = {
+			isa = PBXGroup;
+			children = (
+				E62EDD662C4A6E6E003C23ED /* Guideline4_design.swift */,
+			);
+			path = Rejects;
+			sourceTree = "<group>";
+		};
 		E636136928B22E570050C070 = {
 			isa = PBXGroup;
 			children = (
@@ -617,6 +635,7 @@
 				E9D1A20E28D4228F00C46741 /* SwiftUI */,
 				E6AD8E7A2969488600208D8C /* Study */,
 				E6AD8E7B2969489700208D8C /* SwiftStudy */,
+				E62EDD642C4A6E39003C23ED /* Apple */,
 				E6A16EA828BB3FAA00921D78 /* Common */,
 				E636137B28B22E570050C070 /* Main.storyboard */,
 				E636137E28B22E5A0050C070 /* Assets.xcassets */,
@@ -1572,6 +1591,7 @@
 				E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */,
 				E62ACA1429C58D93009ED371 /* Before_VisitorExample.swift in Sources */,
 				E6E0A2032C15B9D90038A667 /* AnimationEx1ViewController.swift in Sources */,
+				E62EDD672C4A6E6E003C23ED /* Guideline4_design.swift in Sources */,
 				E640F25B29A20ED200E0F749 /* ObserverViewController.swift in Sources */,
 				E62EDD632C427CCA003C23ED /* ProxyPattern.swift in Sources */,
 				E6AD8E7F296948E600208D8C /* DynamicMemberLookup.swift in Sources */,
