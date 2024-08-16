@@ -77,7 +77,7 @@ extension OutlineViewController {
                     title: "구조(Structural)",
                     subitems: [
                         OutlineItem(title: "Adapter",
-                                    viewController: AdapterViewController.self),
+                                    swiftUIController: AdapterView().toHostingController()),
                         OutlineItem(title: "Bridge",
                                     viewController: BridgeViewController.self),
                         OutlineItem(title: "Composite",
