@@ -1,29 +1,15 @@
 //
-//  FlyweightViewController.swift
+//  FlyweightView.swift
 //  RxSwiftStudyInUIkit
 //
 //  Created by won soohyeon on 2023/02/11.
 //
 
-import UIKit
+import SwiftUI
 
-final class FlyweightViewController: UIViewController {
+struct FlyweightView: View {
     
-    private let textView = UITextView().then {
-        $0.isEditable = false
-        $0.font = .systemFont(ofSize: 24)
-    }
-    
-    override func viewDidLoad() {
-        view.backgroundColor = .white
-        
-        view.addSubview(textView)
-        
-        textView.snp.makeConstraints{
-            $0.edges.equalToSuperview().inset(24)
-        }
-        
-        textView.text = """
+    private let textViewContent: String = """
         [ 플라이웨이트 패턴 ]
         자주 변하는 속성(또는 외적인 속성 extrinsic)과 변하지 않는 속성(또는 내적인 속성, intrinsic)을 분리하고 재사용하여 메모리 사용을 줄일 수 있다.
         다른 객체들이 공통으로 사용하는 데이터를 캐싱하여 RAM을 절약합니다.
@@ -45,29 +31,61 @@ final class FlyweightViewController: UIViewController {
         자주사용되는 범위에 있는 값들을 캐싱하여 리턴해준다.
         자바에서 int1 == int2 보다 isEqual 사용을 권장하는 이유
         """
-        
-        client()
+    
+    var body: some View {
+        VStack {
+            ScrollView {
+                Text(textViewContent)
+                    .font(.system(size: 24))
+                    .padding(24)
+                    .background(Color.white)
+                    .cornerRadius(8)
+                
+                CodeView(code: """
+                let fontFactory = FontFactory()
+                // 아래처럼 여러번 재사용될때 메모리 사용을 줄일 수 있음
+                // 이때 Intrinsic 속성을 모아놓은 클래스는 다른 곳들에서 공유하는 클래스이기때문에 Immutable해야함
+                // ex1. 폰트
+                let _ = Characters(
+                    value: "h",
+                    color: "white",
+                    font: fontFactory.getFont(font: Font(family: "nanum", size: 12.0))
+                )
+                
+                // ex2. 웹 브라우저: DOM 노드 관리
+                let styleFactory = StyleFlyweightFactory()
+
+                let style1 = styleFactory.getFlyweight(color: "red", fontSize: 12)
+                let style2 = styleFactory.getFlyweight(color: "red", fontSize: 12)
+
+                style1.apply(to: "div1")
+                style2.apply(to: "div2")
+                """)
+            }
+            .background(Color(UIColor.systemBackground).edgesIgnoringSafeArea(.all))
+            .onAppear {
+                client()
+            }
+        }
     }
     
     private func client() {
         let fontFactory = FontFactory()
         // 아래처럼 여러번 재사용될때 메모리 사용을 줄일 수 있음
         // 이때 Intrinsic 속성을 모아놓은 클래스는 다른 곳들에서 공유하는 클래스이기때문에 Immutable해야함
-        Characters(
+        let _ = Characters(
             value: "h",
             color: "white",
             font: fontFactory.getFont(font: Font(family: "nanum", size: 12.0))
         )
-        Characters(
-            value: "h",
-            color: "white",
-            font: fontFactory.getFont(font: Font(family: "nanum", size: 12))
-        )
-        Characters(
-            value: "h",
-            color: "white",
-            font: fontFactory.getFont(font: Font(family: "nanum", size: 12))
-        )
+        
+        let styleFactory = StyleFlyweightFactory()
+
+        let style1 = styleFactory.getFlyweight(color: "red", fontSize: 12)
+        let style2 = styleFactory.getFlyweight(color: "red", fontSize: 12)
+
+        style1.apply(to: "div1")
+        style2.apply(to: "div2")
     }
 }
 
@@ -118,5 +136,34 @@ class FontFactory {
         }
         cache[font.getFamily()] = font
         return font
+    }
+}
+
+class StyleFlyweight {
+    let color: String
+    let fontSize: Int
+
+    init(color: String, fontSize: Int) {
+        self.color = color
+        self.fontSize = fontSize
+    }
+
+    func apply(to element: String) {
+        print("Applying color: \(color), fontSize: \(fontSize) to \(element)")
+    }
+}
+
+class StyleFlyweightFactory {
+    private var flyweights: [String: StyleFlyweight] = [:]
+
+    func getFlyweight(color: String, fontSize: Int) -> StyleFlyweight {
+        let key = "\(color)-\(fontSize)"
+        if let flyweight = flyweights[key] {
+            return flyweight
+        } else {
+            let flyweight = StyleFlyweight(color: color, fontSize: fontSize)
+            flyweights[key] = flyweight
+            return flyweight
+        }
     }
 }

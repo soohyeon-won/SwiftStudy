@@ -115,9 +115,9 @@
 		E6ED787D2C3D80E400C686DC /* DecoratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78712C3D80E400C686DC /* DecoratorView.swift */; };
 		E6ED787E2C3D80E400C686DC /* BridgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78732C3D80E400C686DC /* BridgeView.swift */; };
 		E6ED787F2C3D80E400C686DC /* FacadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78752C3D80E400C686DC /* FacadeView.swift */; };
-		E6ED78802C3D80E400C686DC /* AdapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78772C3D80E400C686DC /* AdapterViewController.swift */; };
-		E6ED78812C3D80E400C686DC /* CompositeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78792C3D80E400C686DC /* CompositeViewController.swift */; };
-		E6ED78822C3D80E400C686DC /* FlyweightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED787B2C3D80E400C686DC /* FlyweightViewController.swift */; };
+		E6ED78802C3D80E400C686DC /* AdapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78772C3D80E400C686DC /* AdapterView.swift */; };
+		E6ED78812C3D80E400C686DC /* CompositeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78792C3D80E400C686DC /* CompositeView.swift */; };
+		E6ED78822C3D80E400C686DC /* FlyweightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED787B2C3D80E400C686DC /* FlyweightView.swift */; };
 		E6ED78842C3E998200C686DC /* PrototypePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78832C3E998200C686DC /* PrototypePattern.swift */; };
 		E90654B3295951760027A47C /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B2295951760027A47C /* AbstractFactory.swift */; };
 		E90654B5295951820027A47C /* AbstractFactoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B4295951820027A47C /* AbstractFactoryView.swift */; };
@@ -323,9 +323,9 @@
 		E6ED78712C3D80E400C686DC /* DecoratorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecoratorView.swift; sourceTree = "<group>"; };
 		E6ED78732C3D80E400C686DC /* BridgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeView.swift; sourceTree = "<group>"; };
 		E6ED78752C3D80E400C686DC /* FacadeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeView.swift; sourceTree = "<group>"; };
-		E6ED78772C3D80E400C686DC /* AdapterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterViewController.swift; sourceTree = "<group>"; };
-		E6ED78792C3D80E400C686DC /* CompositeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeViewController.swift; sourceTree = "<group>"; };
-		E6ED787B2C3D80E400C686DC /* FlyweightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightViewController.swift; sourceTree = "<group>"; };
+		E6ED78772C3D80E400C686DC /* AdapterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterView.swift; sourceTree = "<group>"; };
+		E6ED78792C3D80E400C686DC /* CompositeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeView.swift; sourceTree = "<group>"; };
+		E6ED787B2C3D80E400C686DC /* FlyweightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightView.swift; sourceTree = "<group>"; };
 		E6ED78832C3E998200C686DC /* PrototypePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypePattern.swift; sourceTree = "<group>"; };
 		E90654B2295951760027A47C /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		E90654B4295951820027A47C /* AbstractFactoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryView.swift; sourceTree = "<group>"; };
@@ -1075,7 +1075,7 @@
 		E6ED78762C3D80E400C686DC /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
-				E6ED78772C3D80E400C686DC /* AdapterViewController.swift */,
+				E6ED78772C3D80E400C686DC /* AdapterView.swift */,
 			);
 			path = Adapter;
 			sourceTree = "<group>";
@@ -1083,7 +1083,7 @@
 		E6ED78782C3D80E400C686DC /* Composite */ = {
 			isa = PBXGroup;
 			children = (
-				E6ED78792C3D80E400C686DC /* CompositeViewController.swift */,
+				E6ED78792C3D80E400C686DC /* CompositeView.swift */,
 			);
 			path = Composite;
 			sourceTree = "<group>";
@@ -1091,7 +1091,7 @@
 		E6ED787A2C3D80E400C686DC /* Flyweight */ = {
 			isa = PBXGroup;
 			children = (
-				E6ED787B2C3D80E400C686DC /* FlyweightViewController.swift */,
+				E6ED787B2C3D80E400C686DC /* FlyweightView.swift */,
 			);
 			path = Flyweight;
 			sourceTree = "<group>";
@@ -1564,7 +1564,7 @@
 				E6053F302C7B09A8008AB189 /* TempView.swift in Sources */,
 				E69F23842BED0C9D00F6DC40 /* CombineEx5.swift in Sources */,
 				E6186C3B2A0BCD0C004FD75C /* Ribs.swift in Sources */,
-				E6ED78812C3D80E400C686DC /* CompositeViewController.swift in Sources */,
+				E6ED78812C3D80E400C686DC /* CompositeView.swift in Sources */,
 				E997CBE62966814300A5B0B5 /* BuilderPattern.swift in Sources */,
 				E640F25129A20DD200E0F749 /* MediatorViewController.swift in Sources */,
 				E69C82412B00B8A500586158 /* SwiftUI-StackComb.swift in Sources */,
@@ -1578,7 +1578,7 @@
 				E62AE6F429447DB40054EA97 /* FactoryMethodView.swift in Sources */,
 				E6B660C42AF620A1002CEE18 /* SwfitUI-TextView.swift in Sources */,
 				E997CBE82966819D00A5B0B5 /* BuilderView.swift in Sources */,
-				E6ED78802C3D80E400C686DC /* AdapterViewController.swift in Sources */,
+				E6ED78802C3D80E400C686DC /* AdapterView.swift in Sources */,
 				E9F71BFD2974FEB500BDD86B /* PrototypeView.swift in Sources */,
 				E6B63B682A30A1FC00BE7893 /* MoyaViewModel.swift in Sources */,
 				E69F238B2BF4A0FC00F6DC40 /* PracticalCacheView.swift in Sources */,
@@ -1616,7 +1616,7 @@
 				E6ED787C2C3D80E400C686DC /* ProxyView.swift in Sources */,
 				E958D9B228B47FA100D05AC4 /* OutlineViewController.swift in Sources */,
 				E640F25F29A20F0900E0F749 /* StrategyViewController.swift in Sources */,
-				E6ED78822C3D80E400C686DC /* FlyweightViewController.swift in Sources */,
+				E6ED78822C3D80E400C686DC /* FlyweightView.swift in Sources */,
 				E62ACA0C29C576DA009ED371 /* FileProcessor.swift in Sources */,
 				E63613A628B22E6A0050C070 /* ShareStudy.swift in Sources */,
 				E689993A2B427F81006283E9 /* SweeterChapter3_Navigation.swift in Sources */,

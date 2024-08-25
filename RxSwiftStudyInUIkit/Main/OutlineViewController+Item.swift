@@ -87,7 +87,7 @@ extension OutlineViewController {
                         OutlineItem(title: "Facade",
                                     swiftUIController: FacadeView().toHostingController()),
                         OutlineItem(title: "Flyweight",
-                                    viewController: FlyweightViewController.self),
+                                    swiftUIController: FlyweightView().toHostingController()),
                         OutlineItem(title: "Proxy",
                                     swiftUIController: ProxyView().toHostingController())
                     ]

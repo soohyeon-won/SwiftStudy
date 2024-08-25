@@ -26,7 +26,7 @@ struct TempView: View {
             }
             .background(Color(UIColor.systemBackground).edgesIgnoringSafeArea(.all))
             .onAppear {
-                
+                client()
             }
         }
     }
