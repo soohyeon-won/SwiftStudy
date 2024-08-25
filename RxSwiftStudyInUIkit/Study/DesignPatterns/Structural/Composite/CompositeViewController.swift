@@ -5,25 +5,11 @@
 //  Created by won soohyeon on 2023/02/11.
 //
 
-import UIKit
+import SwiftUI
 
-final class CompositeViewController: UIViewController {
+struct CompositeView: View {
     
-    private let textView = UITextView().then {
-        $0.isEditable = false
-        $0.font = .systemFont(ofSize: 24)
-    }
-    
-    override func viewDidLoad() {
-        view.backgroundColor = .white
-        
-        view.addSubview(textView)
-        
-        textView.snp.makeConstraints{
-            $0.edges.equalToSuperview().inset(24)
-        }
-        
-        textView.text = """
+    private let textViewContent: String = """
         [ 컴포짓 패턴 ]
         클라이언트 입장에서는 '전체'나 '부분'이나 모두 동일한 컴포넌트로 인식할 수 있는 계층 구조를 만든다 (Part-Whole Hierachy)
         leef -> primitive(이용가능한 가장 단순한 요소)
@@ -44,16 +30,57 @@ final class CompositeViewController: UIViewController {
         UIView를 상속받아서
         Button, tableView 등을 add하고 화면에 나타내주는 (예제의 getPrice()처럼 .visible() 함수를 호출하는 관점으로 바라보면 이해가 쉬움) 부분들도 컴포짓 패턴을 사용했다고 볼 수 있다.
         """
-        
-        client()
+    
+    var body: some View {
+        VStack {
+            ScrollView {
+                Text(textViewContent)
+                    .font(.system(size: 24))
+                    .padding(24)
+                    .background(Color.white)
+                    .cornerRadius(8)
+                
+                CodeView(code: """
+                let rootFolder = Folder(name: "root")
+                let documentsFolder = Folder(name: "Documents")
+                let picturesFolder = Folder(name: "Pictures")
+
+                let file1 = File(name: "Resume.pdf")
+                let file2 = File(name: "Photo.png")
+                let file3 = File(name: "Vacation.jpg")
+
+                documentsFolder.add(component: file1)
+                picturesFolder.add(component: file2)
+                picturesFolder.add(component: file3)
+
+                rootFolder.add(component: documentsFolder)
+                rootFolder.add(component: picturesFolder)
+
+                // 전체 파일 시스템 구조 출력
+                rootFolder.display(indentation: "")
+                
+                // 출력
+                // + root
+                //  + Documents
+                //   - Resume.pdf
+                //  + Pictures
+                //   - Photo.png
+                //   - Vacation.jpg
+                """)
+            }
+            .background(Color(UIColor.systemBackground).edgesIgnoringSafeArea(.all))
+            .onAppear {
+                client()
+            }
+        }
     }
     
     private func client() {
+        // 1
         let item = Item(price: 10)
         let item2 = Item(price: 20)
         
         let bag = Bag()
-        
         bag.add(component: item)
         bag.add(component: item2)
         
@@ -64,6 +91,25 @@ final class CompositeViewController: UIViewController {
         bag2.add(component: bag)
         bag2.add(component: bag)
         printPrice(component: bag2)
+        
+        // 2
+        let rootFolder = Folder(name: "root")
+        let documentsFolder = Folder(name: "Documents")
+        let picturesFolder = Folder(name: "Pictures")
+
+        let file1 = File(name: "Resume.pdf")
+        let file2 = File(name: "Photo.png")
+        let file3 = File(name: "Vacation.jpg")
+
+        documentsFolder.add(component: file1)
+        picturesFolder.add(component: file2)
+        picturesFolder.add(component: file3)
+
+        rootFolder.add(component: documentsFolder)
+        rootFolder.add(component: picturesFolder)
+
+        // 전체 파일 시스템 구조 출력
+        rootFolder.display(indentation: "")
     }
     
     // OCP
@@ -71,6 +117,8 @@ final class CompositeViewController: UIViewController {
         print("price: \(component.getPrice())")
     }
 }
+
+// MARK: - 예시1. 기본 예제 (가격 합)
 
 protocol Component {
     func getPrice() -> Int
@@ -101,4 +149,45 @@ class Bag: Component {
         return list.map { $0.getPrice() }.reduce(0, +)
     }
     
+}
+
+// MARK: - 예시2. 파일 시스템
+
+protocol FileSystemComponent {
+    var name: String { get }
+    func display(indentation: String)
+}
+
+class File: FileSystemComponent {
+    let name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    func display(indentation: String) {
+        print("\(indentation)- \(name)")
+    }
+}
+
+class Folder: FileSystemComponent {
+    let name: String
+    private var components: [FileSystemComponent] = []
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    func add(component: FileSystemComponent) {
+        components.append(component)
+    }
+    
+    func remove(component: FileSystemComponent) {
+        components.removeAll { $0.name == component.name }
+    }
+    
+    func display(indentation: String) {
+        print("\(indentation)+ \(name)")
+        components.forEach { $0.display(indentation: indentation + "  ") }
+    }
 }

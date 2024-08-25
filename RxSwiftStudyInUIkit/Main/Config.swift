@@ -23,5 +23,5 @@ final class Config: ObservableObject {
     
     private init() { }
 
-    @Published var codeViewFontSize: CGFloat = 9
+    @Published var codeViewFontSize: CGFloat = 12
 }
