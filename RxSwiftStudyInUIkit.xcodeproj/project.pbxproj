@@ -10,6 +10,7 @@
 		4833208F3BBC0C99D4C964CC /* Pods_RxSwiftStudyInUIkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF536F5F65DE6E4B8D37ECED /* Pods_RxSwiftStudyInUIkit.framework */; };
 		B0E2514C333B0813843A82EB /* Pods_RxSwiftStudyInUIkitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9EB24DAEE59F486B26EABC8 /* Pods_RxSwiftStudyInUIkitTests.framework */; };
 		BDDFC40D71217C53DAD331F8 /* Pods_DataLayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFE0A00934D8D2360358485 /* Pods_DataLayerTests.framework */; };
+		E6053F302C7B09A8008AB189 /* TempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6053F2F2C7B09A8008AB189 /* TempView.swift */; };
 		E6186C3B2A0BCD0C004FD75C /* Ribs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6186C3A2A0BCD0C004FD75C /* Ribs.swift */; };
 		E62ACA0529C5701B009ED371 /* DocumentGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62ACA0429C5701B009ED371 /* DocumentGenerator.swift */; };
 		E62ACA0729C5704B009ED371 /* DatabaseConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62ACA0629C5704B009ED371 /* DatabaseConnection.swift */; };
@@ -24,7 +25,7 @@
 		E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6EA2944618F0054EA97 /* Materialize.swift */; };
 		E62AE6EE2944680A0054EA97 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6ED2944680A0054EA97 /* Singleton.swift */; };
 		E62AE6F229447D9C0054EA97 /* SingletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6F129447D9C0054EA97 /* SingletonView.swift */; };
-		E62AE6F429447DB40054EA97 /* FactoryMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6F329447DB40054EA97 /* FactoryMethodViewController.swift */; };
+		E62AE6F429447DB40054EA97 /* FactoryMethodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6F329447DB40054EA97 /* FactoryMethodView.swift */; };
 		E62AE6F629447DE40054EA97 /* FactoryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AE6F529447DE40054EA97 /* FactoryMethod.swift */; };
 		E62DB4DC29F39D82007F4C7F /* StatePatternExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4DB29F39D82007F4C7F /* StatePatternExample.swift */; };
 		E62DB4E129FAAB1E007F4C7F /* MVCArchitecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62DB4E029FAAB1E007F4C7F /* MVCArchitecture.swift */; };
@@ -111,15 +112,15 @@
 		E6E0A2012C15B8B60038A667 /* AnimationEx1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0A2002C15B8B60038A667 /* AnimationEx1View.swift */; };
 		E6E0A2032C15B9D90038A667 /* AnimationEx1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0A2022C15B9D90038A667 /* AnimationEx1ViewController.swift */; };
 		E6ED787C2C3D80E400C686DC /* ProxyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED786F2C3D80E400C686DC /* ProxyView.swift */; };
-		E6ED787D2C3D80E400C686DC /* DecoratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78712C3D80E400C686DC /* DecoratorViewController.swift */; };
-		E6ED787E2C3D80E400C686DC /* BridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78732C3D80E400C686DC /* BridgeViewController.swift */; };
+		E6ED787D2C3D80E400C686DC /* DecoratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78712C3D80E400C686DC /* DecoratorView.swift */; };
+		E6ED787E2C3D80E400C686DC /* BridgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78732C3D80E400C686DC /* BridgeView.swift */; };
 		E6ED787F2C3D80E400C686DC /* FacadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78752C3D80E400C686DC /* FacadeViewController.swift */; };
 		E6ED78802C3D80E400C686DC /* AdapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78772C3D80E400C686DC /* AdapterViewController.swift */; };
 		E6ED78812C3D80E400C686DC /* CompositeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78792C3D80E400C686DC /* CompositeViewController.swift */; };
 		E6ED78822C3D80E400C686DC /* FlyweightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED787B2C3D80E400C686DC /* FlyweightViewController.swift */; };
 		E6ED78842C3E998200C686DC /* PrototypePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED78832C3E998200C686DC /* PrototypePattern.swift */; };
 		E90654B3295951760027A47C /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B2295951760027A47C /* AbstractFactory.swift */; };
-		E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B4295951820027A47C /* AbstractFactoryViewController.swift */; };
+		E90654B5295951820027A47C /* AbstractFactoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90654B4295951820027A47C /* AbstractFactoryView.swift */; };
 		E908D72229652EAA0062B85F /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908D72129652EAA0062B85F /* Ship.swift */; };
 		E94DDCBC28B5CFD7005451EA /* MapStudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94DDCBB28B5CFD7005451EA /* MapStudyViewController.swift */; };
 		E94DDCBE28B5CFE4005451EA /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94DDCBD28B5CFE4005451EA /* Map.swift */; };
@@ -131,7 +132,7 @@
 		E997CBE82966819D00A5B0B5 /* BuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997CBE72966819D00A5B0B5 /* BuilderView.swift */; };
 		E9983B082A0211B900C1444A /* MVVMArchtectureViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9983B072A0211B900C1444A /* MVVMArchtectureViewModelTests.swift */; };
 		E9D1A21028D4230A00C46741 /* SwfitUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D1A20F28D4230A00C46741 /* SwfitUIView.swift */; };
-		E9F71BFD2974FEB500BDD86B /* PrototypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F71BFC2974FEB500BDD86B /* PrototypeViewController.swift */; };
+		E9F71BFD2974FEB500BDD86B /* PrototypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F71BFC2974FEB500BDD86B /* PrototypeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,6 +199,7 @@
 		C1F892FC1AED41C4887C1733 /* Pods-DataLayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataLayerTests.release.xcconfig"; path = "Target Support Files/Pods-DataLayerTests/Pods-DataLayerTests.release.xcconfig"; sourceTree = "<group>"; };
 		CBFE0A00934D8D2360358485 /* Pods_DataLayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataLayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF536F5F65DE6E4B8D37ECED /* Pods_RxSwiftStudyInUIkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftStudyInUIkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6053F2F2C7B09A8008AB189 /* TempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempView.swift; sourceTree = "<group>"; };
 		E6186C3A2A0BCD0C004FD75C /* Ribs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ribs.swift; sourceTree = "<group>"; };
 		E6186C3C2A0BCD2E004FD75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E6186C402A0BCD9A004FD75C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -214,7 +216,7 @@
 		E62AE6EA2944618F0054EA97 /* Materialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materialize.swift; sourceTree = "<group>"; };
 		E62AE6ED2944680A0054EA97 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		E62AE6F129447D9C0054EA97 /* SingletonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonView.swift; sourceTree = "<group>"; };
-		E62AE6F329447DB40054EA97 /* FactoryMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodViewController.swift; sourceTree = "<group>"; };
+		E62AE6F329447DB40054EA97 /* FactoryMethodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodView.swift; sourceTree = "<group>"; };
 		E62AE6F529447DE40054EA97 /* FactoryMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethod.swift; sourceTree = "<group>"; };
 		E62DB4DB29F39D82007F4C7F /* StatePatternExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePatternExample.swift; sourceTree = "<group>"; };
 		E62DB4E029FAAB1E007F4C7F /* MVCArchitecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCArchitecture.swift; sourceTree = "<group>"; };
@@ -318,15 +320,15 @@
 		E6E0A2002C15B8B60038A667 /* AnimationEx1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEx1View.swift; sourceTree = "<group>"; };
 		E6E0A2022C15B9D90038A667 /* AnimationEx1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEx1ViewController.swift; sourceTree = "<group>"; };
 		E6ED786F2C3D80E400C686DC /* ProxyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyView.swift; sourceTree = "<group>"; };
-		E6ED78712C3D80E400C686DC /* DecoratorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecoratorViewController.swift; sourceTree = "<group>"; };
-		E6ED78732C3D80E400C686DC /* BridgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeViewController.swift; sourceTree = "<group>"; };
+		E6ED78712C3D80E400C686DC /* DecoratorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecoratorView.swift; sourceTree = "<group>"; };
+		E6ED78732C3D80E400C686DC /* BridgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeView.swift; sourceTree = "<group>"; };
 		E6ED78752C3D80E400C686DC /* FacadeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeViewController.swift; sourceTree = "<group>"; };
 		E6ED78772C3D80E400C686DC /* AdapterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterViewController.swift; sourceTree = "<group>"; };
 		E6ED78792C3D80E400C686DC /* CompositeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeViewController.swift; sourceTree = "<group>"; };
 		E6ED787B2C3D80E400C686DC /* FlyweightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightViewController.swift; sourceTree = "<group>"; };
 		E6ED78832C3E998200C686DC /* PrototypePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypePattern.swift; sourceTree = "<group>"; };
 		E90654B2295951760027A47C /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
-		E90654B4295951820027A47C /* AbstractFactoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryViewController.swift; sourceTree = "<group>"; };
+		E90654B4295951820027A47C /* AbstractFactoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryView.swift; sourceTree = "<group>"; };
 		E908D72129652EAA0062B85F /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
 		E94DDCBB28B5CFD7005451EA /* MapStudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapStudyViewController.swift; sourceTree = "<group>"; };
 		E94DDCBD28B5CFE4005451EA /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
@@ -338,7 +340,7 @@
 		E997CBE72966819D00A5B0B5 /* BuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderView.swift; sourceTree = "<group>"; };
 		E9983B072A0211B900C1444A /* MVVMArchtectureViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMArchtectureViewModelTests.swift; sourceTree = "<group>"; };
 		E9D1A20F28D4230A00C46741 /* SwfitUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwfitUIView.swift; sourceTree = "<group>"; };
-		E9F71BFC2974FEB500BDD86B /* PrototypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeViewController.swift; sourceTree = "<group>"; };
+		E9F71BFC2974FEB500BDD86B /* PrototypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeView.swift; sourceTree = "<group>"; };
 		F515866E8ECA28C717AABCBF /* Pods-DataLayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataLayerTests.debug.xcconfig"; path = "Target Support Files/Pods-DataLayerTests/Pods-DataLayerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F9EB24DAEE59F486B26EABC8 /* Pods_RxSwiftStudyInUIkitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftStudyInUIkitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD5655182A785D608C140364 /* Pods-RxSwiftStudyInUIkit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftStudyInUIkit.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftStudyInUIkit/Pods-RxSwiftStudyInUIkit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -448,6 +450,7 @@
 		E62AE6EC294466AA0054EA97 /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				E6053F2F2C7B09A8008AB189 /* TempView.swift */,
 				E9F71BFA2974FE9200BDD86B /* Create */,
 				E6ED786D2C3D80E400C686DC /* Structural */,
 				E640F24229A20BE400E0F749 /* Behavioral */,
@@ -467,7 +470,7 @@
 		E62AE6F029447D7C0054EA97 /* FactoryMethod */ = {
 			isa = PBXGroup;
 			children = (
-				E62AE6F329447DB40054EA97 /* FactoryMethodViewController.swift */,
+				E62AE6F329447DB40054EA97 /* FactoryMethodView.swift */,
 				E62AE6F529447DE40054EA97 /* FactoryMethod.swift */,
 				E908D72129652EAA0062B85F /* Ship.swift */,
 			);
@@ -1048,7 +1051,7 @@
 		E6ED78702C3D80E400C686DC /* Decorator */ = {
 			isa = PBXGroup;
 			children = (
-				E6ED78712C3D80E400C686DC /* DecoratorViewController.swift */,
+				E6ED78712C3D80E400C686DC /* DecoratorView.swift */,
 			);
 			path = Decorator;
 			sourceTree = "<group>";
@@ -1056,7 +1059,7 @@
 		E6ED78722C3D80E400C686DC /* Bridge */ = {
 			isa = PBXGroup;
 			children = (
-				E6ED78732C3D80E400C686DC /* BridgeViewController.swift */,
+				E6ED78732C3D80E400C686DC /* BridgeView.swift */,
 			);
 			path = Bridge;
 			sourceTree = "<group>";
@@ -1096,7 +1099,7 @@
 		E90654B1295951590027A47C /* AbstractFactory */ = {
 			isa = PBXGroup;
 			children = (
-				E90654B4295951820027A47C /* AbstractFactoryViewController.swift */,
+				E90654B4295951820027A47C /* AbstractFactoryView.swift */,
 				E90654B2295951760027A47C /* AbstractFactory.swift */,
 			);
 			path = AbstractFactory;
@@ -1185,7 +1188,7 @@
 		E9F71BFB2974FEA400BDD86B /* Prototype */ = {
 			isa = PBXGroup;
 			children = (
-				E9F71BFC2974FEB500BDD86B /* PrototypeViewController.swift */,
+				E9F71BFC2974FEB500BDD86B /* PrototypeView.swift */,
 				E6ED78832C3E998200C686DC /* PrototypePattern.swift */,
 			);
 			path = Prototype;
@@ -1551,13 +1554,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6ED787D2C3D80E400C686DC /* DecoratorViewController.swift in Sources */,
+				E6ED787D2C3D80E400C686DC /* DecoratorView.swift in Sources */,
 				E640F24E29A20D9300E0F749 /* IteratorViewController.swift in Sources */,
 				E68999472B42C47D006283E9 /* SweeterChapter3_Frame.swift in Sources */,
 				E62DB4F629FF8DA8007F4C7F /* MVVMCleanArchitecture.swift in Sources */,
 				E69F23552BDE514300F6DC40 /* CombineEx1.swift in Sources */,
 				E69F23872BF226C200F6DC40 /* CacheEx1View.swift in Sources */,
 				E640F24829A20CEB00E0F749 /* CommandViewController.swift in Sources */,
+				E6053F302C7B09A8008AB189 /* TempView.swift in Sources */,
 				E69F23842BED0C9D00F6DC40 /* CombineEx5.swift in Sources */,
 				E6186C3B2A0BCD0C004FD75C /* Ribs.swift in Sources */,
 				E6ED78812C3D80E400C686DC /* CompositeViewController.swift in Sources */,
@@ -1570,12 +1574,12 @@
 				E62DB4F429FF8D82007F4C7F /* ReactorKit.swift in Sources */,
 				E62AE6F629447DE40054EA97 /* FactoryMethod.swift in Sources */,
 				E62ACA0E29C576EF009ED371 /* TemplateCallbackViewController.swift in Sources */,
-				E90654B5295951820027A47C /* AbstractFactoryViewController.swift in Sources */,
-				E62AE6F429447DB40054EA97 /* FactoryMethodViewController.swift in Sources */,
+				E90654B5295951820027A47C /* AbstractFactoryView.swift in Sources */,
+				E62AE6F429447DB40054EA97 /* FactoryMethodView.swift in Sources */,
 				E6B660C42AF620A1002CEE18 /* SwfitUI-TextView.swift in Sources */,
 				E997CBE82966819D00A5B0B5 /* BuilderView.swift in Sources */,
 				E6ED78802C3D80E400C686DC /* AdapterViewController.swift in Sources */,
-				E9F71BFD2974FEB500BDD86B /* PrototypeViewController.swift in Sources */,
+				E9F71BFD2974FEB500BDD86B /* PrototypeView.swift in Sources */,
 				E6B63B682A30A1FC00BE7893 /* MoyaViewModel.swift in Sources */,
 				E69F238B2BF4A0FC00F6DC40 /* PracticalCacheView.swift in Sources */,
 				E62ACA0729C5704B009ED371 /* DatabaseConnection.swift in Sources */,
@@ -1587,7 +1591,7 @@
 				E62DB4FB2A050C83007F4C7F /* Architecture-Index.swift in Sources */,
 				E62DB4F029FF8D4E007F4C7F /* MVVMArchitecture.swift in Sources */,
 				E62DB4F92A050BE7007F4C7F /* VIPERArchitecture.swift in Sources */,
-				E6ED787E2C3D80E400C686DC /* BridgeViewController.swift in Sources */,
+				E6ED787E2C3D80E400C686DC /* BridgeView.swift in Sources */,
 				E62AE6EB2944618F0054EA97 /* Materialize.swift in Sources */,
 				E62ACA1429C58D93009ED371 /* Before_VisitorExample.swift in Sources */,
 				E6E0A2032C15B9D90038A667 /* AnimationEx1ViewController.swift in Sources */,

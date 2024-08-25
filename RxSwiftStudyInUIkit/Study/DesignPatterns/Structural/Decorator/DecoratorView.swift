@@ -5,25 +5,11 @@
 //  Created by won soohyeon on 2023/02/11.
 //
 
-import UIKit
+import SwiftUI
 
-final class DecoratorViewController: UIViewController {
+struct DecoratorView: View {
     
-    private let textView = UITextView().then {
-        $0.isEditable = false
-        $0.font = .systemFont(ofSize: 24)
-    }
-    
-    override func viewDidLoad() {
-        view.backgroundColor = .white
-        
-        view.addSubview(textView)
-        
-        textView.snp.makeConstraints{
-            $0.edges.equalToSuperview().inset(24)
-        }
-        
-        textView.text = """
+    private let textViewContent: String = """
         [ 데코레이터 패턴 ]
         다이나믹하게 런타임에(유연하게, 동적이게) 기존 코드를 확장하는 디자인 패턴
         (<-> 컴파일타임에(고정적이고, 스태틱하게))
@@ -78,12 +64,53 @@ final class DecoratorViewController: UIViewController {
         
         6. Spring의 BeanDefinitionDecorator
         """
-        
-        client()
+    
+    var body: some View {
+        VStack {
+            ScrollView {
+                Text(textViewContent)
+                    .font(.system(size: 24))
+                    .padding(24)
+                    .background(Color.white)
+                    .cornerRadius(8)
+                
+                CodeView(code: """
+                let enabledSpamFilter = true
+                let enabledTrimming = true
+                
+                var commentService: CommentService = DefaultComentService()
+                
+                if enabledSpamFilter {
+                    commentService = SpamFilteringCommentDecorator(commentService: commentService)
+                }
+                
+                if enabledTrimming {
+                    commentService = TrimmingCommentDecorator(commentService: commentService)
+                }
+                
+                // 위에 있는 코드는 상속을 이용하여 만들어도 비슷하다고 볼 수 있다.
+                // 하지만 Decorator의 조합은 동적으로 이루어지기때문에
+                // 아래와 같은 조건에 의해서 생성할 때에도 손쉽게 Service를 생성할 수 있다.
+                // DefaultCommentService의 기능을 수정하지 않고 클래스를 추가하여 구현할 수 있다. // OCP
+                // CommentService라는 인터페이스를 사용하여 DIP(Dependency Inversion Principle) 의존 역전 원칙을 지킴
+                if enabledSpamFilter && enabledTrimming {
+                    commentService = SpamFilteringCommentDecorator(commentService: commentService)
+                    commentService = TrimmingCommentDecorator(commentService: commentService)
+                }
+                
+                let client = CommentClient(commentService: commentService)
+                client.writeComment(comment: "오징어게임...")
+                client.writeComment(comment: "http://whiteship.me")
+                """)
+            }
+            .background(Color(UIColor.systemBackground).edgesIgnoringSafeArea(.all))
+            .onAppear {
+                client()
+            }
+        }
     }
     
     private func client() {
-        
         let enabledSpamFilter = true
         let enabledTrimming = true
         

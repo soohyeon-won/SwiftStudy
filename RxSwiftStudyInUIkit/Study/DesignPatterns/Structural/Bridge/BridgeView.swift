@@ -5,25 +5,11 @@
 //  Created by won soohyeon on 2023/01/29.
 //
 
-import UIKit
+import SwiftUI
 
-final class BridgeViewController: UIViewController {
+struct BridgeView: View {
     
-    private let textView = UITextView().then {
-        $0.isEditable = false
-        $0.font = .systemFont(ofSize: 24)
-    }
-    
-    override func viewDidLoad() {
-        view.backgroundColor = .white
-        
-        view.addSubview(textView)
-        
-        textView.snp.makeConstraints{
-            $0.edges.equalToSuperview().inset(24)
-        }
-        
-        textView.text = """
+    private let textViewContent: String = """
         [ 브릿지 패턴 ]
         추상적인 것과 구체적인 것을 분리하여 연결하는 패턴
         하나의 계층 구조일 때보다 각기 나누었을때 독립적인 계층 구조로 발전시킬 수 있다.
@@ -44,10 +30,62 @@ final class BridgeViewController: UIViewController {
         
         OCP : Open-Closed principle
         SRP : Single Responsibility principle
-        
         """
-        
-        client()
+    
+    var body: some View {
+        VStack {
+            ScrollView {
+                Text(textViewContent)
+                    .font(.system(size: 24))
+                    .padding(24)
+                    .background(Color.white)
+                    .cornerRadius(8)
+                
+                CodeView(code: """
+                protocol Skin {
+                    var name: String { get set }
+                }
+
+                class 정복자Skin: Skin {
+                    var name: String = "정복자"
+                }
+
+                class DefaultChampion: Champion {
+                    
+                    private let championName: String
+                    private let skin: Skin
+                    
+                    init(championName: String, skin: Skin) {
+                        self.championName = championName
+                        self.skin = skin
+                    }
+                    
+                    func move() {
+                        print("\\(skin.name)\\(championName) move")
+                    }
+                    
+                    func skillQ() {
+                        print("\\(skin.name)\\(championName) Q")
+                    }
+                }
+
+                class 아리: DefaultChampion {
+                    
+                    init(skin: Skin) {
+                        super.init(championName: "아리", skin: skin)
+                    }
+                }
+                
+                // MARK: - used
+                정복자아리().skillQ()
+                아리(skin: 정복자Skin()).skillQ() // skin을 주입
+                """)
+            }
+            .background(Color(UIColor.systemBackground).edgesIgnoringSafeArea(.all))
+            .onAppear {
+                client()
+            }
+        }
     }
     
     private func client() {
