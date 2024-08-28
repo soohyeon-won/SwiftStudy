@@ -96,7 +96,7 @@ extension OutlineViewController {
                     title: "행동(Behavioral)",
                     subitems: [
                         OutlineItem(title: "책임연쇄(ChainOfResponsibility)",
-                                    viewController: ChainOfResponsibilityViewController.self),
+                                    swiftUIController: ChainOfResponsibilityView().toHostingController()),
                         OutlineItem(title: "Command",
                                     viewController: CommandViewController.self),
                         OutlineItem(title: "Interpreter",

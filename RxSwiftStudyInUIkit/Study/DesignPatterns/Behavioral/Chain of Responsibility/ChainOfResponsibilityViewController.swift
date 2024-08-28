@@ -1,29 +1,15 @@
 //
-//  ChainOfResponsibilityViewController.swift
+//  ChainOfResponsibilityView.swift
 //  RxSwiftStudyInUIkit
 //
 //  Created by won soohyeon on 2023/02/19.
 //
 
-import UIKit
+import SwiftUI
 
-final class ChainOfResponsibilityViewController: UIViewController {
+struct ChainOfResponsibilityView: View {
     
-    private let textView = UITextView().then {
-        $0.isEditable = false
-        $0.font = .systemFont(ofSize: 24)
-    }
-    
-    override func viewDidLoad() {
-        view.backgroundColor = .white
-        
-        view.addSubview(textView)
-        
-        textView.snp.makeConstraints{
-            $0.edges.equalToSuperview().inset(24)
-        }
-        
-        textView.text = """
+    private let textViewContent: String = """
         [ 책임 연쇄 패턴 ]
         각각의 책임이 연결되어있는 패턴
         SRP(단일 책임 원칙)에서 얘기하는 책임과 동일
@@ -64,10 +50,68 @@ final class ChainOfResponsibilityViewController: UIViewController {
         
         별다른 필터를 설정하지 않아도 이미 시큐리티 필터가 적용되어있음.
         필터를 추가할 수 있음.
-        
         """
-        
-        client()
+    
+    var body: some View {
+        VStack {
+            ScrollView {
+                Text(textViewContent)
+                    .font(.system(size: 24))
+                    .padding(24)
+                    .background(Color.white)
+                    .cornerRadius(8)
+                
+                CodeView(code: """
+                let chain = CheckAuthRequestHandler(
+                    nextHandler: ContentLoggingRequestHandler(
+                        nextHandler: PrintRequestHandler(nextHandler: nil)
+                    )
+                )
+                chain.handler(request: reqeust)
+
+                final class PrintRequestHandler: CORRequestHandler {
+                    
+                    override init(nextHandler: RequestHandlerProtocol?) {
+                        super.init(nextHandler: nextHandler)
+                    }
+                    
+                    override func handler(request: Request) {
+                        print("프린트 핸들러")
+                        super.handler(request: request)
+                    }
+                }
+
+                final class CheckAuthRequestHandler: CORRequestHandler {
+                    
+                    override init(nextHandler: RequestHandlerProtocol?) {
+                        super.init(nextHandler: nextHandler)
+                    }
+                    
+                    override func handler(request: Request) {
+                        print("인증여부 체크 핸들러")
+                        super.handler(request: request)
+                    }
+                }
+
+                final class ContentLoggingRequestHandler: CORRequestHandler {
+                    
+                    override init(nextHandler: RequestHandlerProtocol?) {
+                        super.init(nextHandler: nextHandler)
+                    }
+                    
+                    override func handler(request: Request) {
+                        print("로깅 핸들러")
+                        super.handler(request: request)
+                    }
+                }
+
+                """)
+            }
+            .background(Color(UIColor.systemBackground).edgesIgnoringSafeArea(.all))
+            .onAppear {
+                client()
+            }
+        }
     }
     
     private func client() {
@@ -97,7 +141,7 @@ class RequestHandler {
     }
 }
 
-// 장점:  SRP 를 지킬 수 있음
+// 장점: SRP 를 지킬 수 있음
 // 문제: client가 AuthRequestHandler를 선택해야해서 클라이언트 코드가 변경됨.
 // 로깅 등을 해야한다고 했을때 handler를 추가해야함
 final class AuthRequestHandler: RequestHandler {
