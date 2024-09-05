@@ -98,7 +98,7 @@ extension OutlineViewController {
                         OutlineItem(title: "책임연쇄(ChainOfResponsibility)",
                                     swiftUIController: ChainOfResponsibilityView().toHostingController()),
                         OutlineItem(title: "Command",
-                                    viewController: CommandViewController.self),
+                                    swiftUIController: CommandView().toHostingController()),
                         OutlineItem(title: "Interpreter",
                                     viewController: InterpreterViewController.self),
                         OutlineItem(title: "Iterator",
