@@ -59,6 +59,92 @@ struct InterpreterView: View {
 
                 // (가격시작값='50.0',가격종료값='100.0'&price>=200.0&price<=1000.0)|(location='Seoul')
                 print("Query Parameters: \\(queryParams)")
+                
+                // Expression 프로토콜이 이제 서버 요청 파라미터를 반환
+                protocol Expression {
+                    func interpret() -> String
+                }
+
+                // Context: 부동산 검색에 필요한 데이터
+                struct RealEstateContext {
+                    let price: Double
+                    let location: String
+                    let size: Double
+                }
+
+                // 가격 조건 Expression
+                class PriceExpression: Expression {
+                    private let minPrice: Double
+                    private let maxPrice: Double
+
+                    init(minPrice: Double, maxPrice: Double) {
+                        self.minPrice = minPrice
+                        self.maxPrice = maxPrice
+                    }
+
+                    func interpret() -> String {
+                        return "price>=\\(minPrice)&price<=\\(maxPrice)"
+                    }
+                }
+
+                // 크기 조건을 위한 Expression
+                class SizeExpression: Expression {
+                    private let minSize: Double
+                    private let maxSize: Double
+
+                    init(minSize: Double, maxSize: Double) {
+                        self.minSize = minSize
+                        self.maxSize = maxSize
+                    }
+
+                    func interpret() -> String {
+                        return "가격시작값='\\(minSize)',가격종료값='\\(maxSize)'"
+                    }
+                }
+
+                // 위치 조건 Expression
+                class LocationExpression: Expression {
+                    private let location: String
+
+                    init(location: String) {
+                        self.location = location
+                    }
+
+                    func interpret() -> String {
+                        return "location='\\(location)'"
+                    }
+                }
+
+                // AND 표현식
+                class AndExpression: Expression {
+                    private let expr1: Expression
+                    private let expr2: Expression
+
+                    init(_ expr1: Expression, _ expr2: Expression) {
+                        self.expr1 = expr1
+                        self.expr2 = expr2
+                    }
+
+                    func interpret() -> String {
+                        return "\\(expr1.interpret())&\\(expr2.interpret())"
+                    }
+                }
+
+                // OR 표현식
+                class OrExpression: Expression {
+                    private let expr1: Expression
+                    private let expr2: Expression
+
+                    init(_ expr1: Expression, _ expr2: Expression) {
+                        self.expr1 = expr1
+                        self.expr2 = expr2
+                    }
+
+                    func interpret() -> String {
+                        return "(\\(expr1.interpret()))|(\\(expr2.interpret()))"
+                    }
+                }
+
                 """)
             }
             .background(Color(UIColor.systemBackground).edgesIgnoringSafeArea(.all))
