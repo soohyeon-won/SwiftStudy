@@ -50,7 +50,7 @@
 		E636139928B22E5A0050C070 /* RxSwiftStudyInUIkitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E636139828B22E5A0050C070 /* RxSwiftStudyInUIkitUITestsLaunchTests.swift */; };
 		E63613A628B22E6A0050C070 /* ShareStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63613A528B22E6A0050C070 /* ShareStudy.swift */; };
 		E640F24529A20C9A00E0F749 /* ChainOfResponsibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F24429A20C9A00E0F749 /* ChainOfResponsibilityView.swift */; };
-		E640F24829A20CEB00E0F749 /* CommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F24729A20CEB00E0F749 /* CommandViewController.swift */; };
+		E640F24829A20CEB00E0F749 /* CommandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F24729A20CEB00E0F749 /* CommandView.swift */; };
 		E640F24B29A20D5B00E0F749 /* InterpreterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F24A29A20D5B00E0F749 /* InterpreterViewController.swift */; };
 		E640F24E29A20D9300E0F749 /* IteratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F24D29A20D9300E0F749 /* IteratorViewController.swift */; };
 		E640F25129A20DD200E0F749 /* MediatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F25029A20DD200E0F749 /* MediatorViewController.swift */; };
@@ -245,7 +245,7 @@
 		E636139828B22E5A0050C070 /* RxSwiftStudyInUIkitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftStudyInUIkitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E63613A528B22E6A0050C070 /* ShareStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareStudy.swift; sourceTree = "<group>"; };
 		E640F24429A20C9A00E0F749 /* ChainOfResponsibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainOfResponsibilityView.swift; sourceTree = "<group>"; };
-		E640F24729A20CEB00E0F749 /* CommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandViewController.swift; sourceTree = "<group>"; };
+		E640F24729A20CEB00E0F749 /* CommandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandView.swift; sourceTree = "<group>"; };
 		E640F24A29A20D5B00E0F749 /* InterpreterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterViewController.swift; sourceTree = "<group>"; };
 		E640F24D29A20D9300E0F749 /* IteratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorViewController.swift; sourceTree = "<group>"; };
 		E640F25029A20DD200E0F749 /* MediatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorViewController.swift; sourceTree = "<group>"; };
@@ -696,7 +696,7 @@
 		E640F24629A20CDE00E0F749 /* Command */ = {
 			isa = PBXGroup;
 			children = (
-				E640F24729A20CEB00E0F749 /* CommandViewController.swift */,
+				E640F24729A20CEB00E0F749 /* CommandView.swift */,
 			);
 			path = Command;
 			sourceTree = "<group>";
@@ -1560,7 +1560,7 @@
 				E62DB4F629FF8DA8007F4C7F /* MVVMCleanArchitecture.swift in Sources */,
 				E69F23552BDE514300F6DC40 /* CombineEx1.swift in Sources */,
 				E69F23872BF226C200F6DC40 /* CacheEx1View.swift in Sources */,
-				E640F24829A20CEB00E0F749 /* CommandViewController.swift in Sources */,
+				E640F24829A20CEB00E0F749 /* CommandView.swift in Sources */,
 				E6053F302C7B09A8008AB189 /* TempView.swift in Sources */,
 				E69F23842BED0C9D00F6DC40 /* CombineEx5.swift in Sources */,
 				E6186C3B2A0BCD0C004FD75C /* Ribs.swift in Sources */,
