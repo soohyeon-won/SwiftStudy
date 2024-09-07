@@ -102,7 +102,7 @@ extension OutlineViewController {
                         OutlineItem(title: "Interpreter",
                                     swiftUIController: InterpreterView().toHostingController()),
                         OutlineItem(title: "Iterator",
-                                    viewController: IteratorViewController.self),
+                                    swiftUIController: IteratorView().toHostingController()),
                         OutlineItem(title: "Mediator",
                                     viewController: MediatorViewController.self),
                         OutlineItem(title: "Memento",

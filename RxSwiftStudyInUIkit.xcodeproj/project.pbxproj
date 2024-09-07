@@ -51,8 +51,8 @@
 		E63613A628B22E6A0050C070 /* ShareStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63613A528B22E6A0050C070 /* ShareStudy.swift */; };
 		E640F24529A20C9A00E0F749 /* ChainOfResponsibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F24429A20C9A00E0F749 /* ChainOfResponsibilityView.swift */; };
 		E640F24829A20CEB00E0F749 /* CommandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F24729A20CEB00E0F749 /* CommandView.swift */; };
-		E640F24B29A20D5B00E0F749 /* InterpreterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F24A29A20D5B00E0F749 /* InterpreterViewController.swift */; };
-		E640F24E29A20D9300E0F749 /* IteratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F24D29A20D9300E0F749 /* IteratorViewController.swift */; };
+		E640F24B29A20D5B00E0F749 /* InterpreterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F24A29A20D5B00E0F749 /* InterpreterView.swift */; };
+		E640F24E29A20D9300E0F749 /* IteratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F24D29A20D9300E0F749 /* IteratorView.swift */; };
 		E640F25129A20DD200E0F749 /* MediatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F25029A20DD200E0F749 /* MediatorViewController.swift */; };
 		E640F25929A20EB700E0F749 /* MementoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F25829A20EB700E0F749 /* MementoViewController.swift */; };
 		E640F25B29A20ED200E0F749 /* ObserverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F25A29A20ED200E0F749 /* ObserverViewController.swift */; };
@@ -246,8 +246,8 @@
 		E63613A528B22E6A0050C070 /* ShareStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareStudy.swift; sourceTree = "<group>"; };
 		E640F24429A20C9A00E0F749 /* ChainOfResponsibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainOfResponsibilityView.swift; sourceTree = "<group>"; };
 		E640F24729A20CEB00E0F749 /* CommandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandView.swift; sourceTree = "<group>"; };
-		E640F24A29A20D5B00E0F749 /* InterpreterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterViewController.swift; sourceTree = "<group>"; };
-		E640F24D29A20D9300E0F749 /* IteratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorViewController.swift; sourceTree = "<group>"; };
+		E640F24A29A20D5B00E0F749 /* InterpreterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterView.swift; sourceTree = "<group>"; };
+		E640F24D29A20D9300E0F749 /* IteratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorView.swift; sourceTree = "<group>"; };
 		E640F25029A20DD200E0F749 /* MediatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorViewController.swift; sourceTree = "<group>"; };
 		E640F25829A20EB700E0F749 /* MementoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoViewController.swift; sourceTree = "<group>"; };
 		E640F25A29A20ED200E0F749 /* ObserverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverViewController.swift; sourceTree = "<group>"; };
@@ -704,7 +704,7 @@
 		E640F24929A20D4000E0F749 /* Interpreter */ = {
 			isa = PBXGroup;
 			children = (
-				E640F24A29A20D5B00E0F749 /* InterpreterViewController.swift */,
+				E640F24A29A20D5B00E0F749 /* InterpreterView.swift */,
 			);
 			path = Interpreter;
 			sourceTree = "<group>";
@@ -712,7 +712,7 @@
 		E640F24C29A20D8400E0F749 /* Iterator */ = {
 			isa = PBXGroup;
 			children = (
-				E640F24D29A20D9300E0F749 /* IteratorViewController.swift */,
+				E640F24D29A20D9300E0F749 /* IteratorView.swift */,
 			);
 			path = Iterator;
 			sourceTree = "<group>";
@@ -1555,7 +1555,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6ED787D2C3D80E400C686DC /* DecoratorView.swift in Sources */,
-				E640F24E29A20D9300E0F749 /* IteratorViewController.swift in Sources */,
+				E640F24E29A20D9300E0F749 /* IteratorView.swift in Sources */,
 				E68999472B42C47D006283E9 /* SweeterChapter3_Frame.swift in Sources */,
 				E62DB4F629FF8DA8007F4C7F /* MVVMCleanArchitecture.swift in Sources */,
 				E69F23552BDE514300F6DC40 /* CombineEx1.swift in Sources */,
@@ -1569,7 +1569,7 @@
 				E640F25129A20DD200E0F749 /* MediatorViewController.swift in Sources */,
 				E69C82412B00B8A500586158 /* SwiftUI-StackComb.swift in Sources */,
 				E69F23482BDD1FEC00F6DC40 /* Config.swift in Sources */,
-				E640F24B29A20D5B00E0F749 /* InterpreterViewController.swift in Sources */,
+				E640F24B29A20D5B00E0F749 /* InterpreterView.swift in Sources */,
 				E69C82DA2B3C238800586158 /* SweeterChapter3_Button.swift in Sources */,
 				E62DB4F429FF8D82007F4C7F /* ReactorKit.swift in Sources */,
 				E62AE6F629447DE40054EA97 /* FactoryMethod.swift in Sources */,
