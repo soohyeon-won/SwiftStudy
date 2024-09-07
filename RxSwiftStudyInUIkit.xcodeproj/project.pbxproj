@@ -53,7 +53,7 @@
 		E640F24829A20CEB00E0F749 /* CommandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F24729A20CEB00E0F749 /* CommandView.swift */; };
 		E640F24B29A20D5B00E0F749 /* InterpreterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F24A29A20D5B00E0F749 /* InterpreterView.swift */; };
 		E640F24E29A20D9300E0F749 /* IteratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F24D29A20D9300E0F749 /* IteratorView.swift */; };
-		E640F25129A20DD200E0F749 /* MediatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F25029A20DD200E0F749 /* MediatorViewController.swift */; };
+		E640F25129A20DD200E0F749 /* MediatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F25029A20DD200E0F749 /* MediatorView.swift */; };
 		E640F25929A20EB700E0F749 /* MementoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F25829A20EB700E0F749 /* MementoViewController.swift */; };
 		E640F25B29A20ED200E0F749 /* ObserverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F25A29A20ED200E0F749 /* ObserverViewController.swift */; };
 		E640F25D29A20EEF00E0F749 /* StateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E640F25C29A20EEF00E0F749 /* StateViewController.swift */; };
@@ -248,7 +248,7 @@
 		E640F24729A20CEB00E0F749 /* CommandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandView.swift; sourceTree = "<group>"; };
 		E640F24A29A20D5B00E0F749 /* InterpreterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterView.swift; sourceTree = "<group>"; };
 		E640F24D29A20D9300E0F749 /* IteratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorView.swift; sourceTree = "<group>"; };
-		E640F25029A20DD200E0F749 /* MediatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorViewController.swift; sourceTree = "<group>"; };
+		E640F25029A20DD200E0F749 /* MediatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorView.swift; sourceTree = "<group>"; };
 		E640F25829A20EB700E0F749 /* MementoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoViewController.swift; sourceTree = "<group>"; };
 		E640F25A29A20ED200E0F749 /* ObserverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverViewController.swift; sourceTree = "<group>"; };
 		E640F25C29A20EEF00E0F749 /* StateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViewController.swift; sourceTree = "<group>"; };
@@ -720,7 +720,7 @@
 		E640F24F29A20DC200E0F749 /* Mediator */ = {
 			isa = PBXGroup;
 			children = (
-				E640F25029A20DD200E0F749 /* MediatorViewController.swift */,
+				E640F25029A20DD200E0F749 /* MediatorView.swift */,
 			);
 			path = Mediator;
 			sourceTree = "<group>";
@@ -1566,7 +1566,7 @@
 				E6186C3B2A0BCD0C004FD75C /* Ribs.swift in Sources */,
 				E6ED78812C3D80E400C686DC /* CompositeView.swift in Sources */,
 				E997CBE62966814300A5B0B5 /* BuilderPattern.swift in Sources */,
-				E640F25129A20DD200E0F749 /* MediatorViewController.swift in Sources */,
+				E640F25129A20DD200E0F749 /* MediatorView.swift in Sources */,
 				E69C82412B00B8A500586158 /* SwiftUI-StackComb.swift in Sources */,
 				E69F23482BDD1FEC00F6DC40 /* Config.swift in Sources */,
 				E640F24B29A20D5B00E0F749 /* InterpreterView.swift in Sources */,
