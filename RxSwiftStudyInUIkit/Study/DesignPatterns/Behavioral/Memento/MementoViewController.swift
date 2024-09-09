@@ -5,25 +5,11 @@
 //  Created by won soohyeon on 2023/02/19.
 //
 
-import UIKit
+import SwiftUI
 
-final class MementoViewController: UIViewController {
+struct MementoView: View {
     
-    private let textView = UITextView().then {
-        $0.isEditable = false
-        $0.font = .systemFont(ofSize: 24)
-    }
-    
-    override func viewDidLoad() {
-        view.backgroundColor = .white
-        
-        view.addSubview(textView)
-        
-        textView.snp.makeConstraints{
-            $0.edges.equalToSuperview().inset(24)
-        }
-        
-        textView.text = """
+    private let textViewContent: String = """
         [ 메멘토 패턴 ]
         - 캡슐화를 유지하면서 객체 내부 상태를 외부에 저장하는 방법
         - 객체 상체를 외부에 저장했다가 해당 상태로 복구할 수 있다.
@@ -67,9 +53,116 @@ final class MementoViewController: UIViewController {
         위에서 언급한 라이브러리와 프레임워크는 메멘토 패턴을 구현하는 방법을 제공하지만,
         메멘토 패턴은 일반적으로 객체의 상태를 저장하고 복원하는 고급 기술입니다.
         따라서 개발자가 직접 구현하는 경우가 더 많습니다.
-        """
         
-        client()
+        [언제 사용하는 게 좋을까?]
+        상태 복구가 필요한 경우: 변경 전 상태를 유지해야 할 때.
+        Undo/Redo 기능 구현: 여러 번의 변경 내역을 저장하고 그 중 특정 지점으로 돌아갈 때.
+        데이터 보존: 중요한 데이터를 일시적으로 수정하되, 실수 시 원상 복구해야 할 경우.
+        """
+    
+    var body: some View {
+        VStack {
+            ScrollView {
+                Text(textViewContent)
+                    .font(.system(size: 24))
+                    .padding(24)
+                    .background(Color.white)
+                    .cornerRadius(8)
+                
+                CodeView(code: """
+                // 1. Originator - 상태를 보유하는 객체
+                class CMPost {
+                    var title: String
+                    var content: String
+                    
+                    init(title: String, content: String) {
+                        self.title = title
+                        self.content = content
+                    }
+                    
+                    // 상태를 메멘토로 저장
+                    func createMemento() -> PostMemento {
+                        return PostMemento(title: title, content: content)
+                    }
+                    
+                    // 메멘토에서 상태 복원
+                    func restore(from memento: PostMemento) {
+                        self.title = memento.title
+                        self.content = memento.content
+                    }
+                    
+                    func printDetails() {
+                        print("제목: \\(title), 내용: \\(content)")
+                    }
+                }
+
+                // 2. Memento - Originator의 상태를 저장
+                class PostMemento {
+                    let title: String
+                    let content: String
+                    
+                    init(title: String, content: String) {
+                        self.title = title
+                        self.content = content
+                    }
+                }
+
+                // 3. Caretaker - Memento 객체를 관리
+                class PostHistory {
+                    private var mementos: [PostMemento] = []
+                    
+                    // 상태 저장
+                    func saveState(_ memento: PostMemento) {
+                        mementos.append(memento)
+                    }
+                    
+                    // 마지막 저장 상태로 복원
+                    func restoreLastState() -> PostMemento? {
+                        return mementos.popLast()
+                    }
+                }
+                
+                // 사용 예시
+                let post = CMPost(title: "Swift의 새로운 기능", content: "Swift 5.5에서 도입된 async/await에 대해 알아봅니다.")
+                let history = PostHistory()
+
+                // 초기 상태 출력
+                post.printDetails()
+
+                // 상태 저장
+                history.saveState(post.createMemento())
+
+                // 게시물 수정 (1차)
+                post.title = "Swift의 업데이트"
+                post.content = "Swift 5.5와 SwiftUI 3.0에 대해 설명합니다."
+                post.printDetails()
+
+                // 상태 저장
+                history.saveState(post.createMemento())
+
+                // 게시물 수정 (2차)
+                post.title = "Swift의 차기 버전"
+                post.content = "Swift 6.0에 대한 예측과 기대 사항을 공유합니다."
+                post.printDetails()
+
+                // 복원: 마지막 저장 상태로 복원
+                if let lastState = history.restoreLastState() {
+                    post.restore(from: lastState)
+                    post.printDetails()  // 1차 수정된 상태로 복원
+                }
+
+                // 복원: 초기 상태로 복원
+                if let initialState = history.restoreLastState() {
+                    post.restore(from: initialState)
+                    post.printDetails()  // 초기 작성 상태로 복원
+                }
+                """)
+            }
+            .background(Color(UIColor.systemBackground).edgesIgnoringSafeArea(.all))
+            .onAppear {
+                client()
+            }
+        }
     }
     
     private func client() {
@@ -99,6 +192,41 @@ final class MementoViewController: UIViewController {
         
         print(mementoGame.getBlueTeamScore())
         print(mementoGame.getRedTeamScore())
+        
+        // 사용 예시
+        let post = CMPost(title: "Swift의 새로운 기능", content: "Swift 5.5에서 도입된 async/await에 대해 알아봅니다.")
+        let history = PostHistory()
+
+        // 초기 상태 출력
+        post.printDetails()
+
+        // 상태 저장
+        history.saveState(post.createMemento())
+
+        // 게시물 수정 (1차)
+        post.title = "Swift의 업데이트"
+        post.content = "Swift 5.5와 SwiftUI 3.0에 대해 설명합니다."
+        post.printDetails()
+
+        // 상태 저장
+        history.saveState(post.createMemento())
+
+        // 게시물 수정 (2차)
+        post.title = "Swift의 차기 버전"
+        post.content = "Swift 6.0에 대한 예측과 기대 사항을 공유합니다."
+        post.printDetails()
+
+        // 복원: 마지막 저장 상태로 복원
+        if let lastState = history.restoreLastState() {
+            post.restore(from: lastState)
+            post.printDetails()  // 1차 수정된 상태로 복원
+        }
+
+        // 복원: 초기 상태로 복원
+        if let initialState = history.restoreLastState() {
+            post.restore(from: initialState)
+            post.printDetails()  // 초기 작성 상태로 복원
+        }
     }
 }
 
@@ -151,3 +279,56 @@ final class GameSave {
         return redTeamScore
     }
 }
+
+// 1. Originator - 상태를 보유하는 객체
+class CMPost {
+    var title: String
+    var content: String
+    
+    init(title: String, content: String) {
+        self.title = title
+        self.content = content
+    }
+    
+    // 상태를 메멘토로 저장
+    func createMemento() -> PostMemento {
+        return PostMemento(title: title, content: content)
+    }
+    
+    // 메멘토에서 상태 복원
+    func restore(from memento: PostMemento) {
+        self.title = memento.title
+        self.content = memento.content
+    }
+    
+    func printDetails() {
+        print("제목: \(title), 내용: \(content)")
+    }
+}
+
+// 2. Memento - Originator의 상태를 저장
+class PostMemento {
+    let title: String
+    let content: String
+    
+    init(title: String, content: String) {
+        self.title = title
+        self.content = content
+    }
+}
+
+// 3. Caretaker - Memento 객체를 관리
+class PostHistory {
+    private var mementos: [PostMemento] = []
+    
+    // 상태 저장
+    func saveState(_ memento: PostMemento) {
+        mementos.append(memento)
+    }
+    
+    // 마지막 저장 상태로 복원
+    func restoreLastState() -> PostMemento? {
+        return mementos.popLast()
+    }
+}
+
