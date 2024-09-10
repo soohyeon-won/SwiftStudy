@@ -1,33 +1,15 @@
 //
-//  ObserverViewController.swift
+//  ObserverView.swift
 //  RxSwiftStudyInUIkit
 //
 //  Created by won soohyeon on 2023/02/19.
 //
 
-import UIKit
+import SwiftUI
 
-final class ObserverViewController: UIViewController {
+struct ObserverView: View {
     
-    private let textView = UITextView().then {
-        $0.isEditable = false
-        $0.font = .systemFont(ofSize: 24)
-    }
-    
-    // for KVO
-    let objectToObserve = MyClass()
-    var observation: NSKeyValueObservation?
-    
-    override func viewDidLoad() {
-        view.backgroundColor = .white
-        
-        view.addSubview(textView)
-        
-        textView.snp.makeConstraints{
-            $0.edges.equalToSuperview().inset(24)
-        }
-        
-        textView.text = """
+    private let textViewContent: String = """
         [ 옵저버 패턴 ]
         - 다수의 객체가 특정 객체 상태 변화를 감지하고 알림을 받는 패턴
         - 발행(Publish) - 구독(subscribe) 패턴을 구현할 수 있다.
@@ -59,10 +41,29 @@ final class ObserverViewController: UIViewController {
         1. NotificationCenter
         2. KVO
         """
-        
-        clientChat()
-        clientStock()
-        exampleKVO()
+    // for KVO
+    let objectToObserve = MyClass()
+    @State var observation: NSKeyValueObservation?
+    
+    var body: some View {
+        VStack {
+            ScrollView {
+                Text(textViewContent)
+                    .font(.system(size: 24))
+                    .padding(24)
+                    .background(Color.white)
+                    .cornerRadius(8)
+                
+                CodeView(code: """
+                """)
+            }
+            .background(Color(UIColor.systemBackground).edgesIgnoringSafeArea(.all))
+            .onAppear {
+                clientChat()
+                clientStock()
+                exampleKVO()
+            }
+        }
     }
     
     private func clientChat() {

@@ -1,29 +1,15 @@
 //
-//  StateViewController.swift
+//  StateView.swift
 //  RxSwiftStudyInUIkit
 //
 //  Created by won soohyeon on 2023/02/19.
 //
 
-import UIKit
+import SwiftUI
 
-final class StateViewController: UIViewController {
+struct StateView: View {
     
-    private let textView = UITextView().then {
-        $0.isEditable = false
-        $0.font = .systemFont(ofSize: 24)
-    }
-    
-    override func viewDidLoad() {
-        view.backgroundColor = .white
-        
-        view.addSubview(textView)
-        
-        textView.snp.makeConstraints{
-            $0.edges.equalToSuperview().inset(24)
-        }
-        
-        textView.text = """
+    private let textViewContent: String = """
         [ 상태 (State) 패턴 ]
         • 객체 내부 상태 변경에 따라 객체의 행동이 달라지는 패턴.
         • 상태에 특화된 행동들을 분리해 낼 수 있으며, 새로운 행동을 추가하더라도 다른 행동에 영향을 주지 않는다.
@@ -58,8 +44,105 @@ final class StateViewController: UIViewController {
         전략 패턴은 객체가 사용할 전략 객체를 외부에서 주입받아 사용합니다.
         반면, 상태 패턴은 객체가 스스로 상태를 변경하고, 그에 따라 적절한 행동을 수행합니다.
         """
-        
-        client()
+    
+    var body: some View {
+        VStack {
+            ScrollView {
+                Text(textViewContent)
+                    .font(.system(size: 24))
+                    .padding(24)
+                    .background(Color.white)
+                    .cornerRadius(8)
+                
+                CodeView(code: """
+                // 게시물 상태 프로토콜 정의
+                protocol PostState {
+                    func handleEdit(context: PostContext)
+                    var statusDescription: String { get }
+                }
+
+                // 게시물 클래스
+                class PostContext {
+                    private var state: PostState
+                    
+                    init(initialState: PostState) {
+                        self.state = initialState
+                    }
+                    
+                    // 상태 변경
+                    func setState(_ newState: PostState) {
+                        self.state = newState
+                    }
+                    
+                    // 상태에 따른 편집 동작 처리
+                    func edit() {
+                        state.handleEdit(context: self)
+                    }
+                    
+                    // 상태 확인
+                    func getStatus() -> String {
+                        return state.statusDescription
+                    }
+                }
+
+                // '초안' 상태 구현
+                class DraftState: PostState {
+                    var statusDescription: String {
+                        return "게시물을 작성하는 중입니다."
+                    }
+                    
+                    func handleEdit(context: PostContext) {
+                        print("게시물이 편집되었습니다.")
+                        context.setState(PublishedState())  // 상태를 게시됨으로 전환
+                    }
+                }
+
+                // '게시됨' 상태 구현
+                class PublishedState: PostState {
+                    var statusDescription: String {
+                        return "게시물이 게시되었습니다."
+                    }
+                    
+                    func handleEdit(context: PostContext) {
+                        print("게시물을 더 이상 수정할 수 없습니다. 게시물이 잠깁니다.")
+                        context.setState(LockedState())  // 상태를 잠금으로 전환
+                    }
+                }
+
+                // '잠금됨' 상태 구현
+                class LockedState: PostState {
+                    var statusDescription: String {
+                        return "게시물이 잠금 상태입니다."
+                    }
+                    
+                    func handleEdit(context: PostContext) {
+                        print("잠금된 게시물은 수정할 수 없습니다.")
+                    }
+                }
+                
+                private func example3_writePost() {
+                    // 실제 사용 예시
+                    let post = PostContext(initialState: DraftState())
+                    print("현재 상태: \\(post.getStatus())")
+
+                    // 상태 전환: 초안 -> 게시됨
+                    post.edit()
+                    print("현재 상태: \\(post.getStatus())")
+
+                    // 상태 전환: 게시됨 -> 잠금
+                    post.edit()
+                    print("현재 상태: \\(post.getStatus())")
+
+                    // 잠금 상태에서 수정 시도
+                    post.edit()
+                }
+                """)
+            }
+            .background(Color(UIColor.systemBackground).edgesIgnoringSafeArea(.all))
+            .onAppear {
+                client()
+            }
+        }
     }
     
     private func client() {
@@ -83,9 +166,26 @@ final class StateViewController: UIViewController {
         community.getUseState(isWriter: isWriter)
         community.excuteEntryAction()
     }
+    
+    private func example3_writePost() {
+        // 실제 사용 예시
+        let post = PostContext(initialState: DraftState())
+        print("현재 상태: \(post.getStatus())")
+
+        // 상태 전환: 초안 -> 게시됨
+        post.edit()
+        print("현재 상태: \(post.getStatus())")
+
+        // 상태 전환: 게시됨 -> 잠금
+        post.edit()
+        print("현재 상태: \(post.getStatus())")
+
+        // 잠금 상태에서 수정 시도
+        post.edit()
+    }
 }
 
-public class client {
+public class Client {
     func client() {
         let student = Student (name: "whiteship")
         let onlineCourse = OnlineCourse()
@@ -290,7 +390,69 @@ class VendingMachine2 {
     }
 }
 
-// 사용 예시
-let vendingMachine = VendingMachine2()
+// MARK: - 게시물 작성 & 잠금
 
+// 게시물 상태 프로토콜 정의
+protocol PostState {
+    func handleEdit(context: PostContext)
+    var statusDescription: String { get }
+}
 
+// 게시물 클래스
+class PostContext {
+    private var state: PostState
+    
+    init(initialState: PostState) {
+        self.state = initialState
+    }
+    
+    // 상태 변경
+    func setState(_ newState: PostState) {
+        self.state = newState
+    }
+    
+    // 상태에 따른 편집 동작 처리
+    func edit() {
+        state.handleEdit(context: self)
+    }
+    
+    // 상태 확인
+    func getStatus() -> String {
+        return state.statusDescription
+    }
+}
+
+// '초안' 상태 구현
+class DraftState: PostState {
+    var statusDescription: String {
+        return "게시물을 작성하는 중입니다."
+    }
+    
+    func handleEdit(context: PostContext) {
+        print("게시물이 편집되었습니다.")
+        context.setState(PublishedState())  // 상태를 게시됨으로 전환
+    }
+}
+
+// '게시됨' 상태 구현
+class PublishedState: PostState {
+    var statusDescription: String {
+        return "게시물이 게시되었습니다."
+    }
+    
+    func handleEdit(context: PostContext) {
+        print("게시물을 더 이상 수정할 수 없습니다. 게시물이 잠깁니다.")
+        context.setState(LockedState())  // 상태를 잠금으로 전환
+    }
+}
+
+// '잠금됨' 상태 구현
+class LockedState: PostState {
+    var statusDescription: String {
+        return "게시물이 잠금 상태입니다."
+    }
+    
+    func handleEdit(context: PostContext) {
+        print("잠금된 게시물은 수정할 수 없습니다.")
+    }
+}
