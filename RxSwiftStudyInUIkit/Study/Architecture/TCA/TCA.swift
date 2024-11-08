@@ -90,6 +90,7 @@ struct Todos {
     @BindingState var filter: Filter = .all
     var todos: IdentifiedArrayOf<Todo.State> = []
 
+    // State에 의해 반환하게 만들기
     var filteredTodos: IdentifiedArrayOf<Todo.State> {
       switch filter {
       case .active: return self.todos.filter { !$0.isComplete }
@@ -100,7 +101,7 @@ struct Todos {
   }
 
   enum Action: BindableAction, Sendable {
-    case addTodoButtonTapped
+    case addTodoButtonTapped // 이벤트는 액션 이후 행동과 연관짓지 않기
     case binding(BindingAction<State>)
     case clearCompletedButtonTapped
     case delete(IndexSet)
@@ -172,6 +173,7 @@ struct Todos {
       }
     }
     .forEach(\.todos, action: \.todos) {
+        // 각 Todo 항목의 상태와 액션을 처리하기 위해 반복적으로 Todo 리듀서를 연결
       Todo()
     }
   }
