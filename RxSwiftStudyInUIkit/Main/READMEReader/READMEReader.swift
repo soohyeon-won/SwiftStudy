@@ -64,6 +64,7 @@ struct WebView: UIViewRepresentable {
     // UIView를 생성하여 반환합니다.
     func makeUIView(context: Context) -> WKWebView {
         let webView = WKWebView()
+        webView.navigationDelegate = self
         return webView
     }
     
@@ -72,5 +73,49 @@ struct WebView: UIViewRepresentable {
         // 주어진 URL을 로드합니다.
         let request = URLRequest(url: url)
         webView.load(request)
+    }
+}
+
+extension WebView: WKNavigationDelegate {
+    
+    // 1. 요청 전 처리 (navigation 여부 결정)
+    func webView(_ webView: WKWebView,
+                 decidePolicyFor navigationAction: WKNavigationAction,
+                 decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        // 예: 특정 URL 차단 등
+        print("🔍 요청 URL: \(navigationAction.request.url?.absoluteString ?? "")")
+        decisionHandler(.allow)
+    }
+
+    // 2. 로딩 시작
+    func webView(_ webView: WKWebView,
+                 didStartProvisionalNavigation navigation: WKNavigation!) {
+        print("▶️ 로딩 시작")
+    }
+
+    // 3. 콘텐츠 수신 시작 후
+    func webView(_ webView: WKWebView,
+                 didCommit navigation: WKNavigation!) {
+        print("📥 콘텐츠 수신 시작")
+    }
+
+    // 4. 로딩 완료
+    func webView(_ webView: WKWebView,
+                 didFinish navigation: WKNavigation!) {
+        print("✅ 로딩 완료")
+    }
+
+    // 5. 로딩 실패
+    func webView(_ webView: WKWebView,
+                 didFail navigation: WKNavigation!,
+                 withError error: Error) {
+        print("❌ 로딩 실패: \(error.localizedDescription)")
+    }
+
+    // 6. 초기 요청 실패
+    func webView(_ webView: WKWebView,
+                 didFailProvisionalNavigation navigation: WKNavigation!,
+                 withError error: Error) {
+        print("❌ 초기 로딩 실패: \(error.localizedDescription)")
     }
 }
