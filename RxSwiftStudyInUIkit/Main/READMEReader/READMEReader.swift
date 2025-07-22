@@ -77,45 +77,140 @@ struct WebView: UIViewRepresentable {
 }
 
 extension WebView: WKNavigationDelegate {
-    
-    // 1. 요청 전 처리 (navigation 여부 결정)
+
+    // 1. 페이지 이동 여부 결정 (딥링크 처리, 외부 앱 이동 등)
     func webView(_ webView: WKWebView,
                  decidePolicyFor navigationAction: WKNavigationAction,
                  decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        // 예: 특정 URL 차단 등
-        print("🔍 요청 URL: \(navigationAction.request.url?.absoluteString ?? "")")
+
+        guard let url = navigationAction.request.url else {
+            decisionHandler(.cancel)
+            return
+        }
+
+        let urlString = url.absoluteString
+        print("🌐 요청 URL: \(urlString)")
+
+        // 예: 외부 앱 처리
+        if url.scheme == "tel" || url.scheme == "mailto" {
+            if UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url)
+                decisionHandler(.cancel)
+                return
+            }
+        }
+
+        // 예: 앱 내부 딥링크 처리
+        if urlString.hasPrefix("myapp://") {
+            handleCustomScheme(url)
+            decisionHandler(.cancel)
+            return
+        }
+
+        // 예: 파일 다운로드 등은 별도로 처리
+        if urlString.hasSuffix(".pdf") || urlString.contains("download") {
+            handleDownload(url)
+            decisionHandler(.cancel)
+            return
+        }
+
         decisionHandler(.allow)
     }
 
-    // 2. 로딩 시작
+    // 2. 응답 수신 후 처리 (헤더 체크 등)
     func webView(_ webView: WKWebView,
-                 didStartProvisionalNavigation navigation: WKNavigation!) {
-        print("▶️ 로딩 시작")
+                 decidePolicyFor navigationResponse: WKNavigationResponse,
+                 decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+
+        if let httpResponse = navigationResponse.response as? HTTPURLResponse {
+            print("📡 응답 코드: \(httpResponse.statusCode)")
+            if httpResponse.statusCode == 401 {
+                showLoginPage()
+                decisionHandler(.cancel)
+                return
+            }
+        }
+
+        decisionHandler(.allow)
     }
 
-    // 3. 콘텐츠 수신 시작 후
-    func webView(_ webView: WKWebView,
-                 didCommit navigation: WKNavigation!) {
-        print("📥 콘텐츠 수신 시작")
+    // 3. 로딩 시작
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        print("🚀 로딩 시작")
+        showLoadingIndicator()
     }
 
-    // 4. 로딩 완료
-    func webView(_ webView: WKWebView,
-                 didFinish navigation: WKNavigation!) {
+    // 4. 콘텐츠 시작 수신
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+        print("📥 콘텐츠 수신 중")
+    }
+
+    // 5. 로딩 완료
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         print("✅ 로딩 완료")
+        hideLoadingIndicator()
+
+        // JS Inject 예시
+        webView.evaluateJavaScript("document.title") { result, error in
+            if let title = result as? String {
+                self.title = title
+            }
+        }
     }
 
-    // 5. 로딩 실패
+    // 6. 로딩 실패
     func webView(_ webView: WKWebView,
                  didFail navigation: WKNavigation!,
                  withError error: Error) {
         print("❌ 로딩 실패: \(error.localizedDescription)")
+        hideLoadingIndicator()
+        showErrorPage()
     }
 
-    // 6. 초기 요청 실패
+    // 7. 초기 요청 실패
     func webView(_ webView: WKWebView,
                  didFailProvisionalNavigation navigation: WKNavigation!,
                  withError error: Error) {
         print("❌ 초기 로딩 실패: \(error.localizedDescription)")
+        hideLoadingIndicator()
+        showErrorPage()
     }
+
+    // 8. HTTPS 인증서 관련 (필요 시)
+    func webView(_ webView: WKWebView,
+                 didReceive challenge: URLAuthenticationChallenge,
+                 completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+        // 신뢰할 수 없는 인증서 허용 시 (주의!)
+        completionHandler(.performDefaultHandling, nil)
+    }
+    
+    // MARK: - 보조 함수
+    
+    private func handleCustomScheme(_ url: URL) {
+        // 앱 내부에서 처리할 딥링크 로직
+        print("📲 딥링크 처리: \(url)")
+    }
+
+    private func handleDownload(_ url: URL) {
+        // 다운로드 처리 로직
+        print("⬇️ 다운로드 처리: \(url)")
+        UIApplication.shared.open(url)
+    }
+
+    private func showLoadingIndicator() {
+        // 로딩 인디케이터 표시
+    }
+
+    private func hideLoadingIndicator() {
+        // 로딩 인디케이터 숨김
+    }
+
+    private func showLoginPage() {
+        // 로그인 화면 이동 등
+    }
+
+    private func showErrorPage() {
+        // 에러 UI 표시 등
+    }
+
 }
