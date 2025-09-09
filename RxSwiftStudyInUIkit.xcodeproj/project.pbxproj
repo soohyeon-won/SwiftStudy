@@ -336,6 +336,7 @@
 		E950C91728B87BD800E0C80A /* ReduceStudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceStudyViewController.swift; sourceTree = "<group>"; };
 		E958D9AF28B47E4000D05AC4 /* ShareStudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareStudyViewController.swift; sourceTree = "<group>"; };
 		E958D9B128B47FA100D05AC4 /* OutlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineViewController.swift; sourceTree = "<group>"; };
+		E96FAAE02E6FBC34005DC8AA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E997CBE52966814300A5B0B5 /* BuilderPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderPattern.swift; sourceTree = "<group>"; };
 		E997CBE72966819D00A5B0B5 /* BuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderView.swift; sourceTree = "<group>"; };
 		E9983B072A0211B900C1444A /* MVVMArchtectureViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMArchtectureViewModelTests.swift; sourceTree = "<group>"; };
@@ -912,6 +913,7 @@
 		E6AD8E7A2969488600208D8C /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				E96FAADF2E6FBBE8005DC8AA /* Keychain */,
 				E6E0A1FD2C15B5CC0038A667 /* Animation */,
 				E69F23812BED0AF300F6DC40 /* Cache */,
 				E659A9E42BDA7D2F00EF6998 /* Combine */,
@@ -1141,6 +1143,14 @@
 				E94DDCBB28B5CFD7005451EA /* MapStudyViewController.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		E96FAADF2E6FBBE8005DC8AA /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				E96FAAE02E6FBC34005DC8AA /* README.md */,
+			);
+			path = Keychain;
 			sourceTree = "<group>";
 		};
 		E997CBE42966814300A5B0B5 /* Builder */ = {
